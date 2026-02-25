@@ -1,8 +1,8 @@
 # Nginx
 
-Документация Nginx.
+Dokumentaciya Nginx.
 
-## Документы
+## Dokumenty
 
-- [1. Руководство по установке](./1.Руководство-по-установке.md)
-- [2. Руководство по использованию](./2.Руководство-по-использованию.md)
+- [1. Rukovodstvo po ustanovke](./1.Rukovodstvo-po-ustanovke.md)
+- [2. Rukovodstvo po ispolzovaniyu](./2.Rukovodstvo-po-ispolzovaniyu.md)

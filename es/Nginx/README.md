@@ -1,8 +1,8 @@
 # Nginx
 
-Documentación de Nginx.
+Documentacion de Nginx.
 
-## Docs
+## Documentos
 
-- [1. Guía de Instalación](./1.Guía-de-Instalación.md)
-- [2. Guía de Uso](./2.Guía-de-Uso.md)
+- [1. Guia de Instalacion](./1.Guia-de-Instalacion.md)
+- [2. Guia de Uso](./2.Guia-de-Uso.md)

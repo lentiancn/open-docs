@@ -1,14 +1,8 @@
 # Element Plus
 
-Element Plus는 Vue 3용 컴포넌트 라이브러리입니다.
+Element Plus는 Vue 3 컴포넌트 라이브러리입니다.
 
-## 기능
-
-- 종합적인 컴포넌트
-- TypeScript 지원
-- 커스터마이징 가능한 테마
-
-## 설치
+## 빠른 시작
 
 ```bash
 npm install element-plus
@@ -16,8 +10,8 @@ npm install element-plus
 
 ## 문서
 
-- [설치 가이드](./1.설치-가이드.md)
-- [사용 가이드](./2.사용-가이드.md)
+- [설치 가이드](./1.安装文档.md)
+- [사용 가이드](./2.使用指南.md)
 
 ## 링크
 
@@ -25,4 +19,4 @@ npm install element-plus
 
 ## 라이선스
 
-MIT License
+MIT

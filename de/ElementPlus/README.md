@@ -1,28 +1,22 @@
 # Element Plus
 
-Element Plus ist eine Vue 3 Komponentenbibliothek.
+Element Plus 是 Vue 3 组件库。
 
-## Merkmale
-
-- Umfassende Komponenten
-- TypeScript Support
-- Anpassbare Themes
-
-## Schnellstart
+## 快速开始
 
 ```bash
 npm install element-plus
 ```
 
-## Dokumentation
+## 文档
 
-- [Installationsanleitung](./1.Installationsanleitung.md)
-- [Bedienungsanleitung](./2.Bedienungsanleitung.md)
+- [安装指南](./1.安装文档.md)
+- [使用指南](./2.使用指南.md)
 
-## Links
+## 链接
 
-- [Website](https://element-plus.org/)
+- [官网](https://element-plus.org/)
 
-## Lizenz
+## 许可证
 
-MIT License
+MIT

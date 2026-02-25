@@ -1,31 +1,31 @@
 # Element Plus
 
-Element Plus is a Vue 3 based component library for developers, designers and product managers.
+Element Plus 是为开发者、设计师和产品经理打造的 Vue 3 组件库。
 
-## Introduction
+## 简介
 
-Element Plus is a UI component library built for Vue 3, providing a set of essential components for modern web applications. It offers a comprehensive set of well-designed and fully-featured components.
+Element Plus 是为 Vue 3 构建的 UI 组件库，提供了一套完整的现代化网页应用必备组件。
 
-## Features
+## 特性
 
-- **Comprehensive Components**: Buttons, Forms, Tables, Dialogs, Navigation
-- **TypeScript Support**: Full TypeScript definitions
-- **Tree Shaking**: Import only what you need
-- **Customizable Themes**: CSS variables and SCSS support
-- **Internationalization**: 10+ languages supported
-- **Accessibility**: WCAG compliant
+- **完整组件库**：按钮、表单、表格、对话框、导航等
+- **TypeScript 支持**：完整的类型定义
+- **Tree Shaking**：按需导入
+- **主题定制**：CSS 变量和 SCSS 支持
+- **国际化**：支持 10+ 语言
+- **无障碍性**：符合 WCAG 标准
 
-## Version Information
+## 版本信息
 
-| Version | Status | Vue Version |
-|---------|--------|-------------|
-| 2.x | ✅ Current | Vue 3 |
-| 1.x | ⚠️ Maintenance | Vue 3 |
-| Element UI | ❌ Legacy | Vue 2 |
+| 版本 | 状态 | Vue 版本 |
+|------|------|----------|
+| 2.x | ✅ 当前 | Vue 3 |
+| 1.x | ⚠️ 维护 | Vue 3 |
+| Element UI | ❌ 旧版 | Vue 2 |
 
-> **Note**: Element Plus is for Vue 3 only. Use Element UI for Vue 2 projects.
+> **注意**：Element Plus 仅支持 Vue 3。Vue 2 项目请使用 Element UI。
 
-## Quick Start
+## 快速开始
 
 ### npm
 
@@ -40,26 +40,26 @@ npm install element-plus
 <script src="https://unpkg.com/element-plus/dist/index.full.js"></script>
 ```
 
-## Documentation
+## 文档
 
-- [Installation Guide](./1.Installation-Guide.md) - Complete installation instructions
-- [Usage Guide](./2.Usage-Guide.md) - Component usage and examples
+- [安装指南](./1.安装文档.md) - 完整的安装说明
+- [使用指南](./2.使用指南.md) - 组件使用示例
 
-## Browser Support
+## 浏览器支持
 
-| Browser | Version |
-|---------|---------|
+| 浏览器 | 版本 |
+|--------|------|
 | Chrome | 80+ |
 | Firefox | 80+ |
 | Safari | 14+ |
 | Edge | 80+ |
 
-## Related Resources
+## 相关资源
 
-- [Official Website](https://element-plus.org/)
+- [官方网站](https://element-plus.org/)
 - [GitHub](https://github.com/element-plus/element-plus)
-- [Component Docs](https://element-plus.org/en-US/component/button.html)
+- [组件文档](https://element-plus.org/en-US/component/button.html)
 
-## License
+## 许可证
 
-MIT License - Free for personal and commercial use.
+MIT License - 免费用于个人和商业项目。

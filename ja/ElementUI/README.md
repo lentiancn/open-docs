@@ -1,6 +1,6 @@
 # Element UI
 
-Vue 2.x アプリケーション用のUIコンポーネントライブラリです。
+Vue 2.xアプリケーション用のUIコンポーネントライブラリです。
 
 ## 概要
 
@@ -8,8 +8,8 @@ Element UIは、Vue 2.xでデスクトップアプリケーションを構築す
 
 ## ドキュメント
 
-- [インストールガイド](./1.インストールドキュメント.md) - 詳細な設定手順
-- [使用ガイド](./2.使用ガイド.md) - 包括的な使用ガイド
+- [インストールガイド](./1.インストールドキュメント.md) - 完全なセットアップ手順
+- [ユーザーガイド](./2.ユーザーガイド.md) - 包括的な使用ガイド
 
 ## クイックスタート
 
@@ -19,7 +19,7 @@ Element UIは、Vue 2.xでデスクトップアプリケーションを構築す
 npm install element-ui --save
 ```
 
-### 使用方法
+### 使用
 
 ```javascript
 import Vue from 'vue'
@@ -37,10 +37,10 @@ Vue.use(ElementUI)
 
 ## 機能
 
-- 📦 **60以上のコンポーネント** - 包括的なUIライブラリ
-- 🎨 **カスタマイズ可能** - テーマのカスタマイズが容易
+- 📦 **60+ コンポーネント** - 包括的なUIライブラリ
+- 🎨 **カスタマイズ可能** - テーマ変更が容易
 - 🌍 **i18n** - 10以上の言語をサポート
-- 📱 **レスポンシブ** - デスクトップ向け
+- 📱 **レスポンシブ** - デスクトップ特化
 
 ## バージョン
 
@@ -49,13 +49,13 @@ Vue.use(ElementUI)
 | 2.x | Vue 2.6+ | 現行 |
 | 1.x | Vue 2.x | レガシー |
 
-**注意：** Vue 3の場合は [Element Plus](https://element-plus.org/) を使用してください
+**注意：** Vue 3の場合は[Element Plus](https://element-plus.org/)を使用してください
 
 ## コンポーネントカテゴリ
 
 | カテゴリ | 例 |
-|---------|-----|
-|  Básico | Button, Icon, Layout |
+|----------|-----|
+| 基礎 | Button, Icon, Layout |
 | フォーム | Input, Select, Form |
 | データ | Table, Tree, Tag |
 | 通知 | Message, Notification |
@@ -72,11 +72,10 @@ Vue.use(ElementUI)
 ## ブラウザサポート
 
 | ブラウザ | バージョン |
-|---------|------------|
-| IE | 10以上 |
-| Chrome | 50以上 |
-| Firefox | 50以上 |
-| Safari | 10以上 |
+|----------|------------|
+| IE | 10+ |
+| Chrome | 50+ |
+| Firefox | 50+ |
 
 ## ライセンス
 
@@ -84,6 +83,6 @@ MIT
 
 ## 関連リンク
 
-- [ウェブサイト](https://element.eleme.io/)
+- [公式サイト](https://element.eleme.io/)
 - [GitHub](https://github.com/ElemeFE/element)
 - [Element Plus (Vue 3)](https://element-plus.org/)

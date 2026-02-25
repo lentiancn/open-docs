@@ -1,8 +1,28 @@
 # Element Plus
 
-Dokumentaciya Element Plus.
+Element Plus - библиотека компонентов для Vue 3.
 
-## Dokumenty
+## Особенности
 
-- [1. Rukovodstvo po ustanovke](./1.Rukovodstvo-po-ustanovke.md)
-- [2. Rukovodstvo po ispolzovaniyu](./2.Rukovodstvo-po-ispolzovaniyu.md)
+- Полные компоненты
+- Поддержка TypeScript
+- Настраиваемые темы
+
+## Установка
+
+```bash
+npm install element-plus
+```
+
+## Документация
+
+- [Руководство по установке](./1.Руководство-по-установке.md)
+- [Руководство по использованию](./2.Руководство-по-использованию.md)
+
+## Ссылки
+
+- [Официальный сайт](https://element-plus.org/)
+
+## Лицензия
+
+MIT License

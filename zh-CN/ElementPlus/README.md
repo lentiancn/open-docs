@@ -1,104 +1,65 @@
 # Element Plus
 
-一个基于 Vue 3 的组件库，为开发者、设计师和产品经理提供丰富的 UI 组件。
+Element Plus 是为开发者、设计师和产品经理打造的 Vue 3 组件库。
 
-## 概述
+## 简介
 
-Element Plus 是为 Vue 3 应用程序构建的 UI 组件库。它提供了一套全面的开箱即用组件，具有一致的设计系统。
-
-## 文档
-
-- [安装指南](./1.安装文档.md) - 完整的环境设置说明
-- [使用指南](./2.使用指南.md) - 全面的使用指南和示例
+Element Plus 是一款专为 Vue 3 构建的 UI 组件库，提供了一套现代 Web 应用所需的基础组件。它提供了全面、设计精美、功能完整的组件集合。
 
 ## 特性
 
-- 📦 **60+ 组件** - 全面的 UI 组件库
-- 🎨 **一致设计** - 统一的设计语言
-- 🌍 **国际化** - 支持 10+ 种语言
-- 🎯 **TypeScript** - 完整的 TypeScript 支持
-- ⚡ **Vue 3** - 基于 Vue 3 和组合式 API 构建
-- 📱 **响应式** - 适配所有设备尺寸
+- **丰富的组件**：按钮、表单、表格、对话框、导航等
+- **TypeScript 支持**：完整的 TypeScript 类型定义
+- **Tree Shaking**：按需引入所需组件
+- **主题定制**：支持 CSS 变量和 SCSS
+- **国际化**：支持 10+ 种语言
+- **无障碍访问**：符合 WCAG 标准
+
+## 版本信息
+
+| 版本 | 状态 | Vue 版本 |
+|---------|--------|-------------|
+| 2.x | ✅ 当前版本 | Vue 3 |
+| 1.x | ⚠️ 维护中 | Vue 3 |
+| Element UI | ❌ 旧版 | Vue 2 |
+
+> **注意**：Element Plus 仅支持 Vue 3。Vue 2 项目请使用 Element UI。
 
 ## 快速开始
 
-### 安装
+### npm
 
 ```bash
 npm install element-plus
 ```
 
-### 使用
+### CDN
 
-```typescript
-// main.ts
-import { createApp } from 'vue'
-import ElementPlus from 'element-plus'
-import 'element-plus/dist/index.css'
-import App from './App.vue'
-
-const app = createApp(App)
-app.use(ElementPlus)
-app.mount('#app')
+```html
+<link rel="stylesheet" href="https://unpkg.com/element-plus/dist/index.css">
+<script src="https://unpkg.com/element-plus/dist/index.full.js"></script>
 ```
 
-### 使用组件
+## 文档
 
-```vue
-<template>
-  <el-button type="primary">Hello Element Plus</el-button>
-</template>
-```
-
-## 安装方法
-
-| 方法 | 命令 |
-|------|------|
-| npm | `npm install element-plus` |
-| yarn | `yarn add element-plus` |
-| pnpm | `pnpm install element-plus` |
-| CDN | 通过 `<script>` 标签引入 |
-
-## 组件分类
-
-| 分类 | 示例 |
-|------|------|
-| 基础 | Button, Link, Typography |
-| 表单 | Input, Select, Radio, Checkbox |
-| 数据 | Table, Tree, Pagination |
-| 通知 | Alert, Message, Notification |
-| 导航 | Menu, Tabs, Breadcrumb |
-| 对话框 | Dialog, Drawer |
-
-## IDE 支持
-
-| IDE | 支持情况 |
-|-----|----------|
-| VS Code | 完整支持（配合 Volar） |
-| WebStorm | 完整支持 |
-| IntelliJ IDEA | 完整支持 |
+- [安装指南](./1.安装文档.md) - 完整的安装说明
+- [使用指南](./2.使用指南.md) - 组件使用和示例
 
 ## 浏览器支持
 
 | 浏览器 | 版本 |
-|--------|------|
-| Chrome | 64+ |
-| Edge | 79+ |
-| Firefox | 78+ |
-| Safari | 12+ |
+|---------|---------|
+| Chrome | 80+ |
+| Firefox | 80+ |
+| Safari | 14+ |
+| Edge | 80+ |
 
-**注意：** 不支持 IE11。
+## 相关资源
 
-## 版本
-
-| 版本 | Vue | 状态 |
-|------|-----|------|
-| 2.x | Vue 3.2+ | 当前 |
-| 1.x | Vue 3.0+ | 旧版本 |
-
-## 相关链接
-
-- [官网](https://element-plus.org)
+- [官方网站](https://element-plus.org/)
 - [GitHub](https://github.com/element-plus/element-plus)
-- [npm](https://www.npmjs.com/package/element-plus)
-- [Vue 3](https://vuejs.org)
+- [组件文档](https://element-plus.org/zh-CN/component/button.html)
+
+## 许可证
+
+MIT 许可证 - 免费用于个人和商业用途。

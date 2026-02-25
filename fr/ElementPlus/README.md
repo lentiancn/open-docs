@@ -1,8 +1,28 @@
 # Element Plus
 
-Documentation Element Plus.
+Element Plus est une bibliothèque de composants pour Vue 3.
 
-## Documents
+## Caractéristiques
 
-- [1. Guide dinstallation](./1.Guide-dinstallation.md)
-- [2. Guide dutilisation](./2.Guide-dutilisation.md)
+- Composants complets
+- Support TypeScript
+- Thèmes personnalisables
+
+## Installation
+
+```bash
+npm install element-plus
+```
+
+## Documentation
+
+- [Guide d'installation](./1.Guide-dinstallation.md)
+- [Guide d'utilisation](./2.Guide-dutilisation.md)
+
+## Liens
+
+- [Site officiel](https://element-plus.org/)
+
+## Licence
+
+MIT License

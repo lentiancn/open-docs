@@ -1,40 +1,37 @@
 # Angular
 
-Angular ist ein modernes Web-Anwendungsframework, das von Google gepflegt wird.
+Angular ist ein leistungsstarkes Frontend-Framework, das von Google für die Erstellung von Webanwendungen entwickelt wurde.
 
 ## Einführung
 
-Angular ist ein TypeScript Open-Source-Web-Anwendungsframework, das für den Aufbau effizienter, komplexer Single-Page-Anwendungen entwickelt wurde.
+Angular ist ein TypeScript-basiertes Framework, das eine vollständige Lösung für den Aufbau moderner Webanwendungen bietet, mit Funktionen wie bidirektionaler Datenbindung, Abhängigkeitsinjektion und leistungsstarken CLI-Tools.
 
-## Hauptfunktionen
+## Funktionen
 
-- **Komponentenbasierte Architektur**: Komponentenbasierte Designmuster
-- **TypeScript-Unterstützung**: Native TypeScript-Unterstützung
-- **Bidirektionale Datenbindung**: Automatische Synchronisation zwischen Modell und Ansicht
-- **Abhängigkeitsinjektion**: Leistungsfähiges Abhängigkeitsinjektionssystem
-- **Routing-System**: Vollständige Routing-Lösung
-- **HTTP-Client**: Vollständiger HTTP-Client
-- **Formularverarbeitung**: Reaktive und vorlagengesteuerte Formulare
-- **Testunterstützung**: Vollständige Unit- und End-to-End-Tests
+- **Komponentenbasiert**: Wiederverwendbare UI-Komponenten erstellen
+- **TypeScript**: Typsichere Entwicklung
+- **CLI**: Leistungsstarke Befehlszeilentools
+- **Routing**: Integriertes Routing-System
+- **Formulare**: Vorlagen- und reaktive Formulare
+- **HTTP**: HTTP-Client für API-Aufrufe
+- **Testen**: Integrierte Testunterstützung
 
 ## Versionsinformationen
 
-| Version | Status | Veröffentlichungsdatum |
-|---------|--------|------------------------|
-| Angular 17 | ✅ Aktuell | November 2023 |
-| Angular 16 | ✅ Unterstützt | Mai 2023 |
-| Angular 15 | ⚠️ Wartung | November 2022 |
-| Angular 14 | ⚠️ Wartung | Mai 2022 |
+| Version | Status |
+|---------|--------|
+| Angular 18.x | ✅ Aktuell |
+| Angular 17.x | ✅ Unterstützt |
 
 ## Schnellstart
 
-### Angular CLI installieren
+### Installieren
 
 ```bash
 npm install -g @angular/cli
 ```
 
-### Neues Projekt erstellen
+### Projekt erstellen
 
 ```bash
 ng new my-app
@@ -42,26 +39,19 @@ cd my-app
 ng serve
 ```
 
+Öffne http://localhost:4200
+
 ## Dokumentation
 
-- [Installationsanleitung](./1.Installationsanleitung.md) - Vollständige Installationsanweisungen
-- [Benutzerhandbuch](./2.Benutzerhandbuch.md) - Verwendung von Komponenten und Diensten
+- [Installationsanleitung](./1.Installationsanleitung.md)
+- [Bedienungsanleitung](./2.Bedienungsanleitung.md)
 
-## Browser-Unterstützung
-
-| Browser | Version |
-|---------|---------|
-| Chrome | 90+ |
-| Firefox | 90+ |
-| Safari | 14+ |
-| Edge | 90+ |
-
-## Verwandte Ressourcen
+## Verwandte Links
 
 - [Offizielle Website](https://angular.io/)
-- [Angular CLI](https://angular.io/cli)
-- [Angular Material](https://material.angular.io/)
+- [Dokumentation](https://angular.io/docs)
+- [CLI-Referenz](https://angular.io/cli)
 
 ## Lizenz
 
-MIT License
+MIT-Lizenz

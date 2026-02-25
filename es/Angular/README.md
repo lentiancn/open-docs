@@ -1,40 +1,37 @@
 # Angular
 
-Angular es un marco de trabajo moderno para aplicaciones web mantenido por Google.
+Angular es un potente framework de frontend desarrollado por Google para construir aplicaciones web.
 
 ## Introducción
 
-Angular es un marco de trabajo de código abierto escrito en TypeScript para construir aplicaciones web modernas, diseñado específicamente para crear aplicaciones de una sola página eficientes y complejas.
+Angular es un framework basado en TypeScript que proporciona una solución completa para construir aplicaciones web modernas con características como enlace de datos bidireccional, inyección de dependencias y potentes herramientas CLI.
 
-## Características Principales
+## Características
 
-- **Arquitectura basada en componentes**: Patrón de diseño basado en componentes
-- **Soporte TypeScript**: Soporte nativo para TypeScript
-- **Enlace de datos bidireccional**: Sincronización automática entre modelo y vista
-- **Inyección de dependencias**: Sistema potente de inyección de dependencias
-- **Sistema de enrutamiento**: Solución completa de enrutamiento
-- **Cliente HTTP**: Cliente HTTP completo
-- **Manejo de formularios**: Formularios reactivos y basados en plantillas
-- **Soporte de pruebas**: Pruebas unitarias y end-to-end completas
+- **Basado en componentes**: Construye componentes de UI reutilizables
+- **TypeScript**: Desarrollo seguro con tipos
+- **CLI**: Potentes herramientas de línea de comandos
+- **Enrutamiento**: Sistema de enrutamiento incorporado
+- **Formularios**: Formularios plantilla y reactivos
+- **HTTP**: Cliente HTTP para llamadas API
+- **Testing**: Soporte de pruebas incorporado
 
-## Información de Versiones
+## Información de Versión
 
-| Versión | Estado | Fecha de Lanzamiento |
-|---------|--------|----------------------|
-| Angular 17 | ✅ Actual | Noviembre 2023 |
-| Angular 16 | ✅ Soportado | Mayo 2023 |
-| Angular 15 | ⚠️ Mantenimiento | Noviembre 2022 |
-| Angular 14 | ⚠️ Mantenimiento | Mayo 2022 |
+| Versión | Estado |
+|---------|--------|
+| Angular 18.x | ✅ Actual |
+| Angular 17.x | ✅ Soportada |
 
 ## Inicio Rápido
 
-### Instalar Angular CLI
+### Instalar
 
 ```bash
 npm install -g @angular/cli
 ```
 
-### Crear Nuevo Proyecto
+### Crear Proyecto
 
 ```bash
 ng new my-app
@@ -42,26 +39,19 @@ cd my-app
 ng serve
 ```
 
+Abre http://localhost:4200
+
 ## Documentación
 
-- [Guía de Instalación](./1.Guía de Instalación.md) - Instrucciones completas de instalación
-- [Guía de Uso](./2.Guía de Uso.md) - Cómo usar componentes y servicios
+- [Guía de Instalación](./1.Guía-de-Instalación.md)
+- [Guía de Uso](./2.Guía-de-Uso.md)
 
-## Soporte de Navegadores
+## Enlaces Relacionados
 
-| Navegador | Versión |
-|-----------|---------|
-| Chrome | 90+ |
-| Firefox | 90+ |
-| Safari | 14+ |
-| Edge | 90+ |
-
-## Recursos Relacionados
-
-- [Sitio Web Oficial](https://angular.io/)
-- [Angular CLI](https://angular.io/cli)
-- [Angular Material](https://material.angular.io/)
+- [Sitio Oficial](https://angular.io/)
+- [Documentación](https://angular.io/docs)
+- [Referencia CLI](https://angular.io/cli)
 
 ## Licencia
 
-MIT License
+Licencia MIT

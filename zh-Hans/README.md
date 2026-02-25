@@ -2,7 +2,7 @@
 
 [![许可证](https://img.shields.io/github/license/lentiancn/open-docs.svg)](LICENSE)
 
-简体中文 | [繁體中文](README_zh-Hant.md) | [English](README.md)
+简体中文 | [繁體中文](../zh-Hant/README.md) | [English](../Docker/README.md)
 
 ## 介绍
 

@@ -1,45 +1,66 @@
-# Spring Boot Dokumentation
+# Spring Boot
 
-Spring Boot erleichtert das Erstellen von eigenständigen, produktionsreifen Spring-basierten Anwendungen.
+Spring Boot macht es einfach, eigenständige, produktionsreife Spring-basierte Anwendungen zu erstellen.
 
-## Dokumente
+## Übersicht
 
-- [Installationsanleitung](./1.Installationsanleitung.md) - Java, Maven und Gradle Umgebung einrichten
-- [Benutzungsanleitung](./2.Benutzungsanleitung.md) - Projekte erstellen, REST-APIs, Datenbankverbindungen und Deployment
+Spring Boot ist ein Open-Source-Framework, das die Entwicklung von Spring-Anwendungen vereinfacht. Es bietet Standardwerte für Code und Konfiguration, sodass sich Entwickler auf die Geschäftslogik statt auf die Infrastruktureinrichtung konzentrieren können.
+
+## Dokumentation
+
+- [Installationsanleitung](./1.安装文档.md) - Entwicklungsumgebung einrichten
+- [Anwendungsleitfaden](./2.使用指南.md) - Spring Boot-Anwendungen erstellen und verwalten
 
 ## Schnellstart
 
 ### Projekt erstellen
 
-Besuche [Spring Initializr](https://start.spring.io/) um ein neues Spring Boot Projekt zu generieren.
+Besuchen Sie [Spring Initializr](https://start.spring.io/), um ein neues Projekt zu generieren:
 
 ```bash
-# Maven verwenden
-curl https://start.spring.io/starter.zip -d type=maven-project -d dependencies=web,jpa,h2 -o demo.zip
-unzip demo.zip -d demo
-cd demo
-./mvnw spring-boot:run
+curl https://start.spring.io/starter.zip \
+  -d type=maven-project \
+  -d language=java \
+  -d bootVersion=3.2.5 \
+  -d baseDir=myapp \
+  -d dependencies=web,jpa,h2 \
+  -o myapp.zip
 ```
 
 ### Anwendung ausführen
 
 ```bash
+cd myapp
 ./mvnw spring-boot:run
 ```
 
-Besuche http://localhost:8080
+### Auf Anwendung zugreifen
+
+Browser öffnen: http://localhost:8080
 
 ## Funktionen
 
-- Eigenständige Spring-Anwendungen erstellen
-- Tomcat, Jetty oder Undertow direkt einbetten
-- Vorkonfigurierte "Starter"-Abhängigkeiten bereitstellen
-- Spring und Drittanbieterbibliotheken automatisch konfigurieren
-- Produktionsreife Funktionen wie Metriken, Gesundheitsprüfungen und externalisierte Konfiguration bereitstellen
-- Keine Codegenerierung und keine XML-Konfiguration erforderlich
+- **Schnelle Einrichtung**: Beginnen Sie mit vorkonfigurierten Vorlagen
+- **Eingebetteter Server**: Keine externen Anwendungsserver erforderlich
+- **Auto-Konfiguration**: Automatische Konfiguration basierend auf dem Classpath
+- **Actuator**: Integrierte Überwachungs- und Verwaltungsendpunkte
+- **Spring Boot CLI**: Befehlszeilentool für schnelle Entwicklung
 
-## Verwandte Links
+## Versionsanforderungen
 
-- [Offizielle Dokumentation](https://spring.io/projects/spring-boot)
-- [Spring Anleitungen](https://spring.io/guides)
-- [Spring Boot API](https://docs.spring.io/spring-boot/docs/current/api/)
+| Komponente | Minimale Version |
+|-----------|----------------|
+| Java | 17 (für Spring Boot 3.x) |
+| Maven | 3.6+ |
+| Gradle | 7.5+ |
+
+## Verwandte Projekte
+
+- [Spring Framework](https://spring.io/projects/spring-framework)
+- [Spring Data](https://spring.io/projects/spring-data)
+- [Spring Security](https://spring.io/projects/spring-security)
+- [Spring Cloud](https://spring.io/projects/spring-cloud)
+
+## Lizenz
+
+Spring Boot steht unter Apache 2.0-Lizenz.

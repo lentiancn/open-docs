@@ -1,45 +1,45 @@
-# Documentation Spring Boot
+# Spring Boot
 
-Spring Boot facilite la création d'applications autonomes de qualité production basées sur Spring.
+Spring Boot facilite la création d'applications Spring autonomes de qualité production.
 
-## Documents
+## Présentation
 
-- [Guide d'installation](./1.Guide-d'installation.md) - Configuration de l'environnement Java, Maven et Gradle
-- [Guide d'utilisation](./2.Guide-d'utilisation.md) - Créer des projets, API REST, connexions aux bases de données et déploiement
+Spring Boot est un framework open source qui simplifie le développement d'applications Spring. Il fournit des valeurs par défaut pour le code et la configuration.
+
+## Documentation
+
+- [Guide d'installation](./1.安装文档.md) - Configurer l'environnement de développement
+- [Guide utilisateur](./2.使用指南.md) - Créer et gérer les applications
 
 ## Démarrage rapide
 
-### Créer un projet
-
-Visitez [Spring Initializr](https://start.spring.io/) pour générer un nouveau projet Spring Boot.
-
 ```bash
-# Utiliser Maven
-curl https://start.spring.io/starter.zip -d type=maven-project -d dependencies=web,jpa,h2 -o demo.zip
-unzip demo.zip -d demo
-cd demo
+curl https://start.spring.io/starter.zip \
+  -d type=maven-project \
+  -d language=java \
+  -d bootVersion=3.2.5 \
+  -d baseDir=myapp \
+  -d dependencies=web,jpa,h2 \
+  -o myapp.zip
+
+cd myapp
 ./mvnw spring-boot:run
 ```
 
-### Exécuter l'application
+## Fonctionnalités
 
-```bash
-./mvnw spring-boot:run
-```
+- Configuration rapide
+- Serveur intégré
+- Configuration automatique
+- Actuator pour la surveillance
 
-Visitez http://localhost:8080
+## Versions
 
-## Caractéristiques
+| Composant | Version minimale |
+|-----------|-----------------|
+| Java | 17 (Spring Boot 3.x) |
+| Maven | 3.6+ |
 
-- Créer des applications Spring autonomes
-- Intégrer Tomcat, Jetty ou Undertow directement
-- Fournir des dépendances "starter" préconfigurées
-- Configurer automatiquement Spring et les bibliothèques tierces
-- Fournir des fonctionnalités prêtes pour la production: métriques, vérifications de santé et configuration externalisée
-- Pas de génération de code ni de configuration XML requis
+## Licence
 
-## Liens connexes
-
-- [Documentation officielle](https://spring.io/projects/spring-boot)
-- [Guides Spring](https://spring.io/guides)
-- [API Spring Boot](https://docs.spring.io/spring-boot/docs/current/api/)
+Spring Boot est sous licence Apache 2.0.

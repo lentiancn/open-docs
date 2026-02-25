@@ -1,45 +1,66 @@
-# Spring Boot Documentation
+# Spring Boot
 
 Spring Boot makes it easy to create stand-alone, production-grade Spring-based applications.
 
-## Documents
+## Overview
 
-- [Installation Guide](./1.安装文档.md) - Java, Maven, and Gradle environment setup
-- [Usage Guide](./2.使用指南.md) - Create projects, REST APIs, database connections, and deployment
+Spring Boot is an open-source framework that simplifies the development of Spring applications. It provides defaults for code and configuration, allowing developers to focus on business logic rather than infrastructure setup.
+
+## Documentation
+
+- [Installation Guide](./1.安装文档.md) - Setup development environment
+- [Usage Guide](./2.使用指南.md) - Create and manage Spring Boot applications
 
 ## Quick Start
 
-### Create a Project
+### Create Project
 
-Visit [Spring Initializr](https://start.spring.io/) to generate a new Spring Boot project.
+Visit [Spring Initializr](https://start.spring.io/) to generate a new project:
 
 ```bash
-# Using Maven
-curl https://start.spring.io/starter.zip -d type=maven-project -d dependencies=web,jpa,h2 -o demo.zip
-unzip demo.zip -d demo
-cd demo
+curl https://start.spring.io/starter.zip \
+  -d type=maven-project \
+  -d language=java \
+  -d bootVersion=3.2.5 \
+  -d baseDir=myapp \
+  -d dependencies=web,jpa,h2 \
+  -o myapp.zip
+```
+
+### Run Application
+
+```bash
+cd myapp
 ./mvnw spring-boot:run
 ```
 
-### Run the Application
+### Access Application
 
-```bash
-./mvnw spring-boot:run
-```
-
-Visit http://localhost:8080
+Open browser: http://localhost:8080
 
 ## Features
 
-- Create stand-alone Spring applications
-- Embed Tomcat, Jetty, or Undertow directly
-- Provide opinionated 'starter' dependencies
-- Automatically configure Spring and third-party libraries
-- Provide production-ready features like metrics, health checks, and externalized configuration
-- No code generation and no XML configuration required
+- **Quick Setup**: Get started with pre-configured templates
+- **Embedded Server**: No need for external application servers
+- **Auto-Configuration**: Automatic configuration based on classpath
+- **Actuator**: Built-in monitoring and management endpoints
+- **Spring Boot CLI**: Command-line tool for rapid development
 
-## Related Links
+## Version Requirements
 
-- [Official Documentation](https://spring.io/projects/spring-boot)
-- [Spring Guides](https://spring.io/guides)
-- [Spring Boot API](https://docs.spring.io/spring-boot/docs/current/api/)
+| Component | Minimum Version |
+|-----------|----------------|
+| Java | 17 (for Spring Boot 3.x) |
+| Maven | 3.6+ |
+| Gradle | 7.5+ |
+
+## Related Projects
+
+- [Spring Framework](https://spring.io/projects/spring-framework)
+- [Spring Data](https://spring.io/projects/spring-data)
+- [Spring Security](https://spring.io/projects/spring-security)
+- [Spring Cloud](https://spring.io/projects/spring-cloud)
+
+## License
+
+Spring Boot is under Apache 2.0 license.

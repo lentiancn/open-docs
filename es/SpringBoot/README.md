@@ -1,45 +1,66 @@
-# Documentación de Spring Boot
+# Spring Boot
 
 Spring Boot facilita la creación de aplicaciones independientes de grado de producción basadas en Spring.
 
-## Documentos
+## Descripción General
 
-- [Guía de Instalación](./1.Guía-de-Instalación.md) - Configuración del entorno Java, Maven y Gradle
-- [Guía de Uso](./2.Guía-de-Uso.md) - Crear proyectos, APIs REST, conexiones a bases de datos y despliegue
+Spring Boot es un framework de código abierto que simplifica el desarrollo de aplicaciones Spring. Proporciona valores predeterminados para código y configuración, permitiendo a los desarrolladores concentrarse en la lógica de negocio en lugar de la configuración de infraestructura.
+
+## Documentación
+
+- [Guía de Instalación](./1.安装文档.md) - Configurar entorno de desarrollo
+- [Guía de Uso](./2.使用指南.md) - Crear y gestionar aplicaciones Spring Boot
 
 ## Inicio Rápido
 
-### Crear un Proyecto
+### Crear Proyecto
 
-Visita [Spring Initializr](https://start.spring.io/) para generar un nuevo proyecto Spring Boot.
+Visita [Spring Initializr](https://start.spring.io/) para generar un nuevo proyecto:
 
 ```bash
-# Usando Maven
-curl https://start.spring.io/starter.zip -d type=maven-project -d dependencies=web,jpa,h2 -o demo.zip
-unzip demo.zip -d demo
-cd demo
+curl https://start.spring.io/starter.zip \
+  -d type=maven-project \
+  -d language=java \
+  -d bootVersion=3.2.5 \
+  -d baseDir=myapp \
+  -d dependencies=web,jpa,h2 \
+  -o myapp.zip
+```
+
+### Ejecutar Aplicación
+
+```bash
+cd myapp
 ./mvnw spring-boot:run
 ```
 
-### Ejecutar la Aplicación
+### Acceder a la Aplicación
 
-```bash
-./mvnw spring-boot:run
-```
-
-Visita http://localhost:8080
+Abre el navegador: http://localhost:8080
 
 ## Características
 
-- Crea aplicaciones Spring independientes
-- Incrusta Tomcat, Jetty o Undertow directamente
-- Proporciona dependencias de "starter" predeterminadas
-- Configura automáticamente Spring y bibliotecas de terceros
-- Proporciona funciones listas para producción como métricas, verificaciones de salud y configuración externalizada
-- No requiere generación de código ni configuración XML
+- **Configuración Rápida**: Comienza con plantillas preconfiguradas
+- **Servidor Integrado**: No necesita servidores de aplicaciones externos
+- **Auto-Configuración**: Configuración automática basada en classpath
+- **Actuator**: Endpoints de monitoreo y gestión integrados
+- **Spring Boot CLI**: Herramienta de línea de comandos para desarrollo rápido
 
-## Enlaces Relacionados
+## Requisitos de Versión
 
-- [Documentación Oficial](https://spring.io/projects/spring-boot)
-- [Guías de Spring](https://spring.io/guides)
-- [API de Spring Boot](https://docs.spring.io/spring-boot/docs/current/api/)
+| Componente | Versión Mínima |
+|-----------|----------------|
+| Java | 17 (para Spring Boot 3.x) |
+| Maven | 3.6+ |
+| Gradle | 7.5+ |
+
+## Proyectos Relacionados
+
+- [Spring Framework](https://spring.io/projects/spring-framework)
+- [Spring Data](https://spring.io/projects/spring-data)
+- [Spring Security](https://spring.io/projects/spring-security)
+- [Spring Cloud](https://spring.io/projects/spring-cloud)
+
+## Licencia
+
+Spring Boot está bajo licencia Apache 2.0.

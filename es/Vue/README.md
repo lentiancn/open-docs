@@ -2,25 +2,25 @@
 
 Vue es un framework progresivo de JavaScript para construir interfaces de usuario.
 
-## Descripción General
+## Descripción general
 
-Vue está diseñado para ser adoptable de forma incremental. Se puede usar para componentes simples o aplicaciones complejas de una sola página.
+Vue está diseñado para ser incrementalmente adoptable. Se puede usar para componentes simples o aplicaciones complejas de una sola página.
 
-### Versiones Principales
+### Versiones principales
 
-| Versión | Estado | Fecha de Lanzamiento |
-|---------|--------|--------------|
+| Versión | Estado | Fecha de lanzamiento |
+|---------|--------|---------------------|
 | Vue 3 | Actual - Recomendado | Septiembre 2020 |
 | Vue 2 | Legado (EOL 2023) | Octubre 2016 |
 
 ## Documentación
 
-- [Guía de Instalación](./1.安装文档.md) - Instrucciones completas de configuración para todos los entornos
-- [Guía de Uso](./2.使用指南.md) - Guía completa de uso con ejemplos
+- [Guía de instalación](./1.Instalación.md) - Instrucciones completas de configuración
+- [Guía de uso](./2.Guiadeus.md) - Guía completa con ejemplos
 
-## Inicio Rápido
+## Inicio rápido
 
-### Instalar via npm
+### Instalar vía npm
 
 ```bash
 # Vue 3 (Recomendado)
@@ -36,51 +36,45 @@ npm install
 npm run dev
 ```
 
-### Usando CDN
-
-```html
-<script src="https://vuejs.org/js/vue.js"></script>
-```
-
 ## Características
 
 - **Reactivo** - Seguimiento automático de dependencias
 - **Componentes** - Construir bloques de UI reutilizables
-- **Directivas** - Extensiones de sintaxis de plantillas
+- **Directivas** - Extensiones de sintaxis de plantilla
 - **Transiciones** - Sistema de animación integrado
-- **Router** - Enrutamiento de aplicaciones de una página
-- **Gestión de Estado** - Pinia para estado global
+- **Router** - Enrutamiento de aplicaciones de una sola página
+- **Gestión de estado** - Estado global con Pinia
 
 ## Ecosistema
 
 | Herramienta | Propósito |
-|------|---------|
+|-------------|-----------|
 | Vue Router | Navegación y enrutamiento |
 | Pinia | Gestión de estado |
-| Vite | Herramienta de compilación |
+| Vite | Herramienta de construcción |
 | Vue CLI | Andamiaje de proyectos |
-| VueUse | Utilidades de Composition API |
+| VueUse | Utilidades de composición |
 | Nuxt | Meta-framework |
 
 ## Vue 2 vs Vue 3
 
-| Función | Vue 2 | Vue 3 |
-|---------|-------|-------|
+| Característica | Vue 2 | Vue 3 |
+|----------------|-------|-------|
 | Estilo API | Options API | Composition API + Options |
 | Reactividad | defineProperty | Proxy |
 | TypeScript | Parcial | Completo |
 | Rendimiento | Bueno | Mejor |
-| Tamaño Bundle | ~20KB | ~10KB |
+| Tamaño | ~20KB | ~10KB |
 
 ## Soporte de IDE
 
 | IDE | Plugin |
 |-----|--------|
 | VS Code | Volar |
-| WebStorm | Soporte integrado |
-| IntelliJ | Vue.js plugin |
+| WebStorm | Integrado |
+| IntelliJ | Plugin Vue.js |
 
-## Soporte de Navegadores
+## Soporte de navegador
 
 | Versión | Chrome | Firefox | Safari | Edge |
 |---------|--------|---------|--------|------|
@@ -91,9 +85,9 @@ npm run dev
 
 MIT
 
-## Enlaces Relacionados
+## Enlaces relacionados
 
-- [Sitio Oficial](https://vuejs.org)
+- [Sitio oficial](https://vuejs.org)
 - [Documentación](https://vuejs.org/guide/)
 - [GitHub](https://github.com/vuejs/core)
 - [Vue Router](https://router.vuejs.org/)

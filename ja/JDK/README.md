@@ -1,50 +1,57 @@
-# JDK（Java Development Kit）
+# JDK
 
-JDKはJavaプラットフォームの基礎であり、Javaアプリケーションの開発と実行のためのツールを提供します。
+JDK（Java Development Kit）は公式のJava開発キットです。
 
-## 概要
+## はじめに
 
-JDKには以下が含まれます：
-- **JRE**（Java Runtime Environment）
-- **コンパイラ**（javac）
-- **開発ツール**（jar、javadoc、jdbなど）
-- **ライブラリ**
+JDKは、Java開発所需的ツールとライブラリを提供.Compiler（javac）、Runtime（java）、以及其他各種 utilities.
 
-## ドキュメント
+## 機能
 
-- [インストールガイド](./1.インストールドキュメント.md) - すべてのプラットフォームにJDKをインストール
-- [使用ガイド](./2.使用ガイド.md) - 開発コマンドとツール
+- **javac**：Javaコンパイラー
+- **java**：Javaランタイムランチャー
+- **javadoc**：ドキュメントジェネレーター
+- **jar**：Javaアーカイブツール
+- **jdb**：デバッガー
+- **セキュリティツール**：keytool、jarsigner
+
+## バージョン情報
+
+| バージョン | タイプ | 状態 |
+|---------|------|--------|
+| JDK 21 | LTS | ✅ 現行 |
+| JDK 17 | LTS | ✅ サポート中 |
+| JDK 22 | フィーチャー | ✅ 最新 |
 
 ## クイックスタート
 
-```bash
-# バージョンを確認
-java -version
-javac -version
+### インストール
 
-# コンパイルと実行
+```bash
+# Homebrewを使用
+brew install openjdk@21
+
+# SDKMANを使用
+sdk install java 21.0.2-tem
+```
+
+### コンパイルと実行
+
+```bash
 javac HelloWorld.java
 java HelloWorld
 ```
 
-## バージョン履歴
+## ドキュメント
 
-| バージョン | タイプ | リリース日 |
-|---------|------|---------|
-| JDK 25 | 最新 | 2026 |
-| JDK 21 | LTS | 2023年9月 |
-| JDK 17 | LTS | 2021年9月 |
-| JDK 11 | LTS | 2018年9月 |
+- [インストールガイド](./1.安装文档.md)
+- [使用ガイド](./2.使用指南.md)
 
-## 主要ツール
+## 関連リンク
 
-- **javac** - Javaコンパイラ
-- **java** - Javaランチャー
-- **jar** - JARアーカイブツール
-- **javadoc** - APIドキュメントジェネレーター
-- **jdb** - Javaデバッガー
+- [Oracle JDK](https://www.oracle.com/java/)
+- [Eclipse Temurin](https://adoptium.net/)
 
 ## ライセンス
 
-Oracle JDKはJDK 21以降でOracle No-Fee Terms and Conditions（NFTC）を使用しています。
-OpenJDKはClasspath例外を伴うGPL v2を使用しています。
+Oracle Free Use Terms and Conditions（Oracle JDK）

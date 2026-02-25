@@ -1,50 +1,57 @@
-# JDK (Java Development Kit)
+# JDK
 
-JDK is the foundation of Java platform, providing tools for developing and running Java applications.
+JDK (Java Development Kit) is the official Java development kit.
 
-## Overview
+## Introduction
 
-JDK includes:
-- **JRE** (Java Runtime Environment)
-- **Compiler** (javac)
-- **Development Tools** (jar, javadoc, jdb, etc.)
-- **Libraries**
+JDK provides tools and libraries for Java development, including compiler (javac), runtime (java), and various utilities.
 
-## Documentation
+## Features
 
-- [Installation Guide](./1.安装文档.md) - Install JDK on all platforms
-- [Usage Guide](./2.使用指南.md) - Development commands and tools
+- **javac**: Java compiler
+- **java**: Java runtime launcher
+- **javadoc**: Documentation generator
+- **jar**: Java archive tool
+- **jdb**: Debugger
+- **Security tools**: keytool, jarsigner
+
+## Version Information
+
+| Version | Type | Status |
+|---------|------|--------|
+| JDK 21 | LTS | ✅ Current |
+| JDK 17 | LTS | ✅ Supported |
+| JDK 22 | Feature | ✅ Latest |
 
 ## Quick Start
 
-```bash
-# Check version
-java -version
-javac -version
+### Install
 
-# Compile and run
+```bash
+# Using Homebrew
+brew install openjdk@21
+
+# Using SDKMAN
+sdk install java 21.0.2-tem
+```
+
+### Compile and Run
+
+```bash
 javac HelloWorld.java
 java HelloWorld
 ```
 
-## Version History
+## Documentation
 
-| Version | Type | Release |
-|---------|------|---------|
-| JDK 25 | Latest | 2026 |
-| JDK 21 | LTS | Sep 2023 |
-| JDK 17 | LTS | Sep 2021 |
-| JDK 11 | LTS | Sep 2018 |
+- [Installation Guide](./1.安装文档.md)
+- [Usage Guide](./2.使用指南.md)
 
-## Key Tools
+## Related Links
 
-- **javac** - Java compiler
-- **java** - Java launcher
-- **jar** - JAR archive tool
-- **javadoc** - API documentation generator
-- **jdb** - Java debugger
+- [Oracle JDK](https://www.oracle.com/java/)
+- [Eclipse Temurin](https://adoptium.net/)
 
 ## License
 
-Oracle JDK uses Oracle No-Fee Terms and Conditions (NFTC) for JDK 21+.
-OpenJDK is GPL v2 with Classpath Exception.
+Oracle Free Use Terms and Conditions (Oracle JDK)

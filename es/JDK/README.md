@@ -1,50 +1,57 @@
-# JDK (Java Development Kit)
+# JDK
 
-JDK es la base de la plataforma Java, proporcionando herramientas para desarrollar y ejecutar aplicaciones Java.
+JDK (Java Development Kit) es el kit de desarrollo oficial de Java.
 
-## Descripción general
+## Introducción
 
-JDK incluye:
-- **JRE** (Java Runtime Environment)
-- **Compilador** (javac)
-- **Herramientas de desarrollo** (jar, javadoc, jdb, etc.)
-- **Bibliotecas**
+JDK proporciona herramientas y bibliotecas para el desarrollo de Java, incluyendo el compilador (javac), el runtime (java) y varias utilidades.
 
-## Documentación
+## Características
 
-- [Guía de instalación](./1.Installdocumento.md) - Instalar JDK en todas las plataformas
-- [Guía de uso](./2.Guiadeusoidor.md) - Comandos y herramientas de desarrollo
+- **javac**: Compilador Java
+- **java**: Lanzador de runtime Java
+- **javadoc**: Generador de documentación
+- **jar**: Herramienta de archivo Java
+- **jdb**: Depurador
+- **Herramientas de seguridad**: keytool, jarsigner
 
-## Inicio rápido
+## Información de Versiones
+
+| Versión | Tipo | Estado |
+|---------|------|--------|
+| JDK 21 | LTS | ✅ Actual |
+| JDK 17 | LTS | ✅ Soportada |
+| JDK 22 | Función | ✅ Última |
+
+## Inicio Rápido
+
+### Instalar
 
 ```bash
-# Verificar versión
-java -version
-javac -version
+# Usando Homebrew
+brew install openjdk@21
 
-# Compilar y ejecutar
+# Usando SDKMAN
+sdk install java 21.0.2-tem
+```
+
+### Compilar y Ejecutar
+
+```bash
 javac HelloWorld.java
 java HelloWorld
 ```
 
-## Historial de versiones
+## Documentación
 
-| Versión | Tipo | Fecha de lanzamiento |
-|---------|------|---------|
-| JDK 25 | Última | 2026 |
-| JDK 21 | LTS | Septiembre 2023 |
-| JDK 17 | LTS | Septiembre 2021 |
-| JDK 11 | LTS | Septiembre 2018 |
+- [Guía de Instalación](./1.安装文档.md)
+- [Guía de Uso](./2.使用指南.md)
 
-## Herramientas principales
+## Enlaces Relacionados
 
-- **javac** - Compilador Java
-- **java** - Lanzador Java
-- **jar** - Herramienta de archivos JAR
-- **javadoc** - Generador de documentación API
-- **jdb** - Depurador Java
+- [Oracle JDK](https://www.oracle.com/java/)
+- [Eclipse Temurin](https://adoptium.net/)
 
 ## Licencia
 
-Oracle JDK utiliza los Términos y Condiciones sin tarifas de Oracle (NFTC) para JDK 21+.
-OpenJDK es GPL v2 con Excepción de Classpath.
+Términos y Condiciones de Uso Gratuito de Oracle (Oracle JDK)

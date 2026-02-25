@@ -1,50 +1,57 @@
-# JDK（Java 開發工具包）
+# JDK
 
-JDK 是 Java 平台的基礎，提供用於開發和執行 Java 應用程式的工具。
+JDK（Java Development Kit）是官方的 Java 開發工具包。
 
-## 概述
+## 簡介
 
-JDK 包含：
-- **JRE**（Java 執行時環境）
-- **編譯器**（javac）
-- **開發工具**（jar、javadoc、jdb 等）
-- **類庫**
+JDK 提供了 Java 開發所需的工具和庫，包括編譯器（javac）、執行環境（java）以及各種實用工具。
 
-## 文件
+## 功能特性
 
-- [安裝指南](./1.安裝文檔.md) - 在所有平台上安裝 JDK
-- [使用指南](./2.使用指南.md) - 開發命令和工具
+- **javac**：Java 編譯器
+- **java**：Java 執行環境啟動器
+- **javadoc**：文件產生器
+- **jar**：Java 歸檔工具
+- **jdb**：偵錯器
+- **安全工具**：keytool、jarsigner
+
+## 版本資訊
+
+| 版本 | 類型 | 狀態 |
+|---------|------|--------|
+| JDK 21 | LTS | ✅ 目前版本 |
+| JDK 17 | LTS | ✅ 支援中 |
+| JDK 22 | 功能版本 | ✅ 最新版本 |
 
 ## 快速開始
 
-```bash
-# 檢查版本
-java -version
-javac -version
+### 安裝
 
-# 編譯並執行
+```bash
+# 使用 Homebrew
+brew install openjdk@21
+
+# 使用 SDKMAN
+sdk install java 21.0.2-tem
+```
+
+### 編譯和執行
+
+```bash
 javac HelloWorld.java
 java HelloWorld
 ```
 
-## 版本歷史
+## 文件
 
-| 版本 | 類型 | 發布日期 |
-|---------|------|---------|
-| JDK 25 | 最新版 | 2026 |
-| JDK 21 | LTS | 2023年9月 |
-| JDK 17 | LTS | 2021年9月 |
-| JDK 11 | LTS | 2018年9月 |
+- [安裝指南](./1.安装文档.md)
+- [使用指南](./2.使用指南.md)
 
-## 主要工具
+## 相關連結
 
-- **javac** - Java 編譯器
-- **java** - Java 啟動器
-- **jar** - JAR 打包工具
-- **javadoc** - API 文檔生成器
-- **jdb** - Java 調試器
+- [Oracle JDK](https://www.oracle.com/java/)
+- [Eclipse Temurin](https://adoptium.net/)
 
-## 許可證
+## 授權
 
-Oracle JDK 自 JDK 21 起使用 Oracle 無費用條款和條件（NFTC）。
-OpenJDK 採用 GPL v2 許可證及 Classpath 例外。
+Oracle 免費使用條款和條件（Oracle JDK）

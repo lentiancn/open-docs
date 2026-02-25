@@ -1,50 +1,57 @@
-# JDK (Java Development Kit)
+# JDK
 
-JDK ist die Grundlage der Java-Plattform und bietet Tools zum Entwickeln und Ausführen von Java-Anwendungen.
+JDK (Java Development Kit) ist das offizielle Java-Entwicklungskit.
 
-## Übersicht
+## Einführung
 
-JDK enthält:
-- **JRE** (Java Runtime Environment)
-- **Compiler** (javac)
-- **Entwicklungstools** (jar, javadoc, jdb, etc.)
-- **Bibliotheken**
+JDK bietet Tools und Bibliotheken für die Java-Entwicklung, einschließlich Compiler (javac), Runtime (java) und verschiedenen Hilfsprogrammen.
 
-## Dokumentation
+## Funktionen
 
-- [Installationsanleitung](./1.Installationsanleitung.md) - JDK auf allen Plattformen installieren
-- [Benutzerhandbuch](./2.Benutzerhandbuch.md) - Entwicklungsbefehle und Tools
+- **javac**: Java-Compiler
+- **java**: Java-Runtime-Starter
+- **javadoc**: Dokumentationsgenerator
+- **jar**: Java-Archivwerkzeug
+- **jdb**: Debugger
+- **Sicherheitstools**: keytool, jarsigner
+
+## Versionsinformationen
+
+| Version | Typ | Status |
+|---------|------|--------|
+| JDK 21 | LTS | ✅ Aktuell |
+| JDK 17 | LTS | ✅ Unterstützt |
+| JDK 22 | Feature | ✅ Neueste |
 
 ## Schnellstart
 
-```bash
-# Version prüfen
-java -version
-javac -version
+### Installieren
 
-# Kompilieren und ausführen
+```bash
+# Homebrew verwenden
+brew install openjdk@21
+
+# SDKMAN verwenden
+sdk install java 21.0.2-tem
+```
+
+### Kompilieren und Ausführen
+
+```bash
 javac HelloWorld.java
 java HelloWorld
 ```
 
-## Versionshistorie
+## Dokumentation
 
-| Version | Typ | Veröffentlichung|---------|
-| |
-|---------|------ JDK 25 | Neueste | 2026 |
-| JDK 21 | LTS | September 2023 |
-| JDK 17 | LTS | September 2021 |
-| JDK 11 | LTS | September 2018 |
+- [Installationsanleitung](./1.安装文档.md)
+- [Benutzerhandbuch](./2.使用指南.md)
 
-## Wichtige Tools
+## Verwandte Links
 
-- **javac** - Java-Compiler
-- **java** - Java-Starter
-- **jar** - JAR-Archiv-Werkzeug
-- **javadoc** - API-Dokumentationsgenerator
-- **jdb** - Java-Debugger
+- [Oracle JDK](https://www.oracle.com/java/)
+- [Eclipse Temurin](https://adoptium.net/)
 
 ## Lizenz
 
-Oracle JDK verwendet die Oracle No-Fee Terms and Conditions (NFTC) für JDK 21+.
-OpenJDK ist GPL v2 mit Classpath Exception.
+Oracle Free Use Terms and Conditions (Oracle JDK)

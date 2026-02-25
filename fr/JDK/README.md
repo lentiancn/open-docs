@@ -9,7 +9,7 @@ JDK fournit des outils et bibliothèques pour le développement Java, y compris 
 ## Fonctionnalités
 
 - **javac**: Compilateur Java
-- **java**: Lanceur runtime Java
+- **java**: Lanceur Java
 - **javadoc**: Générateur de documentation
 - **jar**: Outil d'archive Java
 - **jdb**: Débogueur
@@ -21,21 +21,18 @@ JDK fournit des outils et bibliothèques pour le développement Java, y compris 
 |---------|------|--------|
 | JDK 21 | LTS | ✅ Actuelle |
 | JDK 17 | LTS | ✅ Supportée |
-| JDK 22 | Fonctionnalité | ✅ Dernière |
+| JDK 22 | Fonctionnalités | ✅ Dernière |
 
 ## Démarrage rapide
 
-### Installer
+### Installation
 
 ```bash
-# Utiliser Homebrew
 brew install openjdk@21
-
-# Utiliser SDKMAN
 sdk install java 21.0.2-tem
 ```
 
-### Compiler et exécuter
+### Compilation et exécution
 
 ```bash
 javac HelloWorld.java
@@ -44,14 +41,14 @@ java HelloWorld
 
 ## Documentation
 
-- [Guide d'installation](./1.安装文档.md)
-- [Guide d'utilisation](./2.使用指南.md)
+- [Guide d'installation](./1.Guide-dinstallation.md)
+- [Manuel utilisateur](./2.Manuel-utilisateur.md)
 
-## Liens utiles
+## Liens
 
 - [Oracle JDK](https://www.oracle.com/java/)
 - [Eclipse Temurin](https://adoptium.net/)
 
 ## Licence
 
-Oracle Free Use Terms and Conditions (Oracle JDK)
+Oracle Free Use Terms and Conditions

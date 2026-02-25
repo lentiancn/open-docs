@@ -44,8 +44,8 @@ java HelloWorld
 
 ## Documentation
 
-- [Installation Guide](./1.安装文档.md)
-- [Usage Guide](./2.使用指南.md)
+- [Installation Guide](./1.安装指南.md)
+- [User Manual](./2.使用手册.md)
 
 ## Related Links
 

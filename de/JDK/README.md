@@ -4,12 +4,12 @@ JDK (Java Development Kit) ist das offizielle Java-Entwicklungskit.
 
 ## Einführung
 
-JDK bietet Tools und Bibliotheken für die Java-Entwicklung, einschließlich Compiler (javac), Runtime (java) und verschiedenen Hilfsprogrammen.
+JDK bietet Tools und Bibliotheken für die Java-Entwicklung, einschließlich Compiler (javac), Runtime (java) und various utilities.
 
 ## Funktionen
 
 - **javac**: Java-Compiler
-- **java**: Java-Runtime-Starter
+- **java**: Java-Runtime-Launcher
 - **javadoc**: Dokumentationsgenerator
 - **jar**: Java-Archivwerkzeug
 - **jdb**: Debugger
@@ -44,8 +44,8 @@ java HelloWorld
 
 ## Dokumentation
 
-- [Installationsanleitung](./1.安装文档.md)
-- [Benutzerhandbuch](./2.使用指南.md)
+- [Installationsanleitung](./1.Installationsanleitung.md)
+- [Benutzerhandbuch](./2.Benutzerhandbuch.md)
 
 ## Verwandte Links
 

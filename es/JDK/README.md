@@ -15,7 +15,7 @@ JDK proporciona herramientas y bibliotecas para el desarrollo de Java, incluyend
 - **jdb**: Depurador
 - **Herramientas de seguridad**: keytool, jarsigner
 
-## Información de Versiones
+## Información de Versión
 
 | Versión | Tipo | Estado |
 |---------|------|--------|
@@ -44,8 +44,8 @@ java HelloWorld
 
 ## Documentación
 
-- [Guía de Instalación](./1.安装文档.md)
-- [Guía de Uso](./2.使用指南.md)
+- [Guía de Instalación](./1.Guía-de-Instalación.md)
+- [Manual del Usuario](./2.Manual-del-Usuario.md)
 
 ## Enlaces Relacionados
 

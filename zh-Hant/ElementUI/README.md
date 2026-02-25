@@ -4,7 +4,7 @@
 
 ## 概述
 
-Element UI 是為 Vue 2.x 構建桌面應用而設計的 UI 元件庫。它提供了一套全面的隨取即用元件。
+Element UI 是為 Vue 2.x 構建桌面應用而設計的 UI 元件庫。它提供了一套全面的開箱即用元件。
 
 ## 文檔
 
@@ -35,21 +35,21 @@ Vue.use(ElementUI)
 <el-button type="primary">按鈕</el-button>
 ```
 
-## 功能特點
+## 特性
 
 - 📦 **60+ 元件** - 全面的 UI 庫
-- 🎨 **可自訂** - 容易進行主題客製化
+- 🎨 **可定制** - 易於主題定制
 - 🌍 **國際化** - 支援 10+ 種語言
-- 📱 **響應式** - 專注於桌面端
+- 📱 **響應式** - 專注桌面端
 
 ## 版本
 
 | 版本 | Vue | 狀態 |
 |------|-----|------|
-| 2.x | Vue 2.6+ | 目前使用 |
+| 2.x | Vue 2.6+ | 當前 |
 | 1.x | Vue 2.x | 舊版 |
 
-**注意：** 若使用 Vue 3，請使用 [Element Plus](https://element-plus.org/)
+**注意：** 對於 Vue 3，請使用 [Element Plus](https://element-plus.org/)
 
 ## 元件分類
 
@@ -76,9 +76,8 @@ Vue.use(ElementUI)
 | IE | 10+ |
 | Chrome | 50+ |
 | Firefox | 50+ |
-| Safari | 10+ |
 
-## 授權
+## 許可證
 
 MIT
 

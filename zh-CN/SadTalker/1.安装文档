@@ -39,14 +39,22 @@ sudo apt install libgl1-mesa-glx libglib2.0-0 libsm6 libxext6 libxrender-dev lib
 sudo apt install ffmpeg
 ```
 
-### 步骤 2：克隆项目
+### 步骤 2：安装 CUDA（如需要）
+
+```bash
+# 下载并安装 CUDA 11.8
+wget https://developer.download.nvidia.com/compute/cuda/11.8.0/local_installers/cuda_11.8.0_520.61.05_linux.run
+sudo sh cuda_11.8.0_520.61.05_linux.run
+```
+
+### 步骤 3：克隆项目
 
 ```bash
 git clone https://github.com/OpenTalker/SadTalker.git
 cd SadTalker
 ```
 
-### 步骤 3：创建虚拟环境
+### 步骤 4：创建虚拟环境
 
 ```bash
 python3.9 -m venv venv
@@ -56,7 +64,7 @@ source venv/bin/activate
 python --version
 ```
 
-### 步骤 4：安装 PyTorch
+### 步骤 5：安装 PyTorch
 
 ```bash
 # CUDA 11.8 版本
@@ -66,7 +74,7 @@ pip install torch==2.0.1 torchvision==0.15.2 --index-url https://download.pytorc
 python -c "import torch; print(torch.cuda.is_available())"
 ```
 
-### 步骤 5：安装依赖
+### 步骤 6：安装依赖
 
 ```bash
 pip install -r requirements.txt
@@ -75,7 +83,7 @@ pip install -r requirements.txt
 pip install numpy opencv-python librosa soundfile
 ```
 
-### 步骤 6：下载模型
+### 步骤 7：下载模型
 
 ```bash
 # 创建模型目录
@@ -83,6 +91,8 @@ mkdir -p checkpoints
 
 # 自动下载
 bash scripts/download_models.sh
+
+# 或从发布页手动下载
 ```
 
 ## Windows 安装
@@ -161,6 +171,26 @@ docker pull ghcr.io/opentalker/sadtalker:latest
 
 # 运行（需要 GPU）
 docker run --gpus all -v $(pwd):/workspace -p 8888:8888 ghcr.io/opentalker/sadtalker:latest
+```
+
+### 使用 Docker Compose
+
+```yaml
+version: '3.8'
+services:
+  sadtalker:
+    image: ghcr.io/opentalker/sadtalker:latest
+    volumes:
+      - ./workspace:/workspace
+    ports:
+      - "8888:8888"
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
 ```
 
 ## 验证安装

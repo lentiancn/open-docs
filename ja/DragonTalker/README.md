@@ -1,19 +1,19 @@
 # DragonTalker
 
-DragonTalkerは、単一の画像と音声からリアルなアバター動画を生成するAIプロジェクトです。
+DragonTalkerは、単一の画像とオーディオからリアルな話し頭ビデオを生成するAIプロジェクトです。
 
 ## 概要
 
-DragonTalkerは以下により高品質なアバター動画を生成します：
-- 音声から顔の特徴点を抽出
+DragonTalkerは以下の方法で高品質な話し頭ビデオを生成します：
+- オーディオから顔の特徴点を抽出
 - 3D顔の動き係数を生成
-- リアルなリップシンクと表情をレンダリング
-- 顔復元で動画品質を向上
+- リアルなリップシンクと顔表情をレンダリング
+- 顔修復でビデオ品質を向上
 
 ## ドキュメント
 
-- [インストールガイド](./1.インストールドキュメント.md) - 全プラットフォームでのセットアップ
-- [使用ガイド](./2.使用ガイド.md) - DragonTalkerの活用方法
+- [インストールガイド](./1.インストールドキュメント.md) - すべてのプラットフォームでのセットアップ
+- [ユーザーガイド](./2.ユーザーガイド.md) - DragonTalkerの使用方法
 
 ## クイックスタート
 
@@ -23,19 +23,19 @@ DragonTalkerは以下により高品質なアバター動画を生成します�
 git clone https://github.com/your-repo/DragonTalker.git
 cd DragonTalker
 
-# 仮想環境の作成
+# 仮想環境を作成
 python -m venv venv
 source venv/bin/activate  # Linux/macOS
 # venv\Scripts\activate  # Windows
 
-# 依存関係のインストール
+# 依存関係をインストール
 pip install -r requirements.txt
 
-# モデルのダウンロード
+# モデルをダウンロード
 bash scripts/download_models.sh
 ```
 
-### 動画の生成
+### ビデオを生成
 
 ```bash
 python inference.py \
@@ -48,21 +48,21 @@ python inference.py \
 
 ## 機能
 
-- **音声駆動アニメーション** - 音声からアバター動画を生成
-- **3D動作推定** - リアルな顔の動き
-- **多様なポーズスタイル** - 45以上のポーズオプション
-- **顔画質向上** - GFP-GAN、RestoreFormer、CodeFormer対応
+- **オーディオ駆動アニメーション** - オーディオから話し頭ビデオを生成
+- **3D動き推定** - リアルな顔の動き
+- **複数のポーズスタイル** - 45以上のポーズオプション
+- **顔エンハンスメント** - GFP-GAN、RestoreFormer、CodeFormer統合
 - **Webインターフェース** - 使いやすいデモ
-- **Python API** - プログラムからの利用
+- **Python API** - プログラムによるアクセス
 
 ## システム要件
 
 ### ハードウェア
 
-| コンポーネント | 最小要件 | 推奨要件 |
-|----------------|----------|----------|
+| コンポーネント | 最小 | 推奨 |
+|----------------|------|------|
 | GPU | 6GB VRAM | 16GB VRAM |
-| メモリ | 8GB | 32GB |
+| RAM | 8GB | 32GB |
 | ストレージ | 20GB | 50GB |
 
 ### ソフトウェア
@@ -71,7 +71,7 @@ python inference.py \
 - CUDA 11.7+
 - ffmpeg
 
-## 対応プラットフォーム
+## サポートプラットフォーム
 
 - Ubuntu 18.04/20.04/22.04
 - Windows 10/11
@@ -82,24 +82,24 @@ python inference.py \
 ### 画像
 - 形式：JPG、PNG
 - 解像度：512x512以上を推奨
-- 顔：正面を向いていること、清晰
+- 顔：正面向き、明瞭
 
-### 音声
+### オーディオ
 - 形式：WAV、MP3
 - 長さ：1-60秒
-- 品質：明確な音声
+- 品質：明瞭なSpeech
 
 ## 出力
 
 - 形式：MP4 (H.264)
-- 解像度：256x256 または 512x512
+- 解像度：256x256または512x512
 - フレームレート：25
 
 ## ライセンス
 
-研究目的のみ。詳細はGitHubを参照してください。
+研究用途のみ。GitHubを参照してください。
 
 ## 関連リンク
 
 - [GitHub](https://github.com/your-repo/DragonTalker)
-- [HuggingFace デモ](https://huggingface.co/spaces)
+- [HuggingFaceデモ](https://huggingface.co/spaces)

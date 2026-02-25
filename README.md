@@ -10,7 +10,7 @@ This repository is used for continuously accumulating and organizing installatio
 
 ## Donations
 
-If you find the content helpful, you can scan the QR code below to buy me a coffee! Your recognition is the motivation for creation, thank you very much! (‚óè'‚ó°'‚óè)
+If you find the content helpful, you can scan the QR code below to buy me a coffee! Your recognition is the motivation for creation, thank you very much! (‚ó?‚ó?‚ó?
 
 <div style="display:flex;">
   <img src="https://raw.githubusercontent.com/lentiancn/lentiancn/refs/heads/master/donate/alipay.jpg" alt="Alipay donation" width="30%" style="width:40%;">
@@ -24,4 +24,5 @@ If you find the content helpful, you can scan the QR code below to buy me a coff
 
 ## Contact
 
-Email: gentkit@126.com
+Email: lentiancn@126.com
+

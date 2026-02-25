@@ -1,8 +1,8 @@
 # Docker
 
-Docker 相关文档。
+Docker documentation.
 
-## 文档
+## Docs
 
-- [1.安装文档](./1.安装文档.md)
-- [2.使用指南](./2.使用指南.md)
+- [1. Installation Guide](./1.安装文档.md)
+- [2. Usage Guide](./2.使用指南.md)

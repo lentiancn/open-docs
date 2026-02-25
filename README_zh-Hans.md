@@ -20,7 +20,7 @@
 
 ## 许可证
 
-`open-docs` 的授权遵循 [MIT 许可证](LICENSE) 。
+`开放文档` 的授权遵循 [MIT 许可证](LICENSE) 。
 
 ## 联系方式
 

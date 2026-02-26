@@ -1,41 +1,41 @@
-# Bootstrap Documentation
+# Bootstrap Documentación
 
-Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive layouts, mobile-first websites and web applications.
-
----
-
-## Documentation
-
-### Getting Started
-
-- [Installation Guide](./1.安装指南.md) - Multiple ways to install Bootstrap
-- [User Manual](./2.使用手册.md) - Bootstrap core features and components
+Bootstrap es el marco HTML, CSS y JS más popular para desarrollar diseños responsivos, sitios web y aplicaciones web adaptados para dispositivos móviles.
 
 ---
 
-## About Bootstrap
+## Índice de Documentación
 
-Bootstrap provides a powerful CSS framework, pre-built components, and JavaScript plugins to help developers quickly build modern, responsive websites and applications.
+### Guías de Inicio
 
-### Key Features
-
-- **Responsive Grid System**: 12-column responsive layout
-- **Predefined Styles**: Rich CSS classes
-- **Powerful Components**: Navbar, cards, modals, etc.
-- **JavaScript Plugins**: Interactive functionality
-- **Customization Options**: Theme customization via Sass
-
-### Version Information
-
-- **Current Version**: Bootstrap 5.3.x
-- **Browser Support**: All modern browsers
-- **Dependencies**: No jQuery required (Bootstrap 5)
+- [Guía de Instalación](./1.Guía-de-Instalación.md) - Multiple formas de instalar Bootstrap
+- [Manual de Usuario](./2.Manual-de-Usuario.md) - Características centrales y componentes de Bootstrap
 
 ---
 
-## Quick Start
+## Acerca de Bootstrap
 
-### CDN Include
+Bootstrap proporciona un potente marco CSS, componentes preconstruidos y complementos JavaScript para ayudar a los desarrolladores a crear rápidamente sitios y aplicaciones web modernos y responsivos.
+
+### Características Principales
+
+- **Sistema de Cuadrícula Responsivo**: Diseño responsivo de 12 columnas
+- **Estilos Predefinidos**: Rica gama de clases CSS
+- **Potentes Componentes**: Barra de navegación, tarjetas, modales, etc.
+- **Complementos JavaScript**: Funcionalidad interactiva
+- **Opciones de Personalización**: Personalización de temas a través de Sass
+
+### Información de Versión
+
+- **Versión Actual**: Bootstrap 5.3.x
+- **Soporte de Navegadores**: Todos los navegadores modernos
+- **Dependencias**: No requiere jQuery (Bootstrap 5)
+
+---
+
+## Inicio Rápido
+
+### Incluir por CDN
 
 ```html
 <!-- CSS -->
@@ -45,7 +45,7 @@ Bootstrap provides a powerful CSS framework, pre-built components, and JavaScrip
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 ```
 
-### npm Installation
+### Instalación por npm
 
 ```bash
 npm install bootstrap
@@ -53,46 +53,46 @@ npm install bootstrap
 
 ---
 
-## Basic Examples
+## Ejemplos Básicos
 
-### Grid Layout
+### Diseño de Cuadrícula
 
 ```html
 <div class="container">
   <div class="row">
-    <div class="col-md-4">Column 1</div>
-    <div class="col-md-4">Column 2</div>
-    <div class="col-md-4">Column 3</div>
+    <div class="col-md-4">Columna 1</div>
+    <div class="col-md-4">Columna 2</div>
+    <div class="col-md-4">Columna 3</div>
   </div>
 </div>
 ```
 
-### Components
+### Componentes
 
 ```html
-<button class="btn btn-primary">Primary Button</button>
+<button class="btn btn-primary">Botón Primario</button>
 
 <div class="card" style="width: 18rem;">
   <div class="card-body">
-    <h5 class="card-title">Card Title</h5>
-    <p class="card-text">Card content</p>
+    <h5 class="card-title">Título de Tarjeta</h5>
+    <p class="card-text">Contenido de Tarjeta</p>
   </div>
 </div>
 ```
 
 ---
 
-## Learning Resources
+## Recursos de Aprendizaje
 
-- [Bootstrap Official Documentation](https://getbootstrap.com/docs/)
-- [Bootstrap Chinese Website](https://www.bootcss.com/)
-- [Bootstrap Icons](https://icons.getbootstrap.com/)
-- [Bootstrap Customization Tool](https://getbootstrap.com/docs/5.3/customize/options/)
+- [Documentación Oficial de Bootstrap](https://getbootstrap.com/docs/)
+- [Sitio Bootstrap en Chino](https://www.bootcss.com/)
+- [Iconos de Bootstrap](https://icons.getbootstrap.com/)
+- [Herramienta de Personalización de Bootstrap](https://getbootstrap.com/docs/5.3/customize/options/)
 
 ---
 
-## License
+## Licencia
 
-This project documentation is licensed under [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
+Esta documentación del proyecto tiene licencia bajo [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
 
-Bootstrap code is subject to [MIT License](https://github.com/twbs/bootstrap/blob/main/LICENSE).
+El código de Bootstrap está sujeto a [MIT License](https://github.com/twbs/bootstrap/blob/main/LICENSE).

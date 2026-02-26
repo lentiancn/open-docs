@@ -1,70 +1,101 @@
-# Bootstrap 5
+# Bootstrap 文档
 
-Bootstrap 是世界上最流行的前端开源工具包，用于构建响应式、移动优先的网站。
+欢迎阅读 Bootstrap 综合文档指南。
 
-## 简介
+---
 
-Bootstrap 5 是最新版本，完全使用原生 JavaScript 重写，不再依赖 jQuery。它提供了丰富的 CSS 和 JavaScript 组件，帮助开发者快速构建现代网页。
+## 目录
 
-## 主要特性
+- [安装指南](./1.安装指南.md)
+- [使用手册](./2.使用手册.md)
+- [快速开始](#快速开始)
+- [版本信息](#版本信息)
 
-- **响应式设计**：内置响应式栅格系统
-- **丰富的组件**：按钮、导航、表单、卡片、模态框等
-- **强大的工具类**：间距、颜色、文本、显示等实用工具
-- **Sass 支持**：支持使用 Sass 自定义主题
-- **图标库**：集成 Bootstrap Icons
-- **无需 jQuery**：完全使用原生 JavaScript
-
-## 版本信息
-
-| 版本 | 状态 | 发布日期 |
-|------|------|----------|
-| 5.3.3 | ✅ 当前稳定版 | 2024年1月 |
-| 5.3.2 | ✅ 支持 | 2023年11月 |
-| 5.3.1 | ✅ 支持 | 2023年8月 |
-| 5.3.0 | ✅ 支持 | 2023年5月 |
-| 4.x | ❌ 停止维护 | - |
-
-> **注意**：Bootstrap 4 已停止维护，不建议用于新项目。
+---
 
 ## 快速开始
 
-### CDN 引入
+### CDN 引入（推荐）
 
 ```html
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap 入门</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1>Hello, Bootstrap!</h1>
+        <button class="btn btn-primary">主要按钮</button>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
 ```
 
 ### npm 安装
 
 ```bash
-npm install bootstrap@5.3.3
+npm install bootstrap
 ```
 
-## 文档
+---
 
-- [安装指南](./1.安装文档.md) - 完整的安装和配置说明
-- [使用指南](./2.使用指南.md) - 组件和工具类的使用方法
+## 版本信息
 
-## 浏览器支持
+### 最新稳定版本
 
-| 浏览器 | 最低版本 |
+| 版本 | 发布日期 | 状态 |
+|---------|--------------|--------|
+| Bootstrap 5.3 | 2023年5月 | 最新 |
+| Bootstrap 5.2 | 2022年9月 | 支持 |
+| Bootstrap 5.1 | 2021年8月 | 支持 |
+
+### 浏览器支持
+
+| 浏览器 | 支持版本 |
 |--------|----------|
 | Chrome | 90+ |
-| Firefox | 90+ |
+| Firefox | 88+ |
 | Safari | 14+ |
 | Edge | 90+ |
 | Opera | 76+ |
 
-## 相关资源
+---
 
-- [官方文档](https://getbootstrap.com/docs/5.3/)
-- [中文文档](https://www.bootcss.com/)
-- [Bootstrap Icons](https://icons.getbootstrap.com/)
-- [官方示例](https://getbootstrap.com/docs/5.3/examples/)
-- [主题市场](https://themes.getbootstrap.com/)
+## 文档语言
 
-## 许可证
+本文档提供多种语言版本：
 
-MIT License - 自由使用于个人和商业项目。
+- 英语 (en)
+- 简体中文 (zh-CN)
+- 繁体中文 (zh-Hant)
+- 日语 (ja)
+- 西班牙语 (es)
+- 德语 (de)
+- 俄语 (ru)
+- 法语 (fr)
+- 韩语 (ko)
+
+---
+
+## 资源链接
+
+- [Bootstrap 官网](https://getbootstrap.com/)
+- [Bootstrap 中文网](https://v5.bootcss.com/)
+- [Bootstrap GitHub](https://github.com/twbs/bootstrap)
+- [Bootstrap 图标](https://icons.getbootstrap.com/)
+- [示例模板](https://getbootstrap.com/docs/5.3/examples/)
+
+---
+
+## 贡献
+
+欢迎贡献改进本文档。请在 GitHub 仓库提交问题或拉取请求。
+
+---
+
+*最后更新：2024*

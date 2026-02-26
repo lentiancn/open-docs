@@ -1,15 +1,28 @@
 # Docker 文档
 
-欢迎阅读 Docker 综合文档指南。
+Docker 是一个开源的容器化平台，用于开发、部署和运行应用程序。
 
 ---
 
-## 目录
+## 文档目录
 
-- [安装指南](./1.安装指南.md)
-- [使用手册](./2.使用手册.md)
-- [快速开始](#快速开始)
-- [版本信息](#版本信息)
+### 入门指南
+
+- [安装指南](./1.安装指南.md) - 在各种操作系统上安装 Docker Desktop 和 Docker Engine
+- [使用手册](./2.使用手册.md) - Docker 基本使用方法和命令参考
+
+---
+
+## Docker 简介
+
+Docker 是一个开源的容器化平台，通过容器化技术实现应用程序的快速部署、扩展和运行。
+
+### 主要特性
+
+- **轻量级**：容器共享主机操作系统内核，无需额外的操作系统开销
+- **可移植**：一次构建，到处运行
+- **隔离性**：每个容器相互隔离，互不影响
+- **可扩展**：支持横向扩展和自动化部署
 
 ---
 
@@ -17,93 +30,47 @@
 
 ### 安装 Docker
 
-#### Windows/macOS
-从 https://www.docker.com/products/docker-desktop/ 下载并安装 Docker Desktop。
+请参阅 [安装指南](./1.安装指南.md) 获取详细的安装说明。
 
-#### Linux (Ubuntu)
+### 运行第一个容器
+
 ```bash
-sudo apt-get update
-sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin
-sudo systemctl start docker
-sudo docker run hello-world
+# 拉取并运行 hello-world 镜像
+docker run hello-world
 ```
 
-### 第一个容器
+### 运行 Nginx
 
 ```bash
-# 运行 Nginx
+# 启动 Nginx 容器
 docker run -d -p 8080:80 nginx
 
 # 访问 http://localhost:8080
 ```
 
-### 第一个 Dockerfile
+---
 
-```dockerfile
-FROM node:18-alpine
-WORKDIR /app
-COPY . .
-RUN npm install
-CMD ["node", "index.js"]
-```
+## Docker 版本
 
-```bash
-docker build -t myapp .
-docker run -p 3000:3000 myapp
-```
+当前文档涵盖以下 Docker 版本：
+
+- Docker Desktop 4.x
+- Docker Engine 24.x
+- Docker Compose 2.x
 
 ---
 
-## 版本信息
+## 相关资源
 
-### 最新稳定版本
-
-| 版本 | 发布日期 | 状态 |
-|---------|--------------|--------|
-| Docker 25.x | 2024年 | 当前稳定版 |
-| Docker 24.x | 2023年 | 支持 |
-| Docker 20.x | 2022年 | 支持 |
-
-### 系统要求
-
-#### Windows
-- Windows 10/11 64位 专业版+
-- 4GB RAM
-- 启用 Hyper-V
-
-#### macOS
-- macOS 10.15+
-- 4GB RAM
-
-#### Linux
-- Ubuntu 20.04+
-- 内核 3.10+
-
----
-
-## 文档语言
-
-本文档提供多种语言版本：
-
-- 英语 (en)
-- 简体中文 (zh-CN)
-- 繁体中文 (zh-Hant)
-- 日语 (ja)
-- 西班牙语 (es)
-- 德语 (de)
-- 俄语 (ru)
-- 法语 (fr)
-- 韩语 (ko)
-
----
-
-## 资源链接
-
-- [Docker 官网](https://www.docker.com/)
-- [Docker 文档](https://docs.docker.com/)
+- [Docker 官方网站](https://www.docker.com/)
+- [Docker 官方文档](https://docs.docker.com/)
 - [Docker Hub](https://hub.docker.com/)
-- [Docker Compose](https://docs.docker.com/compose/)
+- [Docker 订阅和定价](https://www.docker.com/pricing/)
 
 ---
 
-*最后更新：2024*
+## 许可证
+
+本项目文档基于 [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/) 授权。
+
+Docker 相关的源代码和二进制文件受其各自的许可证约束。

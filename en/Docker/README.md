@@ -1,6 +1,28 @@
 # Docker Documentation
 
-Welcome to the comprehensive Docker documentation guide.
+Docker is an open-source containerization platform for developing, deploying, and running applications.
+
+---
+
+## Documentation
+
+### Getting Started
+
+- [Installation Guide](./1.安装指南.md) - Install Docker Desktop and Docker Engine on various operating systems
+- [User Manual](./2.使用手册.md) - Docker basic usage and command reference
+
+---
+
+## About Docker
+
+Docker is an open-source containerization platform that enables rapid deployment, scaling, and running of applications through containerization technology.
+
+### Key Features
+
+- **Lightweight**: Containers share the host OS kernel, no additional OS overhead
+- **Portable**: Build once, run anywhere
+- **Isolated**: Each container is isolated from each other
+- **Scalable**: Supports horizontal scaling and automated deployment
 
 ---
 
@@ -8,54 +30,47 @@ Welcome to the comprehensive Docker documentation guide.
 
 ### Install Docker
 
-**Windows/macOS**: Download Docker Desktop from https://www.docker.com/products/docker-desktop/
+See [Installation Guide](./1.安装指南.md) for detailed installation instructions.
 
-**Linux (Ubuntu)**:
+### Run Your First Container
+
 ```bash
-sudo apt-get update
-sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin
-sudo systemctl start docker
-sudo docker run hello-world
+# Pull and run hello-world image
+docker run hello-world
 ```
 
-### First Container
+### Run Nginx
 
 ```bash
+# Start Nginx container
 docker run -d -p 8080:80 nginx
-# Visit http://localhost:8080
+
+# Access http://localhost:8080
 ```
 
 ---
 
-## Version
+## Docker Versions
 
-| Version | Status |
-|---------|--------|
-| Docker 25.x | Current |
-| Docker 24.x | Supported |
+This documentation covers the following Docker versions:
 
----
-
-## Documentation Languages
-
-- English (en)
-- Chinese Simplified (zh-CN)
-- Chinese Traditional (zh-Hant)
-- Japanese (ja)
-- Spanish (es)
-- German (de)
-- Russian (ru)
-- French (fr)
-- Korean (ko)
+- Docker Desktop 4.x
+- Docker Engine 24.x
+- Docker Compose 2.x
 
 ---
 
-## Resources
+## Related Resources
 
-- [Docker Official](https://www.docker.com/)
-- [Docker Docs](https://docs.docker.com/)
+- [Docker Official Website](https://www.docker.com/)
+- [Docker Official Documentation](https://docs.docker.com/)
 - [Docker Hub](https://hub.docker.com/)
+- [Docker Subscriptions and Pricing](https://www.docker.com/pricing/)
 
 ---
 
-*Last Updated: 2024*
+## License
+
+This project documentation is licensed under [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
+
+Docker-related source code and binaries are subject to their respective license agreements.

@@ -15,7 +15,9 @@ Bootstrap 是最流行的 HTML、CSS 和 JS 框架，用于开发响应式布局
 
 ## Bootstrap 简介
 
-Bootstrap 提供了强大的 CSS 框架、预构建的组件和 JavaScript 插件，帮助开发者快速构建现代化、响应式的网站和应用。
+Bootstrap 提供了强大的 CSS 框架、预构建的组件和 JavaScript 插件，帮助开发者快速构建现代化、响
+
+应式的网站和应用。
 
 ### 主要特性
 

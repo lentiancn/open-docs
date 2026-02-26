@@ -1,31 +1,61 @@
 # Docker Documentation
 
-Docker is an open-source platform for developing, deploying, and running applications using containers.
+Welcome to the comprehensive Docker documentation guide.
 
-## Documents
-
-- [Installation Guide](./1.安装文档.md) - Detailed guide for installing Docker on all platforms
-- [Usage Guide](./2.使用指南.md) - Docker basic operations and advanced usage
+---
 
 ## Quick Start
 
-### Verify Installation
+### Install Docker
 
+**Windows/macOS**: Download Docker Desktop from https://www.docker.com/products/docker-desktop/
+
+**Linux (Ubuntu)**:
 ```bash
-docker --version
-docker run hello-world
+sudo apt-get update
+sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin
+sudo systemctl start docker
+sudo docker run hello-world
 ```
 
-### Run Your First Container
+### First Container
 
 ```bash
-docker run -d -p 80:80 nginx:alpine
+docker run -d -p 8080:80 nginx
+# Visit http://localhost:8080
 ```
 
-Then visit http://localhost:80
+---
 
-## Related Links
+## Version
 
-- [Docker Official Documentation](https://docs.docker.com/)
+| Version | Status |
+|---------|--------|
+| Docker 25.x | Current |
+| Docker 24.x | Supported |
+
+---
+
+## Documentation Languages
+
+- English (en)
+- Chinese Simplified (zh-CN)
+- Chinese Traditional (zh-Hant)
+- Japanese (ja)
+- Spanish (es)
+- German (de)
+- Russian (ru)
+- French (fr)
+- Korean (ko)
+
+---
+
+## Resources
+
+- [Docker Official](https://www.docker.com/)
+- [Docker Docs](https://docs.docker.com/)
 - [Docker Hub](https://hub.docker.com/)
-- [Docker Compose Documentation](https://docs.docker.com/compose/)
+
+---
+
+*Last Updated: 2024*

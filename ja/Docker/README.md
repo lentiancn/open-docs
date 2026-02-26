@@ -1,20 +1,12 @@
-# Docker 文書
-
-Docker はオープンソースのコンテナプラットフォームです。
-
-## 文書
-
-- [インストールガイド](./1.安装文档.md)
-- [使用ガイド](./2.使用指南.md)
+﻿# Docker ドキュメント
 
 ## クイックスタート
 
-```bash
-docker --version
-docker run hello-world
-```
+`ash
+sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin
+docker run -d -p 8080:80 nginx
+`
 
-## 関連リンク
+---
 
-- [Docker 公式ドキュメント](https://docs.docker.com/)
-- [Docker Hub](https://hub.docker.com/)
+*更新: 2024*

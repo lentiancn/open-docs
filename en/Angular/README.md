@@ -1,37 +1,27 @@
-# Angular
+# Angular Documentation
 
-Angular is a powerful frontend framework developed by Google for building web applications.
+Welcome to the Angular comprehensive documentation guide.
 
-## Introduction
+---
 
-Angular is a TypeScript-based framework that provides a complete solution for building modern web applications with features like two-way binding, dependency injection, and powerful CLI tools.
+## Table of Contents
 
-## Features
+- [Installation Guide](./1.Installation-Guide.md)
+- [User Manual](./2.User-Manual.md)
+- [Quick Start](#quick-start)
+- [Version Information](#version-information)
 
-- **Component-based**: Build reusable UI components
-- **TypeScript**: Type-safe development
-- **CLI**: Powerful command-line tools
-- **Routing**: Built-in routing system
-- **Forms**: Template-driven and reactive forms
-- **HTTP**: HTTP client for API calls
-- **Testing**: Built-in testing support
-
-## Version Information
-
-| Version | Status |
-|---------|--------|
-| Angular 18.x | ✅ Current |
-| Angular 17.x | ✅ Supported |
+---
 
 ## Quick Start
 
-### Install
+### Install Angular CLI
 
 ```bash
 npm install -g @angular/cli
 ```
 
-### Create Project
+### Create New Project
 
 ```bash
 ng new my-app
@@ -39,19 +29,68 @@ cd my-app
 ng serve
 ```
 
-Open http://localhost:4200
+### Generate Components
 
-## Documentation
+```bash
+ng generate component my-component
+# or
+ng g c my-component
+```
 
-- [Installation Guide](./1.Installation-Guide.md)
-- [Usage Guide](./2.Usage-Guide.md)
+---
 
-## Related Links
+## Version Information
 
-- [Official Website](https://angular.io/)
-- [Documentation](https://angular.io/docs)
-- [CLI Reference](https://angular.io/cli)
+### Latest Stable Version
 
-## License
+| Version | Release Date | Status |
+|---------|--------------|--------|
+| Angular 19 | 2024 | Latest |
+| Angular 18 | 2024 | Supported |
+| Angular 17 | 2023 | Supported |
+| Angular 16 | 2023 | Supported |
 
-MIT License
+### Node.js Requirements
+
+| Angular Version | Node.js Version |
+|-----------------|-----------------|
+| Angular 19 | 18.19+, 20.x |
+| Angular 18 | 18.19+, 20.x |
+| Angular 17 | 18.x, 20.x |
+| Angular 16 | 16.x, 18.x |
+
+---
+
+## Documentation Languages
+
+This documentation is available in multiple languages:
+
+- English (en)
+- Chinese Simplified (zh-CN)
+- Chinese Traditional (zh-Hant)
+- Japanese (ja)
+- Spanish (es)
+- German (de)
+- Russian (ru)
+- French (fr)
+- Korean (ko)
+
+---
+
+## Resources
+
+- [Official Angular Website](https://angular.io/)
+- [Angular Documentation](https://angular.io/docs)
+- [Angular CLI Reference](https://angular.io/cli)
+- [Angular GitHub](https://github.com/angular/angular)
+- [Angular Blog](https://blog.angular.io/)
+
+---
+
+## Contributing
+
+Feel free to contribute to improve this documentation. Submit issues or pull requests on our repository.
+
+---
+
+*Last Updated: 2024*

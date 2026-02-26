@@ -1,37 +1,27 @@
-# Angular
+# Angular Dokumentation
 
-Angular ist ein leistungsstarkes Frontend-Framework, das von Google für die Erstellung von Webanwendungen entwickelt wurde.
+Willkommen zur vollständigen Angular-Dokumentation.
 
-## Einführung
+---
 
-Angular ist ein TypeScript-basiertes Framework, das eine vollständige Lösung für den Aufbau moderner Webanwendungen bietet, mit Funktionen wie bidirektionaler Datenbindung, Abhängigkeitsinjektion und leistungsstarken CLI-Tools.
+## Inhaltsverzeichnis
 
-## Funktionen
+- [Installationsanleitung](./1.Installationsanleitung.md)
+- [Benutzerhandbuch](./2.Benutzerhandbuch.md)
+- [Schnellstart](#schnellstart)
+- [Versionsinformationen](#versionsinformationen)
 
-- **Komponentenbasiert**: Wiederverwendbare UI-Komponenten erstellen
-- **TypeScript**: Typsichere Entwicklung
-- **CLI**: Leistungsstarke Befehlszeilentools
-- **Routing**: Integriertes Routing-System
-- **Formulare**: Vorlagen- und reaktive Formulare
-- **HTTP**: HTTP-Client für API-Aufrufe
-- **Testen**: Integrierte Testunterstützung
-
-## Versionsinformationen
-
-| Version | Status |
-|---------|--------|
-| Angular 18.x | ✅ Aktuell |
-| Angular 17.x | ✅ Unterstützt |
+---
 
 ## Schnellstart
 
-### Installieren
+### Angular CLI installieren
 
 ```bash
 npm install -g @angular/cli
 ```
 
-### Projekt erstellen
+### Neues Projekt erstellen
 
 ```bash
 ng new my-app
@@ -39,19 +29,40 @@ cd my-app
 ng serve
 ```
 
-Öffne http://localhost:4200
+---
 
-## Dokumentation
+## Versionsinformationen
 
-- [Installationsanleitung](./1.Installationsanleitung.md)
-- [Bedienungsanleitung](./2.Bedienungsanleitung.md)
+| Version | Datum | Status |
+|---------|-------|--------|
+| Angular 19 | 2024 | Aktuell |
+| Angular 18 | 2024 | Unterstützt |
+| Angular 17 | 2023 | Unterstützt |
 
-## Verwandte Links
+---
+
+## Sprachen
+
+Dokumentation ver- Englisch (en)
+- Chfügbar in:
+inesisch Simplified (zh-CN)
+- Chinesisch Traditionell (zh-Hant)
+- Japanisch (ja)
+- Spanisch (es)
+- Deutsch (de)
+- Russisch (ru)
+- Französisch (fr)
+- Koreanisch (ko)
+
+---
+
+## Ressourcen
 
 - [Offizielle Website](https://angular.io/)
 - [Dokumentation](https://angular.io/docs)
-- [CLI-Referenz](https://angular.io/cli)
+- [CLI Referenz](https://angular.io/cli)
+- [GitHub](https://github.com/angular/angular)
 
-## Lizenz
+---
 
-MIT-Lizenz
+*Zuletzt aktualisiert: 2024*

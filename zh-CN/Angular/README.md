@@ -1,37 +1,27 @@
-# Angular
+# Angular 文档
 
-Angular 是由 Google 开发的一款强大的前端框架，用于构建 Web 应用程序。
+欢迎阅读 Angular 综合文档指南。
 
-## 简介
+---
 
-Angular 是一个基于 TypeScript 的框架，提供了构建现代 Web 应用程序的完整解决方案，包括双向数据绑定、依赖注入和强大的 CLI 工具。
+## 目录
 
-## 特性
+- [安装指南](./1.安装指南.md)
+- [使用手册](./2.使用手册.md)
+- [快速开始](#快速开始)
+- [版本信息](#版本信息)
 
-- **组件化**：构建可重用的 UI 组件
-- **TypeScript**：类型安全的开发
-- **CLI**：强大的命令行工具
-- **路由**：内置路由系统
-- **表单**：模板驱动和响应式表单
-- **HTTP**：用于 API 调用的 HTTP 客户端
-- **测试**：内置测试支持
-
-## 版本信息
-
-| 版本 | 状态 |
-|---------|--------|
-| Angular 18.x | ✅ 当前版本 |
-| Angular 17.x | ✅ 受支持 |
+---
 
 ## 快速开始
 
-### 安装
+### 安装 Angular CLI
 
 ```bash
 npm install -g @angular/cli
 ```
 
-### 创建项目
+### 创建新项目
 
 ```bash
 ng new my-app
@@ -39,19 +29,68 @@ cd my-app
 ng serve
 ```
 
-访问 http://localhost:4200
+### 生成组件
 
-## 文档
+```bash
+ng generate component my-component
+# 或
+ng g c my-component
+```
 
-- [安装指南](./1.安装文档.md)
-- [使用指南](./2.使用指南.md)
+---
 
-## 相关链接
+## 版本信息
 
-- [官网](https://angular.io/)
-- [文档](https://angular.io/docs)
-- [CLI 参考](https://angular.io/cli)
+### 最新稳定版本
 
-## 许可证
+| 版本 | 发布日期 | 状态 |
+|---------|--------------|--------|
+| Angular 19 | 2024 | 最新 |
+| Angular 18 | 2024 | 支持 |
+| Angular 17 | 2023 | 支持 |
+| Angular 16 | 2023 | 支持 |
 
-MIT 许可证
+### Node.js 要求
+
+| Angular 版本 | Node.js 版本 |
+|-----------------|-----------------|
+| Angular 19 | 18.19+, 20.x |
+| Angular 18 | 18.19+, 20.x |
+| Angular 17 | 18.x, 20.x |
+| Angular 16 | 16.x, 18.x |
+
+---
+
+## 文档语言
+
+本文档提供多种语言版本：
+
+- 英语 (en)
+- 简体中文 (zh-CN)
+- 繁体中文 (zh-Hant)
+- 日语 (ja)
+- 西班牙语 (es)
+- 德语 (de)
+- 俄语 (ru)
+- 法语 (fr)
+- 韩语 (ko)
+
+---
+
+## 资源链接
+
+- [Angular 官网](https://angular.io/)
+- [Angular 文档](https://angular.io/docs)
+- [Angular CLI 参考](https://angular.io/cli)
+- [Angular GitHub](https://github.com/angular/angular)
+- [Angular 博客](https://blog.angular.io/)
+
+---
+
+## 贡献
+
+欢迎贡献改进本文档。请在我们的仓库提交问题或拉取请求。
+
+---
+
+*最后更新：2024*

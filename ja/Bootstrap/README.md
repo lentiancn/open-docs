@@ -1,41 +1,41 @@
-# Bootstrap Documentation
+# Bootstrap ドキュメント
 
-Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive layouts, mobile-first websites and web applications.
-
----
-
-## Documentation
-
-### Getting Started
-
-- [Installation Guide](./1.安装指南.md) - Multiple ways to install Bootstrap
-- [User Manual](./2.使用手册.md) - Bootstrap core features and components
+Bootstrapは、レスポンシブレイアウト、モバイルファーストのウェブサイトやWebアプリケーションを開発するための最も人気のあるHTML、CSS、JSフレームワークです。
 
 ---
 
-## About Bootstrap
+## ドキュメント目次
 
-Bootstrap provides a powerful CSS framework, pre-built components, and JavaScript plugins to help developers quickly build modern, responsive websites and applications.
+### 入門ガイド
 
-### Key Features
-
-- **Responsive Grid System**: 12-column responsive layout
-- **Predefined Styles**: Rich CSS classes
-- **Powerful Components**: Navbar, cards, modals, etc.
-- **JavaScript Plugins**: Interactive functionality
-- **Customization Options**: Theme customization via Sass
-
-### Version Information
-
-- **Current Version**: Bootstrap 5.3.x
-- **Browser Support**: All modern browsers
-- **Dependencies**: No jQuery required (Bootstrap 5)
+- [インストールガイド](./1.Installation-Guide.md) - Bootstrapをインストールする方法
+- [ユーザーマニュアル](./2.User-Manual.md) - Bootstrapのコア機能とコンポーネントの詳細
 
 ---
 
-## Quick Start
+## Bootstrapについて
 
-### CDN Include
+Bootstrapは、強力なCSSフレームワーク、事前構築されたコンポーネント、JavaScriptプラグインを提供し、開発者が最新のレスポンシブウェブサイトやアプリケーションを迅速に構築するのに役立ちます。
+
+### 主な機能
+
+- **レスポンシブグリッドシステム**: 12列レスポンシブレイアウト
+- **定義済みスタイル**: 豊富なCSSクラス
+- **強力なコンポーネント**: ナビゲーションバー、モadal，卡片など
+- **JavaScriptプラグイン**: インタラクティブ機能
+- **カスタマイズオプション**: Sassによるテーマカスタマイズ
+
+### バージョン情報
+
+- **現在のバージョン**: Bootstrap 5.3.x
+- **ブラウザサポート**: すべての最新ブラウザ
+- **依存関係**: jQuery不要（Bootstrap 5）
+
+---
+
+## クイックスタート
+
+### CDNインクルード
 
 ```html
 <!-- CSS -->
@@ -45,7 +45,7 @@ Bootstrap provides a powerful CSS framework, pre-built components, and JavaScrip
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 ```
 
-### npm Installation
+### npm インストール
 
 ```bash
 npm install bootstrap
@@ -53,46 +53,46 @@ npm install bootstrap
 
 ---
 
-## Basic Examples
+## 基本例
 
-### Grid Layout
+### グリッドレイアウト
 
 ```html
 <div class="container">
   <div class="row">
-    <div class="col-md-4">Column 1</div>
-    <div class="col-md-4">Column 2</div>
-    <div class="col-md-4">Column 3</div>
+    <div class="col-md-4">列1</div>
+    <div class="col-md-4">列2</div>
+    <div class="col-md-4">列3</div>
   </div>
 </div>
 ```
 
-### Components
+### コンポーネント
 
 ```html
-<button class="btn btn-primary">Primary Button</button>
+<button class="btn btn-primary">プライマリーボタン</button>
 
 <div class="card" style="width: 18rem;">
   <div class="card-body">
-    <h5 class="card-title">Card Title</h5>
-    <p class="card-text">Card content</p>
+    <h5 class="card-title">カードタイトル</h5>
+    <p class="card-text">カードの内容</p>
   </div>
 </div>
 ```
 
 ---
 
-## Learning Resources
+## 学習リソース
 
-- [Bootstrap Official Documentation](https://getbootstrap.com/docs/)
-- [Bootstrap Chinese Website](https://www.bootcss.com/)
+- [Bootstrap公式ドキュメント](https://getbootstrap.com/docs/)
+- [Bootstrap中文網](https://www.bootcss.com/)
 - [Bootstrap Icons](https://icons.getbootstrap.com/)
-- [Bootstrap Customization Tool](https://getbootstrap.com/docs/5.3/customize/options/)
+- [Bootstrapカスタマイズツール](https://getbootstrap.com/docs/5.3/customize/options/)
 
 ---
 
-## License
+## ライセンス
 
-This project documentation is licensed under [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
+このプロジェクトドキュメントは[Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/)に基づいてライセンスされています。
 
-Bootstrap code is subject to [MIT License](https://github.com/twbs/bootstrap/blob/main/LICENSE).
+Bootstrapコードは[MIT License](https://github.com/twbs/bootstrap/blob/main/LICENSE)に従います。

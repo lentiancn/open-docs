@@ -1,72 +1,93 @@
 # Element UI
 
-Una biblioteca de componentes UI para aplicaciones Vue 2.x.
+> Una biblioteca de componentes UI de escritorio basada en Vue 2
 
-## Descripción
+---
 
-Element UI es una biblioteca de componentes UI para construir aplicaciones de2.x.
+## Introducción del Proyecto
 
-## Documentación
+Element UI es una biblioteca de componentes UI de escritorio basada en Vue 2, desarrollada y mantenida por el equipo de Ele.me. Proporciona componentes básicos ricos incluyendo botones, formularios, tablas, diálogos, menús de navegación y más.
 
-- [Guía de instalación](./1.Instalación.md) - Instrucciones completas escritorio con Vue 
-- [Guía de uso](./2.Guiadeus.md) - Guía completa
+**Nota**: Para proyectos Vue 3, use [Element Plus](https://github.com/element-plus/element-plus)
 
-## Inicio rápido
+---
 
-### Instalar
+## Información de Versión
+
+| Versión | Vue Versión | Estado |
+|---------|-------------|---------|
+| Element UI 2.x | Vue 2 | Fin de mantenimiento |
+| Element UI 1.x | Vue 2 | Fin de vida |
+
+---
+
+## Características Principales
+
+- Basado en Vue 2
+- Rica biblioteca de componentes PC
+- Soporte importación bajo demanda
+- Soporte internacionalización
+- Soporte personalización de temas
+
+---
+
+## Navegación de Documentación
+
+### Primeros Pasos
+
+| Documento | Descripción |
+|----------|-------------|
+| [Guía de Instalación](./1.Guía-de-Instalación.md) | Configuración completa |
+
+### Guía de Usuario
+
+| Documento | Descripción |
+|----------|-------------|
+| [Manual de Usuario](./2.Manual-de-Usuario.md) | Ejemplos de código detallados |
+
+---
+
+## Inicio Rápido
+
+### Instalación
 
 ```bash
 npm install element-ui --save
 ```
 
-### Usar
+### Importar
 
 ```javascript
-import Vue from 'vue'
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
 
 Vue.use(ElementUI)
 ```
 
-## Características
+---
 
-- 📦 **60+ Componentes** - Biblioteca UI completa
-- 🎨 **Personalizable** - Temas fáciles
-- 🌍 **i18n** - Soporta 10+ idiomas
-- 📱 **Responsive** - Enfocado en escritorio
+## Recursos Relacionados
 
-## Versiones
+- Sitio oficial: https://element.eleme.io/
+- GitHub: https://github.com/ElemeFE/element
 
-| Versión | Vue | Estado |
-|---------|-----|--------|
-| 2.x | Vue 2.6+ | Actual |
-| 1.x | Vue 2.x | Legado |
+---
 
-## Componentes
+## ⚠️ Aviso Importante
 
-| Categoría | Ejemplos |
-|-----------|----------|
-| Básico | Button, Icon, Layout |
-| Formulario | Input, Select, Form |
-| Datos | Table, Tree, Tag |
-| Notificación | Message, Notification |
-| Navegación | Menu, Tabs |
+El mantenimiento de Element UI se ha detenido. Se recomienda:
 
-## Soporte de navegador
+1. **Proyectos nuevos**: Usar [Element Plus](https://github.com/element-plus/element-plus) (Vue 3)
+2. **Proyectos existentes**: Planificar migración a Element Plus
 
-| Navegador | Versión |
-|-----------|---------|
-| IE | 10+ |
-| Chrome | 50+ |
-| Firefox | 50+ |
+---
 
 ## Licencia
 
-MIT
+MIT License
 
-## Enlaces
+---
 
-- [Sitio](https://element.eleme.io/)
-- [GitHub](https://github.com/ElemeFE/element)
-- [Element Plus](https://element-plus.org/)
+## Contribución
+
+¡Issues y Pull Requests bienvenidos!

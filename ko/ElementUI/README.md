@@ -1,15 +1,51 @@
 # Element UI
 
-Vue 2.x 애플리케이션용 UI 컴포넌트 라이브러리입니다.
+> Vue 2 기반 데스크톱 UI 컴포넌트 라이브러리
 
-## 개요
+---
 
-Element UI는 Vue 2.x로 데스크톱 애플리케이션을 구축하기 위한 UI 컴포넌트 라이브러리입니다. 포괄적인 즉시 사용 가능한 컴포넌트 세트를 제공합니다.
+## 프로젝트 개요
 
-## 문서
+Element UI는 Vue 2 기반 데스크톱 UI 컴포넌트 라이브러리로, Ele.me 팀에서 개발하고 유지관리합니다. 버튼, 폼, 테이블, 다이얼로그, 탐색 메뉴 등 풍부한 기본 컴포넌트를 제공합니다.
 
-- [설치 가이드](./1.安装문서.md) - 전체 설정 지침
-- [사용 가이드](./2.사용指南.md) - 포괄적인 사용 가이드
+**참고**: Vue 3 프로젝트는 [Element Plus](https://github.com/element-plus/element-plus)를 사용하세요
+
+---
+
+## 버전 정보
+
+| 버전 | Vue 버전 | 상태 |
+|------|----------|------|
+| Element UI 2.x | Vue 2 | 유지관리 종료 |
+| Element UI 1.x | Vue 2 | 종료됨 |
+
+---
+
+## 주요 기능
+
+- Vue 2 기반
+- 풍부한 PC 컴포넌트
+- 필요시 가져오기 지원
+- 국제화 지원
+- 테마 커스터마이징 지원
+
+---
+
+## 문서 탐색
+
+### 시작하기
+
+| 문서 | 설명 |
+|------|------|
+| [설치 가이드](./1.설치-가이드.md) | 전체 설정 |
+
+### 사용자 가이드
+
+| 문서 | 설명 |
+|------|------|
+| [사용자 매뉴얼](./2.사용자-매뉴얼.md) | 상세 코드 예제 |
+
+---
 
 ## 빠른 시작
 
@@ -19,70 +55,39 @@ Element UI는 Vue 2.x로 데스크톱 애플리케이션을 구축하기 위한 
 npm install element-ui --save
 ```
 
-### 사용
+### 가져오기
 
 ```javascript
-import Vue from 'vue'
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
 
 Vue.use(ElementUI)
 ```
 
-### 컴포넌트
+---
 
-```vue
-<el-button type="primary">버튼</el-button>
-```
+## 리소스
 
-## 기능
+- 공식 웹사이트: https://element.eleme.io/
+- GitHub: https://github.com/ElemeFE/element
 
-- 📦 **60+ 컴포넌트** - 포괄적인 UI 라이브러리
-- 🎨 **사용자 정의 가능** - 쉬운 테마 설정
-- 🌍 **국제화** - 10개 이상 언어 지원
-- 📱 **반응형** - 데스크톱 중심
+---
 
-## 버전
+## ⚠️ 중요 공지
 
-| 버전 | Vue | 상태 |
-|------|-----|------|
-| 2.x | Vue 2.6+ | 현재 |
-| 1.x | Vue 2.x | 레거시 |
+Element UI 유지관리가 종료되었습니다. 권장 사항:
 
-**참고:** Vue 3은 [Element Plus](https://element-plus.org/)를 사용하세요.
+1. **새 프로젝트**: [Element Plus](https://github.com/element-plus/element-plus) (Vue 3) 사용
+2. **기존 프로젝트**: Element Plus로 마이그레이션 계획
 
-## 컴포넌트 분류
-
-| 분류 | 예시 |
-|------|------|
-| 기본 | Button, Icon, Layout |
-| 폼 | Input, Select, Form |
-| 데이터 | Table, Tree, Tag |
-| 알림 | Message, Notification |
-| 내비게이션 | Menu, Tabs |
-
-## IDE 지원
-
-| IDE | 지원 |
-|-----|------|
-| VS Code | 전체 |
-| WebStorm | 전체 |
-| IntelliJ | 전체 |
-
-## 브라우저 지원
-
-| 브라우저 | 버전 |
-|---------|------|
-| IE | 10+ |
-| Chrome | 50+ |
-| Firefox | 50+ |
+---
 
 ## 라이선스
 
-MIT
+MIT License
 
-## 관련 링크
+---
 
-- [웹사이트](https://element.eleme.io/)
-- [GitHub](https://github.com/ElemeFE/element)
-- [Element Plus (Vue 3)](https://element-plus.org/)
+## 기여
+
+이슈와 풀 리퀘스트를 환영합니다!

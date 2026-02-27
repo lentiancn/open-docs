@@ -1,19 +1,60 @@
 # DragonTalker
 
-DragonTalkerは、単一の画像とオーディオからリアルな話し頭ビデオを生成するAIプロジェクトです。
+> 単一画像と音声からリアルなトークンヘッド動画を生成
 
-## 概要
+---
 
-DragonTalkerは以下の方法で高品質な話し頭ビデオを生成します：
-- オーディオから顔の特徴点を抽出
-- 3D顔の動き係数を生成
-- リアルなリップシンクと顔表情をレンダリング
-- 顔修復でビデオ品質を向上
+## プロジェクト紹介
 
-## ドキュメント
+DragonTalkerは、深層学習ベースのトークンヘッド生成システムです。単一の静的な人物画像と音声ファイルを組み合わせ、人物の話し動作動画像を自動生成します。高度な3D顔再構成と画像合成アルゴリズムにより、元の人物の顔の特徴を維持しながら、正確な唇同期と自然な表情の変化を実現します。
 
-- [インストールガイド](./1.インストールドキュメント.md) - すべてのプラットフォームでのセットアップ
-- [ユーザーガイド](./2.ユーザーガイド.md) - DragonTalkerの使用方法
+---
+
+## 主な特徴
+
+- 音声駆動アニメーション：静的な画像と音声ファイルから同期の話し動画を生成
+- 3D運動推定：3D顔ランドマーク再構成に基づく自然な頭部姿勢と表情
+- マルチポース支持：45以上の定義済み頭部ポジステンプレート
+- 顔強調：GFPGAN、RestoreFormer、CodeFormerを統合
+- Webインターフェース：ブラウザベースの簡単な操作
+- Python API：完全なプログラミング接口を提供
+
+---
+
+## システム要件
+
+### ハードウェア
+
+| コンポーネント | 最低要件 | 推奨要件 |
+|------|----------|----------|
+| GPU | NVIDIA GTX 1060 (6GB) | NVIDIA RTX 3080 (16GB) |
+| メモリ | 8GB | 32GB |
+| ストレージ | 20GB | 50GB SSD |
+
+### ソフトウェア
+
+- Python 3.8 - 3.10
+- CUDA 11.7+
+- ffmpeg
+
+---
+
+## 文書
+
+### 入门
+
+| 文書 | 説明 |
+|------|------|
+| [クイックスタート](./3.クイックスタート.md) | 10分で開始 |
+| [インストールガイド](./1.インストールガイド.md) | 完全なインストール教程 |
+
+### 使用ガイド
+
+| 文書 | 説明 |
+|------|------|
+| [ユーザーマニュアル](./2.ユーザーマニュアル.md) | 詳しい機能説明 |
+
+---
 
 ## クイックスタート
 
@@ -22,84 +63,69 @@ DragonTalkerは以下の方法で高品質な話し頭ビデオを生成しま�
 ```bash
 git clone https://github.com/your-repo/DragonTalker.git
 cd DragonTalker
-
-# 仮想環境を作成
 python -m venv venv
-source venv/bin/activate  # Linux/macOS
-# venv\Scripts\activate  # Windows
-
-# 依存関係をインストール
+source venv/bin/activate
 pip install -r requirements.txt
-
-# モデルをダウンロード
 bash scripts/download_models.sh
 ```
 
-### ビデオを生成
+### 動画を生成
 
 ```bash
 python inference.py \
   --source_image examples/source_image.jpg \
   --driven_audio examples/driven_audio.wav \
   --result_dir ./results \
-  --preprocess full \
   --enhancer gfpgan
 ```
 
-## 機能
+### Webインターフェース
 
-- **オーディオ駆動アニメーション** - オーディオから話し頭ビデオを生成
-- **3D動き推定** - リアルな顔の動き
-- **複数のポーズスタイル** - 45以上のポーズオプション
-- **顔エンハンスメント** - GFP-GAN、RestoreFormer、CodeFormer統合
-- **Webインターフェース** - 使いやすいデモ
-- **Python API** - プログラムによるアクセス
+```bash
+python app.py
+```
 
-## システム要件
+ブラウザ：http://localhost:7860
 
-### ハードウェア
-
-| コンポーネント | 最小 | 推奨 |
-|----------------|------|------|
-| GPU | 6GB VRAM | 16GB VRAM |
-| RAM | 8GB | 32GB |
-| ストレージ | 20GB | 50GB |
-
-### ソフトウェア
-
-- Python 3.8-3.10
-- CUDA 11.7+
-- ffmpeg
-
-## サポートプラットフォーム
-
-- Ubuntu 18.04/20.04/22.04
-- Windows 10/11
-- macOS 11+
+---
 
 ## 入力要件
 
-### 画像
-- 形式：JPG、PNG
-- 解像度：512x512以上を推奨
-- 顔：正面向き、明瞭
+### 源画像
 
-### オーディオ
+- 形式：JPG、PNG
+- 解像度：512×512以上
+- 内容：正面顔、クリア、遮蔽なし
+
+### 駆動音声
+
 - 形式：WAV、MP3
 - 長さ：1-60秒
-- 品質：明瞭なSpeech
+- 品質：クリアな音声
 
-## 出力
+---
+
+## 出力仕様
 
 - 形式：MP4 (H.264)
-- 解像度：256x256または512x512
-- フレームレート：25
+- 解像度：256×256 または 512×512
+- フレームレート：25 FPS
+
+---
+
+## 関連リソース
+
+- デモ：https://huggingface.co/spaces/dragon-talker
+- GitHub：https://github.com/your-repo/DragonTalker
+
+---
 
 ## ライセンス
 
-研究用途のみ。GitHubを参照してください。
+研究用途のみ。詳細についてはGitHubを参照。
 
-## 関連リンク
+---
 
-- [GitHub](https://github.com/your-repo/DragonTalker)
-- [HuggingFaceデモ](https://huggingface.co/spaces)
+## コントリビューション
+
+IssueとPull Requestを歓迎します！

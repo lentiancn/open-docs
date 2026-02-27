@@ -1,25 +1,68 @@
 # DragonTalker
 
-DragonTalker 是一个 AI 项目，用于从单张图像和音频生成逼真的说话头像视频。
+> 从单张图像和音频生成逼真的说话头像视频
 
-## 概述
+---
 
-DragonTalker 通过以下方式生成高质量说话头像视频：
-- 从音频中提取面部特征点
-- 生成 3D 面部运动系数
-- 渲染逼真的唇同步和面部表情
-- 使用面部修复增强视频质量
+## 项目简介
 
-## 文档
+DragonTalker 是一款基于深度学习的说话头像生成系统，能够将一张静态人物图像与音频文件结合，自动生成人物说话动作的动态视频。该技术采用先进的3D面部重建和图像合成算法，能够完美保持原始人物的面部特征，同时实现精准的唇形同步和自然的表情变化。
 
-- [安装指南](./1.安装文档.md) - 在所有平台上设置
-- [使用指南](./2.使用指南.md) - 如何使用 DragonTalker
+---
+
+## 主要特性
+
+- 音频驱动动画：只需提供目标人物的静态图像和音频文件，即可生成同步的说话视频
+- 3D运动估计：基于面部关键点的3D重建技术，生成自然的头部姿态和表情变化
+- 多姿势支持：内置45种以上预定义头部姿势模板，满足不同应用场景需求
+- 面部增强：集成 GFPGAN、RestoreFormer、CodeFormer 等先进的面部修复技术
+- Web 演示界面：提供友好的浏览器端操作入口，无需配置开发环境即可体验
+- Python API：提供完整的编程接口，支持二次开发和批量处理
+
+---
+
+## 系统要求
+
+### 硬件配置
+
+| 组件 | 最低配置 | 推荐配置 |
+|------|----------|----------|
+| 显卡 | NVIDIA GTX 1060 (6GB显存) | NVIDIA RTX 3080 (16GB显存) |
+| 内存 | 8GB | 32GB |
+| 存储 | 20GB | 50GB SSD |
+
+### 软件环境
+
+- Python 3.8 - 3.10
+- CUDA 11.7+
+- ffmpeg
+- Ubuntu 18.04/20.04/22.04 或 Windows 10/11 或 macOS 11+
+
+---
+
+## 文档导航
+
+### 新手入门
+
+| 文档 | 说明 |
+|------|------|
+| [安装指南](./1.安装指南.md) | 完整的安装和环境配置教程 |
+| [快速开始](#快速开始) | 5分钟快速上手 |
+
+### 使用指南
+
+| 文档 | 说明 |
+|------|------|
+| [使用手册](./2.使用手册.md) | 详细的功能说明和API参考 |
+
+---
 
 ## 快速开始
 
-### 安装
+### 环境安装
 
 ```bash
+# 克隆项目
 git clone https://github.com/your-repo/DragonTalker.git
 cd DragonTalker
 
@@ -31,7 +74,7 @@ source venv/bin/activate  # Linux/macOS
 # 安装依赖
 pip install -r requirements.txt
 
-# 下载模型
+# 下载预训练模型
 bash scripts/download_models.sh
 ```
 
@@ -46,60 +89,56 @@ python inference.py \
   --enhancer gfpgan
 ```
 
-## 功能
+### 使用 Web 界面
 
-- **音频驱动动画** - 从音频生成说话头像
-- **3D 运动估计** - 逼真的面部运动
-- **多种姿势风格** - 45+ 姿势选项
-- **面部增强** - GFP-GAN、RestoreFormer、CodeFormer 集成
-- **Web 界面** - 易于使用的演示
-- **Python API** - 编程访问
+```bash
+python app.py
+```
 
-## 系统要求
+打开浏览器访问 http://localhost:7860
 
-### 硬件
-
-| 组件 | 最低配置 | 推荐配置 |
-|------|----------|----------|
-| GPU | 6GB 显存 | 16GB 显存 |
-| 内存 | 8GB | 32GB |
-| 存储 | 20GB | 50GB |
-
-### 软件
-
-- Python 3.8-3.10
-- CUDA 11.7+
-- ffmpeg
-
-## 支持平台
-
-- Ubuntu 18.04/20.04/22.04
-- Windows 10/11
-- macOS 11+
+---
 
 ## 输入要求
 
-### 图像
-- 格式：JPG、PNG
-- 分辨率：建议 512x512 或更大
-- 人脸：正面、清晰
+### 源图像
 
-### 音频
+- 格式：JPG、PNG
+- 分辨率：建议 512×512 或更大
+- 内容：正面人脸、清晰无遮挡、光照均匀
+
+### 驱动音频
+
 - 格式：WAV、MP3
-- 时长：1-60 秒
+- 时长：1-60秒
 - 质量：清晰语音
 
-## 输出
+---
+
+## 输出规格
 
 - 格式：MP4 (H.264)
-- 分辨率：256x256 或 512x512
-- 帧率：25
+- 分辨率：256×256 或 512×512
+- 帧率：25 FPS
+
+---
+
+## 相关资源
+
+- 官方演示：https://huggingface.co/spaces/dragon-talker
+- GitHub 仓库：https://github.com/your-repo/DragonTalker
+- 问题反馈：https://github.com/your-repo/DragonTalker/issues
+
+---
 
 ## 许可证
 
-仅供研究使用。详见 GitHub。
+仅供研究使用。详见项目仓库。
 
-## 相关链接
+---
 
-- [GitHub](https://github.com/your-repo/DragonTalker)
-- [HuggingFace 演示](https://huggingface.co/spaces)
+## 贡献指南
+
+欢迎提交 Issue 和 Pull Request！
+
+---

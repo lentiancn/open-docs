@@ -1,65 +1,97 @@
 # Element Plus
 
-Element Plusは、開発者、デザイナー、プロダクトマネージャーのためのVue 3コンポーネントライブラリです。
+> Vue 3ベースのデスクトップUIコンポーネントライブラリ
 
-## 概要
+---
 
-Element Plusは、Vue 3向けに構築されたUIコンポーネントライブラリで、最新のWebアプリケーション必需的コンポーネントを網羅しています。
+## プロジェクト紹介
 
-## 特徴
+Element Plusは、Elementチームが開発したVue 3デスクトップUIコンポーネントライブラリです。Vue 3のComposition APIスタイルに 完全準拠し、TypeScriptで完全に書き直しされています。最初の安定版は2022年2月7日に発表され、長年の 反復によりAPIは非常に安定しています。
 
-- **完全なコンポーネントライブラリ**：ボタン、フォーム、テーブル、ダイアログ、ナビゲーションなど
-- **TypeScriptサポート**：完全な型定義
-- **Tree Shaking**：オンデマンドインポート
-- **テーマカスタマイズ**：CSS変数とSCSSサポート
-- **国際化**：10以上の言語をサポート
-- **アクセシビリティ**：WCAG基準に準拠
+Element Plusは、ボタン、フォーム、テーブル、ダイアログ、ナビゲーションメニューなど、豊富な基本コンポーネントを提供しており、企業レベルの中後続アプリケーションを素早く構築できます。
+
+---
+
+## 主な特徴
+
+- Vue 3 + TypeScriptで開発
+- Composition API記法をサポート
+- 豊富なデスクトップコンポーネント
+- 需給インポートをサポート
+- 国際化をサポート
+- テーマカスタマイズをサポート
+- 完善されたドキュメントとサンプル
+
+---
 
 ## バージョン情報
 
-| バージョン | 状態 | Vueバージョン |
-|------------|------|---------------|
-| 2.x | ✅ 現行 | Vue 3 |
-| 1.x | ⚠️ メンテナンス | Vue 3 |
-| Element UI | ❌ 旧版 | Vue 2 |
+| バージョン | 発表日付 | 説明 |
+|------|----------|------|
+| 2.x | 2022年2月 | 現行安定版、Vue 3をサポート |
+| 1.x | — | 初期バージョン、メンテナンス終了 |
 
-> **注意**：Element PlusはVue 3のみサポートしています。Vue 2プロジェクトはElement UIを使用してください。
+---
+
+## ドキュメントナビゲーション
+
+### 入門
+
+| ドキュメント | 説明 |
+|------|------|
+| [インストールガイド](./1.インストールガイド.md) | 完全な環境設定とインストールチュートリアル |
+
+### ユーザーガイド
+
+| ドキュメント | 説明 |
+|------|------|
+| [ユーザーマニュアル](./2.ユーザーマニュアル.md) | 詳細な機能説明とコードサンプル |
+
+---
 
 ## クイックスタート
 
-### npm
+### インストール
 
 ```bash
 npm install element-plus
 ```
 
-### CDN
+### インポート
 
-```html
-<link rel="stylesheet" href="https://unpkg.com/element-plus/dist/index.css">
-<script src="https://unpkg.com/element-plus/dist/index.full.js"></script>
+```typescript
+import { createApp } from 'vue'
+import ElementPlus from 'element-plus'
+import 'element-plus/dist/index.css'
+import App from './App.vue'
+
+const app = createApp(App)
+
+app.use(ElementPlus)
+
+app.mount('#app')
 ```
 
-## ドキュメント
-
-- [インストールガイド](./1.安装文档.md) - 詳細なインストール手順
-- [使用ガイド](./2.使用指南.md) - コンポーネントの使用例
-
-## ブラウザサポート
-
-| ブラウザ | バージョン |
-|---------|------------|
-| Chrome | 80+ |
-| Firefox | 80+ |
-| Safari | 14+ |
-| Edge | 80+ |
+---
 
 ## 関連リソース
 
-- [公式サイト](https://element-plus.org/)
-- [GitHub](https://github.com/element-plus/element-plus)
-- [コンポーネントドキュメント](https://element-plus.org/en-US/component/button.html)
+- 公式サイト：https://element-plus.org/
+- 中国語ドキュメント：https://element-plus.org/zh-CN/
+- オンライン демо：https://element-plus.run/
+- GitHub：https://github.com/element-plus/element-plus
+- NPM：https://www.npmjs.com/package/element-plus
+
+---
 
 ## ライセンス
 
-MIT License - 個人・商用プロジェクトで無料利用可能。
+MIT License
+
+---
+
+## コントリビューション
+
+IssueとPull Requestを歓迎します！
+
+---

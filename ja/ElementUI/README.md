@@ -1,15 +1,52 @@
 # Element UI
 
-Vue 2.xアプリケーション用のUIコンポーネントライブラリです。
+> Vue 2ベースのデスクトップUIコンポーネントライブラリ
 
-## 概要
+---
 
-Element UIは、Vue 2.xでデスクトップアプリケーションを構築するためのUIコンポーネントライブラリです。すぐに使用できるコンポーネントの包括的なセットを提供します。
+## プロジェクト紹介
 
-## ドキュメント
+Element UIはVue 2ベースのデスクトップUIコンポーネントライブラリで、Ele.meチームが開発・メンテナンスしています。ボタン、フォーム、テーブル、ダイアログ、ナビゲーションメニューなど豊富な基本コンポーネントを提供し、企業向けPCアプリケーションを素早く構築できます。
 
-- [インストールガイド](./1.インストールドキュメント.md) - 完全なセットアップ手順
-- [ユーザーガイド](./2.ユーザーガイド.md) - 包括的な使用ガイド
+**注意**：Vue 3プロジェクトの場合は、[Element Plus](https://github.com/element-plus/element-plus)をご使用ください
+
+---
+
+## バージョン情報
+
+| バージョン | Vueバージョン | 状態 | 説明 |
+|------|----------|------|------|
+| Element UI 2.x | Vue 2 | メンテナンス停止 | 現在のドキュメントバージョン |
+| Element UI 1.x | Vue 2 | メンテナンス停止 | 旧バージョン |
+
+---
+
+## 主な機能
+
+- Vue 2ベース
+- 豊富なPC向けコンポーネント
+- 必要時導入をサポート
+- 国際化をサポート
+- テーマカスタマイズをサポート
+- 完全なドキュメントと例
+
+---
+
+## ドキュメントナビゲーション
+
+### 入門
+
+| ドキュメント | 説明 |
+|------|------|
+| [インストールガイド](./1.インストールガイド.md) | 完全な環境設定とインストールチュートリアル |
+
+### ユーザーガイド
+
+| ドキュメント | 説明 |
+|------|------|
+| [ユーザーマニュアル](./2.ユーザーマニュアル.md) | 詳細な機能説明とコード例 |
+
+---
 
 ## クイックスタート
 
@@ -19,70 +56,48 @@ Element UIは、Vue 2.xでデスクトップアプリケーションを構築す
 npm install element-ui --save
 ```
 
-### 使用
+### 導入
 
 ```javascript
 import Vue from 'vue'
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
+import App from './App.vue'
 
 Vue.use(ElementUI)
+
+new Vue({
+  render: h => h(App)
+}).$mount('#app')
 ```
 
-### コンポーネント
+---
 
-```vue
-<el-button type="primary">ボタン</el-button>
-```
+## 関連資料
 
-## 機能
+- 公式サイト：https://element.eleme.io/
+- GitHubリポジトリ：https://github.com/ElemeFE/element
+- NPM：https://www.npmjs.com/package/element-ui
 
-- 📦 **60+ コンポーネント** - 包括的なUIライブラリ
-- 🎨 **カスタマイズ可能** - テーマ変更が容易
-- 🌍 **i18n** - 10以上の言語をサポート
-- 📱 **レスポンシブ** - デスクトップ特化
+---
 
-## バージョン
+## ⚠️ 重要なお知らせ
 
-| バージョン | Vue | ステータス |
-|------------|-----|------------|
-| 2.x | Vue 2.6+ | 現行 |
-| 1.x | Vue 2.x | レガシー |
+Element UIのメンテナンスは停止しています。推奨：
 
-**注意：** Vue 3の場合は[Element Plus](https://element-plus.org/)を使用してください
+1. **新規プロジェクト**：[Element Plus](https://github.com/element-plus/element-plus)（Vue 3）をご使用ください
+2. **既存プロジェクト**：Element Plusへの移行を計画してください
 
-## コンポーネントカテゴリ
-
-| カテゴリ | 例 |
-|----------|-----|
-| 基礎 | Button, Icon, Layout |
-| フォーム | Input, Select, Form |
-| データ | Table, Tree, Tag |
-| 通知 | Message, Notification |
-| ナビゲーション | Menu, Tabs |
-
-## IDEサポート
-
-| IDE | サポート |
-|-----|----------|
-| VS Code | 完全 |
-| WebStorm | 完全 |
-| IntelliJ | 完全 |
-
-## ブラウザサポート
-
-| ブラウザ | バージョン |
-|----------|------------|
-| IE | 10+ |
-| Chrome | 50+ |
-| Firefox | 50+ |
+---
 
 ## ライセンス
 
-MIT
+MIT License
 
-## 関連リンク
+---
 
-- [公式サイト](https://element.eleme.io/)
-- [GitHub](https://github.com/ElemeFE/element)
-- [Element Plus (Vue 3)](https://element-plus.org/)
+## コントリビューション
+
+IssueとPull Requestを歓迎します！
+
+---

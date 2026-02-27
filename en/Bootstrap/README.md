@@ -1,100 +1,148 @@
-# Bootstrap 文档
+# Bootstrap
 
-Bootstrap 是最流行的 HTML、CSS 和 JS 框架，用于开发响应式布局、移动设备优先的网站和 Web 应用程序。
-
----
-
-## 文档目录
-
-### 入门指南
-
-- [安装指南](./1.安装指南.md) - 安装 Bootstrap 的多种方式
-- [使用手册](./2.使用手册.md) - Bootstrap 核心功能与组件详解
+> The world's most popular open-source CSS framework
 
 ---
 
-## Bootstrap 简介
+## Introduction
 
-Bootstrap 提供了强大的 CSS 框架、预构建的组件和 JavaScript 插件，帮助开发者快速构建现代化、响
+Bootstrap is the world's most popular open-source CSS framework, created by Twitter's designers and engineers. It provides responsive, mobile-first frontend development tools.
 
-应式的网站和应用。
+### Main Features
 
-### 主要特性
-
-- **响应式栅格系统**：12 列响应式布局
-- **预定义样式**：丰富的 CSS 类
-- **强大组件**：导航栏、卡片、模态框等
-- **JavaScript 插件**：交互式功能
-- **自定义选项**：通过 Sass 定制主题
-
-### 版本信息
-
-- **当前版本**：Bootstrap 5.3.x
-- **浏览器支持**：所有现代浏览器
-- **依赖**：无需 jQuery（Bootstrap 5）
+- 📱 **Responsive Design** - Adapts to all device sizes
+- 🎨 **Pre-built Components** - Buttons, navigation, forms
+- 🎯 **Grid System** - 12-column responsive layout
+- 🎭 **Theme System** - Custom styling
+- ⚡ **JavaScript Plugins** - Interactive components
 
 ---
 
-## 快速开始
+## Version Information
 
-### CDN 引入
+| Version | Release Date | Status |
+|---------|--------------|--------|
+| Bootstrap 5.3 | 2023 | Latest Stable |
+| Bootstrap 5.2 | 2022 | Stable |
+| Bootstrap 5.1 | 2021 | Stable |
+
+---
+
+## Documentation
+
+### Beginner
+
+| Document | Description |
+|----------|-------------|
+| [Quick Start](./3.Quick-Start.md) | Get started in 5 minutes |
+| [Installation Guide](./1.Installation-Guide.md | Complete installation tutorial |
+
+### Usage
+
+| Document | Description |
+|----------|-------------|
+| [User Manual](./2.User-Manual.md) | Complete Bootstrap development guide |
+
+### FAQ
+
+| Document | Description |
+|----------|-------------|
+| [FAQ](./4.FAQ.md) | Common development questions |
+
+---
+
+## Quick Start
+
+### CDN Import
 
 ```html
-<!-- CSS -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-
-<!-- JavaScript -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap="stylesheet">
+<script.min.css" rel src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 ```
 
-### npm 安装
+### npm Installation
 
 ```bash
-npm install bootstrap
+npm install bootstrap @popperjs/core
 ```
 
 ---
 
-## 基础示例
+## Common Examples
 
-### 栅格布局
+### Grid System
 
 ```html
 <div class="container">
-  <div class="row">
-    <div class="col-md-4">列 1</div>
-    <div class="col-md-4">列 2</div>
-    <div class="col-md-4">列 3</div>
-  </div>
+    <div class="row">
+        <div class="col-md-6">Column 1</div>
+        <div class="col-md-6">Column 2</div>
+    </div>
 </div>
 ```
 
-### 组件
+### Buttons
 
 ```html
-<button class="btn btn-primary">主要按钮</button>
+<button class="btn btn-primary">Primary</button>
+<button class="btn btn-secondary">Secondary</button>
+```
 
-<div class="card" style="width: 18rem;">
-  <div class="card-body">
-    <h5 class="card-title">卡片标题</h5>
-    <p class="card-text">卡片内容</p>
-  </div>
-</div>
+### Navbar
+
+```html
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+        <a class="navbar-brand" href="#">Brand</a>
+    </div>
+</nav>
 ```
 
 ---
 
-## 学习资源
+## Learning Path
 
-- [Bootstrap 官方文档](https://getbootstrap.com/docs/)
-- [Bootstrap 中文网](https://www.bootcss.com/)
-- [Bootstrap Icons](https://icons.getbootstrap.com/)
-- [Bootstrap 定制工具](https://getbootstrap.com/docs/5.3/customize/options/)
+### Phase 1: Basics
+
+1. Understand grid system
+2. Master containers and layout
+3. Learn typography and colors
+4. Use button components
+
+### Phase 2: Intermediate
+
+1. Form components
+2. Navigation components
+3. Card components
+4. Modals
+
+### Phase 3: Advanced
+
+1. JavaScript plugins
+2. Custom themes
+3. Sass customization
+4. Performance optimization
 
 ---
 
-## 许可证
+## Related Resources
 
-本项目文档基于 [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/) 授权。
+- 🌐 [Official Website](https://getbootstrap.com)
+- 📖 [Documentation](https://getbootstrap.com/docs)
+- 🖼️ [Bootstrap Icons](https://icons.getbootstrap.com)
 
-Bootstrap 代码受 [MIT License](https://github.com/twbs/bootstrap/blob/main/LICENSE) 约束。
+---
+
+## License
+
+MIT License
+
+---
+
+## Contributing
+
+Issues and Pull Requests are welcome!
+
+---
+
+*This project documentation is generated by AI Assistant*

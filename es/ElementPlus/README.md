@@ -1,65 +1,97 @@
 # Element Plus
 
-Element Plus es una biblioteca de componentes Vue 3 diseñada para desarrolladores, diseñadores y gerentes de productos.
+> Biblioteca de componentes UI de escritorio para Vue 3
 
-## Introducción
+---
 
-Element Plus es una biblioteca de componentes UI construida para Vue 3, que proporciona un conjunto completo de componentes esenciales para aplicaciones web modernas.
+## Introducción del Proyecto
 
-## Características
+Element Plus es una biblioteca de componentes UI de escritorio para Vue 3 desarrollada por el equipo de Element. Está completamente escrito en el estilo Composition API de Vue 3 y completamente reescrito en TypeScript. La primera versión estable fue publicada el 7 de febrero de 2022. Después de años de iteración, la API es muy estable.
 
-- **Biblioteca de Componentes Completa**: Botones, formularios, tablas, diálogos, navegación, etc.
-- **Soporte TypeScript**: Definiciones de tipos completas
-- **Tree Shaking**: Importación bajo demanda
-- **Personalización de Temas**: Soporte para variables CSS y SCSS
-- **Internacionalización**: Soporte para más de 10 idiomas
-- **Accesibilidad**: Cumple con los estándares WCAG
+Element Plus proporciona ricos componentes básicos incluyendo botones, formularios, tablas, diálogos, menús de navegación y más. Permite construir rápidamente aplicaciones empresariales de backend.
+
+---
+
+## Características Principales
+
+- Desarrollado con Vue 3 + TypeScript
+- Soporta sintaxis Composition API
+- Rica biblioteca de componentes de escritorio
+- Soporta importación bajo demanda
+- Soporta internacionalización
+- Soporta personalización de temas
+- Documentación completa y ejemplos
+
+---
 
 ## Información de Versión
 
-| Versión | Estado | Versión de Vue |
-|---------|--------|----------------|
-| 2.x | ✅ Actual | Vue 3 |
-| 1.x | ⚠️ Mantenimiento | Vue 3 |
-| Element UI | ❌ Legacy | Vue 2 |
+| Versión | Fecha de Lanzamiento | Descripción |
+|------|----------|------|
+| 2.x | Febrero 2022 | Versión estable actual, soporta Vue 3 |
+| 1.x | — | Versión temprana, ya no mantenida |
 
-> **Nota**: Element Plus solo soporta Vue 3. Para proyectos Vue 2, usa Element UI.
+---
+
+## Navegación de Documentación
+
+### Primeros Pasos
+
+| Documento | Descripción |
+|------|------|
+| [Guía de Instalación](./1.Guía-de-Instalación.md) | Configuración completa del entorno y tutorial de instalación |
+
+### Guía de Usuario
+
+| Documento | Descripción |
+|------|------|
+| [Manual de Usuario](./2.Manual-de-Usuario.md) | Descripciones detalladas de funciones y ejemplos de código |
+
+---
 
 ## Inicio Rápido
 
-### npm
+### Instalación
 
 ```bash
 npm install element-plus
 ```
 
-### CDN
+### Importar
 
-```html
-<link rel="stylesheet" href="https://unpkg.com/element-plus/dist/index.css">
-<script src="https://unpkg.com/element-plus/dist/index.full.js"></script>
+```typescript
+import { createApp } from 'vue'
+import ElementPlus from 'element-plus'
+import 'element-plus/dist/index.css'
+import App from './App.vue'
+
+const app = createApp(App)
+
+app.use(ElementPlus)
+
+app.mount('#app')
 ```
 
-## Documentación
-
-- [Guía de Instalación](./1.安装文档.md) - Instrucciones completas de instalación
-- [Guía de Uso](./2.使用指南.md) - Ejemplos de uso de componentes
-
-## Navegadores Soportados
-
-| Navegador | Versión |
-|-----------|---------|
-| Chrome | 80+ |
-| Firefox | 80+ |
-| Safari | 14+ |
-| Edge | 80+ |
+---
 
 ## Recursos Relacionados
 
-- [Sitio Oficial](https://element-plus.org/)
-- [GitHub](https://github.com/element-plus/element-plus)
-- [Documentación de Componentes](https://element-plus.org/en-US/component/button.html)
+- Sitio web oficial: https://element-plus.org/
+- Documentación en chino: https://element-plus.org/zh-CN/
+- Demo en línea: https://element-plus.run/
+- GitHub: https://github.com/element-plus/element-plus
+- NPM: https://www.npmjs.com/package/element-plus
+
+---
 
 ## Licencia
 
-MIT License - Gratis para proyectos personales y comerciales.
+MIT License
+
+---
+
+## Guía de Contribución
+
+¡Issues y Pull Requests son bienvenidos!
+
+---

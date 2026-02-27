@@ -1,89 +1,103 @@
 # Element UI
 
-A UI component library for Vue 2.x applications.
+> A desktop UI component library based on Vue 2
 
-## Overview
+---
 
-Element UI is a UI component library for building desktop applications with Vue 2.x. It provides a comprehensive set of ready-to-use components.
+## Project Overview
 
-## Documentation
+Element UI is a desktop UI component library based on Vue 2, developed and maintained by Ele.me team. It provides rich basic components including buttons, forms, tables, dialogs, navigation menus and more, enabling rapid development of enterprise-level PC applications.
 
-- [Installation Guide](./1.安装文档.md) - Complete setup instructions
-- [Usage Guide](./2.使用指南.md) - Comprehensive usage guide
+**Note**: For Vue 3 projects, please use [Element Plus](https://github.com/element-plus/element-plus)
+
+---
+
+## Version Information
+
+| Version | Vue Version | Status | Description |
+|---------|-------------|--------|-------------|
+| Element UI 2.x | Vue 2 | End of Maintenance | Current documentation version |
+| Element UI 1.x | Vue 2 | End of Life | Early version |
+
+---
+
+## Main Features
+
+- Based on Vue 2
+- Rich PC-side components
+- Support on-demand import
+- Support internationalization
+- Support theme customization
+- Complete documentation and examples
+
+---
+
+## Documentation Navigation
+
+### Getting Started
+
+| Document | Description |
+|----------|-------------|
+| [Installation Guide](./1.Installation-Guide.md) | Complete environment setup and installation tutorial |
+
+### User Guide
+
+| Document | Description |
+|----------|-------------|
+| [User Manual](./2.User-Manual.md) | Detailed feature descriptions and code examples |
+
+---
 
 ## Quick Start
 
-### Install
+### Installation
 
 ```bash
 npm install element-ui --save
 ```
 
-### Use
+### Import
 
 ```javascript
 import Vue from 'vue'
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
+import App from './App.vue'
 
 Vue.use(ElementUI)
+
+new Vue({
+  render: h => h(App)
+}).$mount('#app')
 ```
 
-### Components
+---
 
-```vue
-<el-button type="primary">Button</el-button>
-```
+## Related Resources
 
-## Features
+- Official Website: https://element.eleme.io/
+- GitHub Repository: https://github.com/ElemeFE/element
+- NPM: https://www.npmjs.com/package/element-ui
 
-- 📦 **60+ Components** - Comprehensive UI library
-- 🎨 **Customizable** - Easy theming
-- 🌍 **i18n** - Supports 10+ languages
-- 📱 **Responsive** - Desktop focused
+---
 
-## Version
+## ⚠️ Important Notice
 
-| Version | Vue | Status |
-|---------|-----|--------|
-| 2.x | Vue 2.6+ | Current |
-| 1.x | Vue 2.x | Legacy |
+Element UI maintenance has stopped. It is recommended to:
 
-**Note:** For Vue 3, use [Element Plus](https://element-plus.org/)
+1. **New projects**: Use [Element Plus](https://github.com/element-plus/element-plus) (Vue 3)
+2. **Existing projects**: Plan to migrate to Element Plus
 
-## Components Categories
-
-| Category | Examples |
-|----------|----------|
-| Basic | Button, Icon, Layout |
-| Form | Input, Select, Form |
-| Data | Table, Tree, Tag |
-| Notice | Message, Notification |
-| Navigation | Menu, Tabs |
-
-## IDE Support
-
-| IDE | Support |
-|-----|---------|
-| VS Code | Full |
-| WebStorm | Full |
-| IntelliJ | Full |
-
-## Browser Support
-
-| Browser | Version |
-|---------|---------|
-| IE | 10+ |
-| Chrome | 50+ |
-| Firefox | 50+ |
-| Safari | 10+ |
+---
 
 ## License
 
-MIT
+MIT License
 
-## Related Links
+---
 
-- [Website](https://element.eleme.io/)
-- [GitHub](https://github.com/ElemeFE/element)
-- [Element Plus (Vue 3)](https://element-plus.org/)
+## Contributing
+
+Issues and Pull Requests are welcome!
+
+---

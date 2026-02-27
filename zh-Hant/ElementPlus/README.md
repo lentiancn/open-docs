@@ -1,65 +1,97 @@
 # Element Plus
 
-Element Plus 是為開發者、設計師和產品經理打造的 Vue 3 組件庫。
+> 基於 Vue 3 的桌面端元件庫
 
-## 簡介
+---
 
-Element Plus 是為 Vue 3 構建的 UI 組件庫，提供了一套完整的現代化網頁應用必備組件。
+## 項目簡介
 
-## 特性
+Element Plus 是由 Element 團隊打造的 Vue 3 桌面端 UI 元件庫，完全遵循 Vue 3 的 Composition API 風格編寫，並全面採用 TypeScript 重構。首個穩定版於 2022 年 2 月 7 日發布，經過多年迭代，API 已經非常穩定。
 
-- **完整組件庫**：按鈕、表單、表格、對話框、導航等
-- **TypeScript 支持**：完整的類型定義
-- **Tree Shaking**：按需導入
-- **主題定制**：CSS 變數和 SCSS 支持
-- **國際化**：支持 10+ 語言
-- **無障礙性**：符合 WCAG 標準
+Element Plus 提供了豐富的基礎元件，包括按鈕、表單、表格、對話框、導航菜單等，能夠快速構建企業級中後台應用。
+
+---
+
+## 主要特性
+
+- 基於 Vue 3 + TypeScript 開發
+- 支援 Composition API 寫法
+- 提供豐富的桌面端元件
+- 支援按需引入
+- 支援國際化
+- 支援主題定製
+- 完善的文檔和示例
+
+---
 
 ## 版本資訊
 
-| 版本 | 狀態 | Vue 版本 |
-|------|------|----------|
-| 2.x | ✅ 當前 | Vue 3 |
-| 1.x | ⚠️ 維護 | Vue 3 |
-| Element UI | ❌ 舊版 | Vue 2 |
+| 版本 | 發布日期 | 說明 |
+|------|----------|------|
+| 2.x | 2022年2月 | 當前穩定版，支援 Vue 3 |
+| 1.x | — | 早期版本，已不再維護 |
 
-> **注意**：Element Plus 仅支持 Vue 3。Vue 2 項目請使用 Element UI。
+---
+
+## 文檔導航
+
+### 新手入門
+
+| 文檔 | 說明 |
+|------|------|
+| [安裝指南](./1.安裝指南.md) | 完整的環境配置和安裝教程 |
+
+### 使用指南
+
+| 文檔 | 說明 |
+|------|------|
+| [使用手冊](./2.使用手冊.md) | 詳細的功能說明和代碼示例 |
+
+---
 
 ## 快速開始
 
-### npm
+### 安裝
 
 ```bash
 npm install element-plus
 ```
 
-### CDN
+### 引入
 
-```html
-<link rel="stylesheet" href="https://unpkg.com/element-plus/dist/index.css">
-<script src="https://unpkg.com/element-plus/dist/index.full.js"></script>
+```typescript
+import { createApp } from 'vue'
+import ElementPlus from 'element-plus'
+import 'element-plus/dist/index.css'
+import App from './App.vue'
+
+const app = createApp(App)
+
+app.use(ElementPlus)
+
+app.mount('#app')
 ```
 
-## 文檔
-
-- [安裝指南](./1.安裝文檔.md) - 完整的安裝說明
-- [使用指南](./2.使用指南.md) - 組件使用示例
-
-## 瀏覽器支持
-
-| 瀏覽器 | 版本 |
-|--------|------|
-| Chrome | 80+ |
-| Firefox | 80+ |
-| Safari | 14+ |
-| Edge | 80+ |
+---
 
 ## 相關資源
 
-- [官方網站](https://element-plus.org/)
-- [GitHub](https://github.com/element-plus/element-plus)
-- [組件文檔](https://element-plus.org/en-US/component/button.html)
+- 官方網站：https://element-plus.org/
+- 中文文檔：https://element-plus.org/zh-CN/
+- 線上演示：https://element-plus.run/
+- GitHub：https://github.com/element-plus/element-plus
+- NPM：https://www.npmjs.com/package/element-plus
 
-## 許可證
+---
 
-MIT License - 免費用於個人和商業項目。
+## 授權條款
+
+MIT License
+
+---
+
+## 貢獻指南
+
+歡迎提交 Issue 和 Pull Request！
+
+---

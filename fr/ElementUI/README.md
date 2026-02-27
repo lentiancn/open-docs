@@ -1,88 +1,94 @@
 # Element UI
 
-Une bibliothèque de composants UI pour les applications Vue 2.x.
+> Une bibliothèque de composants UI de bureau basée sur Vue 2
 
-## Présentation
+---
 
-Element UI est une bibliothèque de composants UI pour les applications de bureau avec Vue 2.x. Elle fournit un ensemble complet de composants prêts à utiliser.
+## Présentation du projet
 
-## Documentation
+Element UI est une bibliothèque de composants UI de bureau basée sur Vue 2, développée et maintenue par l'équipe Ele.me. Elle fournit des composants de base riches, notamment les boutons, formulaires, tableaux, dialogues, menus de navigation et plus encore.
 
-- [Guide d'installation](./1.安装文档.md) - Instructions complètes
-- [Guide d'utilisation](./2.使用指南.md) - Guide complet
+**Note** : Pour les projets Vue 3, utilisez [Element Plus](https://github.com/element-plus/element-plus)
 
-## Démarrage Rapide
+---
 
-### Installer
+## Informations de version
+
+| Version | Version Vue | Statut |
+|---------|-------------|--------|
+| Element UI 2.x | Vue 2 | Maintenance arrêtée |
+| Element UI 1.x | Vue 2 | Arrêtée |
+
+---
+
+## Caractéristiques principales
+
+- Basé sur Vue 2
+- Riches composants pour PC
+- Support de l'import à la demande
+- Support de l'internationalisation
+- Support de la personnalisation des thèmes
+
+---
+
+## Navigation dans la documentation
+
+### Premiers pas
+
+| Document | Description |
+|----------|-------------|
+| [Guide d'installation](./1.Guide-dinstallation.md) | Configuration complète |
+
+### Manuel utilisateur
+
+| Document | Description |
+|----------|-------------|
+| [Manuel utilisateur](./2.Manuel-utilisateur.md) | Exemples de code détaillés |
+
+---
+
+## Démarrage rapide
+
+### Installation
 
 ```bash
 npm install element-ui --save
 ```
 
-### Utiliser
+### Importation
 
 ```javascript
-import Vue from 'vue'
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
 
 Vue.use(ElementUI)
 ```
 
-### Composants
+---
 
-```vue
-<el-button type="primary">Bouton</el-button>
-```
+## Ressources
 
-## Fonctionnalités
+- Site officiel : https://element.eleme.io/
+- GitHub : https://github.com/ElemeFE/element
+- NPM : https://www.npmjs.com/package/element-ui
 
-- 📦 **60+ Composants** - Bibliothèque UI complète
-- 🎨 **Personnalisable** - Thématisation facile
-- 🌍 **i18n** - Supporte 10+ langues
-- 📱 **Responsive** - axé sur le bureau
+---
 
-## Version
+## ⚠️ Avis important
 
-| Version | Vue | Statut |
-|---------|-----|--------|
-| 2.x | Vue 2.6+ | Actuel |
-| 1.x | Vue 2.x | Hérité |
+La maintenance d'Element UI est arrêtée. Il est recommandé :
 
-**Note:** Pour Vue 3, utilisez [Element Plus](https://element-plus.org/)
+1. **Nouveaux projets** : Utiliser [Element Plus](https://github.com/element-plus/element-plus) (Vue 3)
+2. **Projets existants** : Planifier la migration vers Element Plus
 
-## Catégories de Composants
-
-| Catégorie | Exemples |
-|----------|----------|
-| Basique | Button, Icon, Layout |
-| Formulaire | Input, Select, Form |
-| Données | Table, Tree, Tag |
-| Notification | Message, Notification |
-| Navigation | Menu, Tabs |
-
-## Support IDE
-
-| IDE | Support |
-|-----|---------|
-| VS Code | Complet |
-| WebStorm | Complet |
-| IntelliJ | Complet |
-
-## Support Navigateurs
-
-| Navigateur | Version |
-|-----------|---------|
-| IE | 10+ |
-| Chrome | 50+ |
-| Firefox | 50+ |
+---
 
 ## Licence
 
-MIT
+MIT License
 
-## Liens Connexes
+---
 
-- [Site Web](https://element.eleme.io/)
-- [GitHub](https://github.com/ElemeFE/element)
-- [Element Plus (Vue 3)](https://element-plus.org/)
+## Contribution
+
+Issues et Pull Requests bienvenus !

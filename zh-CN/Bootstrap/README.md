@@ -1,37 +1,53 @@
-# Bootstrap 文档
+# Bootstrap
 
-Bootstrap 是最流行的 HTML、CSS 和 JS 框架，用于开发响应式布局、移动设备优先的网站和 Web 应用程序。
-
----
-
-## 文档目录
-
-### 入门指南
-
-- [安装指南](./1.安装指南.md) - 安装 Bootstrap 的多种方式
-- [使用手册](./2.使用手册.md) - Bootstrap 核心功能与组件详解
+> 全球最流行的开源 CSS 框架
 
 ---
 
-## Bootstrap 简介
+## 简介
 
-Bootstrap 提供了强大的 CSS 框架、预构建的组件和 JavaScript 插件，帮助开发者快速构建现代化、响
-
-应式的网站和应用。
+Bootstrap 是全球最流行的开源 CSS 框架，由 Twitter 的设计师和工程师创建。它提供了响应式、移动设备优先的网页前端开发工具。
 
 ### 主要特性
 
-- **响应式栅格系统**：12 列响应式布局
-- **预定义样式**：丰富的 CSS 类
-- **强大组件**：导航栏、卡片、模态框等
-- **JavaScript 插件**：交互式功能
-- **自定义选项**：通过 Sass 定制主题
+- 📱 **响应式设计** - 适配所有设备尺寸
+- 🎨 **预制组件** - 按钮、导航、表单等
+- 🎯 **栅格系统** - 12列响应式布局
+- 🎭 **主题系统** - 自定义样式
+- ⚡ **JavaScript 插件** - 交互组件
 
-### 版本信息
+---
 
-- **当前版本**：Bootstrap 5.3.x
-- **浏览器支持**：所有现代浏览器
-- **依赖**：无需 jQuery（Bootstrap 5）
+## 版本信息
+
+| 版本 | 发布日期 | 状态 |
+|------|----------|------|
+| Bootstrap 5.3 | 2023年 | 最新稳定版 |
+| Bootstrap 5.2 | 2022年 | 稳定版 |
+| Bootstrap 5.1 | 2021年 | 稳定版 |
+
+---
+
+## 文档导航
+
+### �_BEGINNER 新手入门
+
+| 文档 | 说明 |
+|------|------|
+| [快速入门](./3.快速入门.md) | 5 分钟快速上手 Bootstrap |
+| [安装指南](./1.安装指南.md) | 完整的环境安装教程 |
+
+### 📖 USAGE 使用指南
+
+| 文档 | 说明 |
+|------|------|
+| [使用手册](./2.使用手册.md) | 完整的 Bootstrap 开发指南 |
+
+### ❓ FAQ 常见问题
+
+| 文档 | 说明 |
+|------|------|
+| [常见问题](./4.常见问题.md) | 开发中常见问题解答 |
 
 ---
 
@@ -40,61 +56,94 @@ Bootstrap 提供了强大的 CSS 框架、预构建的组件和 JavaScript 插�
 ### CDN 引入
 
 ```html
-<!-- CSS -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-
-<!-- JavaScript -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 ```
 
 ### npm 安装
 
 ```bash
-npm install bootstrap
+npm install bootstrap @popperjs/core
 ```
 
 ---
 
-## 基础示例
+## 常用命令
 
-### 栅格布局
+### 栅格系统
 
 ```html
 <div class="container">
-  <div class="row">
-    <div class="col-md-4">列 1</div>
-    <div class="col-md-4">列 2</div>
-    <div class="col-md-4">列 3</div>
-  </div>
+    <div class="row">
+        <div class="col-md-6">列 1</div>
+        <div class="col-md-6">列 2</div>
+    </div>
 </div>
 ```
 
-### 组件
+### 按钮
 
 ```html
 <button class="btn btn-primary">主要按钮</button>
+<button class="btn btn-secondary">次要按钮</button>
+```
 
-<div class="card" style="width: 18rem;">
-  <div class="card-body">
-    <h5 class="card-title">卡片标题</h5>
-    <p class="card-text">卡片内容</p>
-  </div>
-</div>
+### 导航栏
+
+```html
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+        <a class="navbar-brand" href="#">品牌</a>
+    </div>
+</nav>
 ```
 
 ---
 
-## 学习资源
+## 学习路径
 
-- [Bootstrap 官方文档](https://getbootstrap.com/docs/)
-- [Bootstrap 中文网](https://www.bootcss.com/)
-- [Bootstrap Icons](https://icons.getbootstrap.com/)
-- [Bootstrap 定制工具](https://getbootstrap.com/docs/5.3/customize/options/)
+### 第一阶段：基础
+
+1. 了解栅格系统
+2. 掌握容器和布局
+3. 学习排版和颜色
+4. 使用按钮组件
+
+### 第二阶段：进阶
+
+1. 表单组件
+2. 导航组件
+3. 卡片组件
+4. 模态框
+
+### 第三阶段：高级
+
+1. JavaScript 插件
+2. 自定义主题
+3. Sass 定制
+4. 性能优化
+
+---
+
+## 相关资源
+
+- 🌐 [官方网站](https://getbootstrap.com)
+- 📖 [官方文档](https://getbootstrap.com/docs)
+- 📚 [中文文档](https://bootstrap.doc.cn)
+- 🖼️ [Bootstrap Icons](https://icons.getbootstrap.com)
 
 ---
 
 ## 许可证
 
-本项目文档基于 [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/) 授权。
+MIT License
 
-Bootstrap 代码受 [MIT License](https://github.com/twbs/bootstrap/blob/main/LICENSE) 约束。
+---
+
+## 贡献
+
+欢迎提交 Issue 和 Pull Request！
+
+---
+
+*本项目文档由 AI 助手生成*

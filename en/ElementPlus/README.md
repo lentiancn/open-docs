@@ -1,65 +1,97 @@
 # Element Plus
 
-Element Plus 是为开发者、设计师和产品经理打造的 Vue 3 组件库。
+> A Vue 3 Desktop UI Component Library
 
-## 简介
+---
 
-Element Plus 是为 Vue 3 构建的 UI 组件库，提供了一套完整的现代化网页应用必备组件。
+## Project Overview
 
-## 特性
+Element Plus is a Vue 3 desktop UI component library made by the Element team. It is completely written in Vue 3's Composition API style and fully rewritten in TypeScript. The first stable release was published on February 7, 2022. After years of iteration, the API has become very stable.
 
-- **完整组件库**：按钮、表单、表格、对话框、导航等
-- **TypeScript 支持**：完整的类型定义
-- **Tree Shaking**：按需导入
-- **主题定制**：CSS 变量和 SCSS 支持
-- **国际化**：支持 10+ 语言
-- **无障碍性**：符合 WCAG 标准
+Element Plus provides rich basic components including buttons, forms, tables, dialogs, navigation menus, and more. It enables rapid development of enterprise-level back-office applications.
 
-## 版本信息
+---
 
-| 版本 | 状态 | Vue 版本 |
-|------|------|----------|
-| 2.x | ✅ 当前 | Vue 3 |
-| 1.x | ⚠️ 维护 | Vue 3 |
-| Element UI | ❌ 旧版 | Vue 2 |
+## Key Features
 
-> **注意**：Element Plus 仅支持 Vue 3。Vue 2 项目请使用 Element UI。
+- Built with Vue 3 + TypeScript
+- Supports Composition API syntax
+- Rich desktop components
+- Supports on-demand import
+- Supports internationalization
+- Supports theme customization
+- Complete documentation and examples
 
-## 快速开始
+---
 
-### npm
+## Version Information
+
+| Version | Release Date | Description |
+|---------|--------------|-------------|
+| 2.x | February 2022 | Current stable, supports Vue 3 |
+| 1.x | — | Early version, no longer maintained |
+
+---
+
+## Documentation Navigation
+
+### Getting Started
+
+| Document | Description |
+|----------|-------------|
+| [Installation Guide](./1.Installation-Guide.md) | Complete environment setup and installation tutorial |
+
+### User Guide
+
+| Document | Description |
+|----------|-------------|
+| [User Manual](./2.User-Manual.md) | Detailed feature descriptions and code examples |
+
+---
+
+## Quick Start
+
+### Installation
 
 ```bash
 npm install element-plus
 ```
 
-### CDN
+### Import
 
-```html
-<link rel="stylesheet" href="https://unpkg.com/element-plus/dist/index.css">
-<script src="https://unpkg.com/element-plus/dist/index.full.js"></script>
+```typescript
+import { createApp } from 'vue'
+import ElementPlus from 'element-plus'
+import 'element-plus/dist/index.css'
+import App from './App.vue'
+
+const app = createApp(App)
+
+app.use(ElementPlus)
+
+app.mount('#app')
 ```
 
-## 文档
+---
 
-- [安装指南](./1.安装文档.md) - 完整的安装说明
-- [使用指南](./2.使用指南.md) - 组件使用示例
+## Related Resources
 
-## 浏览器支持
+- Official Website: https://element-plus.org/
+- Chinese Documentation: https://element-plus.org/zh-CN/
+- Online Demo: https://element-plus.run/
+- GitHub: https://github.com/element-plus/element-plus
+- NPM: https://www.npmjs.com/package/element-plus
 
-| 浏览器 | 版本 |
-|--------|------|
-| Chrome | 80+ |
-| Firefox | 80+ |
-| Safari | 14+ |
-| Edge | 80+ |
+---
 
-## 相关资源
+## License
 
-- [官方网站](https://element-plus.org/)
-- [GitHub](https://github.com/element-plus/element-plus)
-- [组件文档](https://element-plus.org/en-US/component/button.html)
+MIT License
 
-## 许可证
+---
 
-MIT License - 免费用于个人和商业项目。
+## Contributing
+
+Issues and Pull Requests are welcome!
+
+---

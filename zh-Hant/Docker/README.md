@@ -1,76 +1,63 @@
-# Docker 文档
+# Docker 文檔
 
-Docker 是一个开源的容器化平台，用于开发、部署和运行应用程序。
-
----
-
-## 文档目录
-
-### 入门指南
-
-- [安装指南](./1.安装指南.md) - 在各种操作系统上安装 Docker Desktop 和 Docker Engine
-- [使用手册](./2.使用手册.md) - Docker 基本使用方法和命令参考
+Docker 是一個開源的容器化平台，用於開發，部署和運行應用程序。
 
 ---
 
-## Docker 简介
+## 文檔目錄
 
-Docker 是一个开源的容器化平台，通过容器化技术实现应用程序的快速部署、扩展和运行。
+### 入門指南
+
+- [安裝指南](./1.安裝指南.md) - 在各種操作系統上安裝 Docker Desktop 和 Docker Engine
+- [使用手冊](./2.使用手冊.md) - Docker 基本使用方法和命令參考
+
+---
+
+## Docker 簡介
+
+Docker 是一個開源的容器化平台，通過容器化技術實現應用程序的快速部署，擴展和運行。
 
 ### 主要特性
 
-- **轻量级**：容器共享主机操作系统内核，无需额外的操作系统开销
-- **可移植**：一次构建，到处运行
-- **隔离性**：每个容器相互隔离，互不影响
-- **可扩展**：支持横向扩展和自动化部署
+- **輕量級**：容器共享主機操作系統內核，無需額外的操作系統開銷
+- **可移植**：一次構建，到處運行
+- **隔離性**：每個容器相互隔離，互不影響
+- **可擴展**：支持橫向擴展和自動化部署
 
 ---
 
-## 快速开始
+## 快速開始
 
-### 安装 Docker
+### 安裝 Docker
 
-请参阅 [安装指南](./1.安装指南.md) 获取详细的安装说明。
+請參閱 [安裝指南](./1.安裝指南.md) 獲取詳細的安裝說明。
 
-### 运行第一个容器
+### 運行第一個容器
 
 ```bash
-# 拉取并运行 hello-world 镜像
+# 拉取並運行 hello-world 鏡像
 docker run hello-world
 ```
 
-### 运行 Nginx
+### 運行 Nginx
 
 ```bash
-# 启动 Nginx 容器
+# 啟動 Nginx 容器
 docker run -d -p 8080:80 nginx
 
-# 访问 http://localhost:8080
+# 訪問 http://localhost:8080
 ```
 
 ---
 
-## Docker 版本
+## 相關資源
 
-当前文档涵盖以下 Docker 版本：
-
-- Docker Desktop 4.x
-- Docker Engine 24.x
-- Docker Compose 2.x
-
----
-
-## 相关资源
-
-- [Docker 官方网站](https://www.docker.com/)
-- [Docker 官方文档](https://docs.docker.com/)
+- [Docker 官方網站](https://www.docker.com/)
+- [Docker 官方文檔](https://docs.docker.com/)
 - [Docker Hub](https://hub.docker.com/)
-- [Docker 订阅和定价](https://www.docker.com/pricing/)
 
 ---
 
-## 许可证
+## 許可證
 
-本项目文档基于 [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/) 授权。
-
-Docker 相关的源代码和二进制文件受其各自的许可证约束。
+本項目文檔基於 [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/) 授權。

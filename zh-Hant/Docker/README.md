@@ -1,63 +1,59 @@
-# Docker 文檔
+# Docker
 
-Docker 是一個開源的容器化平台，用於開發，部署和運行應用程序。
-
----
-
-## 文檔目錄
-
-### 入門指南
-
-- [安裝指南](./1.安裝指南.md) - 在各種操作系統上安裝 Docker Desktop 和 Docker Engine
-- [使用手冊](./2.使用手冊.md) - Docker 基本使用方法和命令參考
+> 全球最受歡迎的容器化平台
 
 ---
 
-## Docker 簡介
+## 簡介
 
-Docker 是一個開源的容器化平台，通過容器化技術實現應用程序的快速部署，擴展和運行。
+Docker 是一個開源的容器化平台，用於開發、部署和運行應用程式。
 
 ### 主要特性
 
-- **輕量級**：容器共享主機操作系統內核，無需額外的操作系統開銷
-- **可移植**：一次構建，到處運行
-- **隔離性**：每個容器相互隔離，互不影響
-- **可擴展**：支持橫向擴展和自動化部署
+- 📦 輕量級
+- 🚀 可移植
+- 🔒 隔離性
+- ⚡ 高效
+
+---
+
+## 版本資訊
+
+| 版本 | 狀態 |
+|------|------|
+| Docker 27.x | 最新穩定版 |
+| Docker 26.x | 穩定版 |
+
+---
+
+## 文檔導航
+
+| 文檔 | 說明 |
+|------|------|
+| [快速入門](./3.快速入門.md) | 10 分鐘快速上手 |
+| [安裝指南](./1.安裝指南.md) | 完整安裝教學 |
+| [使用手冊](./2.使用手冊.md) | 開發指南 |
+| [常見問題](./4.常見問題.md) | FAQ |
 
 ---
 
 ## 快速開始
 
-### 安裝 Docker
-
-請參閱 [安裝指南](./1.安裝指南.md) 獲取詳細的安裝說明。
-
-### 運行第一個容器
-
 ```bash
-# 拉取並運行 hello-world 鏡像
+# 安裝
+curl -fsSL https://get.docker.com | sh
+
+# 第一個容器
 docker run hello-world
-```
-
-### 運行 Nginx
-
-```bash
-# 啟動 Nginx 容器
-docker run -d -p 8080:80 nginx
-
-# 訪問 http://localhost:8080
 ```
 
 ---
 
 ## 相關資源
 
-- [Docker 官方網站](https://www.docker.com/)
-- [Docker 官方文檔](https://docs.docker.com/)
-- [Docker Hub](https://hub.docker.com/)
+- 官網：https://www.docker.com
+- 文檔：https://docs.docker.com
 
 ---
 
-## 許可證
-
-本項目文檔基於 [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/) 授權。
+*本項目文檔由 AI 助手生成*

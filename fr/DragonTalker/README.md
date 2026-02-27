@@ -1,19 +1,60 @@
 # DragonTalker
 
-DragonTalker est un projet d'IA permettant de générer des vidéos réalistes de tête parlante à partir d'une seule image et d'un fichier audio.
+> Générez des vidéos réalistes de têtes parlantes à partir d'une image et d'un audio
 
-## Vue d'ensemble
+---
 
-DragonTalker génère des vidéos de tête parlante de haute qualité en :
-- Extrayant les repères faciaux à partir de l'audio
-- Générant des coefficients de mouvement facial 3D
-- Rendant une synchronisation labiale et des expressions faciales réalistes
-- Améliorant la qualité vidéo avec la restauration faciale
+## Description du projet
+
+DragonTalker est un système de génération de têtes parlantes basé sur l'apprentissage profond qui crée des vidéos réalistes à partir d'une image statique d'une personne et d'un fichier audio. Utilisant des algorithmes avancés de reconstruction faciale 3D et de synthèse d'image, DragonTalker préserve parfaitement les traits originaux tout en réalisant une synchronisation labiale précise et des expressions naturelles.
+
+---
+
+## Caractéristiques principales
+
+- Animation pilotée par audio : génère des vidéos parlantes synchronisées à partir d'une image et d'un audio
+- Estimation de mouvement 3D : postures de tête et expressions faciales naturelles basées sur la reconstruction 3D
+- Positions multiples : plus de 45 modèles de poses de tête prédéfinis
+- Amélioration faciale : intègre GFPGAN, RestoreFormer, CodeFormer
+- Interface web : opération via navigateur simple
+- Python API : interface de programmation complète
+
+---
+
+## Configuration requise
+
+### Matériel
+
+| Composant | Minimum | Recommandé |
+------------|
+| GPU|-----------|---------| | NVIDIA GTX 1060 (6GB) | NVIDIA RTX 3080 (16GB) |
+| RAM | 8GB | 32GB |
+| Stockage | 20GB | 50GB SSD |
+
+### Logiciel
+
+- Python 3.8 - 3.10
+- CUDA 11.7+
+- ffmpeg
+
+---
 
 ## Documentation
 
-- [Guide d'installation](./1.Installation.md) - Configuration sur toutes les plateformes
-- [Guide d'utilisation](./2.Guideutilisation.md) - Comment utiliser DragonTalker
+### Premiers pas
+
+| Document | Description |
+|----------|-------------|
+| [Démarrage rapide](./3.Démarrage-rapide.md) | Commencez en 10 minutes |
+| [Guide d'installation](./1.Guide-dinstallation.md) | Tutoriel complet |
+
+### Guide utilisateur
+
+| Document | Description |
+|----------|-------------|
+| [Manuel utilisateur](./2.Manuel-utilisateur.md) | Référence API détaillée |
+
+---
 
 ## Démarrage rapide
 
@@ -22,16 +63,9 @@ DragonTalker génère des vidéos de tête parlante de haute qualité en :
 ```bash
 git clone https://github.com/your-repo/DragonTalker.git
 cd DragonTalker
-
-# Créer un environnement virtuel
 python -m venv venv
-source venv/bin/activate  # Linux/macOS
-# venv\Scripts\activate  # Windows
-
-# Installer les dépendances
+source venv/bin/activate
 pip install -r requirements.txt
-
-# Télécharger les modèles
 bash scripts/download_models.sh
 ```
 
@@ -42,64 +76,56 @@ python inference.py \
   --source_image examples/source_image.jpg \
   --driven_audio examples/driven_audio.wav \
   --result_dir ./results \
-  --preprocess full \
   --enhancer gfpgan
 ```
 
-## Fonctionnalités
+### Interface web
 
-- **Animation pilotée par l'audio** - Générer une tête parlante à partir de l'audio
-- **Estimation de mouvement 3D** - Mouvement facial réaliste
-- **Styles de pose multiples** - Plus de 45 options de pose
-- **Amélioration du visage** - Intégration GFP-GAN, RestoreFormer, CodeFormer
-- **Interface Web** - Démo facile à utiliser
-- **API Python** - Accès programmatique
+```bash
+python app.py
+```
 
-## Configuration système
+Navigateur : http://localhost:7860
 
-### Matériel
-
-| Composant | Minimum | Recommandé |
-|-----------|---------|------------|
-| GPU | 6GB VRAM | 16GB VRAM |
-| RAM | 8GB | 32GB |
-| Stockage | 20GB | 50GB |
-
-### Logiciel
-
-- Python 3.8-3.10
-- CUDA 11.7+
-- ffmpeg
-
-## Plateformes supportées
-
-- Ubuntu 18.04/20.04/22.04
-- Windows 10/11
-- macOS 11+
+---
 
 ## Exigences d'entrée
 
-### Image
+### Image source
+
 - Format : JPG, PNG
-- Résolution : 512x512 ou supérieur recommandé
-- Visage : De face, net
+- Résolution : 512×512 ou plus
+- Contenu : visage de face, net, sans obstruction
 
 ### Audio
+
 - Format : WAV, MP3
 - Durée : 1-60 secondes
-- Qualité : Discours clair
+- Qualité : voix claire
+
+---
 
 ## Sortie
 
 - Format : MP4 (H.264)
-- Résolution : 256x256 ou 512x512
-- Images/seconde : 25
+- Résolution : 256×256 ou 512×512
+- Images : 25 FPS
+
+---
+
+## Ressources
+
+- Démo : https://huggingface.co/spaces/dragon-talker
+- GitHub : https://github.com/your-repo/DragonTalker
+
+---
 
 ## Licence
 
-Usage recherche uniquement. Voir GitHub pour les détails.
+Usage uniquement éducatif. Voir le dépôt pour les détails.
 
-## Liens connexes
+---
 
-- [GitHub](https://github.com/your-repo/DragonTalker)
-- [Démo HuggingFace](https://huggingface.co/spaces)
+## Contribution
+
+Issues et Pull Requests bienvenus !

@@ -27,7 +27,7 @@ Element UI 是基于 Vue 2 的桌面端 UI 组件库，由饿了么团队开发�
 |------|------|
 | [简介](./1.简介.md) | 项目概述和特性 |
 | [安装指南](./2.安装指南.md) | 环境配置和安装教程 |
-| [使用手册](./3.使用手册.md) | 组件使用详解和示例 |
+| [使用手册](./3.使用手册.md) | 组件使用详解 |
 | [常见问题](./4.常见问题.md) | 常见问题解答 |
 
 ---
@@ -46,13 +46,8 @@ npm install element-ui --save
 import Vue from 'vue'
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
-import App from './App.vue'
 
 Vue.use(ElementUI)
-
-new Vue({
-  render: h => h(App)
-}).$mount('#app')
 ```
 
 ---
@@ -71,9 +66,3 @@ Element UI 已停止维护，建议：
 
 1. **新项目**：直接使用 [Element Plus](https://github.com/element-plus/element-plus) (Vue 3)
 2. **存量项目**：计划迁移到 Element Plus
-
----
-
-## 许可证
-
-MIT License

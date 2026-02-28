@@ -1,93 +1,46 @@
 # Element UI
 
-> Eine Desktop-UI-Komponentenbibliothek basierend auf Vue 2
+> Vue 2-basierte Desktop-UI-Komponentenbibliothek
 
 ---
 
-## Projektübersicht
+## Übersicht
 
-Element UI ist eine Desktop-UI-Komponentenbibliothek basierend auf Vue 2, entwickelt und gepflegt vom Ele.me-Team. Es bietet reichhaltige Basis-Komponenten einschließlich Buttons, Formulare, Tabellen, Dialoge, Navigationsmenüs und mehr.
+Element UI ist eine auf Vue 2.0 basierende Desktop-Komponentenbibliothek, entwickelt von Eleme Team. Bietet reichhaltige PC-Komponenten.
 
-**Hinweis**: Für Vue 3-Projekte verwenden Sie bitte [Element Plus](https://github.com/element-plus/element-plus)
+**Hinweis**: Für Vue 3 Projekte, verwenden Sie [Element Plus](https://github.com/element-plus/element-plus)
 
 ---
 
-## Versionsinformationen
+## Version
 
 | Version | Vue Version | Status |
-|---------|-------------|---------|
-| Element UI 2.x | Vue 2 | Wartung eingestellt |
-| Element UI 1.x | Vue 2 | Eingestellt |
-
----
-
-## Hauptmerkmale
-
-- Basiert auf Vue 2
-- Reichhaltige PC-Komponenten
-- Unterstützt bedarfsweisen Import
-- Unterstützt Internationalisierung
-- Unterstützt Theme-Anpassung
+|---------|-------------|--------|
+| Element UI 2.x | Vue 2 | Stabil |
+| Element UI 1.x | Vue 2 | Veraltet |
 
 ---
 
 ## Dokumentation
 
-### Erste Schritte
-
 | Dokument | Beschreibung |
 |----------|--------------|
-| [Installationsanleitung](./1.Installationsanleitung.md) | Vollständige Einrichtung |
-
-### Benutzerhandbuch
-
-| Dokument | Beschreibung |
-|----------|--------------|
-| [Benutzerhandbuch](./2.Benutzerhandbuch.md) | Detaillierte Beispiele |
+| [Einführung](./1.Einführung.md) | Übersicht |
+| [Installationsanleitung](./2.Installationsanleitung.md) | Installation |
+| [Benutzerhandbuch](./3.Benutzerhandbuch.md) | Komponenten |
+| [FAQ](./4.FAQ.md) | Fragen |
 
 ---
 
 ## Schnellstart
 
-### Installation
-
 ```bash
 npm install element-ui --save
-```
-
-### Import
-
-```javascript
-import ElementUI from 'element-ui'
-import 'element-ui/lib/theme-chalk/index.css'
-
-Vue.use(ElementUI)
 ```
 
 ---
 
 ## Ressourcen
 
-- Offizielle Website: https://element.eleme.io/
+- Website: https://element.eleme.io/
 - GitHub: https://github.com/ElemeFE/element
-
----
-
-## ⚠️ Wichtiger Hinweis
-
-Element UI Wartung wurde eingestellt. Empfehlung:
-
-1. **Neue Projekte**: [Element Plus](https://github.com/element-plus/element-plus) (Vue 3) verwenden
-2. **Bestehende Projekte**: Migration zu Element Plus planen
-
----
-
-## Lizenz
-
-MIT License
-
----
-
-## Beiträge
-
-Issues und Pull Requests willkommen!

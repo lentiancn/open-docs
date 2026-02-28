@@ -1,36 +1,21 @@
 # Element UI
 
-> Vue 2ベースのデスクトップUIコンポーネントライブラリ
-
----
+Vue.js 2.0 デスクトップUIコンポーネントライブラリ。
 
 ## 概要
 
-Element UIはVue 2.0ベースのデスクトップコンポーネントライブラリです。Elemeチームによって開発されました。
+Element UIはEle.meチームが開発したVue.js 2.0コンポーネントライブラリ。
 
-**注意**: Vue 3プロジェクトには [Element Plus](https://github.com/element-plus/element-plus) を使用してください
+### 主な機能
 
----
+- **豊富なコンポーネント**：60+コンポーネント
+- **美しいデザイン**
+- **TypeScriptサポート**
+- **オンデマンドインポート**
 
-## バージョン
+### 統計
 
-| バージョン | Vue | 状態 |
-|-----------|-----|------|
-| Element UI 2.x | Vue 2 | 安定版 |
-| Element UI 1.x | Vue 2 | 廃止 |
-
----
-
-## ドキュメント
-
-| ドキュメント | 説明 |
-|------------|------|
-| [概要](./1.概要.md) | 概要 |
-| [インストールガイド](./2.インストールガイド.md) | インストール |
-| [ユーザーマニュアル](./3.ユーザーマニュアル.md) | コンポーネント |
-| [FAQ](./4.FAQ.md) | 質問 |
-
----
+- GitHubスター：54,000+
 
 ## クイックスタート
 
@@ -38,8 +23,19 @@ Element UIはVue 2.0ベースのデスクトップコンポーネントライブ
 npm install element-ui --save
 ```
 
----
+```javascript
+import Vue from 'vue'
+import ElementUI from 'element-ui'
+import 'element-ui/lib/theme-chalk/index.css'
+
+Vue.use(ElementUI)
+```
 
 ## リソース
 
-- 公式サイト: https://element.eleme.io/
+- 公式サイト：https://element.eleme.io
+- GitHub：https://github.com/ElemeFE/element
+
+## ライセンス
+
+MIT License

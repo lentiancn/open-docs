@@ -1,42 +1,43 @@
 # Element UI
 
-> A Vue 2-based desktop UI component library
-
----
+Vue.js 2.0 Desktop UI Component Library.
 
 ## Overview
 
-Element UI is a Vue 2.0-based desktop component library developed by Eleme team. Provides rich PC-side components including forms, tables, dialogs, navigation menus, buttons, and inputs.
+Element UI is an open-source Vue.js 2.0 component library developed by Ele.me team.
 
-**Note**: For Vue 3 projects, use [Element Plus](https://github.com/element-plus/element-plus)
+### Main Features
 
----
+- **Rich Components**: 60+ components
+- **Beautiful Design**: Material Design
+- **TypeScript Support**
+- **On-demand Import**
+- **Theme Customization**
+- **Internationalization**
 
-## Version
+### Statistics
 
-| Version | Vue Version | Status |
-|---------|-------------|--------|
-| Element UI 2.x | Vue 2 | Stable |
-| Element UI 1.x | Vue 2 | Deprecated |
-
----
+- GitHub Stars: 54,000+
+- Weekly Downloads: 180,000+
 
 ## Documentation
 
 | Document | Description |
 |----------|-------------|
-| [Introduction](./1.Introduction.md) | Overview |
-| [Installation Guide](./2.Installation-Guide.md) | Setup |
-| [User Manual](./3.User-Manual.md) | Components |
-| [FAQ](./4.FAQ.md) | FAQ |
-
----
+| [Introduction](./1.Introduction.md) | Overview, features |
+| [Installation Guide](./2.Installation-Guide.md) | Setup, configuration |
+| [User Manual](./3.User-Manual.md) | Component usage |
+| [FAQ](./4.FAQ.md) | Common issues |
 
 ## Quick Start
+
+### Install
 
 ```bash
 npm install element-ui --save
 ```
+
+### Import
 
 ```javascript
 import Vue from 'vue'
@@ -46,9 +47,11 @@ import 'element-ui/lib/theme-chalk/index.css'
 Vue.use(ElementUI)
 ```
 
----
-
 ## Resources
 
-- Official website: https://element.eleme.io/
+- Website: https://element.eleme.io
 - GitHub: https://github.com/ElemeFE/element
+
+## License
+
+MIT License

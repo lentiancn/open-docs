@@ -1,36 +1,21 @@
 # Element UI
 
-> 基於 Vue 2 的桌面端元件庫
+Vue.js 2.0 桌面端元件庫。
 
----
+## 簡介
 
-## 說明
+Element UI 是由餓了麼團隊開源的 Vue.js 2.0 元件庫。
 
-Element UI 是基於 Vue 2.0 的桌面端元件庫，由餓了麼團隊開發和維護。
+### 主要特性
 
-**注意**: 如果是 Vue 3 項目，請使用 [Element Plus](https://github.com/element-plus/element-plus)
+- **豐富元件**：60+ 元件
+- **精美設計**
+- **TypeScript 支持**
+- **按需引入**
 
----
+### 統計
 
-## 版本
-
-| 版本 | Vue | 狀態 |
-|------|-----|------|
-| Element UI 2.x | Vue 2 | 穩定 |
-| Element UI 1.x | Vue 2 | 已廢棄 |
-
----
-
-## 文件
-
-| 文件 | 說明 |
-|------|------|
-| [簡介](./1.簡介.md) | 概述 |
-| [安裝指南](./2.安裝指南.md) | 安裝 |
-| [使用手冊](./3.使用手冊.md) | 元件 |
-| [常見問題](./4.常見問題.md) | 問題 |
-
----
+- GitHub 星標：54,000+
 
 ## 快速開始
 
@@ -38,8 +23,19 @@ Element UI 是基於 Vue 2.0 的桌面端元件庫，由餓了麼團隊開發和
 npm install element-ui --save
 ```
 
----
+```javascript
+import Vue from 'vue'
+import ElementUI from 'element-ui'
+import 'element-ui/lib/theme-chalk/index.css'
 
-## 資源
+Vue.use(ElementUI)
+```
 
-- 官網: https://element.eleme.io/
+## 相關資源
+
+- 官方網站：https://element.eleme.io
+- GitHub：https://github.com/ElemeFE/element
+
+## 許可證
+
+MIT License

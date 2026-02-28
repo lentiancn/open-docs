@@ -1,36 +1,20 @@
 # Element UI
 
-> Vue 2-basierte Desktop-UI-Komponentenbibliothek
-
----
+Vue.js 2.0 Desktop-UI-Komponentenbibliothek.
 
 ## Übersicht
 
-Element UI ist eine auf Vue 2.0 basierende Desktop-Komponentenbibliothek, entwickelt von Eleme Team. Bietet reichhaltige PC-Komponenten.
+Element UI ist eine von Ele.me entwickelte Komponentenbibliothek.
 
-**Hinweis**: Für Vue 3 Projekte, verwenden Sie [Element Plus](https://github.com/element-plus/element-plus)
+### Funktionen
 
----
+- **60+ Komponenten**
+- **Schönes Design**
+- **TypeScript Support**
 
-## Version
+### Statistik
 
-| Version | Vue Version | Status |
-|---------|-------------|--------|
-| Element UI 2.x | Vue 2 | Stabil |
-| Element UI 1.x | Vue 2 | Veraltet |
-
----
-
-## Dokumentation
-
-| Dokument | Beschreibung |
-|----------|--------------|
-| [Einführung](./1.Einführung.md) | Übersicht |
-| [Installationsanleitung](./2.Installationsanleitung.md) | Installation |
-| [Benutzerhandbuch](./3.Benutzerhandbuch.md) | Komponenten |
-| [FAQ](./4.FAQ.md) | Fragen |
-
----
+- GitHub Sterne: 54,000+
 
 ## Schnellstart
 
@@ -38,9 +22,17 @@ Element UI ist eine auf Vue 2.0 basierende Desktop-Komponentenbibliothek, entwic
 npm install element-ui --save
 ```
 
----
+```javascript
+import Vue from 'vue'
+import ElementUI from 'element-ui'
+Vue.use(ElementUI)
+```
 
 ## Ressourcen
 
-- Website: https://element.eleme.io/
+- Webseite: https://element.eleme.io
 - GitHub: https://github.com/ElemeFE/element
+
+## Lizenz
+
+MIT License

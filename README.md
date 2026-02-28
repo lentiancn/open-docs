@@ -12,15 +12,15 @@ This documentation project currently supports **9 languages**:
 
 | Language | Code | Description |
 |----------|------|-------------|
-| English | en | English (US) |
-| Chinese (Simplified) | zh-CN | 简体中文 |
-| Chinese (Traditional) | zh-Hant | 繁體中文 |
-| Japanese | ja | 日本語 |
-| Spanish | es | Español |
-| German | de | Deutsch |
-| Russian | ru | Русский |
-| French | fr | Français |
-| Korean | ko | 한국어 |
+| [English](./en/README.md) | en | English (US) |
+| [Chinese (Simplified)](./zh-CN/README.md) | zh-CN | 简体中文 |
+| [Chinese (Traditional)](./zh-Hant/README.md) | zh-Hant | 繁體中文 |
+| [Japanese](./ja/README.md) | ja | 日本語 |
+| [Spanish](./es/README.md) | es | Español |
+| [German](./de/README.md) | de | Deutsch |
+| [Russian](./ru/README.md) | ru | Русский |
+| [French](./fr/README.md) | fr | Français |
+| [Korean](./ko/README.md) | ko | 한국어 |
 
 Each project folder contains complete documentation in all 9 languages. The documentation is continuously being collected and updated. If you need support for additional languages, please contact me.
 

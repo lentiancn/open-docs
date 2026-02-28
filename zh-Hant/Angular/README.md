@@ -1,188 +1,45 @@
 # Angular
 
-> Angular - 現代 Web 應用開發框架
+> Google 開發的 Web 框架
 
 ---
 
-## 簡介
+## 說明
 
-Angular 是由 Google 維護的一個開源 Web 應用框架，主要用於建構單頁應用程式（SPA）。它使用 TypeScript 作為主要開發語言，提供了完整的開發工具鏈和豐富的功能集。
-
-### 主要特性
-
-- 📦 **元件化架構** - 基於元件的開發模式
-- 🔄 **雙向資料綁定** - 自動同步視圖與資料
-- 💉 **依賴注入** - 強大的依賴管理系統
-- 🌐 **路由系統** - 完整的用戶端路由解決方案
-- 📝 **表單處理** - 強大的表單驗證功能
-- 🔌 **HTTP 用戶端** - 簡潔的 HTTP 通訊
-- 🧪 **測試工具** - 完整的測試支援
-- ⚡ **高效能** - 最佳化的變更偵測和渲染
+Angular 是由 Google 開發和維護的 TypeScript 框架。提供構建現代 Web 應用的完整解決方案。
 
 ---
 
-## 版本資訊
+## 版本
 
 | 版本 | 發布日期 | 狀態 |
 |------|----------|------|
-| Angular 18 | 2024年5月 | 最新穩定版 |
-| Angular 17 | 2023年11月 | 穩定版 |
+| Angular 17 | 2023年11月 | 當前 |
 | Angular 16 | 2023年5月 | 穩定版 |
-
-> 💡 **提示**：本專案文檔基於 Angular 17+ 編寫。
 
 ---
 
-## 文檔導航
+## 文件
 
-### 初學者入門
-
-| 文檔 | 說明 |
+| 文件 | 說明 |
 |------|------|
-| [快速入門](./3.快速入門.md) | 5 分鐘快速上手 Angular |
-| [安裝指南](./1.安裝指南.md) | 完整的環境安裝教學 |
-
-### 使用指南
-
-| 文檔 | 說明 |
-|------|------|
-| [使用手冊](./2.使用手冊.md) | 完整的 Angular 開發指南 |
-
-### 常見問題
-
-| 文檔 | 說明 |
-|------|------|
-| [常見問題](./4.常見問題.md) | 開發中常見問題解答 |
+| [簡介](./1.簡介.md) | 概述 |
+| [安裝指南](./2.安裝指南.md) | 安裝 |
+| [使用手冊](./3.使用手冊.md) | 功能 |
+| [常見問題](./4.常見問題.md) | 問題 |
 
 ---
 
 ## 快速開始
 
-### 1. 安裝 Angular CLI
-
 ```bash
 npm install -g @angular/cli
-```
-
-### 2. 建立新專案
-
-```bash
 ng new my-app
-cd my-app
-```
-
-### 3. 啟動開發伺服器
-
-```bash
 ng serve
 ```
 
-開啟瀏覽器造訪 http://localhost:4200
-
 ---
 
-## 專案結構
+## 資源
 
-```
-my-app/
-├── src/
-│   ├── app/
-│   │   ├── app.component.ts    # 根元件
-│   │   ├── app.config.ts      # 應用設定
-│   │   └── app.routes.ts      # 路由設定
-│   ├── assets/                 # 靜態資源
-│   └── styles.css             # 全域樣式
-├── angular.json                # CLI 設定
-├── package.json                # 依賴設定
-└── tsconfig.json              # TypeScript 設定
-```
-
----
-
-## 常用命令
-
-### 產生程式碼
-
-```bash
-# 建立元件
-ng generate component my-component
-
-# 建立服務
-ng generate service services/my-service
-
-# 建立模組
-ng generate module my-module
-
-# 建立路由
-ng generate routing
-```
-
-### 開發
-
-```bash
-# 啟動開發伺服器
-ng serve
-
-# 建置生產版本
-ng build --configuration production
-
-# 執行測試
-ng test
-
-# 執行 E2E 測試
-ng e2e
-```
-
----
-
-## 學習路徑
-
-### 第一階段：基礎
-
-1. 安裝開發環境
-2. 建立第一個 Angular 應用
-3. 理解元件基本結構
-4. 掌握範本語法（插值、屬性綁定、事件綁定）
-5. 理解資料綁定
-
-### 第二階段：進階
-
-1. 服務和依賴注入
-2. 路由和導航
-3. 表單處理（範本驅動表單 + 反應式表單）
-4. HTTP 通訊
-5. 元件通訊（輸入、輸出、ViewChild）
-
-### 第三階段：高級
-
-1. 狀態管理（Signal、NgRx）
-2. 效能最佳化
-3. 測試策略
-4. 建置和部署
-5. 動畫
-
----
-
-## 相關資源
-
-- 🌐 [官方文檔](https://angular.io/docs)
-- 📚 [官方教學](https://angular.io/tutorial)
-- 🔧 [CLI 參考](https://angular.io/cli)
-- 💬 [社群論壇](https://forum.angular.io/)
-- 🐙 [GitHub](https://github.com/angular/angular)
-
----
-
-## 授權
-
-MIT License
-
----
-
-## 貢獻
-
-歡迎提交 Issue 和 Pull Request！
-
----
-
-*本專案文檔由 AI 助手生成*
+- 官網: https://angular.io/

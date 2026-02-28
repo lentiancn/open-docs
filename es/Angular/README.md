@@ -1,54 +1,45 @@
 # Angular
 
-> Framework moderno de desarrollo de aplicaciones web
+> Framework de Google para aplicaciones web
 
 ---
 
-## Acerca de
+## Descripción
 
-Angular es un framework de aplicación web de código abierto mantenido por Google, usado principalmente para construir Single Page Applications (SPA).
+Angular es un framework TypeScript desarrollado por Google. Solución completa para aplicaciones web modernas.
 
-### Características
-- Componentes
-- Binding bidireccional
-- Inyección de dependencias
-- Enrutamiento
-- Formularios
-- HTTP Client
-- Testing
+---
+
+## Versión
+
+| Versión | Fecha | Estado |
+|---------|-------|--------|
+| Angular 17 | Nov 2023 | Actual |
+| Angular 16 | May 2023 | Estable |
 
 ---
 
 ## Documentación
 
 | Documento | Descripción |
-|------------|-------------|
-| [Guía de Instalación](./1.Guia-de-Instalacion.md) | Instalación completa |
-| [Manual de Usuario](./2.Manual-de-Usuario.md) | Guía de desarrollo |
-| [Inicio Rápido](./3.Inicio-Rapido.md) | Primeros pasos |
-| [Preguntas Frecuentes](./4.Preguntas-Frecuentes.md) | FAQ |
+|-----------|-------------|
+| [Introducción](./1.Introducción.md) | Resumen |
+| [Guía de Instalación](./2.Guía-de-Instalación.md) | Instalación |
+| [Manual de Usuario](./3.Manual-de-Usuario.md) | Funciones |
+| [FAQ](./4.Preguntas-Frecuentes.md) | Preguntas |
 
 ---
 
-## Inicio Rápido
+## Inicio rápido
 
 ```bash
 npm install -g @angular/cli
-ng new mi-app
-cd mi-app
+ng new my-app
 ng serve
 ```
-
-Sitio: http://localhost:4200
 
 ---
 
 ## Recursos
 
-- Web: https://angular.io
-- Tutorial: https://angular.io/tutorial
-- CLI: https://angular.io/cli
-
----
-
-*Generado por AI*
+- Sitio: https://angular.io/

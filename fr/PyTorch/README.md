@@ -1,8 +1,7 @@
-# Documentation PyTorch
+# PyTorch
 
-Framework ML open source de Facebook.
+Framework d'apprentissage automatique
 
-## Documents
+## Documentation
 
-- [Installation](./1.安装文档.md)
-- [Guide](./2.使用指南.md)
+- [Guide d'Installation](./2.Guide-d-Installation.md)

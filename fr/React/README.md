@@ -1,13 +1,7 @@
 # React
 
-Documentation React.
+Bibliothèque pour interfaces utilisateur
 
-## Documents
+## Documentation
 
-- [1. Guide dinstallation](./1.Guide-dinstallation.md)
-- [2. Guide dutilisation](./2.Guide-dutilisation.md)
-
-## Versions
-
-- **React 18** - Version actuelle
-- **React 17** - Version precedente
+- [Guide d'Installation](./2.Guide-d-Installation.md)

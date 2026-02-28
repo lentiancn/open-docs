@@ -1,13 +1,7 @@
 # React
 
-Dokumentaciya React.
+Библиотека для пользовательских интерфейсов
 
-## Dokumenty
+## Документация
 
-- [1. Rukovodstvo po ustanovke](./1.Rukovodstvo-po-ustanovke.md)
-- [2. Rukovodstvo po ispolzovaniyu](./2.Rukovodstvo-po-ispolzovaniyu.md)
-
-## Versii
-
-- **React 18** - Tekuschaya versiya
-- **React 17** - Predyduschaya versiya
+- [Руководство по установке](./2.Руководство-по-установке.md)

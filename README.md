@@ -22,7 +22,7 @@ This documentation project currently supports **9 languages**:
 | French | fr | Français |
 | Korean | ko | 한국어 |
 
-Each project folder contains complete documentation in all 9 languages. The documentation is continuously being collected and updated. If you need support for additional languages, please contact us.
+Each project folder contains complete documentation in all 9 languages. The documentation is continuously being collected and updated. If you need support for additional languages, please contact me.
 
 ## Donations
 

@@ -1,10 +1,10 @@
 # Element Plus
 
-為 Vue 3 打造的桌面端組件庫。
+Vue 3 桌面端 UI 元件庫。
 
 ## 簡介
 
-Element Plus 是由餓了麼團隊開發的 Vue 3 組件庫，提供 70+ 高質量組件。
+Element Plus 是由餓了麼團隊開發的 Vue 3 元件庫，提供 70+ 高質量元件。
 
 ### 主要特性
 
@@ -23,10 +23,10 @@ Element Plus 是由餓了麼團隊開發的 Vue 3 組件庫，提供 70+ 高質�
 
 | 文檔 | 說明 |
 |------|------|
-| [簡介](./1.簡介.md) | 項目概述、組件分類 |
-| [安裝指南](./2.安裝指南.md) | npm/yarn/pnpm、按需引入 |
-| [使用手冊](./3.使用手冊.md) | 按鈕、表格、表單等組件使用 |
-| [常見問題](./4.常見問題.md) | 安裝、使用問題解答 |
+| [簡介](./1.簡介.md) | 項目概述、元件分類、統計數據 |
+| [安裝指南](./2.安裝指南.md) | npm/yarn/pnpm、CDN、主題配置 |
+| [使用手冊](./3.使用手冊.md) | 表格、表單、對話框等元件使用 |
+| [常見問題](./4.常見問題.md) | 安裝、使用、主題問題解答 |
 
 ## 快速開始
 
@@ -55,13 +55,31 @@ app.mount('#app')
 npm install -D unplugin-vue-components unplugin-auto-import
 ```
 
-配置 Vite 後直接使用：
+配置 Vite：
+
+```typescript
+import { defineConfig } from 'vite'
+import vue from '@vitejs/plugin-vue'
+import AutoImport from 'unplugin-auto-import/vite'
+import Components from 'unplugin-vue-components/vite'
+import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
+
+export default defineConfig({
+  plugins: [
+    vue(),
+    AutoImport({ resolvers: [ElementPlusResolver()] }),
+    Components({ resolvers: [ElementPlusResolver()] }),
+  ],
+})
+```
+
+直接使用：
 
 ```vue
 <el-button type="primary">主要按鈕</el-button>
 ```
 
-## 核心組件
+## 核心元件
 
 - Button 按鈕
 - Input 輸入框
@@ -74,6 +92,7 @@ npm install -D unplugin-vue-components unplugin-auto-import
 ## 相關資源
 
 - 官方網站：https://element-plus.org
+- 中文文檔：https://element-plus.org/zh-TW/
 - GitHub：https://github.com/element-plus/element-plus
 - Discord：https://discord.com/invite/element-plus
 

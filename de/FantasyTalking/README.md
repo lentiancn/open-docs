@@ -1,49 +1,42 @@
 # FantasyTalking
 
-FantasyTalking ist ein KI-gestütztes Tool zur Generierung von Talking Heads.
+KI-gesteertes Talking-Head-Videogenerierungstool.
 
-## Einführung
+## Übersicht
 
-FantasyTalking erstellt realistische Talking-Head-Videos aus einem einzelnen Bild und Audio-Eingaben mittels Deep Learning.
+FantasyTalking generiert realistische Sprechvideos aus einem Bild und Audio mittels Deep Learning.
 
 ## Funktionen
 
-- **Einzelbild**: Video aus einem Foto erstellen
-- **Mehrsprachig**: Unterstützung für mehrere Sprachen
-- **Gesichtsverbesserung**: Hochwertige Ausgabe
-- **Einfach zu verwenden**: Einfache Befehlszeilenschnittstelle
+- Einzelbild-Generierung
+- Mehrsprachig
+- Hochwertig
+- Gesichtserweiterung
+- Open Source
 
-## Version
+## Dokumentation
 
-| Version | Status |
-|---------|--------|
-| v1.0 | ✅ Aktuell |
+| Dokument | Beschreibung |
+|----------|--------------|
+| [Übersicht](./1.Übersicht.md) | Projektübersicht |
+| [Installationsanleitung](./2.Installationsanleitung.md) | Installation |
+| [Benutzerhandbuch](./3.Benutzerhandbuch.md) | Detaillierte Nutzung |
+| [FAQ](./4.FAQ.md) | Fragen |
 
 ## Schnellstart
-
-### Installation
 
 ```bash
 git clone https://github.com/FantasyTalking/FantasyTalking.git
 cd FantasyTalking
 pip install -r requirements.txt
-```
-
-### Video generieren
-
-```bash
 python inference.py --source_image face.jpg --audio speech.wav --output output.mp4
 ```
 
-## Dokumentation
+## Ressourcen
 
-- [Installationsanleitung](./1.Installationsanleitung.md)
-- [Benutzerhandbuch](./2.Benutzerhandbuch.md)
-
-## Verwandte Links
-
-- [GitHub](https://github.com/FantasyTalking/FantasyTalking)
+- Website: https://fantasytalking.ai
+- GitHub: https://github.com/Fantasytalking/Fantasytalking
 
 ## Lizenz
 
-Apache-Lizenz 2.0
+Apache License 2.0

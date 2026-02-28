@@ -1,48 +1,41 @@
 # FantasyTalking
 
-FantasyTalking는 AI 기반 Talking Head 생성 도구입니다.
+AI 기반 Talking Head 비디오 생성 도구.
 
-## 소개
+## 개요
 
-FantasyTalking는 딥러닝을 활용하여 단일 이미지와 오디오 입력에서 사실적인 Talking Head 비디오를 생성합니다.
+FantasyTalking은 딥러닝을 사용하여 이미지와 오디오에서 사실적인 대화 비디오를 생성합니다.
 
 ## 기능
 
-- **단일 이미지**: 사진으로 비디오 생성
-- **다국어 지원**: 여러 언어 지원
-- **얼굴 개선**: 고품질 출력
-- **사용 편의성**: 간단한 명령줄 인터페이스
+- 단일 이미지
+- 다국어
+- 고품질
+- 얼굴 향상
+- 오픈 소스
 
-## 버전
+## 문서
 
-| 버전 | 상태 |
-|---------|--------|
-| v1.0 | ✅ 현재 |
+| 문서 | 설명 |
+|------|------|
+| [개요](./1.개요.md) | 프로젝트 개요 |
+| [설치 가이드](./2.설치-가이드.md) | 설치 방법 |
+| [사용자 매뉴얼](./3.사용자-매뉴얼.md) | 상세 사용법 |
+| [FAQ](./4.FAQ.md) | 질문 |
 
 ## 빠른 시작
-
-### 설치
 
 ```bash
 git clone https://github.com/FantasyTalking/FantasyTalking.git
 cd FantasyTalking
 pip install -r requirements.txt
-```
-
-### 비디오 생성
-
-```bash
 python inference.py --source_image face.jpg --audio speech.wav --output output.mp4
 ```
 
-## 문서
+## 리소스
 
-- [설치 가이드](./1.설치가이드.md)
-- [사용 가이드](./2.사용가이드.md)
-
-## 관련 링크
-
-- [GitHub](https://github.com/FantasyTalking/FantasyTalking)
+- 웹사이트: https://fantasytalking.ai
+- GitHub: https://github.com/Fantasytalking/Fantasytalking
 
 ## 라이선스
 

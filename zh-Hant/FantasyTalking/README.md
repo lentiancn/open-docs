@@ -1,48 +1,41 @@
 # FantasyTalking
 
-FantasyTalking 是一款由 AI 驅動的 talking head 生成工具。
+AI 驅動的 Talking Head 影片生成工具。
 
 ## 簡介
 
-FantasyTalking 使用深度學習技術，根據單張圖片和音頻輸入生成逼真的 talking head 影片。
+FantasyTalking 使用深度學習技術，根據單張圖片和音訊輸入生成逼真的說話頭像影片。
 
 ## 功能特點
 
-- **單張圖片**：從一張照片生成影片
-- **多語言支持**：支持多種語言
-- **人臉增強**：高品質輸出
-- **易於使用**：簡單的命令列介面
+- 單圖生成
+- 多語言支持
+- 高質量輸出
+- 人臉增強
+- 開源免費
 
-## 版本
+## 文檔導航
 
-| 版本 | 狀態 |
-|---------|--------|
-| v1.0 | ✅ 當前版本 |
+| 文檔 | 說明 |
+|------|------|
+| [簡介](./1.簡介.md) | 項目概述 |
+| [安裝指南](./2.安裝指南.md) | 安裝步驟 |
+| [使用手冊](./3.使用手冊.md) | 詳細用法 |
+| [常見問題](./4.常見問題.md) | 問題解答 |
 
 ## 快速開始
-
-### 安裝
 
 ```bash
 git clone https://github.com/FantasyTalking/FantasyTalking.git
 cd FantasyTalking
 pip install -r requirements.txt
-```
-
-### 生成影片
-
-```bash
 python inference.py --source_image face.jpg --audio speech.wav --output output.mp4
 ```
 
-## 文檔
+## 相關資源
 
-- [安裝指南](./1.安裝文檔.md)
-- [使用指南](./2.使用指南.md)
-
-## 相關鏈接
-
-- [GitHub](https://github.com/FantasyTalking/FantasyTalking)
+- 官方網站：https://fantasytalking.ai
+- GitHub：https://github.com/Fantasytalking/Fantasytalking
 
 ## 許可證
 

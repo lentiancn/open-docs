@@ -12,7 +12,7 @@ This documentation project currently supports **9 languages**:
 
 | Language | Code | Description |
 |----------|------|-------------|
-| [English](./en/README.md) | en | English (US) |
+| [English](./en/README.md) | en | English |
 | [Chinese (Simplified)](./zh-CN/README.md) | zh-CN | 简体中文 |
 | [Chinese (Traditional)](./zh-Hant/README.md) | zh-Hant | 繁體中文 |
 | [Japanese](./ja/README.md) | ja | 日本語 |

@@ -1,43 +1,48 @@
-# GitLab Documentation
+# GitLab
 
-GitLab is a complete DevOps platform that enables you to manage your entire software development lifecycle.
+> Complete DevOps Platform for Software Development and Operations
 
-## Documents
+---
 
-- [Installation Guide](./1.安装文档.md) - Detailed guide for installing GitLab on all platforms
-- [Usage Guide](./2.使用指南.md) - GitLab basic operations and advanced features
+## Overview
+
+GitLab is a web-based Git repository manager that provides comprehensive DevOps capabilities including source code management, issue tracking, CI/CD pipelines, and security scanning.
+
+## Documentation
+
+This directory contains complete documentation in English:
+
+| File | Description |
+|------|-------------|
+| 1.Introduction.md | Overview and introduction |
+| 2.Installation-Guide.md | Installation and setup guide |
+| 3.User-Manual.md | Detailed usage guide |
+| 4.FAQ.md | Frequently asked questions |
+| README.md | This overview file |
 
 ## Quick Start
 
-### Run with Docker
+### Key Features
 
-```bash
-docker run -d \
-  --name gitlab \
-  --hostname gitlab.example.com \
-  -p 8080:80 -p 8443:443 -p 2222:22 \
-  -v gitlab-data:/var/opt/gitlab \
-  gitlab/gitlab-ce:latest
-```
+- Git repository hosting with branching and tagging
+- Issue tracking and project management
+- Built-in CI/CD pipelines
+- Code review and merge requests
+- Wiki for documentation
+- Security scanning
+- Container registry
 
-Access GitLab at http://localhost:8080
+### Basic Workflow
 
-### Initial Login
+1. Create a project
+2. Clone repository
+3. Create branch and make changes
+4. Push and create merge request
+5. Review and merge
+6. CI/CD auto-deploys
 
-- Username: `root`
-- Password: Set during first visit
+## Support
 
-## Key Features
+For more information, see the documentation files or visit https://docs.gitlab.com/
 
-- **Source Code Management**: Git repositories with branching
-- **CI/CD Pipelines**: Automated build, test, and deploy
-- **Issue Tracking**: Plan and track work
-- **Code Review**: Merge requests with approvals
-- **Container Registry**: Docker image storage
-- **Wiki**: Documentation
-
-## Related Links
-
-- [GitLab Official Documentation](https://docs.gitlab.com/)
-- [GitLab CI/CD](https://docs.gitlab.com/ee/ci/)
-- [GitLab Runner](https://docs.gitlab.com/runner/)
+---

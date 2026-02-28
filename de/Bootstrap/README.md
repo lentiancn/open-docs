@@ -1,32 +1,42 @@
 # Bootstrap
 
-> Das beliebteste CSS-Framework
+> Populäres CSS-Framework
 
-## Über
+---
 
-Bootstrap ist ein CSS-Framework von Twitter.
+## Übersicht
 
-### Features
-- Responsiv
-- Komponenten
-- Grid-System
+Bootstrap ist ein CSS-Framework von Twitter. Bietet responsive Grid und Komponenten.
 
-## Dokumente
+---
+
+## Version
+
+| Version | Datum | Status |
+|---------|-------|--------|
+| Bootstrap 5.3 | Mai 2023 | Aktuell |
+
+---
+
+## Dokumentation
 
 | Dokument | Beschreibung |
 |----------|--------------|
-| [Installation](./1.Installationsanleitung.md) | Installation |
-| [Handbuch](./2.Benutzerhandbuch.md) | Nutzung |
-| [Schnellstart](./3.Schnellstart.md) | Start |
+| [Einführung](./1.Einführung.md) | Übersicht |
+| [Installationsanleitung](./2.Installationsanleitung.md) | Installation |
+| [Benutzerhandbuch](./3.Benutzerhandbuch.md) | Komponenten |
+| [FAQ](./4.FAQ.md) | Fragen |
 
-## CDN
+---
+
+## Schnellstart
 
 ```html
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 ```
+
+---
 
 ## Ressourcen
 
-- https://getbootstrap.com
-
-*AI*
+- Website: https://getbootstrap.com/

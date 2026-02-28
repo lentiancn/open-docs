@@ -1,103 +1,54 @@
 # Element UI
 
-> A desktop UI component library based on Vue 2
+> A Vue 2-based desktop UI component library
 
 ---
 
-## Project Overview
+## Overview
 
-Element UI is a desktop UI component library based on Vue 2, developed and maintained by Ele.me team. It provides rich basic components including buttons, forms, tables, dialogs, navigation menus and more, enabling rapid development of enterprise-level PC applications.
+Element UI is a Vue 2.0-based desktop component library developed by Eleme team. Provides rich PC-side components including forms, tables, dialogs, navigation menus, buttons, and inputs.
 
-**Note**: For Vue 3 projects, please use [Element Plus](https://github.com/element-plus/element-plus)
-
----
-
-## Version Information
-
-| Version | Vue Version | Status | Description |
-|---------|-------------|--------|-------------|
-| Element UI 2.x | Vue 2 | End of Maintenance | Current documentation version |
-| Element UI 1.x | Vue 2 | End of Life | Early version |
+**Note**: For Vue 3 projects, use [Element Plus](https://github.com/element-plus/element-plus)
 
 ---
 
-## Main Features
+## Version
 
-- Based on Vue 2
-- Rich PC-side components
-- Support on-demand import
-- Support internationalization
-- Support theme customization
-- Complete documentation and examples
+| Version | Vue Version | Status |
+|---------|-------------|--------|
+| Element UI 2.x | Vue 2 | Stable |
+| Element UI 1.x | Vue 2 | Deprecated |
 
 ---
 
-## Documentation Navigation
-
-### Getting Started
+## Documentation
 
 | Document | Description |
 |----------|-------------|
-| [Installation Guide](./1.Installation-Guide.md) | Complete environment setup and installation tutorial |
-
-### User Guide
-
-| Document | Description |
-|----------|-------------|
-| [User Manual](./2.User-Manual.md) | Detailed feature descriptions and code examples |
+| [Introduction](./1.Introduction.md) | Overview |
+| [Installation Guide](./2.Installation-Guide.md) | Setup |
+| [User Manual](./3.User-Manual.md) | Components |
+| [FAQ](./4.FAQ.md) | FAQ |
 
 ---
 
 ## Quick Start
 
-### Installation
-
 ```bash
 npm install element-ui --save
 ```
-
-### Import
 
 ```javascript
 import Vue from 'vue'
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
-import App from './App.vue'
 
 Vue.use(ElementUI)
-
-new Vue({
-  render: h => h(App)
-}).$mount('#app')
 ```
 
 ---
 
-## Related Resources
+## Resources
 
-- Official Website: https://element.eleme.io/
-- GitHub Repository: https://github.com/ElemeFE/element
-- NPM: https://www.npmjs.com/package/element-ui
-
----
-
-## ⚠️ Important Notice
-
-Element UI maintenance has stopped. It is recommended to:
-
-1. **New projects**: Use [Element Plus](https://github.com/element-plus/element-plus) (Vue 3)
-2. **Existing projects**: Plan to migrate to Element Plus
-
----
-
-## License
-
-MIT License
-
----
-
-## Contributing
-
-Issues and Pull Requests are welcome!
-
----
+- Official website: https://element.eleme.io/
+- GitHub: https://github.com/ElemeFE/element

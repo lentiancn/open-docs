@@ -1,55 +1,37 @@
 # Flutter
 
-Flutter ist ein Open-Source-UI-Toolkit, das von Google entwickelt wurde, um plattformübergreifende Anwendungen zu erstellen.
+Open-Source UI-Toolkit von Google.
 
-## Beschreibung
+## Übersicht
 
-Flutter ermöglicht es Ihnen, mit einer einzigen Codebasis schöne Anwendungen für iOS, Android, Web und Desktop zu erstellen.
+Flutter ist ein plattformübergreifendes UI-Toolkit mit Dart.
 
-## Hauptfunktionen
+## Funktionen
 
-- **Plattformübergreifend**: Eine Codebasis, mehrere Plattformen
-- **Hot Reload**: Schnelle Entwicklungsiterationen
-- **Umfangreiche Komponenten**: Material Design und Cupertino-Komponenten
-- **Dart-Sprache**: Leicht zu lernen, hervorragende Leistung
-- **Deklarative UI**: Erstellen Sie schöne Oberflächen
-
-## Versionsinformationen
-
-| Version | Status |
-|---------|--------|
-| Flutter 3.x | ✅ Aktuell |
-
-## Schnellstart
-
-### Installation
-
-```bash
-# macOS
-brew install flutter
-
-# Linux
-git clone https://github.com/flutter/flutter.git -b stable
-```
-
-### Projekt erstellen
-
-```bash
-flutter create my_app
-cd my_app
-flutter run
-```
+- Plattformübergreifend
+- Hot Reload
+- Reiche Widgets
+- Hohe Leistung
 
 ## Dokumentation
 
-- [Installationsanleitung](./1.Installationsanleitung.md)
-- [Benutzerhandbuch](./2.Benutzerhandbuch.md)
+| Dokument | Beschreibung |
+|----------|--------------|
+| [Übersicht](./1.Übersicht.md) | Overview |
+| [Installationsanleitung](./2.Installationsanleitung.md) | Setup |
+| [Benutzerhandbuch](./3.Benutzerhandbuch.md) | Beispiele |
+| [FAQ](./4.FAQ.md) | Fragen |
 
-## Verwandte Ressourcen
+## Schnellstart
 
-- [Offizielle Website](https://flutter.dev/)
-- [Deutsche Dokumentation](https://flutter.dev/de)
-- [Dart-Sprache](https://dart.dev/)
+```bash
+flutter create meine_app
+flutter run
+```
+
+## Ressourcen
+
+- https://flutter.dev
 
 ## Lizenz
 

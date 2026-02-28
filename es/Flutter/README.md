@@ -1,55 +1,37 @@
 # Flutter
 
-Flutter es un kit de herramientas de UI de código abierto desarrollado por Google para crear aplicaciones multiplataforma.
+Kit de herramientas UI de código abierto por Google.
 
-## Descripción
+## Resumen
 
-Flutter te permite crear aplicaciones atractivas para iOS, Android, Web y escritorio utilizando una única base de código.
+Flutter es un kit de herramientas UI multiplataforma usando Dart.
 
-## Características principales
+## Características
 
-- **Multiplataforma**: un código, múltiples plataformas
-- **Recarga rápida**: iteraciones de desarrollo rápidas
-- **Componentes enriquecidos**: componentes Material Design y Cupertino
-- **Lenguaje Dart**: fácil de aprender, excelente rendimiento
-- **UI declarativa**: crea interfaces atractivas
-
-## Información de versión
-
-| Versión | Estado |
-|---------|--------|
-| Flutter 3.x | ✅ Actual |
-
-## Inicio rápido
-
-### Instalación
-
-```bash
-# macOS
-brew install flutter
-
-# Linux
-git clone https://github.com/flutter/flutter.git -b stable
-```
-
-### Crear proyecto
-
-```bash
-flutter create my_app
-cd my_app
-flutter run
-```
+- Multiplataforma
+- Hot Reload
+- Widgets ricos
+- Alto rendimiento
 
 ## Documentación
 
-- [Guía de instalación](./1.Guiadeinstalación.md)
-- [Guía de uso](./2.Guiadeus.md)
+| Documento | Descripción |
+|-----------|-------------|
+| [Resumen](./1.Resumen.md) | Overview |
+| [Guía de Instalación](./2.Guia-de-Instalacion.md) | Setup |
+| [Manual de Usuario](./3.Manual-de-Usuario.md) | Ejemplos |
+| [FAQ](./4.Preguntas-Frecuentes.md) | Preguntas |
 
-## Recursos relacionados
+## Inicio rápido
 
-- [Sitio web oficial](https://flutter.dev/)
-- [Documentación en español](https://flutter.dev/es)
-- [Lenguaje Dart](https://dart.dev/)
+```bash
+flutter create mi_app
+flutter run
+```
+
+## Recursos
+
+- https://flutter.dev
 
 ## Licencia
 

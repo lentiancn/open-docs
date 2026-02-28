@@ -1,54 +1,66 @@
-# JMeter
+# Apache JMeter 文件
 
-JMeter 是 Apache 組織開發的開源效能測試工具。
+歡迎閱讀 Apache JMeter 文件。此資料夾包含 Apache JMeter 的綜合文件，這是一款功能強大的開源工具，用於效能測試和負載測試。
 
-## 簡介
+## 什麼是 Apache JMeter？
 
-JMeter 用於對軟體和系統進行效能測試，支援 Web、資料庫、FTP 等多種通訊協定。
+Apache JMeter™ 是一款專為測試功能行為和測量效能而設計的 100% 純 Java 應用程式。原本是為 Web 應用程式測試而設計，現已擴展到涵蓋各種測試功能。
 
-## 主要特性
+## 文件內容
 
-- **多種通訊協定**：HTTP、HTTPS、JDBC、FTP 等
-- **參數化**：CSV 資料驅動測試
-- **分散式測試**：多機器協同測試
-- **豐富報告**：聚合報告、圖形結果
-- **可擴展**：外掛系統
-
-## 版本資訊
-
-| 版本 | 狀態 |
+| 檔案 | 說明 |
 |------|------|
-| JMeter 5.x | ✅ 目前 |
+| `1.簡介.md` | JMeter 概述和功能 |
+| `2.安裝指南.md` | 逐步安裝說明 |
+| `3.使用手冊.md` | 完整使用者指南和教學課程 |
+| `4.常見問題.md` | 常見問題 |
 
-## 快速開始
+## 快速入門
 
-### 安裝
+1. **下載**：從 https://jmeter.apache.org/ 取得 JMeter
+2. **安裝**：解壓縮並執行 `./jmeter.sh`（Linux/Mac）或 `jmeter.bat`（Windows）
+3. **建立測試**：使用 GUI 建立您的測試計劃
+4. **執行**：執行您的測試並分析結果
 
-```bash
-# 下載解壓
-tar -xzf apache-jmeter-5.6.3.tgz
+## 主要功能
 
-# 執行
-./apache-jmeter-5.6.3/bin/jmeter
-```
+- **多協定支援**：HTTP、FTP、JDBC、LDAP、JMS 等
+- **測試 IDE**：錄製和建立測試計劃
+- **CLI 模式**：從命令列執行測試
+- **報告**：動態 HTML 報告
+- **可擴展性**：外掛和指令碼支援
+- **分散式測試**：將負載分散到多台機器
 
-### 使用
+## 需求
 
-```bash
-# 命令列執行
-jmeter -n -t test.jmx -l result.jtl
-```
+- Java 8 或更高版本
+- 建議 4GB+ RAM
+- Windows / Linux / macOS
 
-## 文件
+## 文件語言
 
-- [安裝指南](./1.安装文档.md)
-- [使用指南](./2.使用指南.md)
+此文件提供多種語言版本：
+- 英語 (en)
+- 德語 (de)
+- 西班牙語 (es)
+- 法語 (fr)
+- 日語 (ja)
+- 韓語 (ko)
+- 俄語 (ru)
+- 繁體中文 (zh-Hant)
+- 簡體中文 (zh-CN)
 
-## 相關資源
+## 資源
 
-- [官方網站](https://jmeter.apache.org/)
-- [外掛庫](https://jmeter-plugins.org/)
+- 官方網站：https://jmeter.apache.org/
+- 使用者手冊：https://jmeter.apache.org/usermanual/
+- 下載：https://jmeter.apache.org/download_jmeter.cgi
+- Wiki：https://cwiki.apache.org/confluence/display/JMETER/Home
 
 ## 授權
 
-Apache License 2.0
+Apache JMeter 採用 Apache License 2.0 授權。詳細資訊請參閱 Apache 網站。
+
+---
+
+*此文件由社群貢獻和維護。*

@@ -1,16 +1,36 @@
 # OpenFeign
 
-OpenFeign es un cliente HTTP Java.
+Cliente HTTP declarativo para Java
 
-## Docs
+## Descripción
 
-- [Guía instalación](./1.安装文档.md)
-- [Guía uso](./2.使用指南.md)
+OpenFeign simplifica las llamadas a la API HTTP en aplicaciones Java mediante la definición de interfaces de servicio HTTP usando anotaciones.
+
+## Inicio Rápido
 
 ```java
-@FeignClient(name = "user-service")
+@FeignClient(name = "user-service", url = "https://api.example.com")
 public interface UserClient {
-    @GetMapping("/users/{id}")
-    User getUserById(@PathVariable("id") Long id);
+    
+    @RequestMapping(method = RequestMethod.GET, value = "/users/{id}")
+    User getUser(@PathVariable("id") Long id);
 }
 ```
+
+## Características
+
+- Cliente REST declarativo
+- Soporte de balanceo de carga
+- Interceptores de solicitud/respuesta
+- Manejo de errores con fallback
+- Integración con Spring Cloud
+
+## Documentación
+
+- [Guía de Instalación](./2.Guía-de-Instalación.md)
+- [Manual de Usuario](./3.Manual-de-Usuario.md)
+- [Preguntas Frecuentes](./4.Preguntas-Frecuentes.md)
+
+## Licencia
+
+Apache License 2.0

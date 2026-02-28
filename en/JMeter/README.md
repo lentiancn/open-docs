@@ -1,54 +1,66 @@
-# JMeter
+# Apache JMeter Documentation
 
-JMeter 是 Apache 组织开发的开源性能测试工具。
+Welcome to the Apache JMeter documentation repository. This folder contains comprehensive documentation for Apache JMeter, a powerful open source tool for performance testing and load testing.
 
-## 简介
+## What is Apache JMeter?
 
-JMeter 用于对软件和系统进行性能测试，支持 Web、数据库、FTP 等多种协议。
+Apache JMeter™ is a 100% pure Java application designed to load test functional behavior and measure performance. Originally designed for web application testing, it has expanded to cover various test functions.
 
-## 主要特性
+## Documentation Contents
 
-- **多种协议**：HTTP、HTTPS、JDBC、FTP 等
-- **参数化**：CSV 数据驱动测试
-- **分布式测试**：多机器协同测试
-- **丰富报告**：聚合报告、图形结果
-- **可扩展**：插件系统
+| File | Description |
+|------|-------------|
+| `1.Introduction.md` | Overview and features of JMeter |
+| `2.Installation-Guide.md` | Step-by-step installation instructions |
+| `3.User-Manual.md` | Comprehensive user guide and tutorials |
+| `4.FAQ.md` | Frequently asked questions |
 
-## 版本信息
+## Quick Start
 
-| 版本 | 状态 |
-|------|------|
-| JMeter 5.x | ✅ 当前 |
+1. **Download**: Get JMeter from https://jmeter.apache.org/
+2. **Install**: Extract and run `./jmeter.sh` (Linux/Mac) or `jmeter.bat` (Windows)
+3. **Create Test**: Use the GUI to build your test plan
+4. **Run**: Execute your test and analyze results
 
-## 快速开始
+## Key Features
 
-### 安装
+- **Multi-protocol Support**: HTTP, FTP, JDBC, LDAP, JMS, and more
+- **Test IDE**: Record and build test plans
+- **CLI Mode**: Run tests from command line
+- **Reports**: Dynamic HTML reports
+- **Extensible**: Plugins and scripting support
+- **Distributed Testing**: Scale load across multiple machines
 
-```bash
-# 下载解压
-tar -xzf apache-jmeter-5.6.3.tgz
+## Requirements
 
-# 运行
-./apache-jmeter-5.6.3/bin/jmeter
-```
+- Java 8 or higher
+- 4GB+ RAM recommended
+- Windows / Linux / macOS
 
-### 使用
+## Documentation Languages
 
-```bash
-# 命令行运行
-jmeter -n -t test.jmx -l result.jtl
-```
+This documentation is available in multiple languages:
+- English (en)
+- German (de)
+- Spanish (es)
+- French (fr)
+- Japanese (ja)
+- Korean (ko)
+- Russian (ru)
+- Traditional Chinese (zh-Hant)
+- Simplified Chinese (zh-CN)
 
-## 文档
+## Resources
 
-- [安装指南](./1.安装文档.md)
-- [使用指南](./2.使用指南.md)
+- Official Website: https://jmeter.apache.org/
+- User Manual: https://jmeter.apache.org/usermanual/
+- Downloads: https://jmeter.apache.org/download_jmeter.cgi
+- Wiki: https://cwiki.apache.org/confluence/display/JMETER/Home
 
-## 相关资源
+## License
 
-- [官方网站](https://jmeter.apache.org/)
-- [插件库](https://jmeter-plugins.org/)
+Apache JMeter is licensed under the Apache License 2.0. See the Apache website for details.
 
-## 许可证
+---
 
-Apache License 2.0
+*This documentation is community-contributed and maintained.*

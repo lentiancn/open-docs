@@ -1,106 +1,58 @@
-# SadTalker
+# SadTalker Documentation
 
-SadTalker is an AI project that generates realistic talking head videos from a single image and audio input.
+![SadTalker](https://raw.githubusercontent.com/WinfredSadTalker/SadTalker/main/docs/sadtalker.png)
 
 ## Overview
 
-SadTalker creates high-quality talking head videos by:
-- Extracting facial landmarks from audio
-- Generating 3D face motion coefficients
-- Rendering realistic lip-sync and facial expressions
-- Enhancing video quality with face restoration
+SadTalker is an advanced AI project for generating realistic talking face videos from a single static image and audio input. It creates photorealistic lip-synced facial animations using deep learning techniques.
 
-## Documentation
+## Contents
 
-- [Installation Guide](./1.安装文档.md) - Setup on all platforms
-- [Usage Guide](./2.使用指南.md) - How to use SadTalker
+1. [Introduction](./1.Introduction.md) - Overview and features
+2. [Installation Guide](./1.Installation-Guide.md) - Setup instructions
+3. [User Manual](./2.Usage-Guide.md) - Detailed usage guide
+4. [FAQ](./4.FAQ.md) - Frequently asked questions
 
 ## Quick Start
 
-### Install
-
-```bash
-git clone https://github.com/OpenTalker/SadTalker.git
-cd SadTalker
-
-# Create virtual environment
-python -m venv venv
-source venv/bin/activate  # Linux/macOS
-# venv\Scripts\activate  # Windows
-
-# Install dependencies
-pip install -r requirements.txt
-
-# Download models
-bash scripts/download_models.sh
-```
-
-### Generate Video
+### Generate a Talking Video
 
 ```bash
 python inference.py \
-  --source_image examples/source_image.jpg \
-  --driven_audio examples/driven_audio.wav \
-  --result_dir ./results \
-  --preprocess full \
-  --enhancer gfpgan
+    --source_image path/to/portrait.jpg \
+    --audio path/to/speech.wav \
+    --result_dir ./results
 ```
+
+### Parameters
+
+| Parameter | Description | Default |
+|-----------|-------------|---------|
+| `--source_image` | Input portrait image | Required |
+| `--audio` | Input audio file | Required |
+| `--result_dir` | Output directory | ./results |
+| `--style` | Animation style | Reference |
+| `--preprocess` | Image preprocessing | crop |
 
 ## Features
 
-- **Audio-driven Animation** - Generate talking head from audio
-- **3D Motion Estimation** - Realistic face movements
-- **Multiple Pose Styles** - 45+ pose options
-- **Face Enhancement** - GFP-GAN, RestoreFormer, CodeFormer integration
-- **Web Interface** - Easy-to-use demo
-- **Python API** - Programmatic access
+- **Photo-realistic Generation**: High-quality face synthesis
+- **Audio-driven**: Natural lip-sync from audio
+- **Identity Preservation**: Maintains source identity
+- **Multiple Styles**: Various animation styles
+- **Easy to Use**: Simple command-line interface
 
-## System Requirements
+## Requirements
 
-### Hardware
+- Python 3.8+
+- PyTorch 1.12+
+- CUDA 11.3+
+- 8GB+ GPU Memory
 
-| Component | Minimum | Recommended |
-|-----------|---------|-------------|
-| GPU | 6GB VRAM | 16GB VRAM |
-| RAM | 8GB | 32GB |
-| Storage | 20GB | 50GB |
+## Documentation
 
-### Software
-
-- Python 3.8-3.10
-- CUDA 11.7+
-- ffmpeg
-
-## Supported Platforms
-
-- Ubuntu 18.04/20.04/22.04
-- Windows 10/11
-- macOS 11+
-
-## Input Requirements
-
-### Image
-- Format: JPG, PNG
-- Resolution: 512x512 or larger
-- Face: Front-facing, clear
-
-### Audio
-- Format: WAV, MP3
-- Duration: 1-60 seconds
-- Quality: Clear speech
-
-## Output
-
-- Format: MP4 (H.264)
-- Resolution: 256x256 or 512x512
-- FPS: 25
+For detailed documentation, visit the [official GitHub repository](https://github.com/WinfredSadTalker/SadTalker).
 
 ## License
 
-For research purposes only. See GitHub for license details.
-
-## Related Links
-
-- [GitHub](https://github.com/OpenTalker/SadTalker)
-- [HuggingFace Demo](https://huggingface.co/spaces/fffilo/SadTalker)
-- [Paper](https://arxiv.org/abs/2303.17550)
+See the LICENSE file for usage terms and conditions.

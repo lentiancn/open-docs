@@ -1,61 +1,60 @@
 # TensorFlow Documentation
 
-TensorFlow is an open-source machine learning framework developed by Google for building and training neural networks.
+![TensorFlow](https://www.tensorflow.org/images/tf_logo_social.png)
 
-## Documents
+## Overview
 
-- [Installation Guide](./1.安装文档.md) - Detailed guide for installing TensorFlow on all platforms
-- [Usage Guide](./2.使用指南.md) - TensorFlow basic operations and deep learning
+TensorFlow is an open-source machine learning framework developed by Google. It provides a comprehensive ecosystem for building and deploying machine learning models.
+
+## Contents
+
+1. [Introduction](./1.Introduction.md) - Overview and features
+2. [Installation Guide](./1.Installation-Guide.md) - Setup instructions
+3. [User Manual](./2.Usage-Guide.md) - Development guide
+4. [FAQ](./4.FAQ.md) - Frequently asked questions
 
 ## Quick Start
 
-### Install
+### Install TensorFlow
 
 ```bash
 pip install tensorflow
 ```
 
-### Verify
+### Build a Simple Model
 
 ```python
 import tensorflow as tf
-print(tf.__version__)
+from tensorflow import keras
 
-# Simple computation
-a = tf.constant([[1, 2], [3, 4]])
-b = tf.constant([[5, 6], [7, 8]])
-print(tf.matmul(a, b).numpy())
-```
-
-### Basic Neural Network
-
-```python
-import tensorflow as tf
-
-model = tf.keras.Sequential([
-    tf.keras.layers.Dense(10, activation='relu', input_shape=(5,)),
-    tf.keras.layers.Dense(1)
+# Create a simple model
+model = keras.Sequential([
+    keras.layers.Dense(128, activation='relu'),
+    keras.layers.Dense(10, activation='softmax')
 ])
 
-model.compile(optimizer='adam', loss='mse')
-model.fit(x_train, y_train, epochs=10)
+# Compile
+model.compile(optimizer='adam',
+              loss='sparse_categorical_crossentropy',
+              metrics=['accuracy'])
+
+# Train
+model.fit(x_train, y_train, epochs=5)
 ```
 
-## Key Concepts
+## Key Features
 
-- **Tensor**: Multi-dimensional array
-- **Keras**: High-level API in TensorFlow 2.x
-- **tf.data**: Data pipeline
-- **TFLite**: Mobile/edge deployment
+- **Keras Integration**: High-level API
+- **Eager Execution**: Interactive development
+- **TensorFlow Lite**: Mobile deployment
+- **TensorFlow.js**: Browser ML
+- **TensorBoard**: Visualization
+- **TFX**: Production pipelines
 
-## Docker
+## Documentation
 
-```bash
-docker run -it tensorflow/tensorflow:latest python
-```
+For more information, visit the [official TensorFlow website](https://www.tensorflow.org).
 
-## Related Links
+## License
 
-- [TensorFlow Official Documentation](https://www.tensorflow.org/learn)
-- [TensorFlow Tutorials](https://www.tensorflow.org/tutorials)
-- [Keras Documentation](https://keras.io/)
+TensorFlow is licensed under Apache License 2.0.

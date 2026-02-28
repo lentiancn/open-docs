@@ -1,38 +1,54 @@
 # OpenFeign
 
-OpenFeign is a Java HTTP client binder that provides annotations for creating REST clients.
+Declarative HTTP Client for Java
 
 ## Overview
 
-OpenFeign makes writing HTTP clients easier by providing annotations to express mappings between request parameters and template variables. It is integrated with Spring Cloud.
-
-## Documentation
-
-- [Installation Guide](./1.安装文档.md) - Setup and dependencies
-- [Usage Guide](./2.使用指南.md) - Create REST clients
+OpenFeign simplifies HTTP API calls in Java applications by allowing developers to define HTTP service interfaces using annotations. It eliminates the boilerplate code traditionally required for making HTTP requests.
 
 ## Quick Start
 
+### Define a Feign Client
+
 ```java
-@FeignClient(name = "user-service")
+@FeignClient(name = "user-service", url = "https://api.example.com")
 public interface UserClient {
-    @GetMapping("/users/{id}")
-    User getUserById(@PathVariable("id") Long id);
+    
+    @RequestMapping(method = RequestMethod.GET, value = "/users/{id}")
+    User getUser(@PathVariable("id") Long id);
 }
 ```
 
-## Key Features
+### Use the Client
 
-- **Declarative REST Client** - Define clients as interfaces
-- **Load Balancing** - Integrated with Ribbon
-- **Circuit Breaker** - With Hystrix or Resilience4j
-- **Request/Response Logging** - For debugging
-- **Custom Interceptors** - For authentication
+```java
+@Service
+public class UserService {
+    
+    @Autowired
+    private UserClient userClient;
+    
+    public User getUser(Long id) {
+        return userClient.getUser(id);
+    }
+}
+```
 
-## Version
+## Features
 
-Part of Spring Cloud. See Spring Cloud version compatibility.
+- Declarative REST client
+- Load balancing support
+- Request/Response interceptors
+- Error handling with fallback
+- Multiple HTTP client implementations
+- Spring Cloud integration
+
+## Documentation
+
+- [Installation Guide](./2.Installation-Guide.md)
+- [User Manual](./3.User-Manual.md)
+- [FAQ](./4.FAQ.md)
 
 ## License
 
-Apache License 2.0.
+Apache License 2.0

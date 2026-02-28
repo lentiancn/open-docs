@@ -1,55 +1,74 @@
-# Spring Cloud
+# Spring Cloud Documentation
 
-Spring Cloud provides tools for quickly building common patterns in distributed systems.
+![Spring Cloud](https://spring.io/images/projects/spring-cloud-684d6f1c47c3d462c41a2ff72c5054ea.svg)
 
 ## Overview
 
-Spring Cloud focuses on providing out-of-box experience for typical use cases and extensibility for others. It helps developers quickly stand up services that implement distributed system patterns.
+Spring Cloud provides tools for building distributed systems and microservices. It implements architectural patterns like service discovery, configuration management, circuit breakers, and API gateways.
 
-## Documentation
+## Contents
 
-- [Installation Guide](./1.安装文档.md) - Setup development environment
-- [Usage Guide](./2.使用指南.md) - Build distributed applications
-
-## Key Features
-
-- **Distributed/Versioned Configuration** - Centralized config management
-- **Service Registration & Discovery** - Eureka, Consul, Zookeeper
-- **Routing** - Intelligent routing with Gateway
-- **Service-to-Service Calls** - OpenFeign client
-- **Load Balancing** - Client-side load balancing
-- **Circuit Breakers** - Resilience4j integration
-- **Distributed Messaging** - Stream with Kafka/RabbitMQ
+1. [Introduction](./1.Introduction.md) - Overview and features
+2. [Installation Guide](./1.Installation-Guide.md) - Setup instructions
+3. [User Manual](./2.Usage-Guide.md) - Development guide
+4. [FAQ](./4.FAQ.md) - Frequently asked questions
 
 ## Quick Start
 
-```bash
-curl https://start.spring.io/starter.zip \
-  -d type=maven-project \
-  -d language=java \
-  -d bootVersion=3.3.0 \
-  -d baseDir=myapp \
-  -d dependencies=cloud-config-client,cloud-eureka,cloud-gateway \
-  -o myapp.zip
+### Add Dependencies
+
+```xml
+<dependencies>
+    <dependency>
+        <groupId>org.springframework.cloud</groupId>
+        <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+    </dependency>
+    <dependency>
+        <groupId>org.springframework.cloud</groupId>
+        <artifactId>spring-cloud-starter-config</artifactId>
+    </dependency>
+</dependencies>
 ```
 
-## Version Compatibility
+### Enable Service Discovery
 
-| Release Train | Spring Boot |
-|--------------|-------------|
-| 2025.1.x | 4.0.x |
-| 2024.0.x | 3.4.x |
-| 2023.0.x | 3.2.x, 3.3.x |
+```java
+@SpringBootApplication
+@EnableEurekaClient
+public class MyServiceApplication {
+    public static void main(String[] args) {
+        SpringApplication.run(MyServiceApplication.class, args);
+    }
+}
+```
 
-## Main Projects
+### Configure Gateway
 
-- **Spring Cloud Config** - Centralized configuration
-- **Spring Cloud Gateway** - API Gateway
-- **Spring Cloud Netflix Eureka** - Service Discovery
-- **Spring Cloud OpenFeign** - REST Client
-- **Spring Cloud Stream** - Messaging
-- **Spring Cloud Circuit Breaker** - Resilience
+```yaml
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: myservice
+          uri: lb://myservice
+          predicates:
+            - Path=/api/**
+```
+
+## Core Components
+
+| Component | Purpose |
+|-----------|---------|
+| Eureka | Service Registry |
+| Config Server | Configuration Management |
+| Gateway | API Gateway |
+| Circuit Breaker | Fault Tolerance |
+| Sleuth | Distributed Tracing |
+
+## Documentation
+
+For more information, visit the [official Spring Cloud documentation](https://docs.spring.io/spring-cloud/docs/current/reference/html).
 
 ## License
 
-Spring Cloud is under Apache 2.0 license.
+Spring Cloud is licensed under Apache License 2.0.

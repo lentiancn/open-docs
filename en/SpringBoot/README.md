@@ -1,66 +1,83 @@
-# Spring Boot
+# Spring Boot Documentation
 
-Spring Boot makes it easy to create stand-alone, production-grade Spring-based applications.
+![Spring Boot](https://spring.io/images/projects/spring-boot-7f2c069a40ae66ae1b67d74dd46193c8.svg)
 
 ## Overview
 
-Spring Boot is an open-source framework that simplifies the development of Spring applications. It provides defaults for code and configuration, allowing developers to focus on business logic rather than infrastructure setup.
+Spring Boot is a powerful framework that simplifies Java enterprise application development. It provides auto-configuration, embedded servers, and production-ready features.
 
-## Documentation
+## Contents
 
-- [Installation Guide](./1.安装文档.md) - Setup development environment
-- [Usage Guide](./2.使用指南.md) - Create and manage Spring Boot applications
+1. [Introduction](./1.Introduction.md) - Overview and features
+2. [Installation Guide](./1.Installation-Guide.md) - Setup instructions
+3. [User Manual](./2.Usage-Guide.md) - Development guide
+4. [FAQ](./4.FAQ.md) - Frequently asked questions
 
 ## Quick Start
 
-### Create Project
-
-Visit [Spring Initializr](https://start.spring.io/) to generate a new project:
+### Create a Project
 
 ```bash
+# Using Spring Initializr
 curl https://start.spring.io/starter.zip \
-  -d type=maven-project \
-  -d language=java \
-  -d bootVersion=3.2.5 \
-  -d baseDir=myapp \
-  -d dependencies=web,jpa,h2 \
-  -o myapp.zip
+    -d name=demo \
+    -d dependencies=web \
+    -o demo.zip
 ```
 
-### Run Application
+### Create Your Application
 
+```java
+package com.example.demo;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class DemoApplication {
+    public static void main(String[] args) {
+        SpringApplication.run(DemoApplication.class, args);
+    }
+}
+```
+
+### Create a REST Controller
+
+```java
+@RestController
+public class HelloController {
+    
+    @GetMapping("/hello")
+    public String hello() {
+        return "Hello, Spring Boot!";
+    }
+}
+```
+
+## Key Features
+
+- **Auto-configuration**: Smart default configurations
+- **Embedded Servers**: Tomcat, Jetty, Undertow
+- **Starter Dependencies**: Simplified dependency management
+- **Production-Ready**: Health checks, metrics, externalized config
+- **Spring Cloud**: Microservices support
+
+## Build Tools
+
+### Maven
 ```bash
-cd myapp
 ./mvnw spring-boot:run
 ```
 
-### Access Application
+### Gradle
+```bash
+./gradlew bootRun
+```
 
-Open browser: http://localhost:8080
+## Documentation
 
-## Features
-
-- **Quick Setup**: Get started with pre-configured templates
-- **Embedded Server**: No need for external application servers
-- **Auto-Configuration**: Automatic configuration based on classpath
-- **Actuator**: Built-in monitoring and management endpoints
-- **Spring Boot CLI**: Command-line tool for rapid development
-
-## Version Requirements
-
-| Component | Minimum Version |
-|-----------|----------------|
-| Java | 17 (for Spring Boot 3.x) |
-| Maven | 3.6+ |
-| Gradle | 7.5+ |
-
-## Related Projects
-
-- [Spring Framework](https://spring.io/projects/spring-framework)
-- [Spring Data](https://spring.io/projects/spring-data)
-- [Spring Security](https://spring.io/projects/spring-security)
-- [Spring Cloud](https://spring.io/projects/spring-cloud)
+For more information, visit the [official Spring Boot documentation](https://docs.spring.io/spring-boot/docs/current/reference/html).
 
 ## License
 
-Spring Boot is under Apache 2.0 license.
+Spring Boot is licensed under Apache License 2.0.

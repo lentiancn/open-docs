@@ -1,54 +1,66 @@
-# JMeter
+# Apache JMeter Dokumentation
 
-JMeter ist ein Open-Source-Leistungstest-Tool, das von der Apache-Organisation entwickelt wurde.
+Willkommen in der Apache JMeter Dokumentation. Dieser Ordner enthält umfassende Dokumentation für Apache JMeter, ein leistungsstarkes Open-Source-Tool für Performance-Tests und Last-Tests.
 
-## Einführung
+## Was ist Apache JMeter?
 
-JMeter wird verwendet, um Leistungstests für Software und Systeme durchzuführen und unterstützt verschiedene Protokolle wie Web, Datenbanken, FTP und mehr.
+Apache JMeter™ ist eine zu 100% reine Java-Anwendung, die für Lasttests und Leistungsmessung entwickelt wurde. Ursprünglich für Web-Anwendungs-Tests konzipiert, hat es sich auf verschiedene Testfunktionen ausgeweitet.
 
-## Hauptfunktionen
+## Dokumentationsinhalt
 
-- **Mehrere Protokolle**: HTTP, HTTPS, JDBC, FTP usw.
-- **Parametrisierung**: CSV-gesteuerte Tests
-- **Verteilte Tests**: Zusammenarbeit mehrerer Maschinen
-- **Umfangreiche Berichte**: Aggregierte Berichte, grafische Ergebnisse
-- **Erweiterbar**: Plugin-System
-
-## Versionsinformationen
-
-| Version | Status |
-|------|------|
-| JMeter 5.x | ✅ Aktuell |
+| Datei | Beschreibung |
+|-------|-------------|
+| `1.Übersicht.md` | Überblick und Funktionen von JMeter |
+| `2.Installationsanleitung.md` | Schritt-für-Schritt Installationsanleitung |
+| `3.Benutzerhandbuch.md` | Umfassendes Benutzerhandbuch und Tutorials |
+| `4.FAQ.md` | Häufig gestellte Fragen |
 
 ## Schnellstart
 
-### Installation
+1. **Herunterladen**: JMeter von https://jmeter.apache.org/ holen
+2. **Installieren**: Entpacken und `./jmeter.sh` (Linux/Mac) oder `jmeter.bat` (Windows) ausführen
+3. **Test erstellen**: GUI verwenden um Ihren Testplan zu erstellen
+4. **Ausführen**: Test ausführen und Ergebnisse analysieren
 
-```bash
-# Herunterladen und entpacken
-tar -xzf apache-jmeter-5.6.3.tgz
+## Hauptfunktionen
 
-# Ausführen
-./apache-jmeter-5.6.3/bin/jmeter
-```
+- **Multi-Protokoll-Unterstützung**: HTTP, FTP, JDBC, LDAP, JMS und mehr
+- **Test-IDE**: Testpläne aufnehmen und erstellen
+- **CLI-Modus**: Tests von der Kommandozeile ausführen
+- **Berichte**: Dynamische HTML-Berichte
+- **Erweiterbar**: Plugins und Skripting-Unterstützung
+- **Verteilte Tests**: Last auf mehrere Maschinen verteilen
 
-### Verwendung
+## Anforderungen
 
-```bash
-# Über Befehlszeile ausführen
-jmeter -n -t test.jmx -l result.jtl
-```
+- Java 8 oder höher
+- 4GB+ RAM empfohlen
+- Windows / Linux / macOS
 
-## Dokumentation
+## Dokumentationssprachen
 
-- [Installationsanleitung](./1.安装文档.md)
-- [Benutzeranleitung](./2.使用指南.md)
+Diese Dokumentation ist in mehreren Sprachen verfügbar:
+- Englisch (en)
+- Deutsch (de)
+- Spanisch (es)
+- Französisch (fr)
+- Japanisch (ja)
+- Koreanisch (ko)
+- Russisch (ru)
+- Traditionelles Chinesisch (zh-Hant)
+- Vereinfachtes Chinesisch (zh-CN)
 
-## Verwandte Ressourcen
+## Ressourcen
 
-- [Offizielle Website](https://jmeter.apache.org/)
-- [Plugin-Bibliothek](https://jmeter-plugins.org/)
+- Offizielle Website: https://jmeter.apache.org/
+- Benutzerhandbuch: https://jmeter.apache.org/usermanual/
+- Downloads: https://jmeter.apache.org/download_jmeter.cgi
+- Wiki: https://cwiki.apache.org/confluence/display/JMETER/Home
 
 ## Lizenz
 
-Apache License 2.0
+Apache JMeter ist unter der Apache License 2.0 lizenziert. Details finden Sie auf der Apache-Website.
+
+---
+
+*Diese Dokumentation wird von der Community beigesteuert und gepflegt.*

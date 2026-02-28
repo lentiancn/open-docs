@@ -1,54 +1,66 @@
-# JMeter
+# Apache JMeter ドキュメント
 
-JMeterはApache組織開発したオープンソースのパフォーマンステストツールです。
+Apache JMeterドキュメントへようこそ。このフォルダには、パフォーマンステストと負荷テストのための強力なオープンソースツールであるApache JMeterの包括的なドキュメントが含まれています。
 
-## 概要
+## Apache JMeterとは？
 
-JMeterはソフトウェアおよびシステムのパフォーマンステストに使用され、Web、データベース、FTPなど複数のプロトコルをサポートします。
+Apache JMeter™は、功能動作をテストしパフォーマンスを測定するために設計された100％Pure Javaアプリケーションです。元々はWebアプリケーションのテスト用に設計されていましたが、さまざまなテスト機能をカバーするように拡張されています。
 
-## 主な機能
+## ドキュメント内容
 
-- **複数のプロトコル**：HTTP、HTTPS、JDBC、FTPなど
-- **パラメータ化**：CSVデータ駆動テスト
-- **分散テスト**：複数マシンでの協調テスト
-- **豊富なレポート**：集約レポート、グラフィカル結果
-- **拡張性**：プラグインシステム
-
-## バージョン情報
-
-| バージョン | 状態 |
-|------|------|
-| JMeter 5.x | ✅ 現行 |
+| ファイル | 説明 |
+|---------|------|
+| `1.概要.md` | JMeterの概要と機能 |
+| `2.インストールガイド.md` | ステップバイステップのインストール手順 |
+| `3.ユーザーマニュアル.md` | 包括的なユーザーガイドとチュートリアル |
+| `4.FAQ.md` | よくある質問 |
 
 ## クイックスタート
 
-### インストール
+1. **ダウンロード**: https://jmeter.apache.org/からJMeterを取得
+2. **インストール**: 展開して`./jmeter.sh`（Linux/Mac）または`jmeter.bat`（Windows）を実行
+3. **テストを作成**: GUIを使用してテストplanを構築
+4. **実行**: テストを実行して結果を分析
 
-```bash
-# ダウンロードして展開
-tar -xzf apache-jmeter-5.6.3.tgz
+## 主な機能
 
-# 実行
-./apache-jmeter-5.6.3/bin/jmeter
-```
+- **マルチプロトコルサポート**: HTTP、FTP、JDBC、LDAP、JMSなど
+- **テストIDE**: テストplanを記録して構築
+- **CLIモード**: コマンドラインからテストを実行
+- **レポート**: 動的HTMLレポート
+- **拡張性**: プラグインとスクリプトサポート
+- **分散テスト**: 負荷を複数マシンに分散
 
-### 使用
+## 要件
 
-```bash
-# コマンドラインで実行
-jmeter -n -t test.jmx -l result.jtl
-```
+- Java 8以上
+- 4GB以上のRAMを推奨
+- Windows / Linux / macOS
 
-## ドキュメント
+## ドキュメント言語
 
-- [インストールガイド](./1.安装文档.md)
-- [ユーザーガイド](./2.使用指南.md)
+このドキュメントは複数の言語で利用可能:
+- 英語（en）
+- ドイツ語（de）
+- スペイン語（es）
+- フランス語（fr）
+- 日本語（ja）
+- 韓国語（ko）
+- ロシア語（ru）
+- 繁体字中国語（zh-Hant）
+- 簡体字中国語（zh-CN）
 
-## 関連リソース
+## リソース
 
-- [公式サイト](https://jmeter.apache.org/)
-- [プラグインライブラリ](https://jmeter-plugins.org/)
+- 公式サイト: https://jmeter.apache.org/
+- ユーザーマニュアル: https://jmeter.apache.org/usermanual/
+- ダウンロード: https://jmeter.apache.org/download_jmeter.cgi
+- Wiki: https://cwiki.apache.org/confluence/display/JMETER/Home
 
 ## ライセンス
 
-Apache License 2.0
+Apache JMeterはApache License 2.0でライセンスされています。詳細についてはApache Webサイトを参照してください。
+
+---
+
+*このドキュメントはコミュニティによって寄稿され、維持されています。*

@@ -19,7 +19,7 @@ FantasyTalking is an AI-powered talking head video generation tool that uses dee
 
 | Document | Description |
 |----------|-------------|
-| [Introduction](./1.Introduction.md) | Project overview, features |
+| [Introduction](./1.Overview.md) | Project overview, features |
 | [Installation Guide](./2.Installation-Guide.md) | Environment, setup |
 | [User Manual](./3.User-Manual.md) | Detailed usage |
 | [FAQ](./4.FAQ.md) | Installation and usage issues |

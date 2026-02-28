@@ -1,32 +1,42 @@
 # Bootstrap
 
-> El framework CSS más popular del mundo
+> Framework CSS popular
 
-## Inicio
+---
 
-Bootstrap es un framework CSS de código abierto creado por Twitter.
+## Descripción
 
-### Características
-- Responsivo
-- Componentes pre-construidos
-- Sistema de grid
+Bootstrap es un framework CSS de Twitter. Proporciona grid responsivo y componentes.
 
-## Documentos
+---
+
+## Versión
+
+| Versión | Fecha | Estado |
+|---------|-------|--------|
+| Bootstrap 5.3 | May 2023 | Actual |
+
+---
+
+## Documentación
 
 | Documento | Descripción |
 |-----------|-------------|
-| [Guía](./1.Guia-de-Instalacion.md) | Instalación |
-| [Manual](./2.Manual-de-Usuario.md) | Uso |
-| [Inicio](./3.Inicio-Rapido.md) | Inicio rápido |
+| [Introducción](./1.Introducción.md) | Resumen |
+| [Guía de Instalación](./2.Guía-de-Instalación.md) | Instalación |
+| [Manual de Usuario](./3.Manual-de-Usuario.md) | Componentes |
+| [FAQ](./4.Preguntas-Frecuentes.md) | Preguntas |
 
-## CDN
+---
+
+## Inicio rápido
 
 ```html
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 ```
+
+---
 
 ## Recursos
 
-- https://getbootstrap.com
-
-*AI*
+- Sitio: https://getbootstrap.com/

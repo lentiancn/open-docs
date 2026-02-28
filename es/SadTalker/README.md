@@ -1,106 +1,56 @@
-# SadTalker
+# SadTalker Documentación
 
-SadTalker es un proyecto de IA que genera videos realistas de cabezas parlantes a partir de una sola imagen y entrada de audio.
+## Resumen
 
-## Descripción General
+SadTalker es un proyecto avanzado de IA para generar videos realistas de caras parlantes a partir de una imagen estática y entrada de audio. Crea animaciones faciales fotorrealistas con sincronización de labios usando técnicas de aprendizaje profundo.
 
-SadTalker crea videos de alta calidad de cabezas parlantes mediante:
-- Extracción de puntos de referencia faciales del audio
-- Generación de coeficientes de movimiento facial 3D
-- Renderizado de sincronización labial y expresiones faciales realistas
-- Mejora de la calidad del video con restauración facial
+## Contenidos
 
-## Documentación
+1. [Resumen](./1.Resumen.md) - Resumen y características
+2. [Guía de Instalación](./1.Guia-de-Instalacion.md) - Instrucciones de configuración
+3. [Guía de Uso](./2.Guia-de-Uso.md) - Guía de uso detallada
+4. [Preguntas Frecuentes](./4.Preguntas-Frecuentes.md) - Preguntas comunes
 
-- [Guía de Instalación](./1.安装文档.md) - Configuración en todas las plataformas
-- [Guía de Uso](./2.使用指南.md) - Cómo usar SadTalker
+## Uso Rápido
 
-## Inicio Rápido
-
-### Instalación
-
-```bash
-git clone https://github.com/OpenTalker/SadTalker.git
-cd SadTalker
-
-# Crear entorno virtual
-python -m venv venv
-source venv/bin/activate  # Linux/macOS
-# venv\Scripts\activate  # Windows
-
-# Instalar dependencias
-pip install -r requirements.txt
-
-# Descargar modelos
-bash scripts/download_models.sh
-```
-
-### Generar Video
+### Generar un Video Parlante
 
 ```bash
 python inference.py \
-  --source_image examples/source_image.jpg \
-  --driven_audio examples/driven_audio.wav \
-  --result_dir ./results \
-  --preprocess full \
-  --enhancer gfpgan
+    --source_image path/to/portrait.jpg \
+    --audio path/to/speech.wav \
+    --result_dir ./results
 ```
+
+### Parámetros
+
+| Parámetro | Descripción | Valor por Defecto |
+|-----------|-------------|-------------------|
+| `--source_image` | Imagen de retrato de entrada | Requerido |
+| `--audio` | Archivo de audio de entrada | Requerido |
+| `--result_dir` | Directorio de salida | ./results |
+| `--style` | Estilo de animación | reference |
+| `--preprocess` | Preprocesamiento | crop |
 
 ## Características
 
-- **Animación Dirigida por Audio** - Generar cabeza parlante desde audio
-- **Estimación de Movimiento 3D** - Movimientos faciales realistas
-- **Múltiples Estilos de Pose** - Más de 45 opciones de pose
-- **Mejora de Rostro** - Integración con GFP-GAN, RestoreFormer, CodeFormer
-- **Interfaz Web** - Demo fácil de usar
-- **API Python** - Acceso programático
+- **Generación Fotorrealista**: Síntesis de cara de alta calidad
+- **Impulsado por Audio**: Sincronización de labios natural
+- **Preservación de Identidad**: Mantiene identidad de la fuente
+- **Múltiples Estilos**: Varios estilos de animación
+- **Fácil de Usar**: Interfaz de línea de comandos simple
 
-## Requisitos del Sistema
+## Requisitos
 
-### Hardware
+- Python 3.8+
+- PyTorch 1.12+
+- CUDA 11.3+
+- 8GB+ Memoria GPU
 
-| Componente | Mínimo | Recomendado |
-|------------|---------|-------------|
-| GPU | 6GB VRAM | 16GB VRAM |
-| RAM | 8GB | 32GB |
-| Almacenamiento | 20GB | 50GB |
+## Documentación
 
-### Software
-
-- Python 3.8-3.10
-- CUDA 11.7+
-- ffmpeg
-
-## Plataformas Soportadas
-
-- Ubuntu 18.04/20.04/22.04
-- Windows 10/11
-- macOS 11+
-
-## Requisitos de Entrada
-
-### Imagen
-- Formato: JPG, PNG
-- Resolución: 512x512 o mayor
-- Rostro: Frontal, claro
-
-### Audio
-- Formato: WAV, MP3
-- Duración: 1-60 segundos
-- Calidad: Voz clara
-
-## Salida
-
-- Formato: MP4 (H.264)
-- Resolución: 256x256 o 512x512
-- FPS: 25
+Para documentación detallada, visita el [repositorio oficial de GitHub](https://github.com/WinfredSadTalker/SadTalker).
 
 ## Licencia
 
-Solo para propósitos de investigación. Consulta GitHub para detalles de licencia.
-
-## Enlaces Relacionados
-
-- [GitHub](https://github.com/OpenTalker/SadTalker)
-- [Demo HuggingFace](https://huggingface.co/spaces/fffilo/SadTalker)
-- [Paper](https://arxiv.org/abs/2303.17550)
+Consulta el archivo LICENSE para términos de uso.

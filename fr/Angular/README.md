@@ -1,20 +1,21 @@
 # Angular
 
-> Framework moderne de développement web
+> Framework Google pour applications web
 
 ---
 
-## À propos
+## Description
 
-Angular est un framework web open-source de Google pour SPA.
+Angular est un framework TypeScript développé par Google. Solution complète pour applications web modernes.
 
-### Fonctionnalités
-- Composants
-- Binding bidirectionnel
-- Injection de dépendances
-- Routage
-- Formulaires
-- HTTP Client
+---
+
+## Version
+
+| Version | Date | État |
+|---------|------|------|
+| Angular 17 | Nov 2023 | Actuel |
+| Angular 16 | Mai 2023 | Stable |
 
 ---
 
@@ -22,30 +23,23 @@ Angular est un framework web open-source de Google pour SPA.
 
 | Document | Description |
 |----------|-------------|
-| [Installation](./1.Guide-d-installation.md) | Installation |
-| [Manuel](./2.Manuel-utilisateur.md) | Développement |
-| [Démarrage](./3.Demarrage-rapide.md) | Premiers pas |
+| [Introduction](./1.Introduction.md) | Aperçu |
+| [Guide d'installation](./2.Guide-dinstallation.md) | Installation |
+| [Manuel utilisateur](./3.Manuel-utilisateur.md) | Fonctionnalités |
 | [FAQ](./4.FAQ.md) | Questions |
 
 ---
 
-## Démarrage rapide
+## Démarrage
 
 ```bash
 npm install -g @angular/cli
-ng new mon-app
-cd mon-app
+ng new my-app
 ng serve
 ```
-
-Site: http://localhost:4200
 
 ---
 
 ## Ressources
 
-- https://angular.io/docs
-
----
-
-*Créé par AI*
+- Site: https://angular.io/

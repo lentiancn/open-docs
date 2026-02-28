@@ -1,14 +1,34 @@
 # React
 
-React documentation.
+The library for web and native user interfaces
 
-## Docs
+## Overview
 
-- [1. Installation Guide](./1.Installation-Guide.md)
-- [2. Usage Guide](./2.Usage-Guide.md)
+React is a JavaScript library for building user interfaces using a component-based approach and virtual DOM.
 
-## Versions
+## Quick Start
 
-- **React 18** - Current major version with concurrent features
-- **React 17** - Previous version, no new features
-- **React 16.8+** - Introduced Hooks
+```bash
+npm create vite@latest my-app -- --template react
+cd my-app
+npm install
+npm run dev
+```
+
+## Features
+
+- Component-based architecture
+- Virtual DOM for performance
+- JSX syntax
+- Rich ecosystem (React Router, Redux)
+- React Native for mobile apps
+
+## Documentation
+
+- [Installation Guide](./2.Installation-Guide.md)
+- [User Manual](./3.User-Manual.md)
+- [FAQ](./4.FAQ.md)
+
+## License
+
+MIT License

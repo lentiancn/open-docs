@@ -1,6 +1,6 @@
 # Flutter
 
-Open-source UI toolkit by Google.
+Google's open-source UI toolkit.
 
 ## Introduction
 
@@ -9,21 +9,27 @@ Flutter is an open-source UI toolkit for building cross-platform applications fr
 ## Features
 
 - **Cross-platform**: One codebase for all platforms
-- **Hot Reload**: Instant preview
-- **Rich Widgets**: Material + Cupertino
-- **High Performance**: Native rendering
+- **Hot Reload**: Instant preview of changes
+- **Rich Widgets**: Material Design + Cupertino
+- **High Performance**: Native rendering experience
 - **Open Source**: Free to use
 
 ## Documentation
 
 | Document | Description |
 |----------|-------------|
-| [Introduction](./1.Introduction.md) | Overview |
-| [Installation Guide](./2.Installation-Guide.md) | Setup |
-| [User Manual](./3.User-Manual.md) | Widgets, state, navigation |
-| [FAQ](./4.FAQ.md) | Common issues |
+| [Introduction](./1.Introduction.md) | Project overview, features |
+| [Installation Guide](./2.Installation-Guide.md) | Requirements, installation steps |
+| [User Manual](./3.User-Manual.md) | Widgets, state management, navigation |
+| [FAQ](./4.FAQ.md) | Installation and development issues |
 
 ## Quick Start
+
+### Installation
+
+See installation guide: ./2.Installation-Guide.md
+
+### Create project
 
 ```bash
 flutter create my_app
@@ -31,9 +37,25 @@ cd my_app
 flutter run
 ```
 
-## Resources
+### Project structure
 
-- Official: https://flutter.dev
+```
+lib/
+└── main.dart        # Entry point
+pubspec.yaml         # Configuration file
+```
+
+## Core Concepts
+
+- **Dart**: Flutter programming language
+- **Widget**: UI building block
+- **State**: State management
+- **Platform Channel**: Platform channels
+
+## Related Resources
+
+- Official website: https://flutter.dev
+- Documentation: https://docs.flutter.dev
 - GitHub: https://github.com/flutter/flutter
 
 ## License

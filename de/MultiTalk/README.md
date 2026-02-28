@@ -1,49 +1,39 @@
 # MultiTalk
 
-MultiTalk ist ein Multi-Sprecher-Audiogenerierungswerkzeug.
+Eine leistungsstarke Multi-Party-Sprachchat-Anwendung für Gaming und Kommunikation.
 
-## Einführung
+## Was ist MultiTalk?
 
-MultiTalk erstellt natürlich klingende Multi-Voice-Audioinhalte mit Deep-Learning-Technologie.
+MultiTalk ist eine Desktop-Anwendung, die Multi-Party-Sprachchat für Gamer und Communities ermöglicht. Sie unterstützt mehrere Audioquellen, latenzarme Kommunikation und anpassbare Audioeinstellungen.
 
-## Funktionen
+### Hauptmerkmale
 
-- **Multi-Sprecher**: Unterstützung für mehrere Sprecher
-- **Hohe Qualität**: Natürlich klingende Ausgabe
-- **Mehrsprachig**: Unterstützung für mehrere Sprachen
-- **Einfach zu verwenden**: Einfache Befehlszeilenschnittstelle
-
-## Version
-
-| Version | Status |
-|---------|--------|
-| v1.0 | ✅ Aktuelle Version |
-
-## Schnellstart
-
-### Installation
-
-```bash
-git clone https://github.com/MultiTalk/MultiTalk.git
-cd MultiTalk
-pip install -r requirements.txt
-```
-
-### Audio generieren
-
-```bash
-python inference.py --text "Hallo" --speakers speaker1,speaker2 --output output.wav
-```
+- **Multi-Party-Sprache** - Unterstützung für mehrere Teilnehmer
+- **Geringe Latenz** - Echtzeitkommunikation mit minimaler Verzögerung
+- **Audioquellen** - Mehrere Audio-Eingabe-/Ausgabegeräte
+- **Push-to-talk** - Konfigurierbare Taste für Übertragung
+- **Rauschunterdrückung** - Integrierte Audiofilterung
 
 ## Dokumentation
 
-- [Installationsanleitung](./1.安装文档.md)
-- [Benutzeranleitung](./2.使用指南.md)
+| Dokument | Beschreibung |
+|----------|--------------|
+| [Übersicht](./1.Übersicht.md) | Projektübersicht |
+| [Installationsanleitung](./2.Installationsanleitung.md) | Setup und Installation |
+| [Benutzerhandbuch](./3.Benutzerhandbuch.md) | Detaillierte Nutzung |
+| [FAQ](./4.FAQ.md) | Häufig gestellte Fragen |
 
-## Verwandte Links
+## Schnellstart
 
-- [GitHub](https://github.com/MultiTalk/MultiTalk)
+1. Von der offiziellen Website herunterladen
+2. Anwendung installieren
+3. Audiogeräte konfigurieren
+4. Raum erstellen oder beitreten
+
+## Ressourcen
+
+- Website: https://multitalk.app
 
 ## Lizenz
 
-Apache License 2.0
+MIT License

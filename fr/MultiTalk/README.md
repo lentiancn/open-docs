@@ -1,49 +1,39 @@
 # MultiTalk
 
-MultiTalk est un outil de génération audio multi-locuteurs.
+Une application de chat vocal multi-parties puissante pour les jeux et la communication.
 
-## Introduction
+## Qu'est-ce que MultiTalk ?
 
-MultiTalk crée des contenus audio multi-voix naturels en utilisant la technologie d'apprentissage profond.
+MultiTalk est une application de bureau permettant le chat vocal multi-parties pour les joueurs et les communautés. Elle prend en charge plusieurs sources audio, une communication à faible latence et des paramètres audio personnalisables.
 
-## Fonctionnalités
+### Fonctionnalités Principales
 
-- **Multi-locuteurs** : Support de plusieurs locuteurs
-- **Haute qualité** : Sortie naturelle
-- **Multilingue** : Support de plusieurs langues
-- **Facile à utiliser** : Interface en ligne de commande simple
-
-## Version
-
-| Version | Statut |
-|---------|--------|
-| v1.0 | ✅ Version actuelle |
-
-## Démarrage rapide
-
-### Installation
-
-```bash
-git clone https://github.com/MultiTalk/MultiTalk.git
-cd MultiTalk
-pip install -r requirements.txt
-```
-
-### Générer de l'audio
-
-```bash
-python inference.py --text "Bonjour" --speakers speaker1,speaker2 --output output.wav
-```
+- **Chat vocal multi-parties** - Support de plusieurs participants
+- **Faible latence** - Communication en temps réel avec un minimum de délai
+- **Sources audio** - Multiple périphériques d'entrée/sortie audio
+- **Push-to-talk** - Touche configurable pour la transmission
+- **Réduction du bruit** - Filtrage audio intégré
 
 ## Documentation
 
-- [Guide d'installation](./1.安装文档.md)
-- [Guide d'utilisation](./2.使用指南.md)
+| Document | Description |
+|----------|-------------|
+| [Aperçu](./1.Aperçu.md) | Aperçu du projet |
+| [Guide d'Installation](./2.Guide-d-Installation.md) | Configuration et installation |
+| [Manuel Utilisateur](./3.Manuel-Utilisateur.md) | Utilisation détaillée |
+| [FAQ](./4.FAQ.md) | Questions fréquentes |
 
-## Liens connexes
+## Démarrage Rapide
 
-- [GitHub](https://github.com/MultiTalk/MultiTalk)
+1. Téléchargez depuis le site officiel
+2. Installez l'application
+3. Configurez les périphériques audio
+4. Créez ou rejoignez une salle
+
+## Ressources
+
+- Site Web: https://multitalk.app
 
 ## Licence
 
-Apache License 2.0
+MIT License

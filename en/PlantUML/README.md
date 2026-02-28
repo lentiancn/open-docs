@@ -1,32 +1,12 @@
 # PlantUML
 
-PlantUML 是一个用于快速创建 UML 图的开源工具。
+Open-source tool to draw UML diagrams from text descriptions
 
-## 简介
+## Overview
 
-PlantUML 允许您使用简单的文本描述来创建各种 UML 图，包括序列图、类图、用例图、活动图等。
+PlantUML allows you to create various diagrams from plain text. It supports UML, sequence, class, activity, and many other diagram types.
 
-## 主要特性
-
-- **多种图表类型**：序列图、类图、用例图、状态图、活动图等
-- **简单语法**：纯文本描述，易于编写和维护
-- **跨平台**：支持 Windows、macOS、Linux
-- **集成**：支持 VS Code、IntelliJ、Eclipse
-- **实时预览**：编辑即可见效果
-
-## 快速开始
-
-### 安装
-
-```bash
-# macOS
-brew install plantuml
-
-# Ubuntu
-sudo apt install plantuml
-```
-
-### 使用
+## Quick Start
 
 ```plantuml
 @startuml
@@ -34,16 +14,23 @@ Alice -> Bob: Hello
 @enduml
 ```
 
-## 文档
+## Supported Diagrams
 
-- [安装指南](./1.安装文档.md)
-- [使用指南](./2.使用指南.md)
+- Sequence diagrams
+- Class diagrams
+- Use Case diagrams
+- Activity diagrams
+- State diagrams
+- Component diagrams
+- Network diagrams
+- Gantt charts
 
-## 相关资源
+## Documentation
 
-- [官方网站](https://plantuml.com/)
-- [在线编辑器](https://www.plantuml.com/plantuml)
+- [Installation Guide](./2.Installation-Guide.md)
+- [User Manual](./3.User-Manual.md)
+- [FAQ](./4.FAQ.md)
 
-## 许可证
+## License
 
 GPL License

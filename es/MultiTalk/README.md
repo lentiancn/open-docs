@@ -1,49 +1,39 @@
 # MultiTalk
 
-MultiTalk es una herramienta de generación de audio multiorador.
+Una potente aplicación de chat de voz multiparte para juegos y comunicación.
 
-## Introducción
+## ¿Qué es MultiTalk?
 
-MultiTalk crea contenido de audio multivocal natural utilizando tecnología de aprendizaje profundo.
+MultiTalk es una aplicación de escritorio que permite el chat de voz multiparte para jugadores y comunidades.
 
-## Características
+### Características Principales
 
-- **Multiorador**: Soporte para múltiples oradores
-- **Alta Calidad**: Salida de sonido natural
-- **Multilingüe**: Soporte para múltiples idiomas
-- **Fácil de Usar**: Interfaz de línea de comandos simple
-
-## Versión
-
-| Versión | Estado |
-|---------|--------|
-| v1.0 | ✅ Versión Actual |
-
-## Inicio Rápido
-
-### Instalación
-
-```bash
-git clone https://github.com/MultiTalk/MultiTalk.git
-cd MultiTalk
-pip install -r requirements.txt
-```
-
-### Generar Audio
-
-```bash
-python inference.py --text "Hola" --speakers speaker1,speaker2 --output output.wav
-```
+- **Voz multiparte** - Soporte para múltiples participantes
+- **Baja latencia** - Comunicación en tiempo real
+- **Fuentes de audio** - Múltiples dispositivos de audio
+- **Push-to-talk** - Tecla configurable
+- **Reducción de ruido** - Filtrado de audio integrado
 
 ## Documentación
 
-- [Guía de Instalación](./1.安装文档.md)
-- [Guía de Uso](./2.使用指南.md)
+| Documento | Descripción |
+|-----------|-------------|
+| [Resumen](./1.Resumen.md) | Resumen del proyecto |
+| [Guía de Instalación](./2.Guía-de-Instalación.md) | Configuración e instalación |
+| [Manual de Usuario](./3.Manual-de-Usuario.md) | Uso detallado |
+| [Preguntas Frecuentes](./4.Preguntas-Frecuentes.md) | Preguntas frecuentes |
 
-## Enlaces Relacionados
+## Inicio Rápido
 
-- [GitHub](https://github.com/MultiTalk/MultiTalk)
+1. Descargar del sitio web oficial
+2. Instalar la aplicación
+3. Configurar dispositivos de audio
+4. Crear o unirse a una sala
+
+## Recursos
+
+- Sitio Web: https://multitalk.app
 
 ## Licencia
 
-Apache License 2.0
+MIT License

@@ -1,60 +1,61 @@
-# Go
+# Go Dokumentation
 
-> Eine kompilierte Programmiersprache von Google
-
----
-
-## Übersicht
-
-Go (auch bekannt als Golang) ist eine 2009 von Google entwickelte Programmierspranche. Bekannt für Einfachheit, Effizienz und starke Concurrent-Unterstützung. Wird широко verwendet in Serverentwicklung, Cloud-Native-Anwendungen und Containerisierung.
+> Go ist eine kompilierte Programmiersprache, die von Google entwickelt wurde. Sie ist bekannt für ihre Einfachheit, Effizienz und leistungsstarke Unterstützung für Parallelität.
 
 ---
 
-## Funktionen
+## Dokumentationsverzeichnis
 
-- Statische Typisierung
-- Garbage Collection
-- Native Concurrency (Goroutines)
-- Schnelle Kompilierung
-- Umfangreiche Standardbibliothek
+### 1. Einführung
+Go-Überblick, Funktionen, Anwendungsfälle und Versionsinformationen
 
----
+**[Einführung lesen →](./1.Einführung.md)**
 
-## Version
+### 2. Installationsanleitung
+Vollständiges Installations- und Konfigurationstutorial
 
-| Version | Veröffentlichung | Status |
-|---------|------------------|--------|
-| Go 1.22 | Feb 2024 | Aktuell stabil |
-| Go 1.21 | Aug 2023 | Stabil |
+**[Installationsanleitung lesen →](./2.Installationsanleitung.md)**
 
----
+- Windows/macOS/Linux Installation
+- Umgebungskonfiguration
+- Häufige Befehle
+- Empfohlene Entwicklungstools
 
-## Dokumentation
+### 3. Handbuch
+Detailliertes Programmiertutorial
 
-| Dokument | Beschreibung |
-|----------|--------------|
-| [Einführung](./1.Einführung.md) | Projektübersicht |
-| [Installationsanleitung](./2.Installationsanleitung.md) | Setup und Installation |
-| [Benutzerhandbuch](./3.Benutzerhandbuch.md) | Syntax und Funktionen |
-| [FAQ](./4.FAQ.md) | Häufige Fragen |
+**[Handbuch lesen →](./3.Handbuch.md)**
 
----
+- Grundlegende Syntax
+- Funktionen
+- Strukturen und Methoden
+- Parallelität
+- Fehlerbehandlung
+- Paketverwaltung und Tests
 
-## Schnellstart
+### 4. Häufig gestellte Fragen
+Antworten auf häufige Fragen
 
-```go
-package main
+**[FAQ lesen →](./4.Häufig-gestellte-Fragen.md)**
 
-import "fmt"
-
-func main() {
-    fmt.Println("Hello, World!")
-}
-```
+- Installationsprobleme
+- Syntaxfragen
+- Parallelitätsprobleme
+- Leistungsoptimierung
 
 ---
 
-## Ressourcen
+## Schnelllinks
 
 - Offizielle Website: https://go.dev/
-- Dokumentation: https://go.dev/doc/
+- Offizielle Dokumentation: https://go.dev/doc/
+- Go by Example: https://gobyexample.com/
+
+---
+
+## Verwandte Tools
+
+- **VS Code**: Empfohlener Editor
+- **GoLand**: JetBrains IDE
+- **GORM**: ORM-Bibliothek
+- **Gin**: Web-Framework

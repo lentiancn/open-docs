@@ -1,59 +1,61 @@
-# Go
+# Documentación de Go
 
-> Lenguaje de programación compilado por Google
-
----
-
-## Descripción
-
-Go (también conocido como Golang) es un lenguaje creado por Google en 2009. Conocido por su simplicidad, eficiencia y potente soporte de concurrencia.
+> Go es un lenguaje de programación compilado desarrollado por Google, conocido por su simplicidad, eficiencia y potente soporte de concurrencia.
 
 ---
 
-## Características
+## Índice de Documentación
 
-- Tipado estático
-- Recolección de basura
-- Concurrencia nativa (goroutines)
-- Compilación rápida
-- Biblioteca estándar rica
+### 1. Introducción
+Resumen de Go, características, casos de uso e información de versiones
 
----
+**[Leer Introducción →](./1.Introducción.md)**
 
-## Versión
+### 2. Guía de Instalación
+Tutorial completo de instalación y configuración
 
-| Versión | Fecha | Estado |
-|---------|-------|--------|
-| Go 1.22 | Feb 2024 | Estable actual |
-| Go 1.21 | Aug 2023 | Estable |
+**[Leer Guía de Instalación →](./2.Guía-de-Instalación.md)**
 
----
+- Instalación en Windows/macOS/Linux
+- Configuración del entorno
+- Comandos comunes
+- Herramientas de desarrollo recomendadas
 
-## Documentación
+### 3. Manual de Usuario
+Tutorial detallado de programación
 
-| Documento | Descripción |
-|-----------|-------------|
-| [Introducción](./1.Introducción.md) | Resumen del proyecto |
-| [Guía de Instalación](./2.Guía-de-Instalación.md) | Instalación |
-| [Manual de Usuario](./3.Manual-de-Usuario.md) | Sintaxis |
-| [FAQ](./4.Preguntas-Frecuentes.md) | Preguntas |
+**[Leer Manual de Usuario →](./3.Manual-de-Usuario.md)**
 
----
+- Sintaxis básica
+- Funciones
+- Estructuras y métodos
+- Concurrencia
+- Manejo de errores
+- Gestión de paquetes y pruebas
 
-## Inicio rápido
+### 4. Preguntas Frecuentes
+Preguntas frecuentes
 
-```go
-package main
+**[Leer FAQ →](./4.Preguntas-Frecuentes.md)**
 
-import "fmt"
-
-func main() {
-    fmt.Println("¡Hola, Mundo!")
-}
-```
+- Problemas de instalación
+- Preguntas de sintaxis
+- Problemas de concurrencia
+- Optimización de rendimiento
 
 ---
 
-## Recursos
+## Enlaces Rápidos
 
-- Sitio oficial: https://go.dev/
+- Sitio Web Oficial: https://go.dev/
+- Documentación Oficial: https://go.dev/doc/
+- Go by Example: https://gobyexample.com/
+
+---
+
+## Herramientas Relacionadas
+
+- **VS Code**: Editor recomendado
+- **GoLand**: IDE de JetBrains
+- **GORM**: Biblioteca ORM
+- **Gin**: Framework web

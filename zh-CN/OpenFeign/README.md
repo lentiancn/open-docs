@@ -1,18 +1,8 @@
-# OpenFeign
+# OpenFeign 文档
 
-OpenFeign 是一个 Java HTTP 客户端，用于创建 REST 客户端。
+## 目录
 
-## 文档
-
-- [安装指南](./1.安装文档.md)
-- [使用指南](./2.使用指南.md)
-
-## 快速开始
-
-```java
-@FeignClient(name = "user-service")
-public interface UserClient {
-    @GetMapping("/users/{id}")
-    User getUserById(@PathVariable("id") Long id);
-}
-```
+1. 简介
+2. 安装指南
+3. 使用手册
+4. 常见问题

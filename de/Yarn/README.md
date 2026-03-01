@@ -1,71 +1,46 @@
-# Yarn Documentation
+# Dokumentation
 
-Yarn is a powerful JavaScript package manager and project manager.
-
----
-
-## Documentation Index
-
-| File | Description |
-|------|-------------|
-| [1.Introduction.md](./1.Introduction.md) | What is Yarn, features |
-| [2.Installation-Guide.md](./2.Installation-Guide.md) | Installation methods |
-| [3.User-Manual.md](./3.User-Manual.md) | Detailed usage guide |
-| [4.FAQ.md](./4.FAQ.md) | Frequently asked questions |
+Yarn ist ein leistungsstarker JavaScript-Paketmanager.
 
 ---
 
-## Quick Links
+## Dokumentation
+
+| Datei | Beschreibung |
+|-------|--------------|
+| [1.Einführung.md](./1.Einführung.md) | Was ist Yarn, Funktionen |
+| [2.Installationsanleitung.md](./2.Installationsanleitung.md) | Installationsmethoden |
+| [3.Benutzerhandbuch.md](./3.Benutzerhandbuch.md) | Detailierte Anleitung |
+| [4.Häufig-gestellte-Fragen.md](./4.Häufig-gestellte-Fragen.md) | FAQ |
+
+---
+
+## Schnelllinks
 
 - 🌐 **Website**: https://yarnpkg.com
-- 📖 **Documentation**: https://yarnpkg.com/docs
+- 📖 **Dokumentation**: https://yarnpkg.com/docs
 - 💻 **GitHub**: https://github.com/yarnpkg/berry
-- 💬 **Discord**: https://discord.gg/yarn
 
 ---
 
-## Quick Start
+## Schnellstart
 
-### Install
+### Installation
 
 ```bash
-# Using corepack (recommended)
 corepack enable
 corepack prepare yarn@stable --activate
-
-# Or using npm
-npm install -g yarn
-```
-
-### Initialize
-
-```bash
-yarn init
-yarn install
 ```
 
 ---
 
-## Features
+## Andere Sprachen
 
-- ✅ Fast installation (parallel downloads)
-- ✅ Deterministic installs (yarn.lock)
-- ✅ Offline caching
-- ✅ Workspace support (Monorepo)
-- ✅ Plugin system
-- ✅ Zero-Installs
-- ✅ Security
-- ✅ Cross-platform
-
----
-
-## Other Languages
-
+- [English](../en/)
 - [简体中文](../zh-CN/)
 - [繁體中文](../zh-Hant/)
 - [日本語](../ja/)
 - [Español](../es/)
-- [Deutsch](../de/)
 - [Français](../fr/)
 - [Русский](../ru/)
 - [한국어](../ko/)

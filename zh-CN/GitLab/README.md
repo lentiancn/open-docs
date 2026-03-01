@@ -1,63 +1,74 @@
-# GitLab 文档导航
+# GitLab
 
-> GitLab 是一个完整的 DevOps 平台，本文档将帮助你快速上手
+完整的 DevOps 平台
 
----
+## 概述
 
-## 文档目录
+GitLab 是一个基于 Git 的完整 DevOps 平台，提供从代码管理到持续集成、持续部署的完整工具链。是最受欢迎的 Git 仓库管理平台之一。
 
-### 1. 简介
-GitLab 概述、核心功能、架构和应用场景
+## 文档导航
 
-**[阅读简介 →](./1.简介.md)**
+| 文档 | 说明 |
+|------|------|
+| [简介](./1.简介.md) | 特性、应用场景、CI/CD |
+| [安装指南](./2.安装指南.md) | Omnibus、Docker、Runner |
+| [使用手册](./3.使用手册.md) | 分支、MR、CI/CD、API |
+| [常见问题](./4.常见问题.md) | 启动、性能、备份问题解答 |
 
-### 2. 安装指南
-完整的安装和配置教程
+## 快速开始
 
-**[阅读安装指南 →](./2.安装指南.md)**
+### 安装
 
-- Omnibus 包安装（Ubuntu/Debian/CentOS）
-- Docker 安装
-- Kubernetes 安装
-- 初始配置
-- 常见命令
+```bash
+# Ubuntu/Debian
+curl -sS https://packages.gitlab.com/install/repositories/gitlab/gitlab-ee/script.deb.sh | sudo bash
+sudo EXTERNAL_URL="https://gitlab.example.com" apt-get install gitlab-ee
+```
 
-### 3. 使用手册
-详细的功能使用教程
+### 使用
 
-**[阅读使用手册 →](./3.使用手册.md)**
+```bash
+# 克隆项目
+git clone git@gitlab.com:username/project.git
 
-- 代码管理（分支、合并请求、代码审查）
-- 问题跟踪
-- CI/CD 流水线
-- Wiki 文档
-- 容器镜像仓库
-- 安全扫描
+# 创建分支
+git checkout -b feature/new-feature
 
-### 4. 常见问题
-常见问题解答
+# 提交推送
+git add .
+git commit -m "Add feature"
+git push -u origin feature/new-feature
+```
 
-**[阅读常见问题 →](./4.常见问题.md)**
+## 核心特性
 
-- 安装问题
-- Git 操作问题
-- CI/CD 问题
-- 权限问题
+- **Git 仓库**：代码托管
+- **问题跟踪**：项目管理
+- **CI/CD**：持续集成/部署
+- **代码审查**：Merge Request
+- **Wiki**：文档管理
+- **安全扫描**：代码安全
 
----
+## 常用命令
 
-## 快速链接
+```bash
+gitlab-ctl start         # 启动
+gitlab-ctl stop          # 停止
+gitlab-ctl restart       # 重启
+gitlab-ctl reconfigure   # 重新配置
+gitlab-backup create     # 备份
+```
 
-- 官方网站：https://about.gitlab.com/
-- 官方文档：https://docs.gitlab.com/
-- 安装下载：https://about.gitlab.com/install/
-- 中文社区：https://gitlab.cn/
+## 统计数据
 
----
+- 用户：3000万+
+- GitHub ⭐：23,000+
 
-## 相关工具
+## 相关资源
 
-- **Git**：版本控制系统
-- **GitLab Runner**：CI/CD 执行器
-- **Docker**：容器化平台
-- **Kubernetes**：容器编排平台
+- 官方网站：https://about.gitlab.com
+- 中文文档：https://docs.gitlab.com
+
+## 许可证
+
+MIT License

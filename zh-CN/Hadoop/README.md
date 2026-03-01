@@ -1,40 +1,47 @@
-# Hadoop 文档
+# Hadoop 文档导航
 
-Apache Hadoop 是一个分布式存储和处理系统，用于大数据处理。
+> Hadoop 是一个开源分布式计算平台，用于存储和处理大规模数据
 
-## 文档
+---
 
-- [安装文档](./1.安装文档.md) - 在所有平台上安装 Hadoop 的详细指南
-- [使用指南](./2.使用指南.md) - Hadoop 基本操作
+## 文档目录
 
-## 快速开始
+### 1. 简介
+Hadoop 概述、核心组件和特性
 
-### 安装 Java
+**[阅读简介 →](./1.简介.md)**
 
-```bash
-sudo apt install openjdk-11-jdk
-```
+### 2. 安装指南
+完整的安装和配置教程
 
-### 下载 Hadoop
+**[阅读安装指南 →](./2.安装指南.md)**
 
-```bash
-wget https://dlcdn.apache.org/hadoop/common/hadoop-3.4.3/hadoop-3.4.3.tar.gz
-tar -xzf hadoop-3.4.3.tar.gz
-```
+- 单机模式安装
+- 伪分布式模式
+- 完全分布式模式
 
-### 启动 Hadoop
+### 3. 使用手册
+详细的使用教程
 
-```bash
-hdfs namenode -format
-start-dfs.sh
-start-yarn.sh
-```
+**[阅读使用手册 →](./3.使用手册.md)**
 
-### Web 界面
+- HDFS 操作
+- MapReduce 编程
+- YARN 操作
+- 性能优化
 
-- NameNode: http://localhost:9870
-- ResourceManager: http://localhost:8088
+### 4. 常见问题
+常见问题解答
 
-## 相关链接
+**[阅读常见问题 →](./4.常见问题.md)**
 
-- [Hadoop 官方文档](https://hadoop.apache.org/docs/)
+- 安装问题
+- HDFS 问题
+- MapReduce 问题
+
+---
+
+## 快速链接
+
+- 官方网站：http://hadoop.apache.org/
+- 官方文档：http://hadoop.apache.org/docs/

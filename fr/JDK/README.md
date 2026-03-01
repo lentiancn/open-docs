@@ -1,6 +1,7 @@
-# Node.js
+# JDK Docs
 
 ## Index
+
 1. Intro
 2. Install
 3. Usage

@@ -1,8 +1,7 @@
 # jQuery
 
-Documentation jQuery.
-
-## Documents
-
-- [1. Guide dinstallation](./1.Guide-dinstallation.md)
-- [2. Guide dutilisation](./2.Guide-dutilisation.md)
+## Index
+1. Intro
+2. Install
+3. Usage
+4. FAQ

@@ -1,65 +1,57 @@
-# APISIX
+# Apache APISIX
 
-클라우드 네이티브 API 게이트웨이.
+[![Apache APISIX](https://raw.githubusercontent.com/apache/apisix/master/docs/assets/images/apisix.png)](https://apisix.apache.org/)
 
-## 개요
+**클라우드 네이티브 API 게이트웨이 | AI 게이트웨이**
 
-APISIX는 Apache Software Foundation이 개발한 클라우드 네이티브 API 게이트웨이로, 고성능・高 가용성 API 관리 서비스를 제공합니다.
-
-### 주요 기능
-
-- **고성능**: Nginx + Lua 기반, 10k+ QPS
-- **동적 라우팅**: 재시작 없이 라우트 업데이트
-- **플러그인 시스템**: 70+ 플러그인, 핫로딩
-- **서비스 디스커버리**: Consul, Eureka, Nacos
-- **부하 분산**: 라운드로빈, 해시
-- **보안**: 레이트 리밋, 인증, JWT
-
-### 통계
-
-- GitHub 별표: 13,000+
+동적, 실시간 고성능 API 게이트웨이
 
 ## 문서
 
-| 문서 | 설명 |
+| 파일 | 설명 |
 |------|------|
-| [개요](./1.개요.md) | 프로젝트 개요 |
-| [설치 가이드](./2.설치-가이드.md) | Docker, Helm, 소스 |
-| [사용자 매뉴얼](./3.사용자-매뉴얼.md) | 라우트, 업스트림, 플러그인 |
-| [FAQ](./4.FAQ.md) | 자주 묻는 질문 |
+| [1.소개.md](./1.소개.md) | APISIX 정의 |
+| [2.설치-가이드.md](./2.설치-가이드.md) | 설치 방법 |
+| [3.사용-매뉴얼.md](./3.사용-매뉴얼.md) | 라우트, 인증, 제한 |
+| [4.자주-묻는-질문.md](./4.자주-묻는-질문.md) | FAQ |
 
-## 빠른 시작
+## 시작하기
 
-### Docker 설치
+### 설치
 
 ```bash
-# etcd 시작
-docker run -d --name etcd -p 2379:2379 apache/apisix:3.5.0-etcd
-
-# APISIX 시작
-docker run -d --name apisix -p 9080:9080 apache/apisix:3.5.0
+curl -sL https://run.api7.ai/apisix/quickstart | sh
 ```
 
-### 접근
+### 첫 번째 라우트
 
-- API: http://localhost:9080
-- 대시보드: http://localhost:9090
-- Admin API: http://localhost:9180
+```bash
+curl -i "http://127.0.0.1:9180/apisix/admin/routes" -X PUT -d '
+{"id": "my-route", "uri": "/ip", "upstream": {"type": "roundrobin", "nodes": {"httpbin.org": 1}}}'
+```
 
-## 개념
+### 확인
 
-- **Route**: 매칭 규칙
-- **Upstream**: 백엔드 서비스
-- **Service**: 라우트 컬렉션
-- **Plugin**: 처리 로직
-- **Consumer**: API 소비자
+```bash
+curl "http://127.0.0.1:9080/ip"
+```
 
-## 리소스
+## 기능
 
-- 웹사이트: https://apisix.apache.org
-- 문서: https://apisix.apache.org/docs
+- 동적 라우팅
+- 로드밸런싱
+- 인증
+- 레이트 리미팅
+- 모니터링
+- 다중 프로토콜
+
+## 접근
+
+- HTTP: http://127.0.0.1:9080
+- Admin: http://127.0.0.1:9180
+- Dashboard: http://127.0.0.1:9180/ui
+
+## 자료
+
+- 문서: https://apisix.apache.org/docs/
 - GitHub: https://github.com/apache/apisix
-
-## 라이선스
-
-Apache License 2.0

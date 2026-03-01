@@ -1,93 +1,76 @@
-# APISIX
+# Apache APISIX
 
-Cloud-Native API Gateway.
+[![Apache APISIX](https://raw.githubusercontent.com/apache/apisix/master/docs/assets/images/apisix.png)](https://apisix.apache.org/)
 
-## Overview
+**Cloud-Native API Gateway | AI Gateway**
 
-APISIX is a cloud-native API gateway developed by Apache Software Foundation, providing high-performance and high-availability API management services.
-
-### Core Features
-
-- **High Performance**: Based on Nginx + Lua, 10k+ QPS per core
-- **Dynamic Routing**: Update routes without restart
-- **Plugin System**: 70+ plugins with hot-loading
-- **Service Discovery**: Consul, Eureka, Nacos support
-- **Load Balancing**: Roundrobin, hash, consistent hash
-- **Security**: Rate limiting, authentication, JWT, firewall
-
-### Statistics
-
-- GitHub Stars: 13,000+
-- Production Containers: Millions
+Apache APISIX is a dynamic, real-time, high-performance cloud-native API gateway with rich traffic management features.
 
 ## Documentation
 
-| Document | Description |
-|----------|-------------|
-| [Overview](./1.Overview.md) | Project overview, technical architecture |
-| [Installation Guide](./2.Installation-Guide.md) | Docker, Helm, source installation |
-| [User Manual](./3.User-Manual.md) | Routes, upstream, plugins, load balancing |
-| [FAQ](./4.FAQ.md) | Installation, usage, configuration |
+| File | Description |
+|------|-------------|
+| [1.Introduction.md](./1.Introduction.md) | What is APISIX, core features, technical architecture |
+| [2.Installation-Guide.md](./2.Installation-Guide.md) | Multiple installation methods (Docker, Helm, source) |
+| [3.User-Manual.md](./3.User-Manual.md) | Route config, load balancing, authentication, rate limiting |
+| [4.FAQ.md](./4.FAQ.md) | Frequently asked questions |
 
 ## Quick Start
 
-### Docker Installation
+### Install APISIX
 
 ```bash
-# Start etcd
-docker run -d --name etcd \
-  -p 2379:2379 \
-  apache/apisix:3.5.0-etcd
-
-# Start APISIX
-docker run -d --name apisix \
-  -p 9080:9080 \
-  -p 9090:9090 \
-  apache/apisix:3.5.0
+# Docker quick start (recommended)
+curl -sL https://run.api7.ai/apisix/quickstart | sh
 ```
 
-### Helm Installation (Kubernetes)
+### Create Your First Route
 
 ```bash
-helm repo add apisix https://apache.github.io/apisix-helm-chart
-helm install apisix apisix/apisix
+curl -i "http://127.0.0.1:9180/apisix/admin/routes" -X PUT -d '
+{
+  "id": "my-route",
+  "uri": "/ip",
+  "upstream": {
+    "type": "roundrobin",
+    "nodes": {
+      "httpbin.org:80": 1
+    }
+  }
+}'
 ```
 
-### Access
-
-- API Endpoint: http://localhost:9080
-- Dashboard: http://localhost:9090
-- Admin API: http://localhost:9180
-
-## Core Concepts
-
-- **Route**: Request matching rules
-- **Upstream**: Backend services
-- **Service**: Route collection
-- **Plugin**: Request processing logic
-- **Consumer**: API consumer
-
-## Common Commands
+### Verify
 
 ```bash
-# View routes
-curl http://127.0.0.1:9180/apisix/admin/routes \
-  -H "X-API-KEY: 123456"
-
-# Create route
-curl -X PUT http://127.0.0.1:9180/apisix/admin/routes/1 \
-  -H "X-API-KEY: 123456" \
-  -d '{"uri":"/api/*","upstream":{"type":"roundrobin","nodes":{"localhost:8080":1}}}'
+curl "http://127.0.0.1:9080/ip"
 ```
 
-## Resources
+## Core Features
 
-- Official Website: https://apisix.apache.org
-- Documentation: https://apisix.apache.org/docs
+- Dynamic routing and upstream
+- Load balancing (round-robin, weighted, consistent hash)
+- Authentication (API key, JWT, OAuth, etc.)
+- Rate limiting (limit-count, limit-req, limit-conn)
+- Circuit breaker and health checks
+- Canary release and A/B testing
+- Observability (Prometheus, SkyWalking, Zipkin)
+- Multi-protocol support (HTTP, HTTPS, gRPC, Dubbo, MQTT)
+
+## Access Addresses
+
+- **HTTP**: http://127.0.0.1:9080
+- **HTTPS**: https://127.0.0.1:9443
+- **Admin API**: http://127.0.0.1:9180
+- **Dashboard**: http://127.0.0.1:9180/ui
+
+## Learning Resources
+
+- Official docs: https://apisix.apache.org/docs/
 - GitHub: https://github.com/apache/apisix
-- Dashboard: https://apisix.apache.org/dashboard
-- Community Forum: https://apisix.discourse.group
+- Community forum: https://github.com/apache/apisix/discussions
+- Slack: https://apisix.apache.org/slack
 
-## License
+---
 
-Apache License 2.0
+*This project documentation is based on the latest version of Apache APISIX.*

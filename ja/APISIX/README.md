@@ -1,65 +1,76 @@
-# APISIX
+# Apache APISIX
 
-クラウドネイティブ API ゲートウェイ。
+[![Apache APISIX](https://raw.githubusercontent.com/apache/apisix/master/docs/assets/images/apisix.png)](https://apisix.apache.org/)
 
-## 概要
+**クラウドネイティブAPIゲートウェイ | AIゲートウェイ**
 
-APISIX は Apache ソフトウェア財団旗下的クラウドネイティブ API ゲートウェイであり、高性能・高可用性の API 管理サービスを提供します。
+Apache APISIXは、豊富なトラフィック管理機能を備えた動的・リアルタイム・高性能なクラウドネイティブAPIゲートウェイです。
 
-### 主な機能
-
-- **高性能**: Nginx + Lua ベース、10k+ QPS
-- **動的ルーティング**: 再起動なしでルート更新
-- **プラグインシステム**: 70+ プラグイン
-- **サービス発見**: Consul、Eureka、Nacos サポート
-- **負荷分散**: ラウンドロビン、ハッシュ
-- **セキュリティ**: レート制限、認証、JWT
-
-### 統計
-
-- GitHub スター: 13,000+
-
-## ドキュメント
+## ドキュメント案内
 
 | ドキュメント | 説明 |
-|-------------|------|
-| [概要](./1.概要.md) | プロジェクト概要、技術アーキテクチャ |
-| [インストールガイド](./2.インストールガイド.md) | Docker、Helm、ソースインストール |
-| [ユーザーマニュアル](./3.ユーザーマニュアル.md) | ルート、アップストリーム、プラグイン |
-| [FAQ](./4.FAQ.md) | インストール、使用、設定の問題解答 |
+|------|------|
+| [1.概要.md](./1.概要.md) | APISIXとは、コア機能、技術アーキテクチャ |
+| [2.インストールガイド.md](./2.インストールガイド.md) | 複数のインストール方法（Docker、Helm、ソース） |
+| [3.ユーザーマニュアル.md](./3.ユーザーマニュアル.md) | ルート設定、負荷分散、認証、レート制限など |
+| [4.よくある質問.md](./4.よくある質問.md) | よくある質問と回答 |
 
 ## クイックスタート
 
-### Docker インストール
+### APISIXをインストール
 
 ```bash
-# etcd を起動
-docker run -d --name etcd -p 2379:2379 apache/apisix:3.5.0-etcd
-
-# APISIX を起動
-docker run -d --name apisix -p 9080:9080 apache/apisix:3.5.0
+# Dockerクイックスタート（推奨）
+curl -sL https://run.api7.ai/apisix/quickstart | sh
 ```
 
-### アクセス
+### 最初のルートを作成
 
-- API エンドポイント: http://localhost:9080
-- ダッシュボード: http://localhost:9090
-- Admin API: http://localhost:9180
+```bash
+curl -i "http://127.0.0.1:9180/apisix/admin/routes" -X PUT -d '
+{
+  "id": "my-route",
+  "uri": "/ip",
+  "upstream": {
+    "type": "roundrobin",
+    "nodes": {
+      "httpbin.org:80": 1
+    }
+  }
+}'
+```
 
-## コアコンセプト
+### 確認curl "http://
 
-- **Route**: リクエストマッチルール
-- **Upstream**: バックエンドサービス
-- **Service**: ルートコレクション
-- **Plugin**: リクエスト処理ロジック
-- **Consumer**: API 消費者
+```bash
+127.0.0.1:9080/ip"
+```
 
-## リソース
+## コア機能
 
-- 公式サイト: https://apisix.apache.org
-- ドキュメント: https://apisix.apache.org/docs
-- GitHub: https://github.com/apache/apisix
+- 動的ルートとアップストリーム
+- 負荷分散（ラウンドロビン、加重、一貫性ハッシュ）
+- 認証（APIキー、JWT、OAuthなど）
+- レート制限（limit-count、limit-req、limit-conn）
+- サーキサブレーカーとヘルスチェック
+- カナリアリリースとA/Bテスト
+- 可観測性（Prometheus、SkyWalking、Zipkin）
+- マルチプロトコルサポート（HTTP、HTTPS、gRPC、Dubbo、MQTT）
 
-## ライセンス
+## アクセスアドレス
 
-Apache License 2.0
+- **HTTP**: http://127.0.0.1:9080
+- **HTTPS**: https://127.0.0.1:9443
+- **Admin API**: http://127.0.0.1:9180
+- **Dashboard**: http://127.0.0.1:9180/ui
+
+## 学習リソース
+
+- 公式ドキュメント：https://apisix.apache.org/docs/
+- GitHub：https://github.com/apache/apisix
+- コミュニティフォーラム：https://github.com/apache/apisix/discussions
+- Slack：https://apisix.apache.org/slack
+
+---
+
+*このプロジェクトドキュメントはApache APISIX最新バージョンに基づいています。*

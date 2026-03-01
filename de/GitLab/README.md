@@ -1,48 +1,62 @@
-# GitLab
+# GitLab Dokumentation
 
-> Vollständige DevOps-Plattform für Softwareentwicklung und Betrieb
+> GitLab ist eine vollständige DevOps-Plattform. Dieses Dokument hilft Ihnen beim schnellen Einstieg.
 
 ---
 
-## Überblick
+## Dokumentationsverzeichnis
 
-GitLab ist ein webbasiertes Git-Repository-Management-Tool mit umfassenden DevOps-Funktionen einschließlich Quellcode-Management, Issue-Tracking, CI/CD-Pipelines und Sicherheits-Scans.
+### 1. Einführung
+GitLab-Überblick, Hauptfunktionen, Architektur und Anwendungsfälle
 
-## Dokumentation
+**[Einführung lesen →](./1.Einführung.md)**
 
-Dieses Verzeichnis enthält die vollständige Dokumentation in Deutsch:
+### 2. Installationsanleitung
+Vollständige Installations- und Konfigurationsanleitung
 
-| Datei | Beschreibung |
-|-------|--------------|
-| 1.Übersicht.md | Einführung und Überblick |
-| 2.Installationsanleitung.md | Installations- und Einrichtungsanleitung |
-| 3.Benutzerhandbuch.md | Detaillierte Nutzungsanleitung |
-| 4.FAQ.md | Häufig gestellte Fragen |
-| README.md | Diese Übersichtsdatei |
+**[Installationsanleitung lesen →](./2.Installationsanleitung.md)**
 
-## Schnellstart
+- Omnibus-Paket-Installation (Ubuntu/Debian/CentOS)
+- Docker-Installation
+- Kubernetes-Installation
+- Erstkonfiguration
+- Häufige Befehle
 
-### Hauptfunktionen
+### 3. Benutzerhandbuch
+Detaillierte Anleitung zur Nutzung der Funktionen
 
-- Git-Repository-Hosting mit Branching und Tagging
-- Issue-Tracking und Projektmanagement
-- Integrierte CI/CD-Pipelines
-- Code-Review und Merge-Requests
-- Wiki für Dokumentation
-- Sicherheits-Scans
+**[Benutzerhandbuch lesen →](./3.Benutzerhandbuch.md)**
+
+- Code-Management (Branches, Merge Requests, Code-Review)
+- Issue-Tracking
+- CI/CD-Pipelines
+- Wiki-Dokumentation
 - Container-Registry
+- Sicherheits-Scanning
 
-### Grundlegender Workflow
+### 4. Häufig gestellte Fragen
+Antworten auf häufige Fragen
 
-1. Projekt erstellen
-2. Repository klonen
-3. Branch erstellen und Änderungen vornehmen
-4. Pushen und Merge-Request erstellen
-5. Review und zusammenführen
-6. CI/CD deployed automatisch
+**[FAQ lesen →](./4.Häufig-gestellte-Fragen.md)**
 
-## Support
-
-Weitere Informationen finden Sie in den Dokumentationsdateien oder unter https://docs.gitlab.com/
+- Installationsprobleme
+- Git-Operationen
+- CI/CD-Probleme
+- Berechtigungsfragen
 
 ---
+
+## Schnelllinks
+
+- Offizielle Website: https://about.gitlab.com/
+- Offizielle Dokumentation: https://docs.gitlab.com/
+- Download: https://about.gitlab.com/install/
+
+---
+
+## Verwandte Tools
+
+- **Git**: Versionskontrollsystem
+- **GitLab Runner**: CI/CD-Executor
+- **Docker**: Containerisierungsplattform
+- **Kubernetes**: Container-Orchestrierung

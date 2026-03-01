@@ -1,55 +1,36 @@
 # OpenClaw
 
-> 高度な自動化のためのAIアシスタントフレームワーク
+**自己ホスト型AIゲートウェイ**
 
----
-
-## 概要
-
-OpenClawは、高度なエージェント技術を使用してタスクを自動化するように設計された多用途のAIアシスタントフレームワークです。
+WhatsApp、Telegram、Discord、iMessageをAIアシスタントに接続。
 
 ## ドキュメント
 
-このディレクトリには日本語の完全なドキュメントが含まれています：
-
 | ファイル | 説明 |
-|---------|------|
-| 1.概要.md | 紹介と概要 |
-| 2.インストールガイド.md | インストールとセットアップガイド |
-| 3.ユーザーマニュアル.md | 詳細な使用ガイド |
-| 4.FAQ.md | よくある質問 |
-| README.md | この概要ファイル |
+|----------|------|
+| [1.概要.md](./1.概要.md) | OpenClawとは |
+| [2.インストールガイド.md](./2.インストールガイド.md) | インストール |
+| [3.ユーザーマニュアル.md](./3.ユーザーマニュアル.md) | 使い方 |
+| [4.よくある質問.md](./4.よくある質問.md) | FAQ |
 
 ## クイックスタート
 
-### インストール
-
 ```bash
-npm install -g openclaw
+npm install -g openclaw@latest
+openclaw onboard --install-daemon
+openclaw gateway --port 18789
 ```
 
-### Gatewayを起動
-
-```bash
-openclaw gateway start
-```
-
-### はじめに
-
-```bash
-openclaw chat
-```
+http://127.0.0.1:18789/
 
 ## 機能
 
-- インテリジェントエージェント
-- ブラウザ自動化
-- ファイル管理
-- メッセージング
-- ツールの拡張性
+- マルチチャンネル
+- Webダッシュボード
+- モバイルノード
+- セキュリティ制御
 
-## サポート
+## リソース
 
-詳細については、ドキュメントファイルを参照してください。
-
----
+- Docs: https://docs.openclaw.ai
+- GitHub: https://github.com/openclaw/openclaw

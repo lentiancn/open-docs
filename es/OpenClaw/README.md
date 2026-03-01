@@ -1,55 +1,29 @@
 # OpenClaw
 
-> Marco de Asistente de IA para Automatización Avanzada
+**Puerta de Enlace AI Autohospedada**
 
----
+Conecta WhatsApp, Telegram, Discord, iMessage a asistentes AI.
 
-## Resumen
-
-OpenClaw es un marco versátil de asistente de IA diseñado para automatizar tareas mediante tecnología de agentes avanzados.
-
-## Documentación
-
-Este directorio contiene documentación completa en Español:
+## Docs
 
 | Archivo | Descripción |
 |---------|-------------|
-| 1.Resumen.md | Introducción y visión general |
-| 2.Guía-de-Instalación.md | Guía de instalación y configuración |
-| 3.Manual-de-Usuario.md | Guía detallada de uso |
-| 4.Preguntas-Frecuentes.md | Preguntas frecuentes |
-| README.md | Este archivo de visión general |
+| [1.Introducción.md](./1.Introducción.md) | Qué es OpenClaw |
+| [2.Guía-de-instalación.md](./2.Guía-de-instalación.md) | Instalación |
+| [3.Manual-del-usuario.md](./3.Manual-del-usuario.md) | Uso |
+| [4.Preguntas-frecuentes.md](./4.Preguntas-frecuentes.md) | FAQ |
 
-## Inicio Rápido
-
-### Instalación
+## Inicio
 
 ```bash
-npm install -g openclaw
+npm install -g openclaw@latest
+openclaw onboard --install-daemon
+openclaw gateway --port 18789
 ```
 
-### Iniciar Gateway
+http://127.0.0.1:18789/
 
-```bash
-openclaw gateway start
-```
+## Recursos
 
-### Primeros Pasos
-
-```bash
-openclaw chat
-```
-
-## Características
-
-- Agentes Inteligentes
-- Automatización de Navegador
-- Gestión de Archivos
-- Mensajería
-- Extensibilidad de Herramientas
-
-## Soporte
-
-Para más información, consulta los archivos de documentación.
-
----
+- Docs: https://docs.openclaw.ai
+- GitHub: https://github.com/openclaw/openclaw

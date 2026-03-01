@@ -1,55 +1,43 @@
 # OpenClaw
 
-> 用於進階自動化的 AI 助理框架
+**自托管 AI 閘道**
 
----
+OpenClaw 連接 WhatsApp、Telegram、Discord、iMessage 到 AI 編程助手。
 
-## 簡介
+## 文檔
 
-OpenClaw 是一款多功能 AI 助理框架，透過先進的代理程式技術自動執行任務。
-
-## 文件
-
-本目錄包含繁體中文的完整文件：
-
-| 檔案 | 說明 |
+| 文件 | 說明 |
 |------|------|
-| 1.簡介.md | 簡介與概述 |
-| 2.安裝指南.md | 安裝與設定指南 |
-| 3.使用手冊.md | 詳細使用指南 |
-| 4.常見問題.md | 常見問題 |
-| README.md | 本概述檔案 |
+| [1.簡介.md](./1.簡介.md) | 什麼是 OpenClaw |
+| [2.安裝指南.md](./2.安裝指南.md) | 安裝方法 |
+| [3.使用手冊.md](./3.使用手冊.md) | 使用指南 |
+| [4.常見問題.md](./4.常見問題.md) | FAQ |
 
-## 快速入門
-
-### 安裝
+## 快速開始
 
 ```bash
-npm install -g openclaw
+# 安裝
+npm install -g openclaw@latest
+
+# 初始化
+openclaw onboard --install-daemon
+
+# 啟動
+openclaw gateway --port 18789
 ```
 
-### 啟動 Gateway
-
-```bash
-openclaw gateway start
-```
-
-### 開始使用
-
-```bash
-openclaw chat
-```
+訪問 http://127.0.0.1:18789/
 
 ## 功能
 
-- 智慧代理程式
-- 瀏覽器自動化
-- 檔案管理
-- 訊息傳送
-- 工具擴展性
+- 多通道（WhatsApp、Telegram、Discord、iMessage）
+- Web 控制台
+- 多代理路由
+- 移動節點
+- 安全控制
 
-## 支援
+## 資源
 
-如需更多信息，請參閱文件檔案。
-
----
+- 文檔：https://docs.openclaw.ai
+- GitHub：https://github.com/openclaw/openclaw
+- Discord：https://discord.com/invite/clawd

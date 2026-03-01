@@ -1,55 +1,43 @@
 # OpenClaw
 
-> AI Assistant Framework for Advanced Automation
+**Self-Hosted AI Gateway**
 
----
+OpenClaw connects WhatsApp, Telegram, Discord, iMessage to AI coding assistants.
 
-## Overview
-
-OpenClaw is a versatile AI assistant framework designed to automate tasks through advanced agent technology.
-
-## Documentation
-
-This directory contains complete documentation in English:
+## Docs
 
 | File | Description |
 |------|-------------|
-| 1.Introduction.md | Overview and introduction |
-| 2.Installation-Guide.md | Installation and setup guide |
-| 3.User-Manual.md | Detailed usage guide |
-| 4.FAQ.md | Frequently asked questions |
-| README.md | This overview file |
+| [1.Introduction.md](./1.Introduction.md) | What is OpenClaw |
+| [2.Installation-Guide.md](./2.Installation-Guide.md) | Installation |
+| [3.User-Manual.md](./3.User-Manual.md) | Usage guide |
+| [4.FAQ.md](./4.FAQ.md) | FAQ |
 
 ## Quick Start
 
-### Installation
-
 ```bash
-npm install -g openclaw
+# Install
+npm install -g openclaw@latest
+
+# Initialize
+openclaw onboard --install-daemon
+
+# Start
+openclaw gateway --port 18789
 ```
 
-### Start Gateway
-
-```bash
-openclaw gateway start
-```
-
-### First Steps
-
-```bash
-openclaw chat
-```
+Open http://127.0.0.1:18789/
 
 ## Features
 
-- Intelligent Agents
-- Browser Automation
-- File Management
-- Messaging
-- Tool Extensibility
+- Multi-channel (WhatsApp, Telegram, Discord, iMessage)
+- Web Control UI
+- Multi-agent routing
+- Mobile nodes
+- Security controls
 
-## Support
+## Resources
 
-For more information, see the documentation files.
-
----
+- Docs: https://docs.openclaw.ai
+- GitHub: https://github.com/openclaw/openclaw
+- Discord: https://discord.com/invite/clawd

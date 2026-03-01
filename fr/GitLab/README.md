@@ -1,48 +1,62 @@
-# GitLab
+# Documentation GitLab
 
-> Plateforme DevOps Complète pour le Développement Logiciel et les Opérations
+> GitLab est une plateforme DevOps complète. Cette documentation vous aidera à démarrer rapidement.
 
 ---
 
-## Vue d'Ensemble
+## Index de Documentation
 
-GitLab est un gestionnaire de dépôts Git basé sur le web avec des capacités DevOps complètes incluant la gestion du code source, le suivi des problèmes, les pipelines CI/CD et l'analyse de sécurité.
+### 1. Introduction
+Présentation de GitLab, fonctionnalités principales, architecture et cas d'utilisation
 
-## Documentation
+**[Lire l'Introduction →](./1.Introduction.md)**
 
-Ce répertoire contient la documentation complète en Français:
+### 2. Guide d'Installation
+Tutorial complet d'installation et configuration
 
-| Fichier | Description |
-|---------|-------------|
-| 1.Aperçu.md | Introduction et vue d'ensemble |
-| 2.Guide-d-Installation.md | Guide d'installation et configuration |
-| 3.Manuel-Utilisateur.md | Guide d'utilisation détaillé |
-| 4.FAQ.md | Questions fréquentes |
-| README.md | Ce fichier de vue d'ensemble |
+**[Lire le Guide d'Installation →](./2.Guide-d-Installation.md)**
 
-## Démarrage Rapide
+- Installation du paquet Omnibus (Ubuntu/Debian/CentOS)
+- Installation Docker
+- Installation Kubernetes
+- Configuration initiale
+- Commandes courantes
 
-### Fonctionnalités Principales
+### 3. Manuel Utilisateur
+Tutorial détaillé d'utilisation des fonctionnalités
 
-- Hébergement de dépôts Git avec branchement et étiquetage
-- Suivi des problèmes et gestion de projet
-- Pipelines CI/CD intégrés
-- Révision de code et merge requests
-- Wiki pour documentation
-- Analyse de sécurité
+**[Lire le Manuel Utilisateur →](./3.Manuel-Utilisateur.md)**
+
+- Gestion du code (branches, merge requests, révision de code)
+- Suivi des problèmes
+- Pipelines CI/CD
+- Documentation Wiki
 - Registre de conteneurs
+- Scan de sécurité
 
-### Flux de Travail de Base
+### 4. FAQ
+Questions fréquentes
 
-1. Créer un projet
-2. Cloner le dépôt
-3. Créer une branche et faire des modifications
-4. Pousser et créer une merge request
-5. Réviser et fusionner
-6. CI/CD déploie automatiquement
+**[Lire la FAQ →](./4.FAQ.md)**
 
-## Support
-
-Pour plus d'informations, consultez les fichiers de documentation ou visitez https://docs.gitlab.com/
+- Problèmes d'installation
+- Opérations Git
+- Problèmes CI/CD
+- Questions de permissions
 
 ---
+
+## Liens Rapides
+
+- Site Web Officiel: https://about.gitlab.com/
+- Documentation Officielle: https://docs.gitlab.com/
+- Téléchargement et Installation: https://about.gitlab.com/install/
+
+---
+
+## Outils Connexes
+
+- **Git**: Système de contrôle de versions
+- **GitLab Runner**: Exécuteur CI/CD
+- **Docker**: Plateforme de conteneurisation
+- **Kubernetes**: Orchestration de conteneurs

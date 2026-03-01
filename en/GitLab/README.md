@@ -1,48 +1,62 @@
-# GitLab
+# GitLab Documentation
 
-> Complete DevOps Platform for Software Development and Operations
+> GitLab is a complete DevOps platform. This documentation will help you get started quickly.
 
 ---
 
-## Overview
+## Documentation Index
 
-GitLab is a web-based Git repository manager that provides comprehensive DevOps capabilities including source code management, issue tracking, CI/CD pipelines, and security scanning.
+### 1. Introduction
+GitLab overview, key features, architecture, and use cases
 
-## Documentation
+**[Read Introduction →](./1.Introduction.md)**
 
-This directory contains complete documentation in English:
+### 2. Installation Guide
+Complete installation and configuration tutorial
 
-| File | Description |
-|------|-------------|
-| 1.Introduction.md | Overview and introduction |
-| 2.Installation-Guide.md | Installation and setup guide |
-| 3.User-Manual.md | Detailed usage guide |
-| 4.FAQ.md | Frequently asked questions |
-| README.md | This overview file |
+**[Read Installation Guide →](./2.Installation-Guide.md)**
 
-## Quick Start
+- Omnibus package installation (Ubuntu/Debian/CentOS)
+- Docker installation
+- Kubernetes installation
+- Initial configuration
+- Common commands
 
-### Key Features
+### 3. User Manual
+Detailed feature usage tutorial
 
-- Git repository hosting with branching and tagging
-- Issue tracking and project management
-- Built-in CI/CD pipelines
-- Code review and merge requests
-- Wiki for documentation
-- Security scanning
+**[Read User Manual →](./3.User-Manual.md)**
+
+- Code management (branches, merge requests, code review)
+- Issue tracking
+- CI/CD pipelines
+- Wiki documentation
 - Container registry
+- Security scanning
 
-### Basic Workflow
+### 4. FAQ
+Frequently asked questions
 
-1. Create a project
-2. Clone repository
-3. Create branch and make changes
-4. Push and create merge request
-5. Review and merge
-6. CI/CD auto-deploys
+**[Read FAQ →](./4.FAQ.md)**
 
-## Support
-
-For more information, see the documentation files or visit https://docs.gitlab.com/
+- Installation issues
+- Git operations
+- CI/CD issues
+- Permission questions
 
 ---
+
+## Quick Links
+
+- Official Website: https://about.gitlab.com/
+- Official Documentation: https://docs.gitlab.com/
+- Download & Install: https://about.gitlab.com/install/
+
+---
+
+## Related Tools
+
+- **Git**: Version control system
+- **GitLab Runner**: CI/CD executor
+- **Docker**: Containerization platform
+- **Kubernetes**: Container orchestration

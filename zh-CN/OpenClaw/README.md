@@ -1,23 +1,32 @@
-# OpenClaw
+# OpenClaw 文档导航
 
-[![OpenClaw](https://mintcdn.com/clawdhub/-t5HSeZ3Y_0_wH4i/assets/openclaw-logo-text-dark.png)](https://openclaw.ai/)
+OpenClaw 是一个强大的自托管 AI 助手网关，本目录包含其中文文档帮助你了解和使用 OpenClaw。
 
-**自托管 AI 网关 | 连接多平台聊天应用**
+---
 
-OpenClaw 是一个强大的自托管网关软件，将 WhatsApp、Telegram、Discord、iMessage 等聊天应用连接到 AI 编程助手。
+## 文档目录
 
-## 文档导航
-
-| 文档 | 说明 |
+| 文件 | 说明 |
 |------|------|
-| [1.简介.md](./1.简介.md) | OpenClaw 是什么、核心特性、架构 |
-| [2.安装指南.md](./2.安装指南.md) | 多种安装方式 |
-| [3.使用手册.md](./3.使用手册.md) | 通道配置、消息发送、会话管理 |
+| [1.简介.md](./1.简介.md) | OpenClaw 是什么，功能特点，系统要求 |
+| [2.安装指南.md](./2.安装指南.md) | 各种系统的安装方法，配置说明 |
+| [3.使用手册.md](./3.使用手册.md) | 详细的使用说明和功能介绍 |
 | [4.常见问题.md](./4.常见问题.md) | 常见问题解答 |
+
+---
+
+## 快速链接
+
+- 🌐 **官方网站**：https://openclaw.ai
+- 📖 **官方文档**：https://docs.openclaw.ai
+- 💻 **GitHub**：https://github.com/openclaw/openclaw
+- 💬 **Discord 社区**：https://discord.gg/clawd
+
+---
 
 ## 快速开始
 
-### 安装 OpenClaw
+### 安装
 
 ```bash
 # macOS / Linux
@@ -25,46 +34,48 @@ curl -fsSL https://openclaw.ai/install.sh | bash
 
 # Windows (PowerShell)
 iwr -useb https://openclaw.ai/install.ps1 | iex
+
+# 或通过 npm
+npm install -g openclaw@latest
 ```
 
-### 初始化
+### 配置
 
 ```bash
+# 运行初始化向导
 openclaw onboard --install-daemon
-```
 
-### 启动 Gateway
-
-```bash
+# 启动 Gateway
 openclaw gateway --port 18789
 ```
 
-### 打开控制台
+### 使用
 
-```
-http://127.0.0.1:18789/
-```
-
-## 核心功能
-
-- **多通道支持**：WhatsApp、Telegram、Discord、iMessage
-- **Web 控制台**：浏览器直接聊天和管理
-- **多代理路由**：支持多个 AI 代理
-- **移动节点**：iOS、Android 设备配对
-- **媒体支持**：图片、语音、文件
-- **安全控制**：白名单、群组权限
-
-## 支持的平台
-
-- macOS / Linux / Windows
-- iOS / Android（节点）
-
-## 学习资源
-
-- 官方文档：https://docs.openclaw.ai
-- GitHub：https://github.com/openclaw/openclaw
-- Discord：https://discord.com/invite/clawd
+打开浏览器访问 http://127.0.0.1:18789/ 即可开始使用。
 
 ---
 
-*本项目文档基于 OpenClaw 最新版本编写。*
+## 功能一览
+
+- ✅ 多渠道支持（WhatsApp、Telegram、Discord、iMessage 等）
+- ✅ 自托管，数据本地存储
+- ✅ 多代理路由
+- ✅ Web 控制界面
+- ✅ 移动端节点支持
+- ✅ 定时任务和 Webhook
+- ✅ 浏览器自动化
+- ✅ 语音交互
+
+---
+
+## 相关文档
+
+如果你需要其他语言的文档，可以在以下目录找到：
+- [English](../en/)
+- [日本語](../ja/)
+- [Español](../es/)
+- [Deutsch](../de/)
+- [Français](../fr/)
+- [Русский](../ru/)
+- [한국어](../ko/)
+- [繁體中文](../zh-Hant/)

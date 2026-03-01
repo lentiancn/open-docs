@@ -1,59 +1,21 @@
-# Go
+# Documentation Go
 
-> Langage de programmation compilé par Google
+> Go est un langage de programmation compilé développé par Google, connu pour sa simplicité et son support puissant de concurrence.
 
----
+## Index
 
-## Description
+1. **Introduction** - Vue d'ensemble, fonctionnalités, cas d'usage
+2. **Guide d'Installation** - Installation et configuration
+3. **Manuel Utilisateur** - Guide de programmation complet
+4. **FAQ** - Questions fréquentes
 
-Go (aussi connu sous le nom de Golang) est un langage créé par Google en 2009. Connu pour sa simplicité, son efficacité et son puissant support de concurrence.
-
----
-
-## Caractéristiques
-
-- Typage statique
-- Garbage collection
-- Concurrence native (goroutines)
-- Compilation rapide
-- Bibliothèque standard riche
-
----
-
-## Version
-
-| Version | Date | État |
-|---------|------|------|
-| Go 1.22 | Fév 2024 | Stable actuel |
-| Go 1.21 | Aoû 2023 | Stable |
-
----
-
-## Documentation
-
-| Document | Description |
-|----------|-------------|
-| [Introduction](./1.Introduction.md) | Aperçu |
-| [Guide d'installation](./2.Guide-dinstallation.md) | Installation |
-| [Manuel utilisateur](./3.Manuel-utilisateur.md) | Syntaxe |
-| [FAQ](./4.FAQ.md) | Questions |
-
----
-
-## Démarrage
-
-```go
-package main
-
-import "fmt"
-
-func main() {
-    fmt.Println("Bonjour, le monde!")
-}
-```
-
----
-
-## Ressources
+## Liens Rapides
 
 - Site officiel: https://go.dev/
+- Documentation: https://go.dev/doc/
+- Go by Example: https://gobyexample.com/
+
+## Outils
+
+- VS Code + extension Go
+- GoLand (JetBrains)

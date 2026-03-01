@@ -1,15 +1,14 @@
-# Documentación de Hadoop
+# Hadoop Documentación
 
-Apache Hadoop es un sistema de almacenamiento distribuido.
+> Hadoop - Plataforma de computación distribuida
 
-## Documentos
+## Índice
 
-- [Guía de Instalación](./1.安装文档.md)
-- [Guía de Uso](./2.使用指南.md)
+1. Introducción
+2. Guía de Instalación
+3. Manual
+4. FAQ
 
-## Inicio Rápido
+## Enlaces
 
-```bash
-wget https://dlcdn.apache.org/hadoop/common/hadoop-3.4.3/hadoop-3.4.3.tar.gz
-start-dfs.sh
-```
+- Sitio web: http://hadoop.apache.org/

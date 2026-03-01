@@ -8,25 +8,25 @@ Yarn is a powerful JavaScript package manager and project manager.
 
 | File | Description |
 |------|-------------|
-| [1.Introduction.md](./1.Introduction.md) | What is Yarn, features |
-| [2.Installation-Guide.md](./2.Installation-Guide.md) | Installation methods |
-| [3.User-Manual.md](./3.User-Manual.md) | Detailed usage guide |
+| [1.Introduction.md](./1.Introduction.md) | What is Yarn, features, system requirements |
+| [2.Installation-Guide.md](./2.Installation-Guide.md) | Various system installation methods, configuration |
+| [3.User-Manual.md](./3.User-Manual.md) | Detailed usage instructions and feature introduction |
 | [4.FAQ.md](./4.FAQ.md) | Frequently asked questions |
 
 ---
 
 ## Quick Links
 
-- 🌐 **Website**: https://yarnpkg.com
-- 📖 **Documentation**: https://yarnpkg.com/docs
+- 🌐 **Official Website**: https://yarnpkg.com
+- 📖 **Official Documentation**: https://yarnpkg.com/docs
 - 💻 **GitHub**: https://github.com/yarnpkg/berry
-- 💬 **Discord**: https://discord.gg/yarn
+- 💬 **Discord Community**: https://discord.gg/yarn
 
 ---
 
 ## Quick Start
 
-### Install
+### Installation
 
 ```bash
 # Using corepack (recommended)
@@ -37,11 +37,23 @@ corepack prepare yarn@stable --activate
 npm install -g yarn
 ```
 
-### Initialize
+### Initialize Project
 
 ```bash
 yarn init
+```
+
+### Install Dependencies
+
+```bash
 yarn install
+```
+
+### Add Dependencies
+
+```bash
+yarn add lodash
+yarn add -D typescript
 ```
 
 ---
@@ -49,13 +61,25 @@ yarn install
 ## Features
 
 - ✅ Fast installation (parallel downloads)
-- ✅ Deterministic installs (yarn.lock)
+- ✅ Deterministic installation (yarn.lock)
 - ✅ Offline caching
 - ✅ Workspace support (Monorepo)
 - ✅ Plugin system
 - ✅ Zero-Installs
-- ✅ Security
-- ✅ Cross-platform
+- ✅ Security (integrity verification)
+- ✅ Cross-platform support
+
+---
+
+## Yarn 4.x vs Yarn 1.x
+
+| Feature | Yarn 1.x | Yarn 4.x |
+|---------|----------|----------|
+| Performance | Fast | Faster |
+| PnP Mode | Not supported | Supported |
+| Plugin System | Basic | Powerful |
+| Zero-Installs | Not supported | Supported |
+| Configuration Format | .yarnrc | .yarnrc.yml |
 
 ---
 

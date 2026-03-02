@@ -1,49 +1,40 @@
 # Apifox
 
-API all-in-one collaboration platform.
+API integrated collaboration platform.
 
-## Overview
+## Introduction
 
-Apifox is an API all-in-one collaboration platform that integrates API documentation, debugging, Mock, and automated testing.
+Apifox is an API integrated collaboration platform that combines API documentation, API debugging, API Mock, and API automated testing.
 
-### Key Features
+### Main Features
 
-- **API Documentation** - Auto-generate API docs
-- **API Debugging** - HTTP request simulation
-- **Mock Services** - Quick Mock server creation
-- **Automated Testing** - API automated testing
-- **Team Collaboration** - Project management and permissions
-
-### Statistics
-
-- Millions of developers
-
-## Documentation
-
-| Document | Description |
-|----------|-------------|
-| [Overview](./1.Overview.md) | Project overview |
-| [Installation Guide](./2.Installation-Guide.md) | Installation |
-| [User Manual](./3.User-Manual.md) | Usage guide |
-| [FAQ](./4.FAQ.md) | Common questions |
+- API Documentation
+- API Debugging
+- Mock Service
+- Automated Testing
+- Team Collaboration
+- Data Sync
 
 ## Quick Start
 
-### Install
+1. Download from https://apifox.com
+2. Install and launch
+3. Register/login
+4. Create project and start using
 
-Download from https://apifox.com
+## Documentation Navigation
 
-### Use
+| Document | Description |
+|----------|-------------|
+| [Introduction](./1.Introduction.md) | Project overview |
+| [Installation Guide](./2.Installation-Guide.md) | Download and setup |
+| [User Manual](./3.User-Manual.md) | Core features |
+| [FAQ](./4.FAQ.md) | Common questions |
 
-1. Create project
-2. New interface
-3. Send request
-4. View response
+## Related Resources
 
-## Resources
-
-- Official: https://apifox.com
-- Docs: https://apifox.com/help
+- Official Website: https://apifox.com
+- Documentation: https://apifox.com/help
 - GitHub: https://github.com/apifox
 
 ## License

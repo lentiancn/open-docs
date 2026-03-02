@@ -1,33 +1,33 @@
 # Angular
 
-Modern Web Application Development Framework.
+Modern web application development framework.
 
-## Overview
+## Introduction
 
 Angular is an open-source web application framework developed and maintained by Google, providing a complete solution for modern web application development.
 
 ### Main Features
 
-- **Native TypeScript**: Built with TypeScript
-- **Component-Based**: Easy maintenance and testing
-- **Dependency Injection**: Powerful DI system
-- **Routing**: Complete client-side routing
-- **Forms**: Reactive forms support
-- **HTTP Client**: Complete HTTP services
+- **TypeScript Native**: Built entirely on TypeScript
+- **Component-Based Architecture**: Component-based development pattern
+- **Dependency Injection**: Powerful dependency injection system
+- **Routing System**: Complete client-side routing
+- **Form Handling**: Reactive forms support
+- **HTTP Client**: Complete HTTP service
 
 ### Statistics
 
 - GitHub Stars: 93,000+
 - Weekly Downloads: 3,000,000+
 
-## Documentation
+## Documentation Navigation
 
 | Document | Description |
-|----------|-------------|
-| [Introduction](./1.Introduction.md) | Project overview, architecture |
+|---------|-------------|
+| [Introduction](./1.Introduction.md) | Project overview, technical architecture, statistics |
 | [Installation Guide](./2.Installation-Guide.md) | Environment setup, project creation |
 | [User Manual](./3.User-Manual.md) | Components, services, routing, forms |
-| [FAQ](./4.FAQ.md) | Installation, development, testing issues |
+| [FAQ](./4.FAQ.md) | Installation, development, testing FAQs |
 
 ## Quick Start
 
@@ -67,18 +67,16 @@ ng test
 
 ## Core Concepts
 
-- **Component**: View and logic combination
+- **Component**: Combination of view and logic
 - **Module**: Organize application code
 - **Service**: Encapsulate business logic
 - **Routing**: Page navigation
 - **Directive**: Extend HTML
-- **Pipe**: Data transformation
 
-## Resources
+## Related Resources
 
 - Official Website: https://angular.io
 - GitHub: https://github.com/angular/angular
-- StackBlitz: https://stackblitz.com
 
 ## License
 

@@ -1,29 +1,30 @@
 # Apache APISIX
 
-雲端原生 API 閘道
+云原生 API 网关
 
 ## 概述
 
-Apache APISIX 是 Apache 軟體基金會旗下的雲端原生 API 閘道，為企業提供高效能、高可用的 API 管理服務。作為動態、即時、可擴展的 API 閘道，APISIX 已成為數百萬容器化部署的首選解決方案。
+Apache APISIX 是 Apache 软件基金会旗下的云原生 API 网关，为企业提供高性能、高可用的 API 管理服务。作为动态、实时、可扩展的 API 网关，APISIX 已成为数百万容器化部署的首选解决方案。
 
 ## 特性
 
-- 高效能：基於 Nginx + Lua 實現，單核可達 10k+ QPS
-- 動態路由：無需重啟即可動態更新路由規則
-- 插件系統：豐富的插件生態，支援熱加載
-- 多協議支援：HTTP、HTTPS、HTTP/2、Dubbo、gRPC、WebSocket
-- 安全防護：限流、認證、JWT、防火牆
-- 可觀測性：整合 Prometheus、Zipkin、日誌等
+- 高性能：单核可达 18,000+ QPS
+- 完全动态：无需重启即可更新配置
+- 热加载：插件支持热加载
+- 多协议支持：HTTP、HTTPS、HTTP/2、Dubbo、gRPC、WebSocket
+- 插件生态：80+ 内置插件，支持自定义开发
+- 安全：限流、认证、JWT、防火墙
+- 可观测性：集成 Prometheus、Zipkin、日志
 
-## 快速開始
+## 快速开始
 
-### Docker 安裝
+### Docker 安装
 
 ```bash
 curl -sL https://run.api7.ai/apisix/quickstart | sh
 ```
 
-### 建立路由
+### 创建路由
 
 ```bash
 curl -i "http://127.0.0.1:9180/apisix/admin/routes" -X PUT -d '
@@ -39,19 +40,19 @@ curl -i "http://127.0.0.1:9180/apisix/admin/routes" -X PUT -d '
 }'
 ```
 
-## 文檔
+## 文档
 
-- [簡介](./1.簡介.md)
-- [安裝指南](./2.安裝指南.md)
-- [使用手冊](./3.使用手冊.md)
-- [常見問題](./4.常見問題.md)
+- [简介](./1.简介.md)
+- [安装指南](./2.安装指南.md)
+- [使用手册](./3.使用手册.md)
+- [常见问题](./4.常见问题.md)
 
-## 資源
+## 资源
 
-- 官方網站：https://apisix.apache.org
-- 官方文檔：https://apisix.apache.org/docs
+- 官方网站：https://apisix.apache.org
+- 官方文档：https://apisix.apache.org/docs
 - GitHub：https://github.com/apache/apisix
 
-## 授權
+## 许可证
 
 Apache License 2.0

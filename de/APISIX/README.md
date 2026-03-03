@@ -1,65 +1,57 @@
-# APISIX
+# Apache APISIX
 
-Cloud-nativer API-Gateway.
+Cloud-Native API Gateway
 
-## Übersicht
+## Overview
 
-APISIX ist ein cloud-nativer API-Gateway der Apache Software Foundation, der hochleistungsfähige und hochverfügbare API-Verwaltungsdienste bietet.
+Apache APISIX is a cloud-native API gateway under the Apache Software Foundation, providing high-performance and high-availability API management services. As a dynamic, real-time, and scalable API gateway, APISIX has become the preferred solution for millions of containerized deployments.
 
-### Hauptfunktionen
+## Features
 
-- **Hohe Leistung**: Basiert auf Nginx + Lua, 10k+ QPS
-- **Dynamisches Routing**: Routen ohne Neustart aktualisieren
-- **Plugin-System**: 70+ Plugins mit Hot-Loading
-- **Service-Discovery**: Consul, Eureka, Nacos
-- **Load Balancing**: Roundrobin, Hash
-- **Sicherheit**: Rate Limiting, Authentifizierung, JWT
+- High Performance: Built on Nginx + Lua, capable of 10k+ QPS per core
+- Dynamic Routing: Dynamically update routing rules without restart
+- Plugin System: Rich plugin ecosystem with hot-reloading support
+- Multi-Protocol Support: HTTP, HTTPS, HTTP/2, Dubbo, gRPC, WebSocket
+- Security: Rate limiting, authentication, JWT, firewall
+- Observability: Integrated with Prometheus, Zipkin, logging, and more
 
-### Statistiken
+## Quick Start
 
-- GitHub Stars: 13.000+
-
-## Dokumentation
-
-| Dokument | Beschreibung |
-|----------|--------------|
-| [Übersicht](./1.Übersicht.md) | Projektübersicht |
-| [Installationsanleitung](./2.Installationsanleitung.md) | Docker, Helm, Quellcode |
-| [Benutzerhandbuch](./3.Benutzerhandbuch.md) | Routen, Upstream, Plugins |
-| [FAQ](./4.FAQ.md) | Häufig gestellte Fragen |
-
-## Schnellstart
-
-### Docker-Installation
+### Docker Installation
 
 ```bash
-# etcd starten
-docker run -d --name etcd -p 2379:2379 apache/apisix:3.5.0-etcd
-
-# APISIX starten
-docker run -d --name apisix -p 9080:9080 apache/apisix:3.5.0
+curl -sL https://run.api7.ai/apisix/quickstart | sh
 ```
 
-### Zugriff
+### Create a Route
 
-- API: http://localhost:9080
-- Dashboard: http://localhost:9090
-- Admin API: http://localhost:9180
+```bash
+curl -i "http://127.0.0.1:9180/apisix/admin/routes" -X PUT -d '
+{
+  "id": "my-route",
+  "uri": "/api/*",
+  "upstream": {
+    "type": "roundrobin",
+    "nodes": {
+      "backend:8080": 1
+    }
+  }
+}'
+```
 
-## Konzepte
+## Documentation
 
-- **Route**: Abgleichregeln
-- **Upstream**: Backend-Dienste
-- **Service**: Routensammlung
-- **Plugin**: Verarbeitungslogik
-- **Consumer**: API-Konsument
+- [Introduction](./1.Introduction.md)
+- [Installation Guide](./2.Installation-Guide.md)
+- [User Manual](./3.User-Manual.md)
+- [FAQ](./4.FAQ.md)
 
-## Ressourcen
+## Resources
 
-- Website: https://apisix.apache.org
-- Dokumentation: https://apisix.apache.org/docs
+- Official Website: https://apisix.apache.org
+- Documentation: https://apisix.apache.org/docs
 - GitHub: https://github.com/apache/apisix
 
-## Lizenz
+## License
 
 Apache License 2.0

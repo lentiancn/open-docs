@@ -1,65 +1,57 @@
-# APISIX
+# Apache APISIX
 
-Passerelle API cloud-native.
+Cloud-Native API Gateway
 
-## Aperçu
+## Overview
 
-APISIX est une passerelle API cloud-native développée par la Apache Software Foundation, offrant des services de gestion d'API haute performance et haute disponibilité.
+Apache APISIX is a cloud-native API gateway under the Apache Software Foundation, providing high-performance and high-availability API management services. As a dynamic, real-time, and scalable API gateway, APISIX has become the preferred solution for millions of containerized deployments.
 
-### Fonctionnalités Principales
+## Features
 
-- **Haute Performance**: Basé sur Nginx + Lua, 10k+ QPS
-- **Routage Dynamique**: Mettre à jour les routes sans redémarrage
-- **Système de Plugins**: 70+ plugins avec hot-loading
-- **Découverte de Services**: Consul, Eureka, Nacos
-- **Équilibrage de Charge**: Roundrobin, hash
-- **Sécurité**: Limitation de débit, authentification, JWT
+- High Performance: Built on Nginx + Lua, capable of 10k+ QPS per core
+- Dynamic Routing: Dynamically update routing rules without restart
+- Plugin System: Rich plugin ecosystem with hot-reloading support
+- Multi-Protocol Support: HTTP, HTTPS, HTTP/2, Dubbo, gRPC, WebSocket
+- Security: Rate limiting, authentication, JWT, firewall
+- Observability: Integrated with Prometheus, Zipkin, logging, and more
 
-### Statistiques
+## Quick Start
 
-- GitHub Stars: 13,000+
+### Docker Installation
+
+```bash
+curl -sL https://run.api7.ai/apisix/quickstart | sh
+```
+
+### Create a Route
+
+```bash
+curl -i "http://127.0.0.1:9180/apisix/admin/routes" -X PUT -d '
+{
+  "id": "my-route",
+  "uri": "/api/*",
+  "upstream": {
+    "type": "roundrobin",
+    "nodes": {
+      "backend:8080": 1
+    }
+  }
+}'
+```
 
 ## Documentation
 
-| Document | Description |
-|----------|-------------|
-| [Aperçu](./1.Aperçu.md) | Aperçu du projet |
-| [Guide d'Installation](./2.Guide-d-Installation.md) | Docker, Helm, sources |
-| [Manuel Utilisateur](./3.Manuel-utilisateur.md) | Routes, upstream, plugins |
-| [FAQ](./4.FAQ.md) | Questions fréquentes |
+- [Introduction](./1.Introduction.md)
+- [Installation Guide](./2.Installation-Guide.md)
+- [User Manual](./3.User-Manual.md)
+- [FAQ](./4.FAQ.md)
 
-## Démarrage Rapide
+## Resources
 
-### Installation Docker
-
-```bash
-# Démarrer etcd
-docker run -d --name etcd -p 2379:2379 apache/apisix:3.5.0-etcd
-
-# Démarrer APISIX
-docker run -d --name apisix -p 9080:9080 apache/apisix:3.5.0
-```
-
-### Accès
-
-- API: http://localhost:9080
-- Dashboard: http://localhost:9090
-- Admin API: http://localhost:9180
-
-## Concepts
-
-- **Route**: Règles de correspondance
-- **Upstream**: Services backend
-- **Service**: Collection de routes
-- **Plugin**: Logique de traitement
-- **Consumer**: Consommateur API
-
-## Ressources
-
-- Site: https://apisix.apache.org
+- Official Website: https://apisix.apache.org
 - Documentation: https://apisix.apache.org/docs
 - GitHub: https://github.com/apache/apisix
 
-## Licence
+## License
 
 Apache License 2.0

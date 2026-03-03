@@ -1,65 +1,57 @@
-# APISIX
+# Apache APISIX
 
-Облачный API-шлюз.
+Cloud-Native API Gateway
 
-## Обзор
+## Overview
 
-APISIX — это облачный API-шлюз от Apache Software Foundation, предоставляющий высокопроизводительные и высокодоступные сервисы управления API.
+Apache APISIX is a cloud-native API gateway under the Apache Software Foundation, providing high-performance and high-availability API management services. As a dynamic, real-time, and scalable API gateway, APISIX has become the preferred solution for millions of containerized deployments.
 
-### Основные функции
+## Features
 
-- **Высокая производительность**: На основе Nginx + Lua, 10k+ QPS
-- **Динамическая маршрутизация**: Обновление маршрутов без перезагрузки
-- **Система плагинов**: 70+ плагинов с горячей загрузкой
-- **Обнаружение сервисов**: Consul, Eureka, Nacos
-- **Балансировка нагрузки**: Roundrobin, хэш
-- **Безопасность**: Ограничение частоты, аутентификация, JWT
+- High Performance: Built on Nginx + Lua, capable of 10k+ QPS per core
+- Dynamic Routing: Dynamically update routing rules without restart
+- Plugin System: Rich plugin ecosystem with hot-reloading support
+- Multi-Protocol Support: HTTP, HTTPS, HTTP/2, Dubbo, gRPC, WebSocket
+- Security: Rate limiting, authentication, JWT, firewall
+- Observability: Integrated with Prometheus, Zipkin, logging, and more
 
-### Статистика
+## Quick Start
 
-- GitHub звёзд: 13,000+
-
-## Документация
-
-| Документ | Описание |
-|----------|----------|
-| [Обзор](./1.Обзор.md) | Обзор проекта |
-| [Руководство по установке](./2.Руководство-по-установке.md) | Docker, Helm, исходный код |
-| [Руководство пользователя](./3.Руководство-пользователя.md) | Маршруты, upstream, плагины |
-| [FAQ](./4.FAQ.md) | Часто задаваемые вопросы |
-
-## Быстрый старт
-
-### Установка через Docker
+### Docker Installation
 
 ```bash
-# Запустить etcd
-docker run -d --name etcd -p 2379:2379 apache/apisix:3.5.0-etcd
-
-# Запустить APISIX
-docker run -d --name apisix -p 9080:9080 apache/apisix:3.5.0
+curl -sL https://run.api7.ai/apisix/quickstart | sh
 ```
 
-### Доступ
+### Create a Route
 
-- API: http://localhost:9080
-- Dashboard: http://localhost:9090
-- Admin API: http://localhost:9180
+```bash
+curl -i "http://127.0.0.1:9180/apisix/admin/routes" -X PUT -d '
+{
+  "id": "my-route",
+  "uri": "/api/*",
+  "upstream": {
+    "type": "roundrobin",
+    "nodes": {
+      "backend:8080": 1
+    }
+  }
+}'
+```
 
-## Концепции
+## Documentation
 
-- **Route**: Правила сопоставления
-- **Upstream**: Бэкенд-сервисы
-- **Service**: Коллекция маршрутов
-- **Plugin**: Логика обработки
-- **Consumer**: Потребитель API
+- [Introduction](./1.Introduction.md)
+- [Installation Guide](./2.Installation-Guide.md)
+- [User Manual](./3.User-Manual.md)
+- [FAQ](./4.FAQ.md)
 
-## Ресурсы
+## Resources
 
-- Сайт: https://apisix.apache.org
-- Документация: https://apisix.apache.org/docs
+- Official Website: https://apisix.apache.org
+- Documentation: https://apisix.apache.org/docs
 - GitHub: https://github.com/apache/apisix
 
-## Лицензия
+## License
 
 Apache License 2.0

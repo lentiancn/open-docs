@@ -1,65 +1,57 @@
-# APISIX
+# Apache APISIX
 
-クラウドネイティブ API ゲートウェイ。
+Cloud-Native API Gateway
 
-## 概要
+## Overview
 
-APISIX は Apache ソフトウェア財団旗下的クラウドネイティブ API ゲートウェイであり、高性能・高可用性の API 管理サービスを提供します。
+Apache APISIX is a cloud-native API gateway under the Apache Software Foundation, providing high-performance and high-availability API management services. As a dynamic, real-time, and scalable API gateway, APISIX has become the preferred solution for millions of containerized deployments.
 
-### 主な機能
+## Features
 
-- **高性能**: Nginx + Lua ベース、10k+ QPS
-- **動的ルーティング**: 再起動なしでルート更新
-- **プラグインシステム**: 70+ プラグイン
-- **サービス発見**: Consul、Eureka、Nacos サポート
-- **負荷分散**: ラウンドロビン、ハッシュ
-- **セキュリティ**: レート制限、認証、JWT
+- High Performance: Built on Nginx + Lua, capable of 10k+ QPS per core
+- Dynamic Routing: Dynamically update routing rules without restart
+- Plugin System: Rich plugin ecosystem with hot-reloading support
+- Multi-Protocol Support: HTTP, HTTPS, HTTP/2, Dubbo, gRPC, WebSocket
+- Security: Rate limiting, authentication, JWT, firewall
+- Observability: Integrated with Prometheus, Zipkin, logging, and more
 
-### 統計
+## Quick Start
 
-- GitHub スター: 13,000+
-
-## ドキュメント
-
-| ドキュメント | 説明 |
-|-------------|------|
-| [概要](./1.概要.md) | プロジェクト概要、技術アーキテクチャ |
-| [インストールガイド](./2.インストールガイド.md) | Docker、Helm、ソースインストール |
-| [ユーザーマニュアル](./3.ユーザーマニュアル.md) | ルート、アップストリーム、プラグイン |
-| [FAQ](./4.FAQ.md) | インストール、使用、設定の問題解答 |
-
-## クイックスタート
-
-### Docker インストール
+### Docker Installation
 
 ```bash
-# etcd を起動
-docker run -d --name etcd -p 2379:2379 apache/apisix:3.5.0-etcd
-
-# APISIX を起動
-docker run -d --name apisix -p 9080:9080 apache/apisix:3.5.0
+curl -sL https://run.api7.ai/apisix/quickstart | sh
 ```
 
-### アクセス
+### Create a Route
 
-- API エンドポイント: http://localhost:9080
-- ダッシュボード: http://localhost:9090
-- Admin API: http://localhost:9180
+```bash
+curl -i "http://127.0.0.1:9180/apisix/admin/routes" -X PUT -d '
+{
+  "id": "my-route",
+  "uri": "/api/*",
+  "upstream": {
+    "type": "roundrobin",
+    "nodes": {
+      "backend:8080": 1
+    }
+  }
+}'
+```
 
-## コアコンセプト
+## Documentation
 
-- **Route**: リクエストマッチルール
-- **Upstream**: バックエンドサービス
-- **Service**: ルートコレクション
-- **Plugin**: リクエスト処理ロジック
-- **Consumer**: API 消費者
+- [Introduction](./1.Introduction.md)
+- [Installation Guide](./2.Installation-Guide.md)
+- [User Manual](./3.User-Manual.md)
+- [FAQ](./4.FAQ.md)
 
-## リソース
+## Resources
 
-- 公式サイト: https://apisix.apache.org
-- ドキュメント: https://apisix.apache.org/docs
+- Official Website: https://apisix.apache.org
+- Documentation: https://apisix.apache.org/docs
 - GitHub: https://github.com/apache/apisix
 
-## ライセンス
+## License
 
 Apache License 2.0

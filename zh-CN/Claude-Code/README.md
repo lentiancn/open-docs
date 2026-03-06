@@ -1,58 +1,57 @@
 # Claude Code
 
-下一代编程助手。
-
-## 简介
-
-Claude Code 是 Anthropic 公司开发的 AI 编程助手，基于 Claude 大语言模型，专为代码生成、调试和开发任务优化。
-
-### 主要特性
-
-- 代码生成 - 根据描述生成高质量代码
-- 智能补全 - 上下文感知的代码补全
-- 调试辅助 - 识别并修复代码问题
-- 解释代码 - 帮助理解复杂代码逻辑
-
-## 版本信息
-
-| 版本 | 发布日期 | 状态 |
-|------|----------|------|
-| Claude Code 1.x | 2024 | 最新稳定版 |
-
-## 文档导航
-
-| 文档 | 说明 |
-|------|------|
-| [简介](./1.简介.md) | 项目概述和特性 |
-| [安装指南](./2.安装指南.md) | 环境配置和安装 |
-| [使用手册](./3.使用手册.md) | 基本使用方法和技巧 |
-| [常见问题](./4.常见问题.md) | 常见问题解答 |
+Claude Code 是由 Anthropic 公司开发的 AI 编程助手，旨在帮助开发者更高效地完成编程任务。
 
 ## 快速开始
 
 ### 安装
 
-**VS Code**：
-在扩展市场搜索 "Claude Code"
+```bash
+# 使用 npm 安装
+npm install -g @anthropic-ai/claude-code
 
-**CLI**：
-```
-brew install claude-code
-```
-
-### 使用
-
-直接描述你的需求：
-```
-帮我写一个排序函数
+# 验证安装
+claude-code --version
 ```
 
-## 相关资源
+详细安装步骤请参考 [安装指南](./2.安装指南.md)
 
-- 官方网站：https://claude.com/code
-- 文档：https://docs.anthropic.com
-- GitHub：https://github.com/anthropics/claude-code
+### 配置 API Key
 
-## 许可证
+1. 访问 [Anthropic Console](https://console.anthropic.com/) 获取 API Key
+2. 配置环境变量：
+   ```bash
+   export ANTHROPIC_API_KEY="your-api-key"
+   ```
 
-Proprietary License
+### 开始使用
+
+```bash
+# 启动 Claude Code
+claude-code
+
+# 或者指定项目目录
+claude-code /path/to/project
+```
+
+## 功能特点
+
+- **代码理解**：能够理解整个代码库的结构和逻辑
+- **代码编辑**：智能修改和创建代码文件
+- **命令执行**：在终端中执行各种命令
+- **IDE 集成**：支持 VS Code 和 JetBrains 系列 IDE
+
+## 文档目录
+
+| 文件 | 说明 |
+|------|------|
+| [1.简介.md](./1.简介.md) | Claude Code 基本介绍和特性 |
+| [2.安装指南.md](./2.安装指南.md) | 详细的安装和配置教程 |
+| [3.使用手册.md](./3.使用手册.md) | 完整的使用说明和技巧 |
+| [4.常见问题.md](./4.常见问题.md) | FAQ 和问题解决方案 |
+
+## 相关链接
+
+- 官方网站：https://claude.com/claude-code
+- Anthropic Console：https://console.anthropic.com/
+- GitHub：https://github.com/anthropic/claude-code

@@ -1,18 +1,18 @@
 # Apache APISIX
 
-Apache APISIX 是 Apache 软件基金会下的顶级项目，是一个具有动态、实时、高性能等特点的云原生 API 网关和 AI 网关。
+Apache APISIX 是 Apache 軟體基金會下的頂級項目，是一個具有動態、實時、高效能等特點的雲端原生 API 閘道器和 AI 閘道器。
 
-## 快速开始
+## 快速開始
 
-### 安装
+### 安裝
 
 ```bash
 curl -sL https://run.api7.ai/apisix/quickstart | sh
 ```
 
-详细安装说明请参阅 [安装指南](./2.安装指南.md)。
+詳細安裝說明請參閱 [安裝指南](./2.安裝指南.md)。
 
-### 创建第一个路由
+### 建立第一個路由
 
 ```bash
 curl -i "http://127.0.0.1:9180/apisix/admin/routes" -X PUT -d '
@@ -28,7 +28,7 @@ curl -i "http://127.0.0.1:9180/apisix/admin/routes" -X PUT -d '
 }'
 ```
 
-测试路由：
+測試路由：
 
 ```bash
 curl "http://127.0.0.1:9080/hello"
@@ -36,29 +36,29 @@ curl "http://127.0.0.1:9080/hello"
 
 ## 核心特性
 
-- **高性能**：基于 Nginx，具备出色的处理能力
-- **完全动态**：配置实时生效，无需重启
-- **插件丰富**：身份认证、限流限速、请求改写等
-- **多协议支持**：HTTP、HTTPS、gRPC、Dubbo、WebSocket、MQTT 等
-- **云原生**：支持 Kubernetes、Docker、Helm Chart 部署
-- **可观测性**：内置 Prometheus、Zipkin、SkyWalking 支持
+- **高效能**：基於 Nginx，具備出色的處理能力
+- **完全動態**：配置即時生效，無需重啟
+- **插件豐富**：身分認證、限流限速、請求改寫等
+- **多協定支援**：HTTP、HTTPS、gRPC、Dubbo、WebSocket、MQTT 等
+- **雲端原生**：支援 Kubernetes、Docker、Helm Chart 部署
+- **可觀測性**：內建 Prometheus、Zipkin、SkyWalking 支援
 
-## 文档目录
+## 文檔目錄
 
-- [简介](./1.简介.md) - 了解 APISIX 是什么
-- [安装指南](./2.安装指南.md) - 快速安装 APISIX
-- [使用手册](./3.使用手册.md) - 路由、负载均衡、限速、身份验证等
-- [常见问题](./4.常见问题.md) - 常见问题解答
+- [簡介](./1.簡介.md) - 了解 APISIX 是什麼
+- [安裝指南](./2.安裝指南.md) - 快速安裝 APISIX
+- [使用手冊](./3.使用手冊.md) - 路由、負載均衡、限速、身分驗證等
+- [常見問題](./4.常見問題.md) - 常見問題解答
 
-## 资源链接
+## 資源連結
 
-- 官方文档：https://apisix.apache.org/zh/docs/apisix/
+- 官方文檔：https://apisix.apache.org/zh/docs/apisix/
 - Dashboard：https://apisix.apache.org/zh/docs/apisix/dashboard/
-- 插件市场：https://apisix.apache.org/zh/docs/apisix/plugins/
+- 插件市場：https://apisix.apache.org/zh/docs/apisix/plugins/
 - GitHub：https://github.com/apache/apisix
 
-## 技术支持
+## 技術支援
 
 - 提交 Issue：https://github.com/apache/apisix/issues
-- 社区讨论：https://github.com/apache/apisix/discussions
-- Slack 频道：Apache APISIX Workspace
+- 社區討論：https://github.com/apache/apisix/discussions
+- Slack 頻道：Apache APISIX Workspace

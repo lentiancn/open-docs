@@ -1,23 +1,23 @@
 # Apache APISIX
 
-Apache APISIX is a top-level project under the Apache Software Foundation. It is a cloud-native API gateway and AI gateway known for its dynamic, real-time, and high-performance characteristics.
+Apache APISIX es un proyecto de nivel superior de la Apache Software Foundation. Se trata de una puerta de enlace (gateway) de API nativa para la nube, conocida por ser dinámica, en tiempo real y de alto rendimiento.
 
-## Quick Start
+## Inicio Rápido
 
-### Install
+### Instalación
 
 ```bash
 curl -sL https://run.api7.ai/apisix/quickstart | sh
 ```
 
-See [Installation Guide](./2.Installation-Guide.md) for details.
+Para instrucciones de instalación más detalladas, consulta la [Guía de Instalación](./2.Guía-de-instalación.md).
 
-### Create Your First Route
+### Crear tu Primera Ruta
 
 ```bash
 curl -i "http://127.0.0.1:9180/apisix/admin/routes" -X PUT -d '
 {
-  "id": "my-first-route",
+  "id": "mi-primera-ruta",
   "uri": "/hello",
   "upstream": {
     "type": "roundrobin",
@@ -28,37 +28,37 @@ curl -i "http://127.0.0.1:9180/apisix/admin/routes" -X PUT -d '
 }'
 ```
 
-Test the route:
+Probar la ruta:
 
 ```bash
 curl "http://127.0.0.1:9080/hello"
 ```
 
-## Core Features
+## Características Principales
 
-- **High Performance**: Built on Nginx with excellent processing capability
-- **Fully Dynamic**: Configuration takes effect in real-time without restart
-- **Rich Plugins**: Authentication, rate limiting, request rewriting, and more
-- **Multi-Protocol Support**: HTTP, HTTPS, gRPC, Dubbo, WebSocket, MQTT, and more
-- **Cloud-Native**: Supports Kubernetes, Docker, Helm Chart deployment
-- **Observability**: Built-in Prometheus, Zipkin, SkyWalking support
+- **Alto Rendimiento**: Construido sobre Nginx, con excelente capacidad de procesamiento
+- **Totalmente Dinámico**: La configuración surte efecto en tiempo real, sin reiniciar
+- **Ricos Plugins**: Autenticación, limitación de velocidad, reescritura de solicitudes y más
+- **Soporte Multi-Protocolo**: HTTP, HTTPS, gRPC, Dubbo, WebSocket, MQTT y más
+- **Nativo para la Nube**: Soporta despliegue en Kubernetes, Docker, Helm Chart
+- **Observabilidad**: Soporte integrado para Prometheus, Zipkin, SkyWalking
 
-## Documentation
+## Índice de Documentación
 
-- [Introduction](./1.Introduction.md) - Learn what APISIX is
-- [Installation Guide](./2.Installation-Guide.md) - Quickly install APISIX
-- [User Manual](./3.User-Manual.md) - Routes, load balancing, rate limiting, authentication, and more
-- [FAQ](./4.FAQ.md) - Common questions and answers
+- [Introducción](./1.Introducción.md) - Descubre qué es APISIX
+- [Guía de Instalación](./2.Guía-de-instalación.md) - Instala APISIX rápidamente
+- [Manual del Usuario](./3.Manual-del-usuario.md) - Rutas, balance de carga, limitación de velocidad, autenticación y más
+- [Preguntas Frecuentes](./4.Preguntas-frecuentes.md) - Respuestas a preguntas comunes
 
-## Resources
+## Enlaces de Recursos
 
-- Official Docs: https://apisix.apache.org/docs/apisix/
+- Documentación oficial: https://apisix.apache.org/docs/apisix/
 - Dashboard: https://apisix.apache.org/docs/apisix/dashboard/
-- Plugin Hub: https://apisix.apache.org/docs/apisix/plugins/
+- Mercado de Plugins: https://apisix.apache.org/docs/apisix/plugins/
 - GitHub: https://github.com/apache/apisix
 
-## Support
+## Soporte Técnico
 
-- Submit Issue: https://github.com/apache/apisix/issues
-- Community Discussion: https://github.com/apache/apisix/discussions
-- Slack Channel: Apache APISIX Workspace
+- Reportar Issues: https://github.com/apache/apisix/issues
+- Discusiones de la Comunidad: https://github.com/apache/apisix/discussions
+- Canal de Slack: Apache APISIX Workspace

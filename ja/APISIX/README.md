@@ -1,18 +1,18 @@
 # Apache APISIX
 
-Apache APISIX is a top-level project under the Apache Software Foundation. It is a cloud-native API gateway and AI gateway known for its dynamic, real-time, and high-performance characteristics.
+Apache APISIX は、Apache Software Foundation のトッププロジェクトであり、動的・リアルタイム・高性能を特徴とするクラウドネイティブAPIゲートウェイおよびAIゲートウェイです。
 
-## Quick Start
+## クイックスタート
 
-### Install
+### インストール
 
 ```bash
 curl -sL https://run.api7.ai/apisix/quickstart | sh
 ```
 
-See [Installation Guide](./2.Installation-Guide.md) for details.
+詳細なインストール手順は [インストールガイド](./2.インストールガイド.md) をご覧ください。
 
-### Create Your First Route
+### 最初のルートを作成
 
 ```bash
 curl -i "http://127.0.0.1:9180/apisix/admin/routes" -X PUT -d '
@@ -28,37 +28,37 @@ curl -i "http://127.0.0.1:9180/apisix/admin/routes" -X PUT -d '
 }'
 ```
 
-Test the route:
+ルートをテスト：
 
 ```bash
 curl "http://127.0.0.1:9080/hello"
 ```
 
-## Core Features
+## コア機能
 
-- **High Performance**: Built on Nginx with excellent processing capability
-- **Fully Dynamic**: Configuration takes effect in real-time without restart
-- **Rich Plugins**: Authentication, rate limiting, request rewriting, and more
-- **Multi-Protocol Support**: HTTP, HTTPS, gRPC, Dubbo, WebSocket, MQTT, and more
-- **Cloud-Native**: Supports Kubernetes, Docker, Helm Chart deployment
-- **Observability**: Built-in Prometheus, Zipkin, SkyWalking support
+- **高性能**：Nginx をベースとし、優れた処理能力を実現
+- **完全動的**：設定がリアルタイムで反映、再起動不要
+- **豊富なプラグイン**：認証、レート制限、リクエスト書き出しなど
+- **マルチプロトコルサポート**：HTTP、HTTPS、gRPC、Dubbo、WebSocket、MQTT など
+- **クラウドネイティブ**：Kubernetes、Docker、Helm Chart デプロイをサポート
+- **可観測性**：組み込みの Prometheus、Zipkin、SkyWalking サポート
 
-## Documentation
+## ドキュメント目次
 
-- [Introduction](./1.Introduction.md) - Learn what APISIX is
-- [Installation Guide](./2.Installation-Guide.md) - Quickly install APISIX
-- [User Manual](./3.User-Manual.md) - Routes, load balancing, rate limiting, authentication, and more
-- [FAQ](./4.FAQ.md) - Common questions and answers
+- [概要](./1.概要.md) - APISIX について知る
+- [インストールガイド](./2.インストールガイド.md) - APISIX を素早くインストール
+- [ユーザーマニュアル](./3.ユーザーマニュアル.md) - ルート、負荷分散、レート制限、認証など
+- [よくある質問](./4.よくある質問.md) - よくある質問と回答
 
-## Resources
+## リソースリンク
 
-- Official Docs: https://apisix.apache.org/docs/apisix/
-- Dashboard: https://apisix.apache.org/docs/apisix/dashboard/
-- Plugin Hub: https://apisix.apache.org/docs/apisix/plugins/
-- GitHub: https://github.com/apache/apisix
+- 公式ドキュメント：https://apisix.apache.org/docs/apisix/
+- Dashboard：https://apisix.apache.org/docs/apisix/dashboard/
+- プラグインマーケットプレイス：https://apisix.apache.org/docs/apisix/plugins/
+- GitHub：https://github.com/apache/apisix
 
-## Support
+## 技術サポート
 
-- Submit Issue: https://github.com/apache/apisix/issues
-- Community Discussion: https://github.com/apache/apisix/discussions
-- Slack Channel: Apache APISIX Workspace
+- Issue の報告：https://github.com/apache/apisix/issues
+- コミュニティフォーラム：https://github.com/apache/apisix/discussions
+- Slack チャンネル：Apache APISIX Workspace

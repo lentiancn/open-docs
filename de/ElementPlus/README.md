@@ -1,29 +1,52 @@
 # Element Plus
 
-[Element Plus](https://element-plus.org/) ist eine Vue 3-basierte UI-Komponentenbibliothek.
+Element Plus ist eine auf Vue 3 basierende UI-Komponentenbibliothek, die Entwicklern umfassende Desktop-Komponentenlösungen bietet.
 
-## Funktionen
+## Übersicht
 
-- Vue 3 mit Composition API
-- 70+ Komponenten
-- TypeScript-Unterstützung
-- Import bei Bedarf
-- Internationalisierung
+Element Plus ist die Vue 3-Version von Element UI, entwickelt und gepflegt vom Ele.me-Team. Es bietet einen vollständigen Satz von Designspezifikationen und Komponentenbibliotheken, um Entwicklern zu helfen, schnell Desktop-Anwendungen zu erstellen.
+
+## Hauptfunktionen
+
+- Vollständige Vue 3-Unterstützung: Mit Composition API erstellt
+- Über 70 Komponenten: Deckt alle Aspekte der Desktop-Entwicklung ab
+- TypeScript-Unterstützung: Vollständige Typdefinitionen
+- Import bei Bedarf: Tree Shaking-Unterstützung
+- Internationalisierung: Über 40 Sprachen unterstützt
+- Theme-Anpassung: Flexible Themes
 
 ## Schnellstart
 
-```bash
+### Installation
+
 npm install element-plus
-```
+
+### Verwendung
+
+Vollständiger Import:
+
+import { createApp } from 'vue'
+import ElementPlus from 'element-plus'
+import 'element-plus/dist/index.css'
+import App from './App.vue'
+
+const app = createApp(App)
+app.use(ElementPlus)
+app.mount('#app')
+
+Import bei Bedarf (empfohlen):
+
+npm install -D unplugin-vue-components unplugin-auto-import
 
 ## Dokumentation
 
-- [Einführung](./1.Einführung.md)
-- [Installationsanleitung](./2.Installationsanleitung.md)
-- [Benutzerhandbuch](./3.Benutzerhandbuch.md)
-- [FAQ](./4.Häufig-gestellte-Fragen.md)
+- Einführung: Übersicht über Element Plus
+- Installationsanleitung: Detaillierte Installationsanweisungen
+- Benutzerhandbuch: Verwendung häufiger Komponenten
+- FAQ: Fehlerbehebung
 
-## Links
+## Verwandte Links
 
-- [Offizielle Website](https://element-plus.org/)
-- [GitHub](https://github.com/element-plus/element-plus)
+- Offizielle Website: https://element-plus.org/
+- GitHub: https://github.com/element-plus/element-plus
+- Deutsche Dokumentation: https://element-plus.org/de/

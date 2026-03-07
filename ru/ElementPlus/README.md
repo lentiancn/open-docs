@@ -4,6 +4,4 @@
 
 ## Установка
 
-```bash
 npm install element-plus
-```

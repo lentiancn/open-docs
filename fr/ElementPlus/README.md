@@ -4,6 +4,11 @@ Bibliothèque de composants Vue 3
 
 ## Installation
 
-```bash
 npm install element-plus
-```
+
+## Documentation
+
+- Introduction
+- Guide d'installation
+- Manuel d'utilisation
+- FAQ

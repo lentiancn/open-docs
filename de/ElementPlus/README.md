@@ -12,8 +12,8 @@ Element Plus ist die Vue 3-Version von Element UI, entwickelt und gepflegt vom E
 - Über 70 Komponenten: Deckt alle Aspekte der Desktop-Entwicklung ab
 - TypeScript-Unterstützung: Vollständige Typdefinitionen
 - Import bei Bedarf: Tree Shaking-Unterstützung
-- Internationalisierung: Über 40 Sprachen unterstützt
-- Theme-Anpassung: Flexible Themes
+- Internationalisierung: Unterstützung für über 40 Sprachen
+- Theme-Anpassung: Flexible Themenkonfiguration
 
 ## Schnellstart
 

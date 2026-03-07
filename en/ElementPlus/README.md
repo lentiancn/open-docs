@@ -4,7 +4,9 @@ Vue 3-based UI component library.
 
 ## Quick Start
 
+```bash
 npm install element-plus
+```
 
 ## Docs
 

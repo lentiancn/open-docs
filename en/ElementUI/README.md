@@ -1,21 +1,16 @@
 # Element UI
 
-[Element UI](https://element.eleme.io/) はVue 2 UIコンポーネントライブラリです。
+Vue 2-based UI component library.
 
-## 概要
-
-Vue 2のためのデスクトップUIコンポーネントライブラリ。
-
-## クイックスタート
+## Quick Start
 
 ```bash
 npm install element-ui -S
 ```
 
-## ドキュメント
+## Docs
 
-- [概要](./1.概要.md)
-- [インストールガイド](./2.インストールガイド.md)
-- [ユーザーマニュアル](./3.ユーザーマニュアル.md)
-- [よくある質問](./4.よくある質問.md)
-
+- [Introduction](./1.Introduction.md)
+- [Installation Guide](./2.Installation-Guide.md)
+- [User Manual](./3.User-Manual.md)
+- [FAQ](./4.FAQ.md)

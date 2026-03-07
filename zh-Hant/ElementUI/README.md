@@ -1,46 +1,50 @@
 # Element UI
 
-[Element UI](https://element.eleme.io/) 是饿了么团队开发的 Vue 2 UI 组件库。
+Element UI 是一個基於 Vue 2.0 的 UI 組件庫，為開發者提供了豐富的桌面端組件解決方案。
 
 ## 概述
 
-Element UI 是一套为 Vue 2 设计的桌面端 UI 组件库，用于快速构建企业级应用后台。
+Element UI 是餓了麼團隊開發和維護的 Vue 2.0 組件庫。它提供了一套完整的設計規範和組件庫，幫助開發者快速構建桌面端應用程序。
 
 ## 主要特性
 
-- Vue 2 深度集成
-- 70+ 组件
-- 按需加载
-- 国际化支持
-- 主题定制
+- Vue 2.0 支持：基於 Vue 2.0 構建
+- 70+ 組件：涵蓋桌面應用開發各個方面
+- 按需加載：支持 babel-plugin-component
+- 國際化：支持多種語言
+- 主題定製：靈活的主題配置
 
-## 快速开始
+## 快速開始
 
-### 安装
+### 安裝
 
 ```bash
-npm install element-ui -S
+npm install element-ui --save
 ```
 
 ### 使用
 
+完整引入：
+
 ```javascript
 import Vue from 'vue'
-import ElementUI from 'element-ui'
+import Element from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
 import App from './App.vue'
 
-Vue.use(ElementUI)
+Vue.use(Element)
 ```
 
-## 文档
+## 文檔
 
-- [简介](./1.简介.md)
-- [安装指南](./2.安装指南.md)
-- [使用手册](./3.使用手册.md)
-- [常见问题](./4.常见问题.md)
+- 簡介 - Element UI 概述
+- 安裝指南 - 詳細安裝說明
+- 使用手冊 - 常用組件用法
+- 常見問題 - 故障排除
 
-## 相关链接
+## 相關鏈接
 
-- [官网](https://element.eleme.io/)
-- [GitHub](https://github.com/ElemeFE/element)
+- 官方網站
+- GitHub
+- 中文文檔
+- Element Plus (Vue 3)

@@ -10,18 +10,18 @@ This repository is used for continuously accumulating and organizing installatio
 
 This documentation project currently covers the following technologies and projects:
 
-| Technology | Description |
-|-----------|-------------|
-| APISIX | Cloud-native API gateway and AI gateway (Apache top-level project) |
-| Angular | Open-source Web application framework developed by Google |
-| Apifox | API collaboration platform integrating design, Mock, testing, and documentation |
-| Bootstrap | Popular open-source front-end development framework by Twitter |
-| Claude-Code | AI coding assistant by Anthropic for reading codebases, editing files, and executing commands |
-| Docker | Open platform for developing, shipping, and running applications |
-| ElementPlus | Vue 3-based UI component library for desktop applications |
-| ElementUI | Vue 2.0-based UI component library for desktop applications |
-| FantasyTalking | Open-source speech synthesis and dialogue system |
-| OpenClaw | Personal AI assistant running on your own devices |
+| Technology | Description | Documentation |
+|-----------|-------------|---------------|
+| [APISIX](./zh-CN/APISIX/README.md) | Cloud-native API gateway and AI gateway (Apache top-level project) | zh-CN, en, ja, es, de, fr, ru, ko |
+| [Angular](./zh-CN/Angular/README.md) | Open-source Web application framework developed by Google | zh-CN, en |
+| [Apifox](./zh-CN/Apifox/README.md) | API collaboration platform integrating design, Mock, testing, and documentation | zh-CN, en |
+| [Bootstrap](./zh-CN/Bootstrap/README.md) | Popular open-source front-end development framework by Twitter | zh-CN, en |
+| [Claude-Code](./zh-CN/Claude-Code/README.md) | AI coding assistant by Anthropic for reading codebases, editing files, and executing commands | zh-CN, en |
+| [Docker](./zh-CN/Docker/README.md) | Open platform for developing, shipping, and running applications | zh-CN, en, ja, es, de, fr, ru, ko |
+| [ElementPlus](./zh-CN/ElementPlus/README.md) | Vue 3-based UI component library for desktop applications | zh-CN, en, zh-Hant, ja, es, de, fr, ru, ko |
+| [ElementUI](./zh-CN/ElementUI/README.md) | Vue 2.0-based UI component library for desktop applications | zh-CN, en, zh-Hant, ja, es, de, fr, ru, ko |
+| [FantasyTalking](./zh-CN/FantasyTalking/README.md) | Open-source speech synthesis and dialogue system | zh-CN, en, zh-Hant, ja, es, de, fr, ru, ko |
+| [OpenClaw](./zh-CN/OpenClaw/README.md) | Personal AI assistant running on your own devices | zh-CN, en, zh-Hant, ja, es, de, fr, ru, ko |
 
 ## Supported Languages
 

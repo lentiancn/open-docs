@@ -1,59 +1,63 @@
 # OpenClaw
 
-[English](./README.md) | [简体中文](./README.md) | [日本語](./README.md)
+OpenClaw - あなたのパーソナルAIアシスタント 🦞
 
-🦞 どんなOSでも動くAIアシスターGateway。WhatsApp、Telegram、Discord、iMessageなど対応。
+## 概要
+
+OpenClawは自分が所有するデバイスで動作するパーソナルAIアシスタントです。WhatsApp、Telegram、Slack、Discord、Google Chatなど20以上のプラットフォームを通じてコミュニケーションできます。OpenClawは実際の作業を処理し、スケジュールを管理し、メールを送り、スマートデバイスを制御できます。 真のデジタルパートナーになります。
 
 ## 機能
 
-- 🤖 **AIアシスターGateway** — チャットアプリをAI编程助手をつなぐ
-- 📱 **マルチプラットフォーム** — WhatsApp、Telegram、Discord、iMessage、Signal、Slackなど
-- 🔒 **ローカル設置** — データは全部自分のデバイスに保存
-- 🧠 **マルチエージェント** — 別々のワークスペースと会話
-- 🌐 **Web管理画面** — ブラウザで管理
-- 📷 **モバイルノード** — iOS/Androidペアリング対応
+- **マルチチャンネルアクセス**：20以上のコミュニケーションプラットフォーム
+- **ローカルファースト**：データはローカルに保存、完全にコントロール可能
+- **24時間365日動作**：いつでもサービスを提供
+- **音声インタラクション**：音声ウェイクと会話をサポート
+- **スキルシステム**：拡張可能な自動化機能
+- **オープンソース**：コードは完全にオープンで無料
 
 ## クイックスタート
 
+### インストール
+
 ```bash
-# インストール
-npm install -g openclaw@latest
-
-# 設定
-openclaw onboard --install-daemon
-
-# 起動
-openclaw gateway --port 18789
+curl -fsSL https://openclaw.ai/install.sh | bash
 ```
 
-ブラウザで http://127.0.0.1:18789/ を開けて使う。
+またはnpmを使用：
+
+```bash
+npm install -g openclaw@latest
+```
+
+### セットアップ
+
+```bash
+openclaw onboard --install-daemon
+```
+
+### 使用
+
+```bash
+# Control UIを開く
+openclaw dashboard
+
+# またはメッセージを送信
+openclaw agent --message "Hello"
+```
 
 ## ドキュメント
 
-- [概要](./1.概要.md)
-- [インストールガイド](./2.インストールガイド.md)
-- [ユーザーマニュアル](./3.ユーザーマニュアル.md)
-- [よくある質問](./4.よくある質問.md)
+- [概要](./1.概要.md) - OpenClawとは何かを学ぶ
+- [インストールガイド](./2.インストールガイド.md) - 完全なインストール手順
+- [ユーザーマニュアル](./3.ユーザーマニュアル.md) - 詳細な使用チュートリアル
+- [よくある質問](./4.よくある質問.md) - よくある質問と回答
 
-## 対応プラットフォーム
+## サポート
 
-| プラットフォーム | 状態 | メモ |
-|----------------|------|------|
-| WhatsApp | ✅ | QRペアリング必要 |
-| Telegram | ✅ | Bot API |
-| Discord | ✅ | グループ・DM |
-| iMessage | ✅ | MacかBlueBubbles必要 |
-| Signal | ✅ | signal-cli使用 |
-| Slack | ✅ | Bolt SDK |
-| その他 | ➕ | プラグインで |
+- ドキュメント：https://docs.openclaw.ai
+- Discordコミュニティ：https://discord.gg/clawd
+- GitHub：https://github.com/openclaw/openclaw
 
-## 動作環境
+## 関連リンク
 
-- Node.js 22+
-- Node.jsが入るOS
-
-## リンク
-
-- 📖 [公式ドキュメント](https://docs.openclaw.ai)
-- 💬 [Discordコミュニティ](https://discord.com/invite/clawd)
-- 🐙 [GitHub](https://github.com/openclaw/openclaw)
+- ウェブサイト：https://openclaw.ai

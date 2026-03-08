@@ -1,59 +1,63 @@
 # OpenClaw
 
-[English](./README.md) | [简体中文](./README.md) | [日本語](./README.md)
+OpenClaw - Votre Assistant IA Personnel 🦞
 
-🦞 Passerelle d'assistant IA pour n'importe quel système d'exploitation. Supporte WhatsApp, Telegram, Discord, iMessage et plus.
+## Aperçu
 
-## Caractéristiques
+OpenClaw est un assistant IA personnel qui s'exécute sur vos propres appareils. Il communique via les canaux que vous utilisez déjà, notamment WhatsApp, Telegram, Slack, Discord, Google Chat et plus de 20 autres plateformes. OpenClaw peut gérer du travail réel, gérer les horaires, envoyer des e-mails, contrôler les appareils intelligents — devenant véritablement votre partenaire numérique.
 
-- 🤖 **Passerelle Assistant IA** — Connecte plusieurs applications de chat aux assistants de programmation IA
-- 📱 **Support Multi-plateforme** — WhatsApp, Telegram, Discord, iMessage, Signal, Slack et plus
-- 🔒 **Déploiement Local** — Toutes les données stockées sur votre appareil
-- 🧠 **Support Multi-Agents** — Espaces de travail et conversations isolés
-- 🌐 **Gestion Web** — Interface de contrôle basée sur le navigateur
-- 📷 **Nœuds Mobiles** — Support de couplage d'appareils iOS et Android
+## Fonctionnalités
 
-## Démarrage rapide
+- **Accès multi-canaux** : Plus de 20 plateformes de communication
+- **Local-first** : Données stockées localement, entièrement sous votre contrôle
+- **Fonctionnement 24/7** : Disponible quand vous en avez besoin
+- **Interaction vocale** : Supporte l'activation vocale et la conversation
+- **Système de compétences** : Capacités d'automatisation extensibles
+- **Open source** : Code entièrement ouvert et gratuit
+
+## Démarrage Rapide
+
+### Installer
 
 ```bash
-# Installer
-npm install -g openclaw@latest
-
-# Configurer
-openclaw onboard --install-daemon
-
-# Exécuter
-openclaw gateway --port 18789
+curl -fsSL https://openclaw.ai/install.sh | bash
 ```
 
-Ouvrez http://127.0.0.1:18789/ dans votre navigateur pour commencer.
+Ou en utilisant npm :
+
+```bash
+npm install -g openclaw@latest
+```
+
+### Configurer
+
+```bash
+openclaw onboard --install-daemon
+```
+
+### Utiliser
+
+```bash
+# Ouvrir Control UI
+openclaw dashboard
+
+# Ou envoyer un message
+openclaw agent --message "Hello"
+```
 
 ## Documentation
 
-- [Introduction](./1.Introduction.md) — Ce qu'est OpenClaw
-- [Guide d'installation](./2.Guide-d'installation.md) — Étapes de configuration détaillées
-- [Manuel utilisateur](./3.Manuel-d'utilisation.md) — Guide d'utilisation quotidien
-- [FAQ](./4.FAQ.md) — Réponses aux questions courantes
+- [Introduction](./1.Introduction.md) - Découvrez ce qu'est OpenClaw
+- [Guide d'Installation](./2.Guide-d'installation.md) - Instructions d'installation complètes
+- [Manuel d'Utilisation](./3.Manuel-d'utilisation.md) - Tutoriel d'utilisation détaillé
+- [FAQ](./4.FAQ.md) - Questions fréquentes
 
-## Plateformes supportées
+## Support
 
-| Plateforme | Statut | Notes |
-|------------|--------|-------|
-| WhatsApp | ✅ | Nécessite le couplage QR |
-| Telegram | ✅ | Basé sur Bot API |
-| Discord | ✅ | Groupes et messages directs |
-| iMessage | ✅ | Nécessite Mac ou BlueBubbles |
-| Signal | ✅ | Via signal-cli |
-| Slack | ✅ | Bolt SDK |
-| Plus | ➕ | Via plugins |
+- Documentation : https://docs.openclaw.ai
+- Communauté Discord : https://discord.gg/clawd
+- GitHub : https://github.com/openclaw/openclaw
 
-## Exigences
+## Liens Connexes
 
-- Node.js 22+
-- Tout système d'exploitation supportant Node.js
-
-## Liens
-
-- 📖 [Documentation Officielle](https://docs.openclaw.ai)
-- 💬 [Communauté Discord](https://discord.com/invite/clawd)
-- 🐙 [GitHub](https://github.com/openclaw/openclaw)
+- Site web : https://openclaw.ai

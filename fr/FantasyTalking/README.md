@@ -1,22 +1,36 @@
 # FantasyTalking
 
+FantasyTalking - Système de Synthèse Vocale Open Source
+
 ## Résumé
 
 FantasyTalking est un projet open-source de synthèse vocale et systèmes de dialogue.
 
 ## Caractéristiques
 
-- Synthèse vocale de haute qualité
-- Support multilingue
-- Système de dialogue flexible
-- Multiplateforme
+- **Synthèse Vocale de Haute Qualité**: Technologie TTS basée sur l'apprentissage profond
+- **Support Multilingue**: Chinois, anglais, japonais et autres langues
+- **Système de Dialogue Flexible**: Support des conversations multi-tours
+- **Support Multiplateforme**: Web, mobile et bureau
+- **Intégration Facile**: SDKs et APIs riches
+- **Open Source et Gratuit**: Licence MIT
 
-## Installation
+## Démarrage Rapide
+
+### Installation
 
 ```bash
 npm install fantasy-talking
 # ou
 pip install fantasy-talking
+```
+
+### Utilisation
+
+```javascript
+const FantasyTalking = require('fantasy-talking');
+const client = new FantasyTalking({ apiKey: 'your-api-key' });
+const audio = await client.speak('Bonjour');
 ```
 
 ## Documentation
@@ -29,3 +43,4 @@ pip install fantasy-talking
 ## Support
 
 - GitHub: https://github.com/fantasytalking
+- Site: https://www.fantasytalking.com

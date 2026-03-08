@@ -6,7 +6,7 @@
 
 This repository is used for continuously accumulating and organizing installation, configuration, and usage instructions for various software, tools, and services. It provides directly reusable documentation and practical steps for developers, operations staff, and self-learners.
 
-## Projects & Technologies
+## Projects
 
 This documentation project currently covers the following technologies and projects:
 

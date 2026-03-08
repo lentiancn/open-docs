@@ -10,7 +10,18 @@ This repository is used for continuously accumulating and organizing installatio
 
 This documentation project currently covers the following technologies and projects:
 
-APISIX, Angular, Apifox, Bootstrap, Claude-Code, Docker, ElementPlus, ElementUI, FantasyTalking, OpenClaw
+| Technology | Description |
+|-----------|-------------|
+| APISIX | Cloud-native API gateway and AI gateway (Apache top-level project) |
+| Angular | Open-source Web application framework developed by Google |
+| Apifox | API collaboration platform integrating design, Mock, testing, and documentation |
+| Bootstrap | Popular open-source front-end development framework by Twitter |
+| Claude-Code | AI coding assistant by Anthropic for reading codebases, editing files, and executing commands |
+| Docker | Open platform for developing, shipping, and running applications |
+| ElementPlus | Vue 3-based UI component library for desktop applications |
+| ElementUI | Vue 2.0-based UI component library for desktop applications |
+| FantasyTalking | Open-source speech synthesis and dialogue system |
+| OpenClaw | Personal AI assistant running on your own devices |
 
 ## Supported Languages
 

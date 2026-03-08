@@ -8,10 +8,10 @@ This repository is used for continuously accumulating and organizing installatio
 
 ## Projects
 
-This documentation project currently covers the following technologies and projects:
+This documentation project currently covers the following projects:
 
-| Technology | Description | Documentation |
-|-----------|-------------|---------------|
+| Project | Description | Documentation |
+|---------|-------------|---------------|
 | APISIX | Cloud-native API gateway and AI gateway (Apache top-level project) | [zh-CN](./zh-CN/APISIX/README.md), [en](./en/APISIX/README.md), [ja](./ja/APISIX/README.md), [es](./es/APISIX/README.md), [de](./de/APISIX/README.md), [fr](./fr/APISIX/README.md), [ru](./ru/APISIX/README.md), [ko](./ko/APISIX/README.md), [zh-Hant](./zh-Hant/APISIX/README.md) |
 | Angular | Open-source Web application framework developed by Google | [zh-CN](./zh-CN/Angular/README.md), [en](./en/Angular/README.md) |
 | Apifox | API collaboration platform integrating design, Mock, testing, and documentation | [zh-CN](./zh-CN/Apifox/README.md), [en](./en/Apifox/README.md) |

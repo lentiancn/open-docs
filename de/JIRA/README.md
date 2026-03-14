@@ -8,15 +8,15 @@ Besuchen Sie die Atlassian-Website, um sich zu registrieren und einen für Ihr T
 
 ## Hauptfunktionen
 
-Projektmanagement und Problemverfolgung, Agile Entwicklungunterstützung (Scrum, Kanban), Teamzusammenarbeit und Kommunikation, Integration mit KI-Assistent Rovo, Umfangreiche Drittanbieter-Integrationen, Leistungsstarke Automatisierungsregeln.
+Projektmanagement und Problemverfolgung, Agile Entwicklung-Unterstützung (Scrum, Kanban), Team-Zusammenarbeit und Kommunikation, Integration mit KI-Assistent Rovo, Umfangreiche Drittanbieter-Integrationen, Leistungsstarke Automatisierungsregeln.
 
 ## Preise
 
 Free: 10 Benutzer dauerhaft kostenlos
 
-Standard: 7,50 USD pro Benutzer pro Monat
+Standard: 7,91 USD pro Benutzer pro Monat
 
-Premium: 14,50 USD pro Benutzer pro Monat
+Premium: 14,54 USD pro Benutzer pro Monat
 
 Enterprise: Kontaktieren Sie den Vertrieb für Preise
 

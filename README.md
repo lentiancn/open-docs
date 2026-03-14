@@ -6,6 +6,8 @@
 
 This repository is used for continuously accumulating and organizing installation, configuration, and usage instructions for various software, tools, and services. It provides directly reusable documentation and practical steps for developers, operations staff, and self-learners.
 
+All materials collected in this repository are sourced from the internet and compiled by the author for learning and research purposes only. The author makes no representations or warranties regarding the accuracy, validity, or completeness of the materials. All content is provided for reference only.
+
 ## Projects
 
 This documentation project currently covers the following projects:
@@ -27,6 +29,7 @@ This documentation project currently covers the following projects:
 | Hadoop | Distributed storage and processing framework for big data | [zh-CN](./zh-CN/Hadoop/README.md), [en](./en/Hadoop/README.md), [ja](./ja/Hadoop/README.md), [es](./es/Hadoop/README.md), [de](./de/Hadoop/README.md), [fr](./fr/Hadoop/README.md), [ru](./ru/Hadoop/README.md), [ko](./ko/Hadoop/README.md), [zh-Hant](./zh-Hant/Hadoop/README.md) |
 | HeyGen | AI digital avatar video generation platform | [zh-CN](./zh-CN/HeyGen/README.md), [en](./en/HeyGen/README.md), [ja](./ja/HeyGen/README.md), [es](./es/HeyGen/README.md), [de](./de/HeyGen/README.md), [fr](./fr/HeyGen/README.md), [ru](./ru/HeyGen/README.md), [ko](./ko/HeyGen/README.md), [zh-Hant](./zh-Hant/HeyGen/README.md) |
 | JDK | Java Development Kit, the foundation of Java development | [zh-CN](./zh-CN/JDK/README.md), [en](./en/JDK/README.md), [ja](./ja/JDK/README.md), [es](./es/JDK/README.md), [de](./de/JDK/README.md), [fr](./fr/JDK/README.md), [ru](./ru/JDK/README.md), [ko](./ko/JDK/README.md), [zh-Hant](./zh-Hant/JDK/README.md) |
+| JIRA | Project management and issue tracking software by Atlassian | [zh-CN](./zh-CN/JIRA/README.md), [en](./en/JIRA/README.md), [ja](./ja/JIRA/README.md), [es](./es/JIRA/README.md), [de](./de/JIRA/README.md), [fr](./fr/JIRA/README.md), [ru](./ru/JIRA/README.md), [ko](./ko/JIRA/README.md), [zh-Hant](./zh-Hant/JIRA/README.md) |
 | OpenClaw | Personal AI assistant running on your own devices | [zh-CN](./zh-CN/OpenClaw/README.md), [en](./en/OpenClaw/README.md), [ja](./ja/OpenClaw/README.md), [es](./es/OpenClaw/README.md), [de](./de/OpenClaw/README.md), [fr](./fr/OpenClaw/README.md), [ru](./ru/OpenClaw/README.md), [ko](./ko/OpenClaw/README.md), [zh-Hant](./zh-Hant/OpenClaw/README.md) |
 
 ## Supported Languages

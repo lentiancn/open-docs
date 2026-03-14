@@ -6,6 +6,8 @@
 
 This repository is used for continuously accumulating and organizing installation, configuration, and usage instructions for various software, tools, and services. It provides directly reusable documentation and practical steps for developers, operations staff, and self-learners.
 
+All materials collected in this repository are sourced from the internet and compiled by the author for learning and research purposes only. The author makes no representations or warranties regarding the accuracy, validity, or completeness of the materials. All content is provided for reference only.
+
 ## Projects
 
 This documentation project currently covers the following projects:

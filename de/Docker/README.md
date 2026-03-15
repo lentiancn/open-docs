@@ -1,26 +1,26 @@
 # Docker
 
-[Docker](https://www.docker.com/) is an open platform for developing, shipping, and running applications. Docker allows you to separate your applications from your infrastructure so you can deliver software quickly.
+[Docker](https://www.docker.com/) ist eine offene Plattform für die Entwicklung, Bereitstellung und Ausführung von Anwendungen. Docker ermöglicht es Ihnen, Ihre Anwendungen von Ihrer Infrastruktur zu trennen, damit Sie Software schnell liefern können.
 
-## Overview
+## Übersicht
 
-Docker is an open-source containerization platform that helps developers package applications and their dependencies into lightweight, portable containers. Containers can run in any environment that supports Docker, ensuring "build once, run anywhere."
+Docker ist eine Open-Source-Plattform zur Containerisierung, die Entwicklern hilft, Anwendungen und ihre Abhängigkeiten in leichtgewichtige, portable Container zu verpacken. Container können in jeder Umgebung ausgeführt werden, die Docker unterstützt, was das Prinzip „Einmal erstellen, überall ausführen" gewährleistet.
 
-## Core Concepts
+## Grundkonzepte
 
-- **Container**: Lightweight, executable software package
-- **Image**: Read-only container template
-- **Dockerfile**: Configuration file for building images
-- **Docker Hub**: Official image repository
+- **Container**: Leichtgewichtiges, ausführbares Softwarepaket
+- **Image**: Schreibgeschützte Container-Vorlage
+- **Dockerfile**: Konfigurationsdatei zum Erstellen von Images
+- **Docker Hub**: Offizielles Image-Repository
 
-## Features
+## Funktionen
 
-- **Application Containerization**: Ensure environment consistency
-- **Microservices Architecture**: Independent deployable units
-- **CI/CD Integration**: Automated builds and deployments
-- **Development Environment Standardization**: More efficient team collaboration
+- **Anwendungs-Containerisierung**: Gewährleistung der Umgebungskonsistenz
+- **Microservices-Architektur**: Unabhängig bereitstellbare Einheiten
+- **CI/CD-Integration**: Automatisierte Builds und Bereitstellungen
+- **Standardisierung der Entwicklungsumgebung**: Effizientere Teamzusammenarbeit
 
-## Quick Start
+## Schnellstart
 
 ### Installation
 
@@ -36,47 +36,47 @@ sudo sh get-docker.sh
 ```
 
 **Windows:**
-Download Docker Desktop installer and run.
+Laden Sie den Docker Desktop-Installer herunter und führen Sie ihn aus.
 
-### First Container
+### Erster Container
 
 ```bash
 docker run hello-world
 ```
 
-### Run Nginx
+### Nginx ausführen
 
 ```bash
 docker run -d -p 8080:80 nginx
 ```
 
-Visit http://localhost:8080 to view.
+Besuchen Sie http://localhost:8080.
 
-## Documentation
+## Dokumentation
 
-- [Introduction](./1.Introduction.md) - Docker overview
-- [Installation Guide](./2.Installation-Guide.md) - Detailed installation instructions
-- [User Manual](./3.User-Manual.md) - Daily usage guide
-- [FAQ](./4.FAQ.md) - Troubleshooting
+- [Einführung](./1.Einführung.md) - Docker-Übersicht
+- [Installationsanleitung](./2.Installationsanleitung.md) - Detaillierte Installationsanweisungen
+- [Benutzerhandbuch](./3.Benutzerhandbuch.md) - tägliche Nutzungsanleitung
+- [FAQ](./4.Häufig-gestellte-Fragen.md) - Fehlerbehebung
 
 ## Docker Desktop
 
-Docker Desktop is a one-click-install application for Mac, Windows, and Linux that includes a complete Docker development environment.
+Docker Desktop ist eine Ein-Klick-Installationsanwendung für Mac, Windows und Linux, die eine vollständige Docker-Entwicklungsumgebung enthält.
 
-### System Requirements
+### Systemanforderungen
 
 - **macOS**: 10.15+
 - **Windows**: 10 Pro/Enterprise/Education
 - **Linux**: Ubuntu 22.04+ / Debian 11+ / Fedora 39+
 
-## Licensing
+## Lizenzierung
 
-Commercial use of Docker Desktop requires a paid subscription (more than 250 employees OR more than $10 million USD annual revenue).
+Die kommerzielle Nutzung von Docker Desktop erfordert ein kostenpflichtiges Abonnement (mehr als 250 Mitarbeiter OR mehr als 10 Millionen USD Jahresumsatz).
 
-Docker Engine uses Apache License 2.0 (open source).
+Docker Engine verwendet die Apache-Lizenz 2.0 (Open Source).
 
-## Related Links
+## Verwandte Links
 
-- [Official Website](https://www.docker.com/)
-- [Official Documentation](https://docs.docker.com/)
+- [Offizielle Website](https://www.docker.com/)
+- [Offizielle Dokumentation](https://docs.docker.com/)
 - [Docker Hub](https://hub.docker.com/)

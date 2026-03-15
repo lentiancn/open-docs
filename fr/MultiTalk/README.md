@@ -1,12 +1,12 @@
 # MultiTalk
 
-MultiTalk est un cadre de génération de video conversationnelle multi-personnes gélé par par l'audio développé par l'équipe MeiGen-AI. Ce projet peut générer du contenu video de haute qualite contenant des interactions multi-personnes basé sur des entrées audio multiflux, des images de référence et des invites de texte.
+MultiTalk est un cadre de génération de video conversationnelle multi-personnes gélé par par l'audio développé par l'équipe MeiGen-AI. Ce projet peut générer du contenu video de haute qualité contenant des interactions multi-personnes basé sur des entrées audio multiflux, des images de référence et des invites de texte.
 
 ## Caracteristiques principales
 
 - Generation de video conversationnelle multi-personnes gélé pare par l'audio
 - Support pour les scenarios d'une seule personne et multi-personnes
-- Precision de synchronisation des levres leader de l'industrie
+- Precision de synchronisation des lèvres leader de l'industrie
 - Support pour la génération de video de personnages de dessin anime et de chant
 - Resolution de sortie supportee 480P et 720P
 - Duree maximale du clip video jusqu'a 15 secondes

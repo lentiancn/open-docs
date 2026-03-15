@@ -1,10 +1,10 @@
 # Bootstrap
 
-Bootstrap은 전 세계에서 가장 많이 사용되는 HTML, CSS, JavaScript 오픈소스 프론트엔드 개발 프레임워크로, Twitter사에서 개발하고 관리합니다. 풍부한 컴포넌트와 강력한 JavaScript 플러그인을 제공하여 개발자가 빠르게 반응형 웹 애플리케이션을 구축할 수 있도록 도와줍니다.
+Bootstrap은 HTML, CSS, JavaScript를 위한 세계에서 가장 인기 있는 오픈소스 프론트엔드 프레임워크입니다. Originally developed at Twitter에서 개발되었으며, 개발자가 빠르게 반응형 웹 애플리케이션을 구축할 수 있도록 돕는 풍성한 컴포넌트 세트와 강력한 JavaScript 플러그인을 제공합니다.
 
-## 빠르게 시작하기
+## 빠른 시작
 
-### CDN 불러오기
+### CDN 포함
 
 ```html
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -19,40 +19,39 @@ npm install bootstrap@5
 
 ## 핵심 기능
 
-- **반응형 레이아웃**: 12열 그리드 시스템, 다양한 화면에 대응
-- **풍부한 컴포넌트**: 네비게이션 바, 카드, 폼, 모달 창 등
-- **JavaScript 플러그인**: 드롭다운 메뉴, 캐러셀, 접기 등
-- **Sass 지원**: 테마 쉽게 커스텀
+- **반응형 레이아웃** — 모든 화면 크기에 적응하는 12열 그리드 시스템
+- **풍부한 컴포넌트** — 네비게이션 바, 카드, 폼, 모달 등
+- **JavaScript 플러그인** — 드롭다운, 캐러셀, 아코디언 등
+- **Sass 지원** — 쉬운 테마 사용자 정의
 
-## 문서디렉토리
+## 문서
 
-- [소개](./1.소개.md) - Bootstrap이 무엇인지 알아보기
-- [설치 가이드](./2.설치-가이드.md) - 빠르게 Bootstrap 설치하기
-- [사용 매뉴얼](./3.사용-매뉴얼.md) - 그리드 시스템, 컴포넌트, 유틸리티 클래스 등
-- [자주 묻는 질문](./4.자주-묻는-질문.md) - 자주 하는 질문과 답변
+- [소개](./1.Introduction.md) - Bootstrap이 무엇인지 배우기
+- [설치 가이드](./2.Installation-Guide.md) - Bootstrap 시작하기
+- [사용 매뉴얼](./3.User-Manual.md) - 그리드 시스템, 컴포넌트, 유틸리티 등
+- [자주 묻는 질문](./4.FAQ.md) - 일반적인 질문 답변
 
-## 자주 사용되는 클래스
+## 일반적인 클래스
 
-| 클래스명 | 설명 |
-|------|------|
+| 클래스 | 설명 |
+|-------|-------------|
 | container | 고정 너비 컨테이너 |
 | container-fluid | 전체 너비 컨테이너 |
-| row | 행 |
-| col | 열 |
+| row | 그리드 행 |
+| col | 그리드 열 |
 | btn | 버튼 |
-| card | 카드 |
+| card | 카드 컴포넌트 |
 | navbar | 네비게이션 바 |
-| modal | 모달 창 |
+| modal | 모달 대화상자 |
 
-## 관련 링크
+## 리소스
 
-- 영어 문서: https://getbootstrap.com/
-- 중국어 문서: https://v5.bootcss.com/
+- 공식 문서: https://getbootstrap.com/
 - GitHub: https://github.com/twbs/bootstrap
 
-## 적용 시나리오
+## 언제 Bootstrap을 사용해야 하나요
 
-- 빠른 프로토타입 개발
-- 기업 내부 관리 시스템
+- 빠른 프로토타이핑
+- 내부 비즈니스 관리 시스템
 - 반응형 웹사이트
-- 관리자 백엔드 인터페이스
+- 관리자 대시보드

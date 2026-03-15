@@ -2,11 +2,11 @@
 
 ## Apercu
 
-Mockito est le framework de mocking pour tests unitaires le plus populaire dans l'ecosysteme Java, développé pour le développement guidé par les tests (TDD) et le développement guidé par le comportement (BDD). Il permet aux développeurs de créer des objets simulés qui émulent le comportement d'objets réels de maniéré contrôlée, permettant des tests unitaires indépendants et fiables.
+Mockito est le framework de mocking pour tests unitaires le plus populaire dans l'ecosysteme Java, développé pour le développement guidé par les tests (TDD) et le développement guidé par le comportement (BDD). Il permet aux développeurs de créer des objets simulés qui émulent le comportement d'objets réels de manière contrôlée, permettant des tests unitaires indépendants et fiables.
 
 ## Caracteristiques principales
 
-Une API simple et elegante facilite l'apprentissage et l'utilisation. Des fonctionnalites puissantes supportent la verification des méthodes de methodes, la configuration des valeurs de retour, la simulation d'exceptions, la correspondance d'arguments et plus encore. Une lisibilite excellente rend le code de test intuitif et facile a comprendre, avec des messages d'erreur clairs en cas d'echec de verification. Une communaute active assure la maintenance continue du framework et une documentation complete.
+Une API simple et élégante facilite l'apprentissage et l'utilisation. Des fonctionnalites puissantes supportent la verification des méthodes de methodes, la configuration des valeurs de retour, la simulation d'exceptions, la correspondance d'arguments et plus encore. Une lisibilite excellente rend le code de test intuitif et facile a comprendre, avec des messages d'erreur clairs en cas d'echec de verification. Une communaute active assure la maintenance continue du framework et une documentation complete.
 
 ## Demarrage rapide
 

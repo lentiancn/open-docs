@@ -6,7 +6,7 @@ Mockito es el framework de mocking para pruebas unitarias mas popular en el ecos
 
 ## Caracteristicas principales
 
-Una API limpia y simple facilita el aprendizaje y uso. Funciones potentes que soportan verificacion de llamadas a metodos, configuracion de valores de retorno, simulacion de excepciones, emparejamiento de argumentos y mas. Excelente legibilidad hace que el codigo de prueba sea intuitivo y facil de entender, con mensajes de error claros cuando la verificacion falla. Una comunidad activa asegura el mantenimiento continuo del framework y documentacion completa.
+Una API limpia y simple fácilita el aprendizaje y uso. Funciones potentes que soportan verificación de llamadas a métodos, configuración de valores de retorno, simulacion de excepciones, emparejamiento de argumentos y mas. Excelente legibilidad hace que el código de prueba sea intuitivo y fácil de entender, con mensajes de error claros cuando la verificación falla. Una comunidad activa asegura el mantenimiento continuo del framework y documentacion completa.
 
 ## Inicio rapido
 
@@ -30,7 +30,7 @@ verify(mockedList).get(0);
 
 ## Recursos
 
-El sitio web oficial proporciona documentacion completa y codigo de ejemplo. El repositorio GitHub contiene codigo fuente e informacion de versiones. La documentacion en linea ofrece referencias de API y guias de uso.
+El sitio web oficial proporciona documentacion completa y código de ejemplo. El repositorio GitHub contiene código fuente e informacion de versiones. La documentacion en linea ofrece referencias de API y guias de uso.
 
 ## Requisitos
 

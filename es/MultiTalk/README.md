@@ -2,7 +2,7 @@
 
 MultiTalk es un marco de generación de video conversacional multipersonal impulsado por audio desarrollado por el equipo de MeiGen-AI. Este proyecto puede generar contenido de video de alta calidad que contiene interacciones multipersonales basándose en entradas de audio multiflujo, imágenes de referencia y prompts de texto.
 
-##  características principales
+## características principales
 
 - Generacion de video conversacional multipersonal impulsado por audio
 - Soporte para escenarios de una sola persona y multipersonales

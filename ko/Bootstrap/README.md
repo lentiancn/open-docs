@@ -24,7 +24,7 @@ npm install bootstrap@5
 - **JavaScript 플러그인**: 드롭다운 메뉴, 캐러셀, 접기 등
 - **Sass 지원**: 테마 쉽게 커스텀
 
-## 문서目录
+## 문서디렉토리
 
 - [소개](./1.소개.md) - Bootstrap이 무엇인지 알아보기
 - [설치 가이드](./2.설치-가이드.md) - 빠르게 Bootstrap 설치하기

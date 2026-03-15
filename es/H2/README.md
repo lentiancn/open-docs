@@ -40,7 +40,7 @@ Statement stmt = conn.createStatement();
 stmt.execute("CREATE TABLE users (id INT PRIMARY KEY AUTO_INCREMENT, name VARCHAR(100))");
 
 // Insertar datos
-stmt.execute("INSERT INTO users (name) VALUES ('John')");
+stmt.execute("INSERT INTO users (name) VALUES ('Juan')");
 
 // Consultar datos
 ResultSet rs = stmt.executeQuery("SELECT * FROM users");

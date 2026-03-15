@@ -1,28 +1,28 @@
 # Docker
 
-[Docker](https://www.docker.com/) is an open platform for developing, shipping, and running applications. Docker allows you to separate your applications from your infrastructure so you can deliver software quickly.
+[Docker](https://www.docker.com/) — это открытая платформа для разработки, доставки и запуска приложений. Docker позволяет отделить ваши приложения от инфраструктуры, чтобы вы могли быстро поставлять программное обеспечение.
 
-## Overview
+## Обзор
 
-Docker is an open-source containerization platform that helps developers package applications and their dependencies into lightweight, portable containers. Containers can run in any environment that supports Docker, ensuring "build once, run anywhere."
+Docker — это платформа контейнеризации с открытым исходным кодом, которая помогает разработчикам упаковывать приложения и их зависимости в лёгкие переносимые контейнеры. Контейнеры могут работать в любой среде, поддерживающей Docker, обеспечивая принцип «создай один раз, запускай везде».
 
-## Core Concepts
+## Основные концепции
 
-- **Container**: Lightweight, executable software package
-- **Image**: Read-only container template
-- **Dockerfile**: Configuration file for building images
-- **Docker Hub**: Official image repository
+- **Контейнер**: лёгкий исполняемый программный пакет
+- **Образ**: шаблон контейнера только для чтения
+- **Dockerfile**: файл конфигурации для сборки образов
+- **Docker Hub**: официальный репозиторий образов
 
-## Features
+## Функции
 
-- **Application Containerization**: Ensure environment consistency
-- **Microservices Architecture**: Independent deployable units
-- **CI/CD Integration**: Automated builds and deployments
-- **Development Environment Standardization**: More efficient team collaboration
+- **Контейнеризация приложений**: обеспечение согласованности среды
+- **Архитектура микросервисов**: независимо развёртываемые единицы
+- **Интеграция CI/CD**: автоматические сборки и развёртывания
+- **Стандартизация сред разработки**: более эффективное командное сотрудничество
 
-## Quick Start
+## Быстрый старт
 
-### Installation
+### Установка
 
 **macOS:**
 ```bash
@@ -36,47 +36,47 @@ sudo sh get-docker.sh
 ```
 
 **Windows:**
-Download Docker Desktop installer and run.
+Скачайте установщик Docker Desktop и запустите.
 
-### First Container
+### Первый контейнер
 
 ```bash
 docker run hello-world
 ```
 
-### Run Nginx
+### Запуск Nginx
 
 ```bash
 docker run -d -p 8080:80 nginx
 ```
 
-Visit http://localhost:8080 to view.
+Посетите http://localhost:8080 для просмотра.
 
-## Documentation
+## Документация
 
-- [Introduction](./1.Introduction.md) - Docker overview
-- [Installation Guide](./2.Installation-Guide.md) - Detailed installation instructions
-- [User Manual](./3.User-Manual.md) - Daily usage guide
-- [FAQ](./4.FAQ.md) - Troubleshooting
+- [Введение](./1.Введение.md) — обзор Docker
+- [Руководство по установке](./2.Руководство-по-установке.md) — подробные инструкции по установке
+- [Руководство пользователя](./3.Руководство-пользователя.md) — руководство по повседневному использованию
+- [FAQ](./4.Часто-задаваемые-вопросы.md) — устранение неполадок
 
 ## Docker Desktop
 
-Docker Desktop is a one-click-install application for Mac, Windows, and Linux that includes a complete Docker development environment.
+Docker Desktop — это приложение с установкой в один клик для Mac, Windows и Linux, которое включает полную среду разработки Docker.
 
-### System Requirements
+### Системные требования
 
 - **macOS**: 10.15+
 - **Windows**: 10 Pro/Enterprise/Education
 - **Linux**: Ubuntu 22.04+ / Debian 11+ / Fedora 39+
 
-## Licensing
+## Лицензирование
 
-Commercial use of Docker Desktop requires a paid subscription (more than 250 employees OR more than $10 million USD annual revenue).
+Коммерческое использование Docker Desktop требует платной подписки (более 250 сотрудников ИЛИ годовой доход более 10 миллионов долларов США).
 
-Docker Engine uses Apache License 2.0 (open source).
+Docker Engine использует лицензию Apache 2.0 (открытый исходный код).
 
-## Related Links
+## Ссылки
 
-- [Official Website](https://www.docker.com/)
-- [Official Documentation](https://docs.docker.com/)
+- [Официальный веб-сайт](https://www.docker.com/)
+- [Официальная документация](https://docs.docker.com/)
 - [Docker Hub](https://hub.docker.com/)

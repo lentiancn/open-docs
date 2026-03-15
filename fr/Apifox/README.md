@@ -1,6 +1,6 @@
 # Apifox
 
-Apifox est une plateforme de collaboration API líder en Chine, qui résout de manière intégrée les problèmes de conception, de mock, de test et de documentation des API. Elle intègre la conception d'API, la gestion de documentation API, le débogage API, le mock API et les tests automatisés API. C'est l'un des outils de gestion API les plus populaires en Chine.
+Apifox est une plateforme de collaboration API leader en Chine, qui résout de manière intégrée les problèmes de conception, de mock, de test et de documentation des API. Elle intègre la conception d'API, la gestion de documentation API, le débogage API, le mock API et les tests automatisés API. C'est l'un des outils de gestion API les plus populaires en Chine.
 
 ## Démarrage rapide
 

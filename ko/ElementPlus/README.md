@@ -41,7 +41,7 @@ npm install -D unplugin-vue-components unplugin-auto-import
 ## 문서
 
 - 소개: Element Plus 개요
-- 설치 가이드:詳細な 설치 안내
+- 설치 가이드:상세 설치 안내
 - 사용자 매뉴얼: 일반적인 컴포넌트 사용법
 - FAQ: 문제 해결
 

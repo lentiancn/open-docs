@@ -61,7 +61,7 @@ http://localhost:8080을 방문하여 확인하세요.
 
 ## Docker Desktop
 
-Docker Desktop은 Mac, Windows 및 Linux용 클릭一次 설치 애플리케이션으로 완전한 Docker 개발 환경을 포함합니다.
+Docker Desktop은 Mac, Windows 및 Linux용 클릭한 번 설치 애플리케이션으로 완전한 Docker 개발 환경을 포함합니다.
 
 ### 시스템 요구 사항
 

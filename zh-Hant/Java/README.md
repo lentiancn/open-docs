@@ -51,7 +51,7 @@ java HelloWorld
 
 ## 學習資源
 
-- 官方文件：https://docs.oracle.com/en/java/javase/
+- 官方檔案：https://docs.oracle.com/en/java/javase/
 - 開發者社群：https://dev.java/
 - Oracle 官方：https://www.oracle.com/java/
 

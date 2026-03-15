@@ -28,7 +28,7 @@ Kotlin 廣泛應用於多個開發領域。Android 開發是 Kotlin 最重要的
 
 官方網站提供了完整的文檔和教學，是學習 Kotlin 的最佳起點。Kotlin Playground 可以在瀏覽器中直接編寫和執行 Kotlin 程式碼。
 
-官方 Tour 透過互動式教學帶您從零基礎到中級水平。KotlinConf 是每年一屆的社區盛會，匯聚全球 Kotlin 開發者。
+官方 Tour 透過互動式教學帶您從零基礎到中級水準。KotlinConf 是每年一屆的社區盛會，匯聚全球 Kotlin 開發者。
 
 Kotlin Slack 擁有活躍的社區，您可以在這裡與全球開發者交流。
 

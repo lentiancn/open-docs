@@ -24,7 +24,7 @@ Enterprise：聯繫銷售獲取報價
 
 官方網站：https://www.atlassian.com/software/jira
 
-說明文件：https://confluence.atlassian.com/jiracloud
+說明檔案：https://confluence.atlassian.com/jiracloud
 
 技術支援：https://support.atlassian.com/jirasoftware/
 

@@ -45,7 +45,7 @@ openclaw dashboard
 openclaw agent --message "Hello"
 ```
 
-## 文件
+## 檔案
 
 - [簡介](./1.簡介.md) - 了解 OpenClaw 是什麼
 - [安裝指南](./2.安裝指南.md) - 完整安裝說明
@@ -54,7 +54,7 @@ openclaw agent --message "Hello"
 
 ## 支援
 
-- 官方文件：https://docs.openclaw.ai
+- 官方檔案：https://docs.openclaw.ai
 - Discord 社群：https://discord.gg/clawd
 - GitHub：https://github.com/openclaw/openclaw
 

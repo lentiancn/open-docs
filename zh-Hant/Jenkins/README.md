@@ -15,7 +15,7 @@ Jenkins 提供了一個平台，用於自動化軟體建置、測試和部署過
 - **分散式建置**：支援多節點分散式建置
 - **跨平台**：支援 Windows、Linux、macOS
 
-## 文件
+## 檔案
 
 - [簡介](1.簡介.md)：Jenkins 基本概念和優勢
 - [安裝指南](2.安裝指南.md)：在各種平台上安裝 Jenkins
@@ -41,5 +41,5 @@ docker run -d -p 8080:8080 jenkinsci/blueocean
 ## 學習資源
 
 - 官方網站：https://www.jenkins.io
-- 英文文件：https://www.jenkins.io/doc/
+- 英文檔案：https://www.jenkins.io/doc/
 - 外掛程式中心：https://plugins.jenkins.io

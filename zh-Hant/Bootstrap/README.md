@@ -24,7 +24,7 @@ npm install bootstrap@5
 - **JavaScript 外掛程式**：下拉選單、輪播圖、摺疊等
 - **Sass 支援**：輕鬆自訂主題
 
-## 文件目錄
+## 檔案目錄
 
 - [簡介](./1.簡介.md) - 了解 Bootstrap 是什麼
 - [安裝指南](./2.安裝指南.md) - 快速安裝 Bootstrap
@@ -46,8 +46,8 @@ npm install bootstrap@5
 
 ## 資源連結
 
-- 英文文件：https://getbootstrap.com/
-- 中文文件：https://v5.bootcss.com/
+- 英文檔案：https://getbootstrap.com/
+- 中文檔案：https://v5.bootcss.com/
 - GitHub：https://github.com/twbs/bootstrap
 
 ## 適用場景

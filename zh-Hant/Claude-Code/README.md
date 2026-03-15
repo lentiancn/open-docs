@@ -36,7 +36,7 @@ cd your-project
 claude
 ```
 
-## 文件
+## 檔案
 
 - [簡介](./1.簡介.md) - Claude Code 概述
 - [安裝指南](./2.安裝指南.md) - 詳細安裝和配置說明
@@ -53,6 +53,6 @@ Claude Code 需要以下帳戶之一：
 ## 相關連結
 
 - [官方網站](https://code.claude.com/)
-- [完整文件](https://docs.anthropic.com/en/docs/claude-code/overview)
+- [完整檔案](https://docs.anthropic.com/en/docs/claude-code/overview)
 - [定價資訊](https://claude.com/pricing)
 - [Discord 社群](https://www.anthropic.com/discord)

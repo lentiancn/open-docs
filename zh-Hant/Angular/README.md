@@ -36,7 +36,7 @@ ng serve
 - **表單處理**：響應式表單和模板驅動表單
 - **RxJS**：響應式程式設計支援
 
-## 文件目錄
+## 檔案目錄
 
 - [簡介](./1.簡介.md) - 了解 Angular 是什麼
 - [安裝指南](./2.安裝指南.md) - 快速搭建開發環境
@@ -56,8 +56,8 @@ ng serve
 
 ## 資源連結
 
-- 中文文件：https://angular.cn/
-- 英文文件：https://angular.io/
+- 中文檔案：https://angular.cn/
+- 英文檔案：https://angular.io/
 - GitHub：https://github.com/angular/angular
 - Angular CLI：https://cli.angular.io/
 

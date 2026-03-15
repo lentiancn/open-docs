@@ -1,28 +1,28 @@
 # Docker
 
-[Docker](https://www.docker.com/) is an open platform for developing, shipping, and running applications. Docker allows you to separate your applications from your infrastructure so you can deliver software quickly.
+[Docker](https://www.docker.com/) は，アプリケーションを開発，出荷，実行するためのオープンプラットフォームです。Docker を使用すると，アプリケーションをインフラストラクチャから分離して，ソフトウェアを迅速に配信できます。
 
-## Overview
+## 概要
 
-Docker is an open-source containerization platform that helps developers package applications and their dependencies into lightweight, portable containers. Containers can run in any environment that supports Docker, ensuring "build once, run anywhere."
+Docker は，开发者がアプリケーションとその依存関係を軽量でポータブルなコンテナにパッケージ化するのに役立つ，オープンソースのコンテナ化プラットフォームです。コンテナは，Docker を 지원하는任意の環境で実行でき，「一度構築すれば，どこでも実行可能」を保証します。
 
-## Core Concepts
+## 基本概念
 
-- **Container**: Lightweight, executable software package
-- **Image**: Read-only container template
-- **Dockerfile**: Configuration file for building images
-- **Docker Hub**: Official image repository
+- **コンテナ**: 軽量で実行可能なソフトウェアパッケージ
+- **イメージ**: コンテナの読み取り専用テンプレート
+- **Dockerfile**: イメージを構築するための設定ファイル
+- **Docker Hub**: 公式イメージリポジトリ
 
-## Features
+## 機能
 
-- **Application Containerization**: Ensure environment consistency
-- **Microservices Architecture**: Independent deployable units
-- **CI/CD Integration**: Automated builds and deployments
-- **Development Environment Standardization**: More efficient team collaboration
+- **アプリケーションのコンテナ化**: 環境の一貫性を保証
+- **マイクロサービスアーキテクチャ**: 独立して展開可能なユニット
+- **CI/CD 統合**: 自動化されため войска と展開
+- **開発環境の標準化**: より効率的なチームコラボレーション
 
-## Quick Start
+## クイックスタート
 
-### Installation
+### インストール
 
 **macOS:**
 ```bash
@@ -36,47 +36,47 @@ sudo sh get-docker.sh
 ```
 
 **Windows:**
-Download Docker Desktop installer and run.
+Docker Desktop インストーラーをダウンロードして実行します。
 
-### First Container
+### 最初のコンテナ
 
 ```bash
 docker run hello-world
 ```
 
-### Run Nginx
+### Nginx を実行
 
 ```bash
 docker run -d -p 8080:80 nginx
 ```
 
-Visit http://localhost:8080 to view.
+http://localhost:8080 を参照してください。
 
-## Documentation
+## ドキュメント
 
-- [Introduction](./1.Introduction.md) - Docker overview
-- [Installation Guide](./2.Installation-Guide.md) - Detailed installation instructions
-- [User Manual](./3.User-Manual.md) - Daily usage guide
-- [FAQ](./4.FAQ.md) - Troubleshooting
+- [概要](./1.概要.md) - Docker の概要
+- [インストールガイド](./2.インストールガイド.md) - 詳細なインストール手順
+- [ユーザーマニュアル](./3.ユーザーマニュアル.md) - 毎日の使用ガイド
+- [よくある質問](./4.よくある質問.md) - トラブルシューティング
 
 ## Docker Desktop
 
-Docker Desktop is a one-click-install application for Mac, Windows, and Linux that includes a complete Docker development environment.
+Docker Desktop は，Mac，Windows，Linux 用のワンクリックインストールアプリケーションで，完全な Docker 開発環境が含まれています。
 
-### System Requirements
+### システム要件
 
 - **macOS**: 10.15+
 - **Windows**: 10 Pro/Enterprise/Education
 - **Linux**: Ubuntu 22.04+ / Debian 11+ / Fedora 39+
 
-## Licensing
+## ライセンス
 
-Commercial use of Docker Desktop requires a paid subscription (more than 250 employees OR more than $10 million USD annual revenue).
+Docker Desktop の商用利用には，有料サブスクリプションが必要です（250人以上の従業員または年間1,000万ドル以上の収益）。
 
-Docker Engine uses Apache License 2.0 (open source).
+Docker Engine は Apache 2.0 ライセンス（オープンソース）を使用します。
 
-## Related Links
+## 関連リンク
 
-- [Official Website](https://www.docker.com/)
-- [Official Documentation](https://docs.docker.com/)
+- [公式ウェブサイト](https://www.docker.com/)
+- [公式ドキュメント](https://docs.docker.com/)
 - [Docker Hub](https://hub.docker.com/)

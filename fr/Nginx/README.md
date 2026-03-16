@@ -1,22 +1,49 @@
 # Nginx
 
-Nginx est un serveur web HTTP haute performance, proxy inverse et équilibrateur de charge.
+Serveur web haute performance, reverse proxy et équilibrateur de charge.
 
-## Démarrage rapide
+## Présentation
+
+nginx est un serveur web HTTP moderne, reconnu dans le monde entier pour sa flexibilité et ses performances élevées avec une faible consommation de ressources.
+
+## Fonctionnalités principales
+
+- Serveur HTTP haute performance
+- Reverse proxy avec mise en cache
+- Équilibrage de charge
+- Serveur proxy TCP/UDP
+- Support SSL/TLS, HTTP/2 et HTTP/3
+- Architecture modulaire
+- Faible empreinte mémoire
+
+## Installation
+
+### Linux
 
 ```bash
+# Ubuntu/Debian
 sudo apt install nginx
-nginx
+
+# CentOS/RHEL
+sudo yum install nginx
 ```
 
-## Documentation
+### Docker
 
-- [Introduction](./1.Introduction.md)
-- [Guide d'installation](./2.Guide-d'installation.md)
-- [Manuel d'utilisation](./3.Manuel-d'utilisation.md)
-- [FAQ](./4.FAQ.md)
+```bash
+docker run -d -p 80:80 nginx:latest
+```
 
-## Liens
+## Pour commencer
+
+Consultez les fichiers suivants pour plus de détails :
+
+- 1.Introduction.md — Introduction et présentation générale
+- 2.Guide-d'installation.md — Instructions d'installation
+- 3.Manuel-d'utilisation.md — Guide d'utilisation et configuration
+- 4.FAQ.md — Questions fréquemment posées
+
+## Ressources
 
 - Site officiel : https://nginx.org
 - Documentation : https://nginx.org/en/docs/

@@ -53,10 +53,9 @@ public interface StoreClient {
 ## Estructura de Directorios
 
 - [1. Introducción](1.Introducción.md) - Conceptos básicos y características de OpenFeign
-- [2. Inicio Rápido](2.Inicio_Rápido.md) - Configuración básica y uso
-- [3. Características Avanzadas](3.Características_Avanzadas.md) - Balanceo de carga, cortacircuitos, registro, etc.
-- [4. Opciones de Configuración](4.Opciones_de_Configuración.md) - Parámetros de configuración detallados y opciones de personalización
-- [5. Mejores Prácticas](5.Mejores_Prácticas.md) - Mejores prácticas y patrones comunes para usar OpenFeign
+- [2. Guía de Instalación](2.Guía_de_Instalación.md) - Configuración básica y uso
+- [3. Manual de Usuario](3.Manual_de_Usuario.md) - Balanceo de carga, cortacircuitos, registro, etc.
+- [4. Preguntas Frecuentes](4.Preguntas_Frecuentes.md) - Solución de problemas comunes, manejo de errores y optimización de rendimiento
 
 ## Recursos de Aprendizaje
 

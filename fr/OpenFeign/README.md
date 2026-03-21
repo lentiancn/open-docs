@@ -53,10 +53,9 @@ public interface StoreClient {
 ## Structure des Répertoires
 
 - [1. Introduction](1.Introduction.md) - Concepts de base et fonctionnalités d'OpenFeign
-- [2. Démarrage Rapide](2.Démarrage_Rapide.md) - Configuration de base et utilisation
-- [3. Fonctionnalités Avancées](3.Fonctionnalités_Avancées.md) - Équilibrage de charge, disjoncteur, journalisation, etc.
-- [4. Options de Configuration](4.Options_de_Configuration.md) - Paramètres de configuration détaillés et options de personnalisation
-- [5. Bonnes Pratiques](5.Bonnes_Pratiques.md) - Bonnes pratiques et modèles courants pour utiliser OpenFeign
+- [2. Guide d'Installation](2.Guide_d'Installation.md) - Configuration de base et utilisation
+- [3. Manuel d'Utilisateur](3.Manuel_d'Utilisateur.md) - Équilibrage de charge, disjoncteur, journalisation, etc.
+- [4. Questions Fréquentes](4.Questions_Fréquentes.md) - Bonnes pratiques et modèles courants pour utiliser OpenFeign
 
 ## Ressources d'Apprentissage
 

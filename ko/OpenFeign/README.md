@@ -21,7 +21,7 @@ OpenFeign은 웹 서비스 클라이언트 작성을 더 쉽게 만들어주는 
 ```xml
 <dependency>
     <groupId>org.springframework.cloud</groupId>
-    <artifactId>spring-cloud-starter-openfeign</artifact>
+    <artifactId>spring-cloud-starter-openfeign</artifactId>
 </dependency>
 ```
 
@@ -53,10 +53,9 @@ public interface StoreClient {
 ## 디렉토리 구조
 
 - [1. 소개](1.소개.md) - OpenFeign의 핵심 개념 및 기본 기능
-- [2. 빠른 시작](2.빠른_시작.md) - 기본 설정 및 사용 방법
-- [3. 고급 기능](3.고급_기능.md) - 로드 밸런싱, 서킷 브레이커, 로깅 등
-- [4. 구성 옵션](4.구성_옵션.md) - 자세한 구성 매개변수 및 사용자 정의 옵션
-- [5. 모범 사례](5.모범_사례.md) - OpenFeign 사용을 위한 모범 사례 및 일반적인 패턴
+- [2. 설치 가이드](2.설치_가이드.md) - 기본 설정 및 사용 방법
+- [3. 사용자 매뉴얼](3.사용자_매뉴얼.md) - 로드 밸런싱, 서킷 브레이커, 로깅 등
+- [4. FAQ](4.FAQ.md) - 일반적인 문제 해결, 오류 처리 및 성능 최적화
 
 ## 학습 자료
 
@@ -66,4 +65,9 @@ public interface StoreClient {
 
 ## 버전 호환성
 
-- **Spring Boot
+- **Spring Boot 3.x**: Spring Cloud 2022.0.x 이상 사용
+- **Spring Boot 2.x**: Spring Cloud 2021.0.x 이하 사용
+
+## 라이선스
+
+OpenFeign은 Apache License 2.0에 따라 라이선스됩니다.

@@ -53,10 +53,9 @@ public interface StoreClient {
 ## Verzeichnisstruktur
 
 - [1. Einführung](1.Einführung.md) - Kernkonzepte und grundlegende Funktionen von OpenFeign
-- [2. Schnellstart](2.Schnellstart.md) - Grundlegende Konfiguration und Verwendung
-- [3. Erweiterte Funktionen](3.Erweiterte_Funktionen.md) - Lastverteilung, Circuit Breaker, Protokollierung usw.
-- [4. Konfigurationsoptionen](4.Konfigurationsoptionen.md) - Detaillierte Konfigurationsparameter und Anpassungsoptionen
-- [5. Best Practices](5.Best_Practices.md) - Best Practices und gängige Muster für die Verwendung von OpenFeign
+- [2. Installationsanleitung](2.Installationsanleitung.md) - Grundlegende Konfiguration und Verwendung
+- [3. Benutzerhandbuch](3.Benutzerhandbuch.md) - Lastverteilung, Circuit Breaker, Protokollierung usw.
+- [4. Häufig gestellte Fragen](4.Häufig_gestellte_Fragen.md) - Lösungen für häufige Probleme, Fehlerbehandlung und Leistungsoptimierung
 
 ## Lernressourcen
 

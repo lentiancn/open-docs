@@ -28,7 +28,7 @@ Extends standard HTML with template syntax to declaratively describe HTML output
 Automatically tracks JavaScript state changes and efficiently updates the DOM when changes happen.
 
 ### Single-File Components (SFC)
-Encapsulates component logic (JavaScript), template (HTML), and styles (CSS) in a single *.vue file.
+Encapsulates component logic (JavaScript), template (HTML), and styles (CSS) in a single *.Vue.js file.
 
 ### API Styles
 - **Options API**: Uses objects with data, methods, mounted options to describe components
@@ -38,7 +38,7 @@ Encapsulates component logic (JavaScript), template (HTML), and styles (CSS) in 
 
 ### CDN Approach (No Build Required)
 ```html
-<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+<script src="https://unpkg.com/Vue.js@3/dist/Vue.js.global.js"></script>
 
 <div id="app">{{ message }}</div>
 
@@ -57,7 +57,7 @@ createApp({
 
 ### Official Scaffolding (Recommended)
 ```bash
-npm create vue@latest
+npm create Vue.js@latest
 cd <project-name>
 npm install
 npm run dev
@@ -72,8 +72,8 @@ npm run dev
 
 ## Resources
 
-- **Official Website**: https://vuejs.org
-- **GitHub Repository**: https://github.com/vuejs/core
+- **Official Website**: https://Vue.jsjs.org
+- **GitHub Repository**: https://github.com/Vue.jsjs/core
 - **Community Support**: Discord, GitHub Discussions, DEV Community
 - **Learning Resources**: Vue Mastery, Vue School, Official Blog
 - **Official Libraries**: Vue Router, Pinia, Vite

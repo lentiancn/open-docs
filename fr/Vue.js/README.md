@@ -28,7 +28,7 @@ Vue est conçu pour être flexible et adoptable de manière incrémentielle, ada
 Suit automatiquement les changements d'état JavaScript et met à jour efficacement le DOM lorsque des changements se produisent.
 
 ### Composants à Fichier Unique (SFC)
-Encapsule la logique du composant (JavaScript), le template (HTML) et les styles (CSS) dans un seul fichier *.vue.
+Encapsule la logique du composant (JavaScript), le template (HTML) et les styles (CSS) dans un seul fichier *.Vue.js.
 
 ### Styles d'API
 - **API Options** : Utilise des objets avec des options data, methods, mounted pour décrire les composants
@@ -38,7 +38,7 @@ Encapsule la logique du composant (JavaScript), le template (HTML) et les styles
 
 ### Approche CDN (Pas de Compilation Requise)
 ```html
-<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+<script src="https://unpkg.com/Vue.js@3/dist/Vue.js.global.js"></script>
 
 <div id="app">{{ message }}</div>
 
@@ -57,7 +57,7 @@ createApp({
 
 ### Scaffolding Officiel (Recommandé)
 ```bash
-npm create vue@latest
+npm create Vue.js@latest
 cd <project-name>
 npm install
 npm run dev
@@ -72,8 +72,8 @@ npm run dev
 
 ## Ressources
 
-- **Site Web Officiel** : https://vuejs.org
-- **Dépôt GitHub** : https://github.com/vuejs/core
+- **Site Web Officiel** : https://Vue.jsjs.org
+- **Dépôt GitHub** : https://github.com/Vue.jsjs/core
 - **Support Communautaire** : Discord, GitHub Discussions, DEV Community
 - **Ressources d'Apprentissage** : Vue Mastery, Vue School, Blog Officiel
 - **Bibliothèques Officielles** : Vue Router, Pinia, Vite

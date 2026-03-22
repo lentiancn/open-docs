@@ -28,7 +28,7 @@ Extiende HTML estándar con sintaxis de plantillas para describir declarativamen
 Realiza un seguimiento automático de los cambios en el estado de JavaScript y actualiza eficientemente el DOM cuando ocurren cambios.
 
 ### Componentes de Archivo Único (SFC)
-Encapsula la lógica del componente (JavaScript), la plantilla (HTML) y los estilos (CSS) en un solo archivo *.vue.
+Encapsula la lógica del componente (JavaScript), la plantilla (HTML) y los estilos (CSS) en un solo archivo *.Vue.js.
 
 ### Estilos de API
 - **API de Opciones**: Utiliza objetos con opciones data, methods, mounted para describir componentes
@@ -38,7 +38,7 @@ Encapsula la lógica del componente (JavaScript), la plantilla (HTML) y los esti
 
 ### Enfoque CDN (Sin Compilación Requerida)
 ```html
-<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+<script src="https://unpkg.com/Vue.js@3/dist/Vue.js.global.js"></script>
 
 <div id="app">{{ message }}</div>
 
@@ -57,7 +57,7 @@ createApp({
 
 ### Scaffolding Oficial (Recomendado)
 ```bash
-npm create vue@latest
+npm create Vue.js@latest
 cd <project-name>
 npm install
 npm run dev
@@ -72,8 +72,8 @@ npm run dev
 
 ## Recursos
 
-- **Sitio Web Oficial**: https://vuejs.org
-- **Repositorio GitHub**: https://github.com/vuejs/core
+- **Sitio Web Oficial**: https://Vue.jsjs.org
+- **Repositorio GitHub**: https://github.com/Vue.jsjs/core
 - **Soporte de Comunidad**: Discord, GitHub Discussions, DEV Community
 - **Recursos de Aprendizaje**: Vue Mastery, Vue School, Blog Oficial
 - **Bibliotecas Oficiales**: Vue Router, Pinia, Vite

@@ -38,7 +38,7 @@ Encapsulates component logic (JavaScript), template (HTML), and styles (CSS) in 
 
 ### CDN Approach (No Build Required)
 ```html
-<script src="https://unpkg.com/Vue.js@3/dist/Vue.js.global.js"></script>
+<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 
 <div id="app">{{ message }}</div>
 
@@ -57,7 +57,7 @@ createApp({
 
 ### Official Scaffolding (Recommended)
 ```bash
-npm create Vue.js@latest
+npm create vue@latest
 cd <project-name>
 npm install
 npm run dev
@@ -72,8 +72,8 @@ npm run dev
 
 ## Resources
 
-- **Official Website**: https://Vue.jsjs.org
-- **GitHub Repository**: https://github.com/Vue.jsjs/core
+- **Official Website**: https://vuejs.org
+- **GitHub Repository**: https://github.com/vuejs/core
 - **Community Support**: Discord, GitHub Discussions, DEV Community
 - **Learning Resources**: Vue Mastery, Vue School, Official Blog
 - **Official Libraries**: Vue Router, Pinia, Vite

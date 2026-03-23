@@ -31,6 +31,7 @@ This documentation project currently covers the following projects:
 | JDK | Java Development Kit, the foundation of Java development | [zh-CN](./zh-CN/JDK/README.md), [en](./en/JDK/README.md), [ja](./ja/JDK/README.md), [es](./es/JDK/README.md), [de](./de/JDK/README.md), [fr](./fr/JDK/README.md), [ru](./ru/JDK/README.md), [ko](./ko/JDK/README.md), [zh-Hant](./zh-Hant/JDK/README.md) |
 | JIRA | Project management and issue tracking software by Atlassian | [zh-CN](./zh-CN/JIRA/README.md), [en](./en/JIRA/README.md), [ja](./ja/JIRA/README.md), [es](./es/JIRA/README.md), [de](./de/JIRA/README.md), [fr](./fr/JIRA/README.md), [ru](./ru/JIRA/README.md), [ko](./ko/JIRA/README.md), [zh-Hant](./zh-Hant/JIRA/README.md) |
 | OpenClaw | Personal AI assistant running on your own devices | [zh-CN](./zh-CN/OpenClaw/README.md), [en](./en/OpenClaw/README.md), [ja](./ja/OpenClaw/README.md), [es](./es/OpenClaw/README.md), [de](./de/OpenClaw/README.md), [fr](./fr/OpenClaw/README.md), [ru](./ru/OpenClaw/README.md), [ko](./ko/OpenClaw/README.md), [zh-Hant](./zh-Hant/OpenClaw/README.md) |
+| Vue.js | Progressive JavaScript framework for building user interfaces | [zh-CN](./zh-CN/Vue.js/README.md), [en](./en/Vue.js/README.md), [ja](./ja/Vue.js/README.md), [es](./es/Vue.js/README.md), [de](./de/Vue.js/README.md), [fr](./fr/Vue.js/README.md), [ru](./ru/Vue.js/README.md), [ko](./ko/Vue.js/README.md), [zh-Hant](./zh-Hant/Vue.js/README.md) |
 
 ## Supported Languages
 

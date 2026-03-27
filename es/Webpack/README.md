@@ -1,45 +1,119 @@
-# Webpack Module Bundler
+# Documentación de Webpack
 
-Webpack is a static module bundler for modern JavaScript applications that processes your application and builds a dependency graph to create optimized bundles.
+Esta es la documentación oficial de Webpack, un agregador de módulos estático para aplicaciones JavaScript modernas.
 
-## Documentation Structure
+## Visión General
 
-- [1.Introduction.md](1.Introduction.md) - Webpack overview and main version comparison
-- [2.Installation-Guide.md](2.Installation-Guide.md) - Detailed installation methods for Webpack v5 and v4
-- [3.User-Manual.md](3.User-Manual.md) - Core concepts, configuration, advanced features, and usage instructions
-- [4.FAQ.md](4.FAQ.md) - Common questions and answers about installation, configuration, performance, and migration
+Webpack es una herramienta poderosa para agrupar módulos JavaScript. Procesa su aplicación, construye un gráfico de dependencias y genera uno o más bundles que pueden servirse al navegador.
 
-## Main Version Information
+## Versiones de Webpack
 
-### Webpack v5 (Modern Version)
-- **Official Site**: https://webpack.js.org/
-- **Status**: Actively developed
-- **Features**: ES Module support, persistent caching, module federation, built-in asset modules, improved performance
+Esta documentación cubre tanto Webpack 4 como Webpack 5. Aunque los conceptos fundamentales permanecen iguales, hay diferencias significativas entre versiones que afectan la configuración y el uso de plugins.
 
-### Webpack v4 (Legacy Version)
-- **Official Site**: https://v4.webpack.js.org/
-- **Status**: Maintained (Long-term support)
-- **Features**: CommonJS configuration, basic bundling, code splitting, tree shaking
+### Comparación de Versiones
 
-## Key Features Comparison
+| Característica | Webpack 4 | Webpack 5 |
+|----------------|-----------|-----------|
+| **Requisito de Node.js** | 6.x.x o posterior | 10.13.0 o posterior |
+| **Soporte de ES Module** | Básico | Completo |
+| **Caché Persistente** | Requiere plugin | Integrado |
+| **Module Federation** | No disponible | Integrado |
+| **Módulos de Activos** | Requiere loaders | Integrados |
 
-| Feature | Webpack v5 | Webpack v4 |
-|---------|------------|------------|
-| **Module System** | ES Modules + CommonJS | CommonJS only |
-| **Caching** | Persistent caching | Memory caching |
-| **Asset Handling** | Built-in asset modules | Requires file-loader/url-loader |
-| **Performance** | Faster builds with persistent cache | Standard performance |
-| **Module Federation** | Built-in support | Not available |
-| **Node.js Support** | Node.js 10.13.0+ | Node.js 6.11.5+ |
+Para una comparación detallada de versiones, consulte [1.Introducción.md](./1.Introducción.md).
 
-## Migration Path
+## Estructura de la Documentación
 
-Webpack provides a smooth migration path from v4 to v5:
-1. Update dependencies to latest versions
-2. Replace file-loader/url-loader with asset modules
-3. Review plugin compatibility and update configurations
-4. Leverage new features like persistent caching and module federation
+| Documento | Descripción |
+|-----------|-------------|
+| [1.Introducción.md](./1.Introducción.md) | Conceptos fundamentales y visión general |
+| [2.Guía-de-instalación.md](./2.Guía-de-instalación.md) | Cómo instalar y configurar Webpack |
+| [3.Manual-del-usuario.md](./3.Manual-del-usuario.md) | Guía completa de las características de Webpack |
+| [4.Preguntas-frecuentes.md](./4.Preguntas-frecuentes.md) | Preguntas frecuentes |
 
-## Copyright Notice
+## Inicio Rápido
 
-This documentation is based on official Webpack documentation and follows the MIT License.
+### Instalación
+
+```bash
+# Inicializar proyecto
+npm init -y
+
+# Instalar Webpack
+npm install webpack webpack-cli --save-dev
+```
+
+### Configuración Básica
+
+```javascript
+// webpack.config.js
+const path = require('path');
+
+module.exports = {
+  entry: './src/index.js',
+  output: {
+    filename: 'bundle.js',
+    path: path.resolve(__dirname, 'dist'),
+  },
+};
+```
+
+### Ejecutar Webpack
+
+```bash
+npx webpack
+```
+
+## Conceptos Fundamentales
+
+Webpack tiene cinco conceptos fundamentales que necesita entender:
+
+1. **Entry**: Dónde webpack debe comenzar a construir el gráfico de dependencias
+2. **Output**: Dónde webpack debe emitir los bundles
+3. **Loaders**: Cómo webpack procesa archivos que no son JavaScript
+4. **Plugins**: Cómo realizar una gama más amplia de tareas de build
+5. **Mode**: Establecer el entorno (desarrollo, producción o ninguno)
+
+## Guías Específicas por Versión
+
+### Para Usuarios de Webpack 4
+
+Si está usando Webpack 4:
+
+- Verifique la [Guía de Instalación](./2.Guía-de-instalación.md) para instrucciones específicas de Webpack 4
+- Use [file-loader](https://webpack.js.org/loaders/file-loader), [url-loader](https://webpack.js.org/loaders/url-loader) para manejo de activos
+- Configure el caché con [cache-loader](https://webpack.js.org/loaders/cache-loader)
+
+### Para Usuarios de Webpack 5
+
+Si está usando Webpack 5:
+
+- [Módulos de Activos](https://webpack.js.org/guides/asset-modules) reemplazan file-loader y url-loader
+- [Caché Persistente](https://webpack.js.org/configuration/other-options/#cache) está integrado
+- [Module Federation](https://webpack.js.org/concepts/module-federation/) habilita arquitecturas de micro-frontend
+- Soporte completo de [ES Module](https://webpack.js.org/api/module-methods/)
+
+## Migración
+
+Si está migrando de Webpack 4 a Webpack 5, consulte:
+
+1. [1.Introducción.md - Webpack 4 vs Webpack 5](./1.Introducción.md#webpack-4-vs-webpack-5)
+2. [2.Guía-de-instalación.md - Sección de Migración](./2.Guía-de-instalación.md#migración-de-webpack-4-a-webpack-5)
+3. [3.Manual-del-usuario.md - Migración de Webpack 4 a Webpack 5](./3.Manual-del-usuario.md#migración-de-webpack-4-a-webpack-5)
+
+## Recursos Adicionales
+
+- [Sitio Web Oficial de Webpack](https://webpack.js.org/)
+- [Repositorio GitHub de Webpack](https://github.com/webpack/webpack)
+- [Registro de Cambios de Webpack](https://github.com/webpack/webpack/releases)
+- [Documentación de Webpack](https://webpack.js.org/guides/)
+
+## Comunidad
+
+- [Comunidad Spectrum de Webpack](https://spectrum.chat/webpack)
+- [Webpack en Stack Overflow](https://stackoverflow.com/tags/webpack)
+- [Webpack en Twitter](https://twitter.com/webpack)
+
+## Licencia
+
+Esta documentación se basa en la documentación oficial de Webpack.

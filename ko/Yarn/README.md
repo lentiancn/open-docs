@@ -1,46 +1,29 @@
-# Yarn Package Manager
+# Yarn 패키지 매니저
 
-Yarn is an established open-source package manager used to manage dependencies in JavaScript projects.
+Yarn은 속도, 정확성, 보안 및 개발자 경험에 중점을 둔 오픈소스 패키지 매니저로, JavaScript 프로젝트의 의존성을 관리하는 데 사용됩니다.
 
-## Documentation Structure
+## 버전 개요
 
-- [1.Introduction.md](1.Introduction.md) - Yarn overview and main version comparison
-- [2.Installation-Guide.md](2.Installation-Guide.md) - Detailed installation methods for Yarn v4+ and v1
-- [3.User-Manual.md](3.User-Manual.md) - Basic commands, workspaces, configuration files, and usage instructions
-- [4.FAQ.md](4.FAQ.md) - Common questions and answers about installation, usage, migration, and troubleshooting
+- **Yarn 4+ (모던 버전)**: 활발한 개발 및 유지보수 중, 워크스페이스 및 플러그인 시스템과 같은 고급 기능 제공
+- **Yarn v3**: 유지보수 중, 대규모 모노레포 및 기업 사용자에게 적합  
+- **Yarn Classic (v1)**: 유지보수 중, 전통적인 Yarn 패키지 매니저
 
-## Main Version Information
+## 문서 구조
 
-### Yarn v4+ (Modern Version)
-- **Official Site**: https://yarnpkg.com/
-- **Status**: Actively developed
-- **Features**: Plugin-based architecture, native workspace support, PnP, offline caching, parallel installs, semantic erroring
+- [1.소개.md](1.소개.md) - Yarn의 기본 개념, 버전 차이점 및 핵심 기능
+- [2.설치-가이드.md](2.설치-가이드.md) - 각 버전에 대한 자세한 설치 방법 및 구성
+- [3.사용-매뉴얼.md](3.사용-매뉴얼.md) - 기본 명령어, 고급 기능 및 모범 사례
+- [4.자주-묻는-질문.md](4.자주-묻는-질문.md) - 일반적인 질문 및 문제 해결
 
-### Yarn v1 (Classic)
-- **Official Site**: https://classic.yarnpkg.com/
-- **Status**: Maintained
-- **Features**: Traditional architecture, simple and straightforward, widely compatible, npm-compatible
+## 공식 리소스
 
-## Key Features Comparison
+- **Yarn 4+ 공식 문서**: https://yarnpkg.com/
+- **Yarn v3 공식 문서**: https://v3.yarnpkg.com/
+- **Yarn Classic 공식 문서**: https://classic.yarnpkg.com/
 
-| Feature | Yarn v4+ | Yarn v1 |
-|---------|----------|---------|
-| **Architecture** | Plugin-based (Berry) | Traditional |
-| **Installation** | Corepack recommended | npm global install |
-| **Dependency Resolution** | Plug'n'Play (PnP) | node_modules |
-| **Workspaces** | Native support with advanced features | Basic support |
-| **Performance** | Faster with offline caching | Standard performance |
-| **Error Handling** | Semantic erroring with clear messages | Standard Node.js errors |
-| **Extensibility** | Rich plugin system | Limited extensibility |
+## 저작권 고지
 
-## Migration Path
+이 문서는 yarnpkg.com 공식 웹사이트의 콘텐츠를 기반으로 하며, 개인적인 의견이나 추측 없이 공식 정보만을 포함합니다.
 
-Yarn provides a smooth migration path from v1 to v4+:
-1. Install Corepack and set up modern Yarn
-2. Gradually enable PnP and workspaces
-3. Use compatibility modes when needed
-4. Leverage the full power of modern features
-
-## Copyright Notice
-
-This documentation is based on official Yarn documentation and follows the BSD License.
+---
+*문서 버전: 2026-03-27*

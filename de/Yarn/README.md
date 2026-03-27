@@ -1,46 +1,29 @@
-# Yarn Package Manager
+# Yarn Paketmanager
 
-Yarn is an established open-source package manager used to manage dependencies in JavaScript projects.
+Yarn ist ein Open-Source-Paketmanager, der sich auf Geschwindigkeit, Korrektheit, Sicherheit und Entwicklererfahrung konzentriert und zur Verwaltung von Abhängigkeiten in JavaScript-Projekten verwendet wird.
 
-## Documentation Structure
+## Versionsübersicht
 
-- [1.Introduction.md](1.Introduction.md) - Yarn overview and main version comparison
-- [2.Installation-Guide.md](2.Installation-Guide.md) - Detailed installation methods for Yarn v4+ and v1
-- [3.User-Manual.md](3.User-Manual.md) - Basic commands, workspaces, configuration files, and usage instructions
-- [4.FAQ.md](4.FAQ.md) - Common questions and answers about installation, usage, migration, and troubleshooting
+- **Yarn 4+ (Moderne Version)**: Aktiv entwickelt und gewartet, bietet erweiterte Funktionen wie Workspaces und Plugin-System
+- **Yarn v3**: Wird gewartet, geeignet für große Monorepos und Unternehmensnutzer  
+- **Yarn Classic (v1)**: Wird gewartet, traditioneller Yarn Paketmanager
 
-## Main Version Information
+## Dokumentationsstruktur
 
-### Yarn v4+ (Modern Version)
-- **Official Site**: https://yarnpkg.com/
-- **Status**: Actively developed
-- **Features**: Plugin-based architecture, native workspace support, PnP, offline caching, parallel installs, semantic erroring
+- [1.Einführung.md](1.Einführung.md) - Grundlegende Konzepte, Versionsunterschiede und Kernfunktionen von Yarn
+- [2.Installationsanleitung.md](2.Installationsanleitung.md) - Detaillierte Installationsmethoden und Konfiguration für jede Version
+- [3.Benutzerhandbuch.md](3.Benutzerhandbuch.md) - Grundlegende Befehle, erweiterte Funktionen und Best Practices
+- [4.Häufig-gestellte-Fragen.md](4.Häufig-gestellte-Fragen.md) - Häufige Fragen und Fehlerbehebung
 
-### Yarn v1 (Classic)
-- **Official Site**: https://classic.yarnpkg.com/
-- **Status**: Maintained
-- **Features**: Traditional architecture, simple and straightforward, widely compatible, npm-compatible
+## Offizielle Ressourcen
 
-## Key Features Comparison
+- **Offizielle Dokumentation Yarn 4+**: https://yarnpkg.com/
+- **Offizielle Dokumentation Yarn v3**: https://v3.yarnpkg.com/
+- **Offizielle Dokumentation Yarn Classic**: https://classic.yarnpkg.com/
 
-| Feature | Yarn v4+ | Yarn v1 |
-|---------|----------|---------|
-| **Architecture** | Plugin-based (Berry) | Traditional |
-| **Installation** | Corepack recommended | npm global install |
-| **Dependency Resolution** | Plug'n'Play (PnP) | node_modules |
-| **Workspaces** | Native support with advanced features | Basic support |
-| **Performance** | Faster with offline caching | Standard performance |
-| **Error Handling** | Semantic erroring with clear messages | Standard Node.js errors |
-| **Extensibility** | Rich plugin system | Limited extensibility |
+## Urheberrechtshinweis
 
-## Migration Path
+Diese Dokumentation basiert auf offiziellen Inhalten der yarnpkg.com-Website und enthält nur offizielle Informationen ohne persönliche Meinungen oder Spekulationen.
 
-Yarn provides a smooth migration path from v1 to v4+:
-1. Install Corepack and set up modern Yarn
-2. Gradually enable PnP and workspaces
-3. Use compatibility modes when needed
-4. Leverage the full power of modern features
-
-## Copyright Notice
-
-This documentation is based on official Yarn documentation and follows the BSD License.
+---
+*Dokumentversion: 2026-03-27*

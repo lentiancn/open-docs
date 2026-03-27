@@ -1,46 +1,29 @@
-# Yarn Package Manager
+# Yarn パッケージマネージャー
 
-Yarn is an established open-source package manager used to manage dependencies in JavaScript projects.
+Yarn は、速度、正確性、セキュリティ、開発者体験に焦点を当てたオープンソースのパッケージマネージャーで、JavaScript プロジェクトの依存関係を管理するために使用されます。
 
-## Documentation Structure
+## バージョン概要
 
-- [1.Introduction.md](1.Introduction.md) - Yarn overview and main version comparison
-- [2.Installation-Guide.md](2.Installation-Guide.md) - Detailed installation methods for Yarn v4+ and v1
-- [3.User-Manual.md](3.User-Manual.md) - Basic commands, workspaces, configuration files, and usage instructions
-- [4.FAQ.md](4.FAQ.md) - Common questions and answers about installation, usage, migration, and troubleshooting
+- **Yarn 4+ (モダンバージョン)**: アクティブに開発・メンテナンス中、ワークスペースやプラグインシステムなどの高度な機能を提供
+- **Yarn v3**: メンテナンス中、大規模モノレポやエンタープライズユーザー向け  
+- **Yarn Classic (v1)**: メンテナンス中、従来の Yarn パッケージマネージャー
 
-## Main Version Information
+## ドキュメント構造
 
-### Yarn v4+ (Modern Version)
-- **Official Site**: https://yarnpkg.com/
-- **Status**: Actively developed
-- **Features**: Plugin-based architecture, native workspace support, PnP, offline caching, parallel installs, semantic erroring
+- [1.概要.md](1.概要.md) - Yarn の基本概念、バージョンの違い、コア機能
+- [2.インストールガイド.md](2.インストールガイド.md) - 各バージョンの詳細なインストール方法と設定
+- [3.ユーザーマニュアル.md](3.ユーザーマニュアル.md) - 基本コマンド、高度な機能、ベストプラクティス
+- [4.よくある質問.md](4.よくある質問.md) - よくある質問とトラブルシューティング
 
-### Yarn v1 (Classic)
-- **Official Site**: https://classic.yarnpkg.com/
-- **Status**: Maintained
-- **Features**: Traditional architecture, simple and straightforward, widely compatible, npm-compatible
+## 公式リソース
 
-## Key Features Comparison
+- **Yarn 4+ 公式ドキュメント**: https://yarnpkg.com/
+- **Yarn v3 公式ドキュメント**: https://v3.yarnpkg.com/
+- **Yarn Classic 公式ドキュメント**: https://classic.yarnpkg.com/
 
-| Feature | Yarn v4+ | Yarn v1 |
-|---------|----------|---------|
-| **Architecture** | Plugin-based (Berry) | Traditional |
-| **Installation** | Corepack recommended | npm global install |
-| **Dependency Resolution** | Plug'n'Play (PnP) | node_modules |
-| **Workspaces** | Native support with advanced features | Basic support |
-| **Performance** | Faster with offline caching | Standard performance |
-| **Error Handling** | Semantic erroring with clear messages | Standard Node.js errors |
-| **Extensibility** | Rich plugin system | Limited extensibility |
+## 著作権表示
 
-## Migration Path
+このドキュメントは yarnpkg.com 公式サイトのコンテンツに基づいており、個人的な意見や推測を含まず、公式情報のみを含んでいます。
 
-Yarn provides a smooth migration path from v1 to v4+:
-1. Install Corepack and set up modern Yarn
-2. Gradually enable PnP and workspaces
-3. Use compatibility modes when needed
-4. Leverage the full power of modern features
-
-## Copyright Notice
-
-This documentation is based on official Yarn documentation and follows the BSD License.
+---
+*ドキュメントバージョン: 2026-03-27*

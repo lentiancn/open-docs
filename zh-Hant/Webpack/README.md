@@ -1,45 +1,45 @@
-# Webpack Module Bundler
+# Webpack 模組捆綁器
 
-Webpack is a static module bundler for modern JavaScript applications that processes your application and builds a dependency graph to create optimized bundles.
+Webpack 是一個現代 JavaScript 應用程式的靜態模組捆綁器，處理您的應用程式並建立依賴關係圖以創建最佳化捆綁。
 
-## Documentation Structure
+## 文件結構
 
-- [1.Introduction.md](1.Introduction.md) - Webpack overview and main version comparison
-- [2.Installation-Guide.md](2.Installation-Guide.md) - Detailed installation methods for Webpack v5 and v4
-- [3.User-Manual.md](3.User-Manual.md) - Core concepts, configuration, advanced features, and usage instructions
-- [4.FAQ.md](4.FAQ.md) - Common questions and answers about installation, configuration, performance, and migration
+- [1.簡介.md](1.簡介.md) - Webpack 概述和主要版本比較
+- [2.安裝指南.md](2.安裝指南.md) - Webpack v5 和 v4 的詳細安裝方法
+- [3.使用手冊.md](3.使用手冊.md) - 核心概念、配置、高級特性和使用說明
+- [4.常見問題.md](4.常見問題.md) - 關於安裝、配置、效能和遷移的常見問題
 
-## Main Version Information
+## 主要版本資訊
 
-### Webpack v5 (Modern Version)
-- **Official Site**: https://webpack.js.org/
-- **Status**: Actively developed
-- **Features**: ES Module support, persistent caching, module federation, built-in asset modules, improved performance
+### Webpack v5（現代版本）
+- **官方網站**：https://webpack.js.org/
+- **狀態**：積極開發中
+- **特性**：ES 模組支援、持久化快取、模組聯合、內建資產模組、改進的效能
 
-### Webpack v4 (Legacy Version)
-- **Official Site**: https://v4.webpack.js.org/
-- **Status**: Maintained (Long-term support)
-- **Features**: CommonJS configuration, basic bundling, code splitting, tree shaking
+### Webpack v4（傳統版本）
+- **官方網站**：https://v4.webpack.js.org/
+- **狀態**：維護中（長期支援）
+- **特性**：CommonJS 配置、基本捆綁、程式碼分割、Tree Shaking
 
-## Key Features Comparison
+## 主要特性比較
 
-| Feature | Webpack v5 | Webpack v4 |
-|---------|------------|------------|
-| **Module System** | ES Modules + CommonJS | CommonJS only |
-| **Caching** | Persistent caching | Memory caching |
-| **Asset Handling** | Built-in asset modules | Requires file-loader/url-loader |
-| **Performance** | Faster builds with persistent cache | Standard performance |
-| **Module Federation** | Built-in support | Not available |
-| **Node.js Support** | Node.js 10.13.0+ | Node.js 6.11.5+ |
+| 功能 | Webpack v5 | Webpack v4 |
+|------|------------|------------|
+| **模組系統** | ES 模組 + CommonJS | 僅 CommonJS |
+| **快取** | 持久化快取 | 記憶體快取 |
+| **資產處理** | 內建資產模組 | 需要 file-loader/url-loader |
+| **效能** | 使用持久化快取的更快建構 | 標準效能 |
+| **模組聯合** | 內建支援 | 不可用 |
+| **Node.js 支援** | Node.js 10.13.0+ | Node.js 6.11.5+ |
 
-## Migration Path
+## 遷移路徑
 
-Webpack provides a smooth migration path from v4 to v5:
-1. Update dependencies to latest versions
-2. Replace file-loader/url-loader with asset modules
-3. Review plugin compatibility and update configurations
-4. Leverage new features like persistent caching and module federation
+Webpack 提供了從 v4 到 v5 的平滑遷移路徑：
+1. 更新依賴到最新版本
+2. 用 asset 模組取代 file-loader/url-loader
+3. 查閱外掛程式相容性並更新配置
+4. 利用新特性，例如持久化快取和模組聯合
 
-## Copyright Notice
+## 版權宣告
 
-This documentation is based on official Webpack documentation and follows the MIT License.
+此文件基於官方 Webpack 文件並遵循 MIT 許可證。

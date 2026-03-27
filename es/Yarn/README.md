@@ -1,46 +1,46 @@
-# Yarn Package Manager
+# Gestor de Paquetes Yarn
 
-Yarn is an established open-source package manager used to manage dependencies in JavaScript projects.
+Yarn es un gestor de paquetes open source estable utilizado para gestionar dependencias en proyectos JavaScript.
 
-## Documentation Structure
+## Estructura de la Documentación
 
-- [1.Introduction.md](1.Introduction.md) - Yarn overview and main version comparison
-- [2.Installation-Guide.md](2.Installation-Guide.md) - Detailed installation methods for Yarn v4+ and v1
-- [3.User-Manual.md](3.User-Manual.md) - Basic commands, workspaces, configuration files, and usage instructions
-- [4.FAQ.md](4.FAQ.md) - Common questions and answers about installation, usage, migration, and troubleshooting
+- [1.Introducción.md](1.Introducción.md) - Vista general de Yarn y comparación de versiones principales
+- [2.Guía-de-instalación.md](2.Guía-de-instalación.md) - Métodos detallados de instalación para Yarn v4+ y v1
+- [3.Manual-del-usuario.md](3.Manual-del-usuario.md) - Comandos básicos, workspaces, archivos de configuración e instrucciones de uso
+- [4.Preguntas-frecuentes.md](4.Preguntas-frecuentes.md) - Preguntas y respuestas comunes sobre instalación, uso, migración y solución de problemas
 
-## Main Version Information
+## Información de Versiones Principales
 
-### Yarn v4+ (Modern Version)
-- **Official Site**: https://yarnpkg.com/
-- **Status**: Actively developed
-- **Features**: Plugin-based architecture, native workspace support, PnP, offline caching, parallel installs, semantic erroring
+### Yarn v4+ (Versión Moderna)
+- **Sitio Official**: https://yarnpkg.com/
+- **Estado**: Desarrollado activamente
+- **Características**: Arquitectura basada en plugins, soporte nativo de workspaces, PnP, caché fuera de línea, instalaciones paralelas, semantic erroring
 
-### Yarn v1 (Classic)
-- **Official Site**: https://classic.yarnpkg.com/
-- **Status**: Maintained
-- **Features**: Traditional architecture, simple and straightforward, widely compatible, npm-compatible
+### Yarn v1 (Clásica)
+- **Sitio Official**: https://classic.yarnpkg.com/
+- **Estado**: Mantenida
+- **Características**: Arquitectura tradicional, simple y directa, ampliamente compatible, compatible con npm
 
-## Key Features Comparison
+## Comparación de Características Principales
 
-| Feature | Yarn v4+ | Yarn v1 |
-|---------|----------|---------|
-| **Architecture** | Plugin-based (Berry) | Traditional |
-| **Installation** | Corepack recommended | npm global install |
-| **Dependency Resolution** | Plug'n'Play (PnP) | node_modules |
-| **Workspaces** | Native support with advanced features | Basic support |
-| **Performance** | Faster with offline caching | Standard performance |
-| **Error Handling** | Semantic erroring with clear messages | Standard Node.js errors |
-| **Extensibility** | Rich plugin system | Limited extensibility |
+| Característica | Yarn v4+ | Yarn v1 |
+|----------------|----------|---------|
+| **Arquitectura** | Basada en plugins (Berry) | Tradicional |
+| **Instalación** | Recomendado Corepack | Instalación global npm |
+| **Resolución de Dependencias** | Plug'n'Play (PnP) | node_modules |
+| **Workspaces** | Soporte nativo con características avanzadas | Soporte básico |
+| **Rendimiento** | Más rápido con caché fuera de línea | Rendimiento estándar |
+| ** Manejo de Errores** | Semantic erroring con mensajes claros | Errores estándar de Node.js |
+| **Extensibilidad** | Sistema de plugins rico | Extensibilidad limitada |
 
-## Migration Path
+## Ruta de Migración
 
-Yarn provides a smooth migration path from v1 to v4+:
-1. Install Corepack and set up modern Yarn
-2. Gradually enable PnP and workspaces
-3. Use compatibility modes when needed
-4. Leverage the full power of modern features
+Yarn proporciona una ruta de migración suave de v1 a v4+:
+1. Instalar Corepack y configurar Yarn moderno
+2. Habilitar gradualmente PnP y workspaces
+3. Usar modos de compatibilidad cuando sea necesario
+4. Aprovechar todo el poder de las características modernas
 
-## Copyright Notice
+## Aviso de Derechos de Autor
 
-This documentation is based on official Yarn documentation and follows the BSD License.
+Esta documentación se basa en la documentación oficial de Yarn y sigue la Licencia BSD.

@@ -1,46 +1,29 @@
-# Yarn Package Manager
+# Yarn 包管理器
 
-Yarn is an established open-source package manager used to manage dependencies in JavaScript projects.
+Yarn 是一个专注于速度、正确性、安全性和开发者体验的开源包管理器，用于管理 JavaScript 项目中的依赖关系。
 
-## Documentation Structure
+## 版本概览
 
-- [1.Introduction.md](1.Introduction.md) - Yarn overview and main version comparison
-- [2.Installation-Guide.md](2.Installation-Guide.md) - Detailed installation methods for Yarn v4+ and v1
-- [3.User-Manual.md](3.User-Manual.md) - Basic commands, workspaces, configuration files, and usage instructions
-- [4.FAQ.md](4.FAQ.md) - Common questions and answers about installation, usage, migration, and troubleshooting
+- **Yarn 4+ (现代版本)**: 活跃开发和维护，提供工作区、插件系统等高级功能
+- **Yarn v3**: 维护中，适用于大型单体仓库和企业用户  
+- **Yarn Classic (v1)**: 维护中，传统的 Yarn 包管理器
 
-## Main Version Information
+## 文档结构
 
-### Yarn v4+ (Modern Version)
-- **Official Site**: https://yarnpkg.com/
-- **Status**: Actively developed
-- **Features**: Plugin-based architecture, native workspace support, PnP, offline caching, parallel installs, semantic erroring
+- [1.简介.md](1.简介.md) - Yarn 的基本概念、版本差异和核心功能
+- [2.安装指南.md](2.安装指南.md) - 各版本的详细安装方法和配置
+- [3.使用手册.md](3.使用手册.md) - 基本命令、高级功能和最佳实践
+- [4.常见问题.md](4.常见问题.md) - 常见问题解答和故障排除
 
-### Yarn v1 (Classic)
-- **Official Site**: https://classic.yarnpkg.com/
-- **Status**: Maintained
-- **Features**: Traditional architecture, simple and straightforward, widely compatible, npm-compatible
+## 官方资源
 
-## Key Features Comparison
+- **Yarn 4+ 官方文档**: https://yarnpkg.com/
+- **Yarn v3 官方文档**: https://v3.yarnpkg.com/
+- **Yarn Classic 官方文档**: https://classic.yarnpkg.com/
 
-| Feature | Yarn v4+ | Yarn v1 |
-|---------|----------|---------|
-| **Architecture** | Plugin-based (Berry) | Traditional |
-| **Installation** | Corepack recommended | npm global install |
-| **Dependency Resolution** | Plug'n'Play (PnP) | node_modules |
-| **Workspaces** | Native support with advanced features | Basic support |
-| **Performance** | Faster with offline caching | Standard performance |
-| **Error Handling** | Semantic erroring with clear messages | Standard Node.js errors |
-| **Extensibility** | Rich plugin system | Limited extensibility |
+## 版权声明
 
-## Migration Path
+本文档内容基于官方 yarnpkg.com 网站整理，仅包含官方信息，不包含个人观点或推测。
 
-Yarn provides a smooth migration path from v1 to v4+:
-1. Install Corepack and set up modern Yarn
-2. Gradually enable PnP and workspaces
-3. Use compatibility modes when needed
-4. Leverage the full power of modern features
-
-## Copyright Notice
-
-This documentation is based on official Yarn documentation and follows the BSD License.
+---
+*文档版本: 2026-03-27*
